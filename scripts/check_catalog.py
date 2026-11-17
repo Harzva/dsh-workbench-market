@@ -19,18 +19,18 @@ def main():
     assert entries
     keys = set()
     for entry in entries:
-        key = (entry["repo"], entry["package"])
+        key = (entry["repo"], entry["package"], entry["host"])
         assert key not in keys, key
         keys.add(key)
         check_link(entry["href"])
         source = entry["source"]
-        assert source in {"official", "registered", "manifest", "web"}, source
-        assert entry["host"] == ("web" if source == "web" else "dataelem"), entry
+        assert source in {"official", "registered", "manifest", "web", "deepseek-desktop"}, source
+        assert entry["host"] == (source if source in {"web", "deepseek-desktop"} else "dataelem"), entry
         if source != "official":
             check_link(entry["manifest"])
         if source == "registered":
             check_link(entry["registration"])
-        if source == "web":
+        if source in {"web", "deepseek-desktop"}:
             check_link(entry["workflow"])
     print(f"{len(keys)} entries, matching JSON and browser data, valid evidence links")
 

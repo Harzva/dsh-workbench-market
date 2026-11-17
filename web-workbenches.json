@@ -7,7 +7,8 @@
     "version": "0.5.1",
     "package": "dsh-worktable",
     "manifest": "https://github.com/Aisland-SJL/dsh-worktable/blob/f98246ef0cd10173cabfdb4d7070eb245b12b42d/01_content/package.json",
-    "workflow": "https://github.com/Aisland-SJL/dsh-worktable/blob/f98246ef0cd10173cabfdb4d7070eb245b12b42d/README.md#L25-L52"
+    "workflow": "https://github.com/Aisland-SJL/dsh-worktable/blob/f98246ef0cd10173cabfdb4d7070eb245b12b42d/README.md#L25-L52",
+    "packagePath": "01_content/package.json"
   },
   {
     "repo": "loadingvx/deepseek-harness-workbench-plugin",
@@ -17,7 +18,8 @@
     "version": "0.1.38",
     "package": "dsh-workbench-plugin",
     "manifest": "https://github.com/loadingvx/deepseek-harness-workbench-plugin/blob/421282dc771c72ccf5fac60d70e3d6571a4e62e3/package.json",
-    "workflow": "https://github.com/loadingvx/deepseek-harness-workbench-plugin/blob/421282dc771c72ccf5fac60d70e3d6571a4e62e3/README.md#L5-L17"
+    "workflow": "https://github.com/loadingvx/deepseek-harness-workbench-plugin/blob/421282dc771c72ccf5fac60d70e3d6571a4e62e3/README.md#L5-L17",
+    "packagePath": "package.json"
   },
   {
     "repo": "LiPu-jpg/Openwrite",
@@ -27,7 +29,8 @@
     "version": "0.1.0",
     "package": "@dsh-novel/studio-panel",
     "manifest": "https://github.com/LiPu-jpg/Openwrite/blob/3635a1e5ca5ab9398e8adb7c3a91526826184a30/packages/studio-panel/package.json#L20-L35",
-    "workflow": "https://github.com/LiPu-jpg/Openwrite/blob/3635a1e5ca5ab9398e8adb7c3a91526826184a30/packages/studio-panel/README.md#L1-L7"
+    "workflow": "https://github.com/LiPu-jpg/Openwrite/blob/3635a1e5ca5ab9398e8adb7c3a91526826184a30/packages/studio-panel/README.md#L1-L7",
+    "packagePath": "packages/studio-panel/package.json"
   },
   {
     "repo": "Harzva/dsh-wemedia-workbench",
@@ -37,7 +40,8 @@
     "version": "0.1.0",
     "package": "dsh-wemedia-workbench",
     "manifest": "https://github.com/Harzva/dsh-wemedia-workbench/blob/52747b792b6602ccdd3d95a0b951ca3a21a3b70d/package.json",
-    "workflow": "https://github.com/Harzva/dsh-wemedia-workbench/blob/52747b792b6602ccdd3d95a0b951ca3a21a3b70d/README.md#L3-L30"
+    "workflow": "https://github.com/Harzva/dsh-wemedia-workbench/blob/52747b792b6602ccdd3d95a0b951ca3a21a3b70d/README.md#L3-L30",
+    "packagePath": "package.json"
   },
   {
     "repo": "gulagala001/dsh-deepseek-workbench",
@@ -47,7 +51,9 @@
     "version": "0.1.11-dsh.0.2.2-rc.3",
     "package": "dsh-deepseek-workbench",
     "manifest": "https://github.com/gulagala001/dsh-deepseek-workbench/blob/8b96322a95cfac535977dcbf9d046a8a4beb379c/package.json",
-    "workflow": "https://github.com/gulagala001/dsh-deepseek-workbench/blob/8b96322a95cfac535977dcbf9d046a8a4beb379c/README.md#L16-L45"
+    "workflow": "https://github.com/gulagala001/dsh-deepseek-workbench/blob/8b96322a95cfac535977dcbf9d046a8a4beb379c/README.md#L20-L40",
+    "packagePath": "package.json",
+    "host": "deepseek-desktop"
   },
   {
     "repo": "bandung-circuits/pomasa-studio",
@@ -57,7 +63,8 @@
     "version": "0.3.2",
     "package": "pomasa-studio",
     "manifest": "https://github.com/bandung-circuits/pomasa-studio/blob/e6830c714380ec0485b93be3399e434841f697dd/package.json",
-    "workflow": "https://github.com/bandung-circuits/pomasa-studio/blob/e6830c714380ec0485b93be3399e434841f697dd/README.md#L5-L16"
+    "workflow": "https://github.com/bandung-circuits/pomasa-studio/blob/e6830c714380ec0485b93be3399e434841f697dd/README.md#L5-L16",
+    "packagePath": "package.json"
   },
   {
     "repo": "ZSeven-W/dsh-openpencil",
@@ -67,7 +74,8 @@
     "version": "0.1.0-rc.15",
     "package": "@zseven-w/dsh-openpencil",
     "manifest": "https://github.com/ZSeven-W/dsh-openpencil/blob/56650083e8b1ea01c625b73a4a5c15b98ef53965/package.json",
-    "workflow": "https://github.com/ZSeven-W/dsh-openpencil/blob/56650083e8b1ea01c625b73a4a5c15b98ef53965/README.md#L30-L63"
+    "workflow": "https://github.com/ZSeven-W/dsh-openpencil/blob/56650083e8b1ea01c625b73a4a5c15b98ef53965/README.md#L30-L63",
+    "packagePath": "package.json"
   },
   {
     "repo": "yang0/dsh-handraw-style",
@@ -77,7 +85,8 @@
     "version": "0.7.9",
     "package": "dsh-plugin-pose-studio",
     "manifest": "https://github.com/yang0/dsh-handraw-style/blob/4e959966464e0b3b7aa8fb39ef535946b5362ff1/package.json",
-    "workflow": "https://github.com/yang0/dsh-handraw-style/blob/4e959966464e0b3b7aa8fb39ef535946b5362ff1/README.md#L19-L39"
+    "workflow": "https://github.com/yang0/dsh-handraw-style/blob/4e959966464e0b3b7aa8fb39ef535946b5362ff1/README.md#L19-L39",
+    "packagePath": "package.json"
   },
   {
     "repo": "omdsh-dev/DSH-better-sidebar",
@@ -87,7 +96,8 @@
     "version": "0.32.1",
     "package": "dsh-better-sidebar",
     "manifest": "https://github.com/omdsh-dev/DSH-better-sidebar/blob/2811573c9c0bad51d77db6c3c94d78f5aed8d38a/package.json",
-    "workflow": "https://github.com/omdsh-dev/DSH-better-sidebar/blob/2811573c9c0bad51d77db6c3c94d78f5aed8d38a/README.md#L17-L29"
+    "workflow": "https://github.com/omdsh-dev/DSH-better-sidebar/blob/2811573c9c0bad51d77db6c3c94d78f5aed8d38a/README.md#L17-L29",
+    "packagePath": "package.json"
   },
   {
     "repo": "dream-num/dsh-univer-office",
@@ -97,7 +107,8 @@
     "version": "0.4.0",
     "package": "dsh-univer-office",
     "manifest": "https://github.com/dream-num/dsh-univer-office/blob/f34c329e15818c069321f7109bc8af1a6ca891fe/package.json",
-    "workflow": "https://github.com/dream-num/dsh-univer-office/blob/f34c329e15818c069321f7109bc8af1a6ca891fe/README.md#L168-L188"
+    "workflow": "https://github.com/dream-num/dsh-univer-office/blob/f34c329e15818c069321f7109bc8af1a6ca891fe/README.md#L168-L188",
+    "packagePath": "package.json"
   },
   {
     "repo": "Uid-762/dsh-ai-workbench",
@@ -107,7 +118,8 @@
     "version": "0.8.3",
     "package": "dsh-ai-workbench",
     "manifest": "https://github.com/Uid-762/dsh-ai-workbench/blob/f472a8266d879710f92977cffe1de946da0efedf/package.json",
-    "workflow": "https://github.com/Uid-762/dsh-ai-workbench/blob/f472a8266d879710f92977cffe1de946da0efedf/README.md#L14-L39"
+    "workflow": "https://github.com/Uid-762/dsh-ai-workbench/blob/f472a8266d879710f92977cffe1de946da0efedf/README.md#L14-L39",
+    "packagePath": "package.json"
   },
   {
     "repo": "LongerWu2026/dsh-dev-workbench",
@@ -117,6 +129,51 @@
     "version": "0.4.10",
     "package": "dsh-dev-workbench",
     "manifest": "https://github.com/LongerWu2026/dsh-dev-workbench/blob/d7f3b3e551f13fa92f542eb95dcde63315b20c84/package.json",
-    "workflow": "https://github.com/LongerWu2026/dsh-dev-workbench/blob/d7f3b3e551f13fa92f542eb95dcde63315b20c84/README.md#L1-L16"
+    "workflow": "https://github.com/LongerWu2026/dsh-dev-workbench/blob/d7f3b3e551f13fa92f542eb95dcde63315b20c84/README.md#L1-L16",
+    "packagePath": "package.json"
+  },
+  {
+    "repo": "Dely0/dsh-personal-workbench",
+    "name": "个人工作台",
+    "description": "把日历任务、会话执行和验收集中在同一界面。",
+    "category": "效率",
+    "version": "1.17.2",
+    "package": "@dely0/dsh-personal-workbench",
+    "manifest": "https://github.com/Dely0/dsh-personal-workbench/blob/55c4b4f77439b37e3bc8177df63f21570710debd/package.json",
+    "workflow": "https://github.com/Dely0/dsh-personal-workbench/blob/55c4b4f77439b37e3bc8177df63f21570710debd/README.md#L49-L55",
+    "packagePath": "package.json"
+  },
+  {
+    "repo": "liiydong/dsh-workbench",
+    "name": "文档协作工作台",
+    "description": "在 DSH 会话中协作迭代文档、保留快照并审批。",
+    "category": "效率",
+    "version": "0.7.0",
+    "package": "dsh-workbench",
+    "manifest": "https://github.com/liiydong/dsh-workbench/blob/d2ebff98c4f3b2c1ee11e508d75399089a90c17b/package.json",
+    "workflow": "https://github.com/liiydong/dsh-workbench/blob/d2ebff98c4f3b2c1ee11e508d75399089a90c17b/README.md#L235-L244",
+    "packagePath": "package.json"
+  },
+  {
+    "repo": "staff-os/dsh-workbench",
+    "name": "Staff OS 企业工作台",
+    "description": "在 DSH 里管理 AI 员工、知识库、技能和插件。",
+    "category": "效率",
+    "version": "0.1.0",
+    "package": "@staff-os/dsh-workbench",
+    "manifest": "https://github.com/staff-os/dsh-workbench/blob/d785a4655271156e408b54cf3a34fc3548df99ff/package.json",
+    "workflow": "https://github.com/staff-os/dsh-workbench/blob/d785a4655271156e408b54cf3a34fc3548df99ff/README.zh.md#L123-L134",
+    "packagePath": "package.json"
+  },
+  {
+    "repo": "lukeinx/dsh-workboard",
+    "name": "DSH Workboard",
+    "package": "dsh-workboard",
+    "version": "0.4.1",
+    "description": "在 DSH 中搭建可以反复打开的任务看板，组合已有小组件和 Agent 自定义组件。",
+    "category": "效率",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/lukeinx/dsh-workboard/blob/6d59a7f08e68a56b526bbca6f301a07b0e82dd77/package.json",
+    "workflow": "https://github.com/lukeinx/dsh-workboard/blob/6d59a7f08e68a56b526bbca6f301a07b0e82dd77/README.md#L28-L50"
   }
 ]

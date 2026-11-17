@@ -31,7 +31,10 @@ def build_catalog(index, community, checked_at, web=(), discoveries=()):
     seen_repos = set()
     seen_packages = set()
     known_repos = {item["id"].lower() for item in index["workbenches"]}
-    excluded = {"weixiurui/dsh-firefly-forest", "nikolay-leukhin/dsh_multiagent_system_monitoring_performance_plugin"}
+    excluded = {
+        "weixiurui/dsh-firefly-forest",  # Theme interface.
+        "nikolay-leukhin/dsh_multiagent_system_monitoring_performance_plugin",  # Duplicate of projectHub.
+    }
     for item in index["workbenches"]:
         repo = item["id"].lower()
         source = item.get("distribution") or {}
@@ -50,9 +53,9 @@ def build_catalog(index, community, checked_at, web=(), discoveries=()):
             "identity": item.get("workbenchId"),
             "package": package,
         })
-        seen_repos.add(repo)
+        seen_repos.add((repo, "package.json", "dataelem"))
         if package:
-            seen_packages.add(package)
+            seen_packages.add((package, "dataelem"))
 
     # Preserve reviewed labels while preferring pinned GitHub evidence.
     merged = {}
@@ -75,25 +78,28 @@ def build_catalog(index, community, checked_at, web=(), discoveries=()):
         repo = item["repo"].lower()
         package = item["package"]
         canonical = (item.get("canonicalRepo") or "").lower()
-        if repo in known_repos or repo in excluded or (canonical in known_repos and canonical != repo):
-            continue
-        identity = (repo, item.get("packagePath", "package.json"))
-        if identity in seen_repos or package in seen_packages:
-            continue
         is_web = bool(item.get("workflow"))
+        host = item.get("host", "web") if is_web else "dataelem"
+        package_path = item.get("packagePath", "package.json")
+        if repo in excluded or (not is_web and canonical in known_repos and canonical != repo):
+            continue
+        identity = (repo, package_path, host)
+        if identity in seen_repos or (package, host) in seen_packages:
+            continue
         links = {name: github_link(item.get(name)) for name in ("manifest", "registration", "workflow")}
-        source = "web" if is_web else "registered" if links["registration"] else "manifest"
+        source = host if is_web else "registered" if links["registration"] else "manifest"
         entries.append({
             **{key: item[key] for key in ("name", "description", "package", "version") if key in item},
             **links,
             "repo": repo,
             "category": item.get("category", "其他"),
-            "host": "web" if is_web else "dataelem",
+            "host": host,
+            "packagePath": package_path,
             "source": source,
             "href": github_link("https://github.com/" + item["repo"]),
         })
         seen_repos.add(identity)
-        seen_packages.add(package)
+        seen_packages.add((package, host))
 
     return {"checkedAt": checked_at, "officialIndex": OFFICIAL_INDEX, "entries": entries}
 
@@ -118,7 +124,7 @@ def main():
     scratch.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
     os.replace(scratch, json_target)
     counts = {source: sum(row["source"] == source for row in catalog["entries"])
-              for source in ("official", "registered", "web", "manifest")}
+              for source in ("official", "registered", "web", "deepseek-desktop", "manifest")}
     print(json.dumps(counts))
 
 

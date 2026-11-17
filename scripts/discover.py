@@ -6,6 +6,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -22,6 +23,11 @@ REPO_QUERIES = (
     "topic:dsh-workbench",
     'topic:dsh-plugin workbench in:readme',
     'topic:dsh-plugin 工作台 in:readme',
+    'topic:dsh-plugin worktable in:readme',
+    'topic:dsh-plugin 工作臺 in:readme',
+    '"DeepSeek Harness" worktable in:readme',
+    '"DeepSeek Harness" studio in:name,description',
+    '"DeepSeek Harness" dashboard in:name,description',
     '"DSH Desktop" workbench in:readme',
     '"DSH Desktop" 工作台 in:readme',
     '"dsh-desktop-workbenches" in:readme',
@@ -49,13 +55,23 @@ def fetch(url, limit=READ_LIMIT):
 
 def github(path, **params):
     target = path + ("?" + urllib.parse.urlencode(params) if params else "")
-    result = subprocess.run(
-        ["gh", "api", target],
-        text=True, capture_output=True, timeout=35,
-    )
-    if result.returncode:
-        raise RuntimeError(result.stderr.strip() or "GitHub API request failed")
-    return json.loads(result.stdout)
+    for attempt in range(2):
+        result = subprocess.run(
+            ["gh", "api", "--include", target],
+            text=True, capture_output=True, timeout=35,
+        )
+        headers, _, body = result.stdout.partition("\n\n")
+        if not result.returncode:
+            return json.loads(body)
+        problem = result.stderr.strip() or "GitHub API request failed"
+        if attempt or "rate limit" not in problem.lower():
+            raise RuntimeError(problem)
+        reset = re.search(r"(?mi)^x-ratelimit-reset:\s*(\d+)", headers)
+        retry = re.search(r"(?mi)^retry-after:\s*(\d+)", headers)
+        delay = int(retry.group(1)) if retry else int(reset.group(1)) - int(time.time()) if reset else 10
+        if delay > 75:
+            raise RuntimeError(problem)
+        time.sleep(max(1, delay + 1))
 
 
 def raw_url(repo, ref, path):
@@ -145,11 +161,12 @@ def repo_id(url):
     return None
 
 
-def pages(kind, query, results, errors, per_page=100):
+def pages(kind, query, results, errors, per_page=100, first=None):
     fetched = 0
     try:
         for page in range(1, 11):
-            data = github("search/" + kind, q=query, per_page=per_page, page=page)
+            data = first if page == 1 and first is not None else github(
+                "search/" + kind, q=query, per_page=per_page, page=page)
             items = data["items"]
             meta = results.setdefault(query, {"matched": data["total_count"], "read": 0, "incomplete": False})
             meta["read"] += len(items)
@@ -165,7 +182,47 @@ def pages(kind, query, results, errors, per_page=100):
         results.setdefault(query, {"read": 0})["incomplete"] = True
 
 
-def inventory(existing, skip_code):
+def repository_search(query, results, errors):
+    """Partition capped repository searches using non-overlapping GitHub date ranges."""
+    try:
+        initial = github("search/repositories", q=query, per_page=100, page=1)
+    except (OSError, RuntimeError, subprocess.TimeoutExpired, KeyError, ValueError) as error:
+        errors.append({"query": query, "error": str(error)})
+        results[query] = {"read": 0, "incomplete": True}
+        return
+    if initial["total_count"] <= 1000:
+        yield from pages("repositories", query, results, errors, first=initial)
+        return
+
+    partitions = []
+
+    def read_range(start, end):
+        scoped = f"{query} created:{start}..{end}"
+        try:
+            page = github("search/repositories", q=scoped, per_page=100, page=1)
+        except (OSError, RuntimeError, subprocess.TimeoutExpired, KeyError, ValueError) as error:
+            partitions.append(scoped)
+            errors.append({"query": scoped, "error": str(error)})
+            results[scoped] = {"read": 0, "incomplete": True}
+            return
+        if page["total_count"] > 1000 and start < end:
+            split = start + (end - start) // 2
+            yield from read_range(start, split)
+            yield from read_range(split + dt.timedelta(days=1), end)
+        else:
+            partitions.append(scoped)
+            yield from pages("repositories", scoped, results, errors, first=page)
+
+    end = dt.datetime.now(dt.timezone.utc).date() + dt.timedelta(days=1)
+    yield from read_range(dt.date(2008, 1, 1), end)
+    read = sum(results[part]["read"] for part in partitions)
+    results[query] = {
+        "matched": initial["total_count"], "read": read, "partitions": len(partitions),
+        "incomplete": any(results[part]["incomplete"] for part in partitions) or read < initial["total_count"],
+    }
+
+
+def inventory(existing, skip_code, all_plugin_index=False, previous=()):
     candidates = {}
     searches = {}
     indices = {}
@@ -178,8 +235,24 @@ def inventory(existing, skip_code):
             row["paths"].setdefault(path, set())
             row["sources"].add(source)
 
-    for row in existing:
+    for row in [*existing, *previous]:
         add(row["repo"], row.get("packagePath", "package.json"), source="previous catalog")
+    owners = Counter(row["repo"].split("/")[0] for row in previous)
+    for owner, count in sorted(owners.items()):
+        if count < 3:
+            continue
+        try:
+            for page in range(1, 51):
+                repos = github(f"users/{owner}/repos", type="public", per_page=100, page=page)
+                for row in repos:
+                    if row.get("private") is False:
+                        add(row.get("full_name"), ref=row["default_branch"], source=f"owner:{owner}")
+                if len(repos) < 100:
+                    break
+            else:
+                errors.append({"source": f"owner:{owner}", "error": "owner repository page limit reached"})
+        except (OSError, RuntimeError, subprocess.TimeoutExpired, KeyError, ValueError) as error:
+            errors.append({"source": f"owner:{owner}", "error": str(error)})
     for url, source in ((OFFICIAL_INDEX, "desktop market"), (PLUGIN_INDEX, "plugin index")):
         try:
             index = json.loads(fetch(url, limit=24_000_000))
@@ -188,8 +261,8 @@ def inventory(existing, skip_code):
             for row in rows:
                 repo_url = row.get("url") or (row.get("repository") or {}).get("url")
                 repo = repo_id(repo_url)
-                relevant = source == "desktop market" or re.search(
-                    r"workbench|worktable|工作台|desktopWorkbenches|dshdesktop", json.dumps(
+                relevant = source == "desktop market" or all_plugin_index or re.search(
+                    r"workbench|worktable|工作台|工作臺|desktopWorkbenches|dshdesktop|research studio|控制台", json.dumps(
                         [row.get("name"), row.get("title"), row.get("description"), row.get("metadata")],
                         ensure_ascii=False), re.I)
                 if repo and relevant:
@@ -198,11 +271,13 @@ def inventory(existing, skip_code):
             errors.append({"source": source, "error": str(error)})
 
     for query in REPO_QUERIES:
-        for row in pages("repositories", query + " is:public", searches, errors):
+        print(f"Searching GitHub repositories: {query}", file=sys.stderr, flush=True)
+        for row in repository_search(query + " is:public", searches, errors):
             if row.get("private") is False:
                 add(row.get("full_name"), ref=row["default_branch"], source=query)
     if not skip_code:
         for query in CODE_QUERIES:
+            print(f"Searching GitHub code: {query}", file=sys.stderr, flush=True)
             for row in pages("code", query, searches, errors):
                 repo = row.get("repository", {})
                 if repo.get("private") is not False or not REPO.fullmatch(repo.get("full_name", "")):
@@ -225,9 +300,25 @@ def inventory(existing, skip_code):
     return candidates, searches, indices, errors
 
 
+def web_signal(package):
+    dsh = package.get("dsh")
+    if not isinstance(dsh, dict):
+        return False
+    client, bundle = dsh.get("client"), dsh.get("bundle")
+    if not isinstance(client, dict) or not isinstance(bundle, dict) or not clean_path(bundle.get("patch")):
+        return False
+    description = " ".join(str(package.get(field) or "") for field in ("name", "description", "keywords"))
+    inject = client.get("inject")
+    return isinstance(inject, list) and any(
+        isinstance(service, str) and service.startswith("@deepseek-ai/dsh-client-")
+        for service in inject
+    ) and bool(re.search(r"workbench|worktable|工作台|工作臺|studio|console|dashboard|创作台", description, re.I))
+
+
 def inspect(candidate):
     repo, ref = candidate["repo"], candidate["ref"]
     matches = []
+    web_candidates = []
     failures = []
     commit = None
     for path, hinted_files in sorted(candidate["paths"].items()):
@@ -235,6 +326,11 @@ def inspect(candidate):
             package = package_at(repo, ref, path)
             contract = manifest_contract(package) if package else None
             if not contract:
+                if package and web_signal(package):
+                    web_candidates.append({
+                        "repo": repo, "packagePath": path, "package": package.get("name"),
+                        "version": package.get("version"), "ref": ref, "sources": sorted(candidate["sources"]),
+                    })
                 continue
             if commit is None:
                 commit = github(f"repos/{repo}/commits/HEAD")["sha"]
@@ -275,7 +371,7 @@ def inspect(candidate):
                 failures.append({"repo": repo, "path": path, "error": failure})
         except (OSError, RuntimeError, subprocess.TimeoutExpired, KeyError, ValueError) as error:
             failures.append({"repo": repo, "path": path, "error": str(error)})
-    return matches, failures
+    return matches, web_candidates, failures
 
 
 def main():
@@ -283,6 +379,9 @@ def main():
     parser.add_argument("--output", type=Path, default=ROOT / "discovery.json")
     parser.add_argument("--skip-code-search", action="store_true", help="Use the repository search and indexes only.")
     parser.add_argument("--workers", type=int, default=10)
+    parser.add_argument("--all-plugin-index", action="store_true",
+                        help="Check every public GitHub repository linked by the general plugin index.")
+    parser.add_argument("--expand-from", type=Path, help="Read a previous snapshot and also inspect related owners.")
     parser.add_argument("--only-existing", action="store_true", help="Revalidate recorded community repositories only.")
     args = parser.parse_args()
     if not 1 <= args.workers <= 24:
@@ -297,14 +396,18 @@ def main():
         }
         searches, indices, errors = {}, {}, []
     else:
-        candidates, searches, indices, errors = inventory(existing, args.skip_code_search)
+        previous = json.loads(args.expand_from.read_text())["matches"] if args.expand_from else []
+        candidates, searches, indices, errors = inventory(
+            existing, args.skip_code_search, args.all_plugin_index, previous)
     print(f"Inspecting {len(candidates)} public repositories", file=sys.stderr, flush=True)
     matches = []
+    web_candidates = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
         pending = {pool.submit(inspect, row) for row in candidates.values()}
         for number, future in enumerate(concurrent.futures.as_completed(pending), 1):
-            found, failed = future.result()
+            found, tentative_web, failed = future.result()
             matches.extend(found)
+            web_candidates.extend(tentative_web)
             errors.extend(failed)
             if number % 100 == 0:
                 print(f"{number}/{len(candidates)} inspected, {len(matches)} manifests", file=sys.stderr, flush=True)
@@ -314,6 +417,7 @@ def main():
         "repositoriesInspected": len(candidates), "indexes": indices, "searches": searches,
         "counts": dict(counts), "errors": sorted(errors, key=lambda row: json.dumps(row, sort_keys=True)),
         "matches": sorted(matches, key=lambda row: (row["repo"].lower(), row["packagePath"])),
+        "webCandidates": sorted(web_candidates, key=lambda row: (row["repo"].lower(), row["packagePath"])),
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     scratch = args.output.with_suffix(".tmp")

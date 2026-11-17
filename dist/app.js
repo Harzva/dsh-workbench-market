@@ -14,8 +14,9 @@ const labels = {
   registered: "Dataelem · 注册已核",
   manifest: "Dataelem · 清单候选",
   web: "DSH Web · 已核",
+  "deepseek-desktop": "DeepSeek 官方桌面 · 已核",
 };
-const order = {registered: 0, web: 1, official: 2, manifest: 3};
+const order = {registered: 0, web: 1, "deepseek-desktop": 2, official: 3, manifest: 4};
 
 function renderListing(item) {
   const node = template.content.cloneNode(true);
