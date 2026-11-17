@@ -222,22 +222,28 @@ def discussion_export(path):
 
 
 def pages(kind, query, results, errors, per_page=100, first=None):
-    fetched = 0
+    seen = set()
     try:
         for page in range(1, 11):
             data = first if page == 1 and first is not None else github(
                 "search/" + kind, q=query, per_page=per_page, page=page)
             items = data["items"]
-            meta = results.setdefault(query, {"matched": data["total_count"], "read": 0, "incomplete": False})
-            meta["read"] += len(items)
-            meta["incomplete"] |= bool(data.get("incomplete_results"))
-            fetched += len(items)
-            yield from items
+            matched = data["total_count"]
+            meta = results.setdefault(query, {"matched": matched, "read": 0, "returned": 0, "incomplete": False})
+            meta["returned"] += len(items)
+            meta["incomplete"] |= bool(data.get("incomplete_results")) or matched != meta["matched"]
+            for item in items:
+                identity = (item["repository"]["id"], item["path"]) if kind == "code" else item["id"]
+                if identity in seen:
+                    continue
+                seen.add(identity)
+                meta["read"] += 1
+                yield item
             # A partial page can precede further results when GitHub omits individual hits.
-            if not items or fetched >= min(data["total_count"], 1000):
+            if not items or len(seen) >= min(matched, 1000):
                 break
-        if results[query]["matched"] > fetched:
-            results[query]["incomplete"] = True
+        if meta["matched"] != meta["read"]:
+            meta["incomplete"] = True
     except (OSError, RuntimeError, subprocess.TimeoutExpired, KeyError, ValueError) as error:
         errors.append({"query": query, "error": str(error)})
         results.setdefault(query, {"read": 0})["incomplete"] = True
@@ -279,11 +285,20 @@ def repository_search(query, results, errors):
             yield from pages("repositories", scoped, results, errors, first=page)
 
     end = dt.datetime.now(dt.timezone.utc).date() + dt.timedelta(days=1)
-    yield from read_range(dt.date(2008, 1, 1), end)
-    read = sum(results[part]["read"] for part in partitions)
+    seen = set()
+    for item in read_range(dt.date(2008, 1, 1), end):
+        if item["id"] not in seen:
+            seen.add(item["id"])
+            yield item
+    read = len(seen)
+    partition_reads = sum(results[part]["read"] for part in partitions)
     results[query] = {
-        "matched": initial["total_count"], "read": read, "partitions": len(partitions),
-        "incomplete": any(results[part]["incomplete"] for part in partitions) or read < initial["total_count"],
+        "matched": initial["total_count"], "read": read,
+        "returned": sum(results[part].get("returned", 0) for part in partitions), "partitions": len(partitions),
+        "incomplete": (
+            any(results[part]["incomplete"] for part in partitions)
+            or read != initial["total_count"] or read != partition_reads
+        ),
     }
 
 
@@ -341,7 +356,7 @@ def inventory(existing, skip_code, all_plugin_index=False, previous=(), index_on
             row["sources"].add(source)
 
     def search_code(queries):
-        for query in queries:
+        for query in dict.fromkeys(queries):
             print(f"Searching GitHub code: {query}", file=sys.stderr, flush=True)
             for row in pages("code", query, searches, errors):
                 repo = row.get("repository", {})

@@ -5042,5 +5042,201 @@
         "alt": "插件设计局显示节点连线及右侧的插件链配置和生成方案面板。"
       }
     ]
+  },
+  {
+    "repo": "KorionCN/dsh-d2-diagrams",
+    "name": "D2 图表预览",
+    "description": "从工作区打开 .d2 文件，在右栏修改预览草稿、对照源码和图表，并下载 SVG。",
+    "category": "开发",
+    "version": "0.1.0",
+    "package": "dsh-d2-diagrams",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/KorionCN/dsh-d2-diagrams/blob/9d742e7319da785e057b1bd61877a855829570f8/package.json",
+    "registration": "https://github.com/KorionCN/dsh-d2-diagrams/blob/9d742e7319da785e057b1bd61877a855829570f8/src/client.jsx#L463-L482",
+    "workflow": "https://github.com/KorionCN/dsh-d2-diagrams/blob/9d742e7319da785e057b1bd61877a855829570f8/src/client.jsx#L305-L349",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/KorionCN/dsh-d2-diagrams/9d742e7319da785e057b1bd61877a855829570f8/assets/screenshot-split.webp",
+        "width": 1600,
+        "height": 1433,
+        "alt": "D2 分屏编辑器左侧显示图表源码，右侧实时预览图表。"
+      }
+    ]
+  },
+  {
+    "repo": "CleverPuppy/dsh-gerrit-workbench",
+    "name": "Gerrit 代码评审",
+    "description": "查看待评审变更和补丁差异，撰写行内评论、评分并提交评审，或打开随变更保存的 AI 审查会话。",
+    "category": "开发",
+    "version": "0.1.0",
+    "package": "dsh-gerrit-workbench",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/CleverPuppy/dsh-gerrit-workbench/blob/0e120fdf122f030bb49a1badb54016c71cd827f6/package.json",
+    "registration": "https://github.com/CleverPuppy/dsh-gerrit-workbench/blob/0e120fdf122f030bb49a1badb54016c71cd827f6/client.js#L4180-L4197",
+    "workflow": "https://github.com/CleverPuppy/dsh-gerrit-workbench/blob/0e120fdf122f030bb49a1badb54016c71cd827f6/README.md#L80-L96"
+  },
+  {
+    "repo": "1120370331/dsh-frontend-review",
+    "name": "前端评审画布",
+    "description": "在会话画布固定页面版本，圈画截图，汇总批注发回原会话并对照修改前后的版本。",
+    "category": "开发",
+    "version": "0.4.0",
+    "package": "dsh-frontend-review",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/1120370331/dsh-frontend-review/blob/f9c11562d279fc30e8c1675be47a957357c66bf5/package.json",
+    "registration": "https://github.com/1120370331/dsh-frontend-review/blob/f9c11562d279fc30e8c1675be47a957357c66bf5/client.js#L1840-L1863",
+    "workflow": "https://github.com/1120370331/dsh-frontend-review/blob/f9c11562d279fc30e8c1675be47a957357c66bf5/client.js#L1213-L1248",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/1120370331/dsh-frontend-review/f9c11562d279fc30e8c1675be47a957357c66bf5/docs/canvas.png",
+        "width": 686,
+        "height": 1000,
+        "alt": "前端评审画布展示不同的页面方案，顶部提供批注与提交控件。"
+      }
+    ]
+  },
+  {
+    "repo": "Ejinhouse/dsh-turn-timeline",
+    "name": "会话交付时间线",
+    "description": "在侧栏打开任务时间线，整理会话分组，回看每轮产出的文件并跳转到对应对话。",
+    "category": "效率",
+    "version": "1.2.0",
+    "package": "dsh-turn-timeline",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/Ejinhouse/dsh-turn-timeline/blob/eb113b4d0c1845619147cbac515533cb3ba89116/package.json",
+    "registration": "https://github.com/Ejinhouse/dsh-turn-timeline/blob/eb113b4d0c1845619147cbac515533cb3ba89116/lib/client.js#L1501-L1524",
+    "workflow": "https://github.com/Ejinhouse/dsh-turn-timeline/blob/eb113b4d0c1845619147cbac515533cb3ba89116/README.md#L22-L50",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/Ejinhouse/dsh-turn-timeline/eb113b4d0c1845619147cbac515533cb3ba89116/assets/timeline-ledger.png",
+        "width": 784,
+        "height": 1595,
+        "alt": "任务时间线按状态和主题列出未完成事项、执行轮次和关联文件。"
+      }
+    ]
+  },
+  {
+    "repo": "gapyu995/dsh-fileloom",
+    "name": "Fileloom 文件与媒体管理",
+    "description": "在 DSH 主面板浏览媒体库，预览文件整理方案并执行操作；从历史记录查看或恢复变更。",
+    "category": "效率",
+    "version": "0.2.0",
+    "package": "dsh-plugin-fileloom",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/gapyu995/dsh-fileloom/blob/3ab74e7e9abc2cda7411431f822c6b15bb608665/package.json",
+    "registration": "https://github.com/gapyu995/dsh-fileloom/blob/3ab74e7e9abc2cda7411431f822c6b15bb608665/src/client.ts#L32-L54",
+    "workflow": "https://github.com/gapyu995/dsh-fileloom/blob/3ab74e7e9abc2cda7411431f822c6b15bb608665/README.md#L44-L78"
+  },
+  {
+    "repo": "PowerTrue212/dsh-paperflow",
+    "name": "PaperFlow 论文重排阅读",
+    "description": "导入双栏 PDF、arXiv 论文或网页文章，在会话右栏阅读重排的中英对照段落，保存笔记并导出 Markdown。",
+    "category": "调研",
+    "version": "0.1.0",
+    "package": "dsh-paperflow",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/PowerTrue212/dsh-paperflow/blob/452c3786c6ffc7fa3bbecdd7945228d2cbecbc61/package.json",
+    "registration": "https://github.com/PowerTrue212/dsh-paperflow/blob/452c3786c6ffc7fa3bbecdd7945228d2cbecbc61/client.js#L1696-L1734",
+    "workflow": "https://github.com/PowerTrue212/dsh-paperflow/blob/452c3786c6ffc7fa3bbecdd7945228d2cbecbc61/README.md#L19-L43",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/PowerTrue212/dsh-paperflow/452c3786c6ffc7fa3bbecdd7945228d2cbecbc61/docs/assets/hero.png",
+        "width": 1600,
+        "height": 955,
+        "alt": "左侧会话介绍残差学习论文，右侧 PaperFlow 阅读器显示原文和中文译文。"
+      }
+    ]
+  },
+  {
+    "repo": "Kuugo2002/dsh-pdf2zh",
+    "name": "PDF 翻译",
+    "description": "在主面板或会话右栏导入 PDF，配置页码范围与术语表，重开任务记录预览和下载单语或双语 PDF。",
+    "category": "效率",
+    "version": "1.0.2",
+    "package": "dsh-pdf2zh",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/Kuugo2002/dsh-pdf2zh/blob/50a6040f38d8f4d73dda017844c0a74ab27e7adb/package.json",
+    "registration": "https://github.com/Kuugo2002/dsh-pdf2zh/blob/50a6040f38d8f4d73dda017844c0a74ab27e7adb/lib/client.js#L394-L412",
+    "workflow": "https://github.com/Kuugo2002/dsh-pdf2zh/blob/50a6040f38d8f4d73dda017844c0a74ab27e7adb/README.md#L50-L56"
+  },
+  {
+    "repo": "celloagentclub/dsh-product-previs",
+    "name": "产品白模预演",
+    "description": "导入 GLB，编排产品与人物动作、镜头和关键帧，通过双视图预览并导出 MP4。",
+    "category": "内容",
+    "version": "0.1.1",
+    "package": "dsh-product-previs",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/celloagentclub/dsh-product-previs/blob/d59c7b764e9bf6170daabe559d56877e83db971c/package.json",
+    "registration": "https://github.com/celloagentclub/dsh-product-previs/blob/d59c7b764e9bf6170daabe559d56877e83db971c/client.js#L25-L50",
+    "workflow": "https://github.com/celloagentclub/dsh-product-previs/blob/d59c7b764e9bf6170daabe559d56877e83db971c/README.md#L7-L15"
+  },
+  {
+    "repo": "Eefer-c/dsh-simple-notes",
+    "name": "会话便签",
+    "description": "在会话右栏创建和归档工作区便签，为每张便签绑定开始与结束消息并跳回原会话。",
+    "category": "效率",
+    "version": "1.2.1",
+    "package": "@local/dsh-notes",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/Eefer-c/dsh-simple-notes/blob/45dd91d3486f9b95e894b60e71823bdd36842204/package.json",
+    "registration": "https://github.com/Eefer-c/dsh-simple-notes/blob/45dd91d3486f9b95e894b60e71823bdd36842204/client.js#L2174-L2198",
+    "workflow": "https://github.com/Eefer-c/dsh-simple-notes/blob/45dd91d3486f9b95e894b60e71823bdd36842204/README.md#L58-L91"
+  },
+  {
+    "repo": "YZDame/GeoGebra-Studio",
+    "name": "GeoGebra Studio 几何绘图",
+    "description": "从侧栏打开可编辑的几何画布，在对话中生成图形，在画布上调整构造并下载 GGB、HTML 或图片。",
+    "category": "学习",
+    "version": "0.3.2",
+    "package": "dsh-geogebra-studio",
+    "packagePath": "plugins/dsh-geogebra-studio/package.json",
+    "manifest": "https://github.com/YZDame/GeoGebra-Studio/blob/47ac07c92c6ac8d0dd3618e7b2b89302df283dca/plugins/dsh-geogebra-studio/package.json",
+    "registration": "https://github.com/YZDame/GeoGebra-Studio/blob/47ac07c92c6ac8d0dd3618e7b2b89302df283dca/plugins/dsh-geogebra-studio/lib/client.js#L144-L197",
+    "workflow": "https://github.com/YZDame/GeoGebra-Studio/blob/47ac07c92c6ac8d0dd3618e7b2b89302df283dca/plugins/dsh-geogebra-studio/README.md#L43-L69",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/YZDame/GeoGebra-Studio/47ac07c92c6ac8d0dd3618e7b2b89302df283dca/docs/images/dsh-right-canvas.png",
+        "width": 1440,
+        "height": 900,
+        "alt": "DeepSeek Harness 右侧的 GeoGebra 画布显示圆形及 A、B 两点。"
+      }
+    ]
+  },
+  {
+    "repo": "wenliang9527/ACCcom",
+    "name": "ACCCOM 串口监视器",
+    "description": "在 DSH 中查看 Windows 上 ACCCOM 的实时串口记录，按端口、方向或关键字筛选，回看历史并导出结果。",
+    "category": "开发",
+    "version": "1.8.3",
+    "package": "dsh-serial-panel",
+    "packagePath": "tools/dsh-serial-panel/package.json",
+    "manifest": "https://github.com/wenliang9527/ACCcom/blob/237fdf7f3df32818c630ff4ffa51a1cb0f83d80a/tools/dsh-serial-panel/package.json",
+    "registration": "https://github.com/wenliang9527/ACCcom/blob/237fdf7f3df32818c630ff4ffa51a1cb0f83d80a/tools/dsh-serial-panel/client.js#L1183-L1222",
+    "workflow": "https://github.com/wenliang9527/ACCcom/blob/237fdf7f3df32818c630ff4ffa51a1cb0f83d80a/tools/dsh-serial-panel/README.md#L56-L67"
+  },
+  {
+    "repo": "GrinZero/tripo-studio-plugin",
+    "name": "Tripo Studio 3D 建模",
+    "description": "从会话打开 3D 工作台，浏览资产和生成任务，调整建模配置并预览或下载模型。适配包可从源码构建，面向 DSH 0.2.2-rc.1。",
+    "category": "内容",
+    "version": "0.1.0-preview.1",
+    "package": "tripo-studio-deepseek",
+    "packagePath": "packages/deepseek-adapter/package.json",
+    "manifest": "https://github.com/GrinZero/tripo-studio-plugin/blob/8bf893e9bda2383a6792d36e6e21b6af57e8e5b5/packages/deepseek-adapter/package.json",
+    "registration": "https://github.com/GrinZero/tripo-studio-plugin/blob/8bf893e9bda2383a6792d36e6e21b6af57e8e5b5/packages/deepseek-adapter/dist/client.js#L23655-L23691",
+    "workflow": "https://github.com/GrinZero/tripo-studio-plugin/blob/8bf893e9bda2383a6792d36e6e21b6af57e8e5b5/docs/DEEPSEEK.md#L7-L40"
+  },
+  {
+    "repo": "yhbcode000/mathematica-mcp",
+    "name": "Mathematica 交互笔记本",
+    "description": "在会话旁新建或打开 .nb 笔记本，运行 Wolfram 语言单元格，查看图表和动画并保存。需要本机 Mathematica 或 Wolfram Engine。",
+    "category": "学习",
+    "version": "0.3.0",
+    "package": "dsh-mathematica-notebook",
+    "packagePath": "notebook/package.json",
+    "manifest": "https://github.com/yhbcode000/mathematica-mcp/blob/e77cf91d4c9a5596714e5582ebd9729dea0c085e/notebook/package.json",
+    "registration": "https://github.com/yhbcode000/mathematica-mcp/blob/e77cf91d4c9a5596714e5582ebd9729dea0c085e/notebook/client.js#L3147-L3220",
+    "workflow": "https://github.com/yhbcode000/mathematica-mcp/blob/e77cf91d4c9a5596714e5582ebd9729dea0c085e/notebook/README.md#L68-L85"
   }
 ]

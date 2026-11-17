@@ -53,6 +53,6 @@ python3 scripts/merge_discoveries.py discovery.json .scan/discussions.json --out
 
 DSH Desk、DSH Open、DPHarness、DSHPlugin 与 DSHarness 的公开目录也参与发现。获取目录后，按 GitHub 仓库与包清单路径去重，再补扫此前未覆盖的路径。[DSH Desk 索引](https://plugin.dshdesk.com/data/plugin-index.json) · [DSH Open 索引](https://dshopen.org/index.json) · [DPHarness 索引](https://dpharness.com/market/index.json) · [DSHPlugin 数据](https://github.com/tjsdyy/dshplugin/blob/027ea85e0c717a1256c9d9412bce7667a9aa70c3/app/plugins.json) · [DSHarness 目录](https://dsharness.org/plugins)
 
-如果要从客户端接口反查名称中看不出用途的项目，可单独执行 `python3 scripts/discover.py --code-query 'sidebarRightTabs.register in:file language:TypeScript' --output .scan/right-sidebar.json`。扫描会从命中的源码路径向上查找插件清单，并在报告里记录搜索读到的条数。
+如果要从客户端接口反查名称中看不出用途的项目，可单独执行 `python3 scripts/discover.py --code-query 'sidebarRightTabs.register in:file language:TypeScript' --output .scan/right-sidebar.json`。扫描会从命中的源码路径向上查找插件清单。新报告用 `returned` 记录 API 返回总条数，用 `read` 记录同一查询去重后的命中数。若分页期间总数变化、API 标为不完整或读取数与报告总数不符，保留 `incomplete` 状态。
 
 发现流程只读 GitHub 的公开搜索、上游索引与源码，不安装插件。GitHub 搜索有索引延迟、结果上限和速率限制。REST 代码搜索主要覆盖默认分支和小于 384 KB 的文件，公开 fork 也有额外限制。同一仓库可在多轮出现，因此报告保留各轮的计数。[GitHub 代码搜索说明](https://docs.github.com/en/search-github/searching-on-github/searching-code#considerations-for-code-search)分类与版本证据可按 [收录标准](docs/workbench-definition.md) 复核。

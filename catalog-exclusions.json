@@ -78,5 +78,55 @@
     "commit": "6d9647e33e304eff557e1e84de7d66d525b3d4ad",
     "reason": "提供模型工具与会话导航。客户端仅轮询导航请求后调用现有会话入口，没有注册独立任务界面。",
     "evidence": "https://github.com/Asuta/dsh-cdx-plus/blob/6d9647e33e304eff557e1e84de7d66d525b3d4ad/packages/conversation-workbench/client.js#L15-L44"
+  },
+  {
+    "repo": "longmozhiyuan/dsh-session-delete-menu",
+    "packagePath": "package.json",
+    "source": "web",
+    "version": "0.1.0",
+    "observedAt": "2026-11-17T20:08:41+00:00",
+    "commit": "3400a6ffb00935f35d05044c9ed0ab464abfa5d9",
+    "reason": "在原生会话列表的菜单中添加删除和多选操作，批量工具栏复用原有会话列表。",
+    "evidence": "https://github.com/longmozhiyuan/dsh-session-delete-menu/blob/3400a6ffb00935f35d05044c9ed0ab464abfa5d9/lib/client.js#L475-L517"
+  },
+  {
+    "repo": "abin1020/dsh-restart",
+    "packagePath": "package.json",
+    "source": "web",
+    "version": "0.1.1",
+    "observedAt": "2026-11-17T20:08:41+00:00",
+    "commit": "f3584638841db0eaa23e55dc21f43574479df4be",
+    "reason": "通过设置页配置窗口与右栏尺寸、清理旧 Cookie，并在标题栏添加重启按钮。",
+    "evidence": "https://github.com/Abin1020/dsh-restart/blob/f3584638841db0eaa23e55dc21f43574479df4be/client.js#L1283-L1316"
+  },
+  {
+    "repo": "changan-su/dsh2forsion",
+    "packagePath": "tests/fixtures/rail-page/package.json",
+    "source": "web",
+    "version": "0.1.0",
+    "observedAt": "2026-11-17T20:54:01+00:00",
+    "commit": "f2c7ef9b41ee76203bc968712881091adabfb04a",
+    "reason": "项目测试夹具。右栏页只渲染一行供自动化识别的测试文本。",
+    "evidence": "https://github.com/Changan-Su/DSH2Forsion/blob/f2c7ef9b41ee76203bc968712881091adabfb04a/tests/fixtures/rail-page/client.js#L1-L16"
+  },
+  {
+    "repo": "kkucodes/deepseek-harness-mobile",
+    "packagePath": "tests/fixtures/live-panel-plugin/package.json",
+    "source": "web",
+    "version": "0.0.5",
+    "observedAt": "2026-11-17T20:54:01+00:00",
+    "commit": "a3a879b9c0818352ef7a9b07a33fee3f2a0a2345",
+    "reason": "项目临时验收包，面板用于检查宿主计数、弹窗和文件订阅，无面向用户的业务流程。",
+    "evidence": "https://github.com/KKUCODES/deepseek-harness-mobile/blob/a3a879b9c0818352ef7a9b07a33fee3f2a0a2345/tests/fixtures/live-panel-plugin/README.md#L3-L11"
+  },
+  {
+    "repo": "luyanfcp/dsh-kicad",
+    "packagePath": "spike/hello/package.json",
+    "version": "0.0.1",
+    "source": "web",
+    "commit": "e0f1d21a5de694eed1a9571f6440692543dc5970",
+    "reason": "这是验证 DSH 能同时加载宿主与客户端的测试包。右栏只打印文件地址，没有 KiCad 查看、编辑或验证流程。",
+    "evidence": "https://github.com/LuYanFCP/dsh-kicad/blob/e0f1d21a5de694eed1a9571f6440692543dc5970/spike/hello/client.js#L7-L22",
+    "observedAt": "2026-11-17T20:54:01+00:00"
   }
 ]
