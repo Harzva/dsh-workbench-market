@@ -3,6 +3,7 @@ import json
 import re
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+from update_catalog import screenshot_preview
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -31,8 +32,12 @@ def main():
         assert key not in keys, key
         keys.add(key)
         check_link(entry["href"])
+        if "preview" in entry:
+            preview = entry["preview"]
+            assert screenshot_preview([preview], entry["repo"]) == preview, preview
+            assert isinstance(preview["alt"], str), preview
         source = entry["source"]
-        assert source in {"official", "registered", "manifest", "web", "deepseek-desktop"}, source
+        assert source in {"official", "registered", "manifest", "web", "deepseek-desktop", "dataelem-extension"}, source
         assert entry["host"] == (source if source in {"web", "deepseek-desktop"} else "dataelem"), entry
         if source != "official":
             revision, path = pinned_link(entry["manifest"], entry["repo"])
@@ -43,7 +48,8 @@ def main():
                 assert evidence_revision == revision, evidence
             if source != "manifest":
                 assert evidence, entry
-    print(f"{len(keys)} entries, matching JSON and browser data, valid evidence links")
+    previews = sum("preview" in entry for entry in entries)
+    print(f"{len(keys)} entries with {previews} previews, matching JSON and browser data, valid evidence links")
 
 
 if __name__ == "__main__":

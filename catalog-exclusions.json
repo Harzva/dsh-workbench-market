@@ -1,0 +1,34 @@
+[
+  {
+    "repo": "cosmic-snail/dsh-capp",
+    "packagePath": "packages/capp-workbench/package.json",
+    "source": "registered",
+    "commit": "e7380dda954e1d9debe8b999b1861c229bbf4072",
+    "reason": "该版本的面板只显示服务连通性，调用 ping，包文档称业务端点尚待建设。",
+    "evidence": "https://github.com/cosmic-snail/dsh-capp/blob/e7380dda954e1d9debe8b999b1861c229bbf4072/packages/capp-workbench/src/client/index.tsx#L23-L49"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/vhl-workbench",
+    "packagePath": "package.json",
+    "source": "registered",
+    "commit": "813055e7572ff7eda6cab7843f014c949ec810d2",
+    "reason": "该版本的面板只有版本与连接反馈，宿主只提供 health 路由。",
+    "evidence": "https://github.com/xyb-openharness-dsh-plugins/vhl-workbench/blob/813055e7572ff7eda6cab7843f014c949ec810d2/dsh/index.js#L11-L24"
+  },
+  {
+    "repo": "cinderzhan/dsh-media-workbench",
+    "packagePath": "packages/dsh-media-workbench/package.json",
+    "source": "registered",
+    "officialDuplicate": true,
+    "reason": "子目录与市场条目注册的是同一个工作台身份，保留市场条目。",
+    "evidence": "https://github.com/cinderzhan/dsh-media-workbench/blob/551a3c55d9c7a4e0330752ccac014b1b1910a6b3/packages/dsh-media-workbench/client.js#L136-L148"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/prostate-workbench",
+    "packagePath": "package.json",
+    "source": "registered",
+    "commit": "84f932ff3f60988329970474a1357699d4fef94e",
+    "reason": "随包界面只展示合成数据，宿主只有静态文件和 health，同版本文档确认业务数据和 API 尚未实现。",
+    "evidence": "https://github.com/xyb-openharness-dsh-plugins/prostate-workbench/blob/84f932ff3f60988329970474a1357699d4fef94e/README.md#L3-L7"
+  }
+]

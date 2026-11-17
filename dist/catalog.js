@@ -13,7 +13,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/1445688048/dsh-upcv-workspace",
       "host": "dataelem",
       "identity": "wb-1445688048-dsh-upcv-workspace",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/1445688048/dsh-upcv-workspace/main/docs/screenshots/03-editor.png",
+        "width": 1600,
+        "height": 900,
+        "alt": "求职工作台 截图 1"
+      }
     },
     {
       "repo": "aloneatwar/dsh-explainroo",
@@ -26,7 +32,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/AloneAtWar/dsh-explainroo",
       "host": "dataelem",
       "identity": "wb-aloneatwar-dsh-explainroo",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/AloneAtWar/dsh-explainroo/ecc0076ec820d345dbb7e567d839dbb806f4047c/.github/screenshots/workbench.jpg",
+        "width": 904,
+        "height": 905,
+        "alt": "Explainroo 讲解视频工作台 截图 1"
+      }
     },
     {
       "repo": "andoaidlaksldk/dsh-mind-workbench",
@@ -39,7 +51,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/andoaidlaksldk/dsh-mind-workbench",
       "host": "dataelem",
       "identity": "wb-andoaidlaksldk-dsh-mind-workbench",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/andoaidlaksldk/dsh-mind-workbench/screenshots/docs/screenshots/overview.png",
+        "width": 1600,
+        "height": 900,
+        "alt": "DSH 思维导图工作台 截图 1"
+      }
     },
     {
       "repo": "andoaidlaksldk/dshdrawworkbench",
@@ -52,7 +70,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/andoaidlaksldk/DSHDrawWorkbench",
       "host": "dataelem",
       "identity": "wb-andoaidlaksldk-dshdrawworkbench",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/andoaidlaksldk/DSHDrawWorkbench/main/docs/screenshots/overview.png",
+        "width": 1600,
+        "height": 900,
+        "alt": "DSH 画板 截图 1"
+      }
     },
     {
       "repo": "beianbai/cross-platform-account-dashboard",
@@ -65,7 +89,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/beianbai/cross-platform-account-dashboard",
       "host": "dataelem",
       "identity": "wb-beianbai-cross-platform-account-dashboard",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/beianbai/cross-platform-account-dashboard/main/assets/market-demo-overview.png",
+        "width": 1600,
+        "height": 1000,
+        "alt": "跨平台账号看板 截图 1"
+      }
     },
     {
       "repo": "caisiyang123/llm-api-perf-workbench",
@@ -78,7 +108,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/caisiyang123/llm-api-perf-workbench",
       "host": "dataelem",
       "identity": "wb-caisiyang123-llm-api-perf-workbench",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/caisiyang123/llm-api-perf-workbench/main/docs/images/overview.png",
+        "width": 1600,
+        "height": 757,
+        "alt": "大模型 API 质量台 截图 1"
+      }
     },
     {
       "repo": "cinderzhan/bianqu-workbench",
@@ -91,7 +127,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/cinderzhan/bianqu-workbench",
       "host": "dataelem",
       "identity": "wb-cinderzhan-bianqu-workbench",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/cinderzhan/bianqu-workbench/main/docs/images/overview.webp",
+        "width": 2419,
+        "height": 1733,
+        "alt": "编曲工作台 截图 1"
+      }
     },
     {
       "repo": "cinderzhan/dsh-bid-workbench",
@@ -104,7 +146,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/cinderzhan/dsh-bid-workbench",
       "host": "dataelem",
       "identity": "wb-cinderzhan-dsh-bid-workbench",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/cinderzhan/dsh-bid-workbench/main/docs/images/overview.png",
+        "width": 1600,
+        "height": 900,
+        "alt": "投标作战室 截图 1"
+      }
     },
     {
       "repo": "cinderzhan/dsh-contract-review-workbench",
@@ -117,7 +165,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/cinderzhan/dsh-contract-review-workbench",
       "host": "dataelem",
       "identity": "wb-cinderzhan-dsh-contract-review-workbench",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/cinderzhan/dsh-contract-review-workbench/main/docs/screenshots/comparison.jpg",
+        "width": 1512,
+        "height": 887,
+        "alt": "合同审核工作台 截图 1"
+      }
     },
     {
       "repo": "cinderzhan/dsh-media-workbench",
@@ -130,7 +184,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/cinderzhan/dsh-media-workbench",
       "host": "dataelem",
       "identity": "wb-cinderzhan-dsh-media-workbench",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/cinderzhan/dsh-media-workbench/main/docs/screenshots/media-overview.png",
+        "width": 1440,
+        "height": 900,
+        "alt": "内容运营工作台 截图 1"
+      }
     },
     {
       "repo": "cinderzhan/dsh-zhuangxiu-workbench",
@@ -143,7 +203,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/cinderzhan/dsh-zhuangxiu-workbench",
       "host": "dataelem",
       "identity": "wb-cinderzhan-dsh-zhuangxiu-workbench",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/cinderzhan/dsh-zhuangxiu-workbench/main/docs/images/overview.jpg",
+        "width": 2442,
+        "height": 1336,
+        "alt": "装修工作台 截图 1"
+      }
     },
     {
       "repo": "codesstar/dsh-bidread",
@@ -156,7 +222,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/codesstar/dsh-bidread",
       "host": "dataelem",
       "identity": "wb-codesstar-dsh-bidread",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/codesstar/dsh-bidread/main/docs/images/01-risks.png",
+        "width": 1743,
+        "height": 994,
+        "alt": "招标文件解读 截图 1"
+      }
     },
     {
       "repo": "dadawre/dsh-desktop-run-lens",
@@ -169,7 +241,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/dadawre/dsh-desktop-run-lens",
       "host": "dataelem",
       "identity": "wb-dadawre-dsh-desktop-run-lens",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/dadawre/dsh-desktop-run-lens/03872b41f4408d22dd2111ed8015b5cecb5b89f3/docs/images/overview.png",
+        "width": 2062,
+        "height": 1118,
+        "alt": "运行透视 截图 1"
+      }
     },
     {
       "repo": "dataelement/dsh-ming-life",
@@ -182,7 +260,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/dataelement/dsh-ming-life",
       "host": "dataelem",
       "identity": "wb-dataelement-dsh-ming-life",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/dataelement/dsh-ming-life/main/docs/screenshots/reveal.png",
+        "width": 1440,
+        "height": 1000,
+        "alt": "玄学人生工作台 截图 1"
+      }
     },
     {
       "repo": "dataelement/dsh-site-selection",
@@ -195,7 +279,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/dataelement/dsh-site-selection",
       "host": "dataelem",
       "identity": "wb-dataelement-dsh-site-selection",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/dataelement/dsh-site-selection/main/docs/screenshots/site-map.png",
+        "width": 1440,
+        "height": 900,
+        "alt": "门店选址 截图 1"
+      }
     },
     {
       "repo": "gjz18342624299-arch/dsh-content-workbench",
@@ -208,7 +298,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/gjz18342624299-arch/dsh-content-workbench",
       "host": "dataelem",
       "identity": "wb-gjz18342624299-arch-dsh-content-workbench",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/gjz18342624299-arch/dsh-content-workbench/main/docs/screenshots/overview.png",
+        "width": 1600,
+        "height": 900,
+        "alt": "自媒体内容创作工作台 截图 1"
+      }
     },
     {
       "repo": "gjz18342624299-arch/dsh-contract-review-studio",
@@ -221,7 +317,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/gjz18342624299-arch/dsh-contract-review-studio",
       "host": "dataelem",
       "identity": "wb-gjz18342624299-arch-dsh-contract-review-studio",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/gjz18342624299-arch/dsh-contract-review-studio/c291258a31a5ebb1ceaf6064eaec07d7e9a872f2/docs/images/desktop-projects-0.10.5.png",
+        "width": 2880,
+        "height": 1708,
+        "alt": "合同版本审查台 截图 1"
+      }
     },
     {
       "repo": "gjz18342624299-arch/dsh-huaxue-workbench",
@@ -234,7 +336,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/gjz18342624299-arch/dsh-huaxue-workbench",
       "host": "dataelem",
       "identity": "wb-gjz18342624299-arch-dsh-huaxue-workbench",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/gjz18342624299-arch/dsh-huaxue-workbench/775e75cd15891417ca23ee42b85e66ea51325c37/docs/screenshots/member-picker.jpg",
+        "width": 1375,
+        "height": 1117,
+        "alt": "花少2 · 花学工作台 截图 1"
+      }
     },
     {
       "repo": "gjz18342624299-arch/dsh-seo-geo-workbench",
@@ -247,7 +355,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/gjz18342624299-arch/dsh-seo-geo-workbench",
       "host": "dataelem",
       "identity": "wb-gjz18342624299-arch-dsh-seo-geo-workbench",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/gjz18342624299-arch/dsh-seo-geo-workbench/main/docs/screenshots/collect.png",
+        "width": 1440,
+        "height": 1000,
+        "alt": "SEO/GEO 监测工作台 截图 1"
+      }
     },
     {
       "repo": "gjz18342624299-arch/dsh-shopping-workbench",
@@ -260,7 +374,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/gjz18342624299-arch/dsh-shopping-workbench",
       "host": "dataelem",
       "identity": "wb-gjz18342624299-arch-dsh-shopping-workbench",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/gjz18342624299-arch/dsh-shopping-workbench/main/docs/screenshots/overview-v0330.png",
+        "width": 1635,
+        "height": 946,
+        "alt": "双11省钱情报局 截图 1"
+      }
     },
     {
       "repo": "mehrocc/dsh-meeting-workspace",
@@ -273,7 +393,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/mehrocc/dsh-meeting-workspace",
       "host": "dataelem",
       "identity": "wb-mehrocc-dsh-meeting-workspace",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/mehrocc/dsh-meeting-workspace/main/docs/images/overview.png",
+        "width": 2560,
+        "height": 1500,
+        "alt": "会议纪要工作台 截图 1"
+      }
     },
     {
       "repo": "mfanoffice/text2demo",
@@ -286,7 +412,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/mfanoffice/text2demo",
       "host": "dataelem",
       "identity": "wb-mfanoffice-text2demo",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/mfanoffice/text2demo/main/docs/screenshots/overview.webp",
+        "width": 2880,
+        "height": 1628,
+        "alt": "文案转演示素材工作台 截图 1"
+      }
     },
     {
       "repo": "oil-oil/dsh-oil-creator",
@@ -299,7 +431,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/oil-oil/dsh-oil-creator",
       "host": "dataelem",
       "identity": "wb-oil-oil-dsh-oil-creator",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/oil-oil/dsh-oil-creator/main/docs/images/workbench-overview.jpg",
+        "width": 2614,
+        "height": 1696,
+        "alt": "Oil 内容创作工作台 截图 1"
+      }
     },
     {
       "repo": "oliverliy/projecthub",
@@ -312,7 +450,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/OliverLiy/projectHub",
       "host": "dataelem",
       "identity": "wb-oliverliy-projecthub",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/OliverLiy/projectHub/master/docs/images/overview.png",
+        "width": 2882,
+        "height": 1960,
+        "alt": "项目总控台 截图 1"
+      }
     },
     {
       "repo": "sara2398/xiaohongshu-note-workbench",
@@ -325,7 +469,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/sara2398/xiaohongshu-note-workbench",
       "host": "dataelem",
       "identity": "wb-sara2398-xiaohongshu-note-workbench",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/sara2398/xiaohongshu-note-workbench/main/docs/images/overview.png",
+        "width": 1920,
+        "height": 1020,
+        "alt": "小红书笔记创作 截图 1"
+      }
     },
     {
       "repo": "wisdomqin/product-update-tracker",
@@ -338,7 +488,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/wisdomqin/product-update-tracker",
       "host": "dataelem",
       "identity": "wb-wisdomqin-product-update-tracker",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/wisdomqin/product-update-tracker/main/docs/images/overview.webp",
+        "width": 1683,
+        "height": 947,
+        "alt": "产品更新追踪 截图 1"
+      }
     },
     {
       "repo": "xyb-openharness-dsh-plugins/find-museum",
@@ -351,7 +507,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/xyb-openharness-dsh-plugins/find-museum",
       "host": "dataelem",
       "identity": "wb-xyb-openharness-dsh-plugins-find-museum",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/xyb-openharness-dsh-plugins/find-museum/24d2aa7de6659c3341b2a708ef70a4c43e048236/demo/full/overview-0.2.4.jpg",
+        "width": 1958,
+        "height": 1101,
+        "alt": "寻馆 截图 1"
+      }
     },
     {
       "repo": "zhaoweicmd/lawdesktop",
@@ -364,7 +526,13 @@ window.workbenchCatalog = {
       "href": "https://github.com/zhaoweicmd/lawdesktop",
       "host": "dataelem",
       "identity": "wb-zhaoweicmd-lawdesktop",
-      "package": ""
+      "package": "",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/zhaoweicmd/lawdesktop/main/docs/images/01-overview.png",
+        "width": 1600,
+        "height": 900,
+        "alt": "律案工作台 截图 1"
+      }
     },
     {
       "name": "SYMBIO 工作台",
@@ -472,21 +640,6 @@ window.workbenchCatalog = {
       "href": "https://github.com/cinderzhan/dsh-huaxue-workbench"
     },
     {
-      "name": "dsh-media-workbench",
-      "description": "自媒体工作台：选题、达人、Campaign、排期、数据与会话",
-      "package": "dsh-media-workbench",
-      "version": "0.12.6",
-      "manifest": "https://github.com/cinderzhan/dsh-media-workbench/blob/551a3c55d9c7a4e0330752ccac014b1b1910a6b3/packages/dsh-media-workbench/package.json",
-      "registration": "https://github.com/cinderzhan/dsh-media-workbench/blob/551a3c55d9c7a4e0330752ccac014b1b1910a6b3/packages/dsh-media-workbench/client.js#L142",
-      "workflow": "",
-      "repo": "cinderzhan/dsh-media-workbench",
-      "category": "其他",
-      "host": "dataelem",
-      "packagePath": "packages/dsh-media-workbench/package.json",
-      "source": "registered",
-      "href": "https://github.com/cinderzhan/dsh-media-workbench"
-    },
-    {
       "name": "玄学人生工作台 · Desktop 适配版",
       "description": "基于 Dataelem 玄学人生工作台的派生版本，通过 Desktop 关联解读请求和项目会话。",
       "package": "ming-life",
@@ -517,21 +670,6 @@ window.workbenchCatalog = {
       "href": "https://github.com/cinderzhan/dsh-site-selection"
     },
     {
-      "name": "capp-workbench",
-      "description": "",
-      "package": "capp-workbench",
-      "version": "0.0.2",
-      "manifest": "https://github.com/cosmic-snail/dsh-capp/blob/e7380dda954e1d9debe8b999b1861c229bbf4072/packages/capp-workbench/package.json",
-      "registration": "https://github.com/cosmic-snail/dsh-capp/blob/e7380dda954e1d9debe8b999b1861c229bbf4072/packages/capp-workbench/src/client/index.tsx#L54",
-      "workflow": "",
-      "repo": "cosmic-snail/dsh-capp",
-      "category": "其他",
-      "host": "dataelem",
-      "packagePath": "packages/capp-workbench/package.json",
-      "source": "registered",
-      "href": "https://github.com/cosmic-snail/dsh-capp"
-    },
-    {
       "name": "nihaixia-dsh-desktop",
       "description": "",
       "package": "dsh-workbench-nihaixia",
@@ -560,21 +698,6 @@ window.workbenchCatalog = {
       "packagePath": "package.json",
       "source": "registered",
       "href": "https://github.com/DavidLiu12-code/reader-workbench"
-    },
-    {
-      "name": "游戏制作工作台",
-      "description": "",
-      "package": "dsh-game-studio",
-      "version": "0.1.18",
-      "manifest": "https://github.com/HR2AY/dsh-game-studio/blob/d1bdc7bbf498dd586f50257ce933022942263381/package.json",
-      "registration": "https://github.com/HR2AY/dsh-game-studio/blob/d1bdc7bbf498dd586f50257ce933022942263381/lib/client.js#L1183",
-      "workflow": "",
-      "repo": "hr2ay/dsh-game-studio",
-      "category": "开发",
-      "host": "dataelem",
-      "packagePath": "package.json",
-      "source": "registered",
-      "href": "https://github.com/HR2AY/dsh-game-studio"
     },
     {
       "name": "研究工作台",
@@ -725,6 +848,21 @@ window.workbenchCatalog = {
       "packagePath": "package.json",
       "source": "registered",
       "href": "https://github.com/Siom126/dsh-workbench-xiaohongshu-ops"
+    },
+    {
+      "name": "小红书运营工作台",
+      "description": "在工作台中管理小红书运营任务。",
+      "package": "dsh-workbench-xiaohongshu-ops",
+      "version": "0.2.0",
+      "manifest": "https://github.com/Siom126/OpsWorkstation/blob/9cca07d8be2a877129a45ccf48f182cab154c5c5/package.json",
+      "registration": "https://github.com/Siom126/OpsWorkstation/blob/9cca07d8be2a877129a45ccf48f182cab154c5c5/lib/client.js#L2261",
+      "workflow": "",
+      "repo": "siom126/opsworkstation",
+      "category": "运营",
+      "host": "dataelem",
+      "packagePath": "package.json",
+      "source": "registered",
+      "href": "https://github.com/Siom126/OpsWorkstation"
     },
     {
       "name": "内置浏览器",
@@ -995,21 +1133,6 @@ window.workbenchCatalog = {
       "packagePath": "package.json",
       "source": "registered",
       "href": "https://github.com/xyb-openharness-dsh-plugins/bone-cancer-workbench"
-    },
-    {
-      "name": "breast-cancer-workbench",
-      "description": "",
-      "package": "@pinkypal-dsh/breast-cancer-workbench",
-      "version": "0.13.7",
-      "manifest": "https://github.com/xyb-openharness-dsh-plugins/breast-cancer-workbench/blob/ea69650a96956e11878be32d66ac3a2db3ec688e/package.json",
-      "registration": "https://github.com/xyb-openharness-dsh-plugins/breast-cancer-workbench/blob/ea69650a96956e11878be32d66ac3a2db3ec688e/lib/client.js#L574",
-      "workflow": "",
-      "repo": "xyb-openharness-dsh-plugins/breast-cancer-workbench",
-      "category": "其他",
-      "host": "dataelem",
-      "packagePath": "package.json",
-      "source": "registered",
-      "href": "https://github.com/xyb-openharness-dsh-plugins/breast-cancer-workbench"
     },
     {
       "name": "cervical-workbench",
@@ -1507,21 +1630,6 @@ window.workbenchCatalog = {
       "href": "https://github.com/xyb-openharness-dsh-plugins/primary-immunodeficiency-workbench"
     },
     {
-      "name": "@xyb-community/prostate-workbench",
-      "description": "面向前列腺癌患者与照护者的本机优先工作台：病理与 PSA 读懂、ADT 身体与生活、排尿与性功能康复、主动监测、复诊准备与临床试验档案",
-      "package": "@xyb-community/prostate-workbench",
-      "version": "0.1.6",
-      "manifest": "https://github.com/xyb-openharness-dsh-plugins/prostate-workbench/blob/84f932ff3f60988329970474a1357699d4fef94e/package.json",
-      "registration": "https://github.com/xyb-openharness-dsh-plugins/prostate-workbench/blob/84f932ff3f60988329970474a1357699d4fef94e/lib/client.js#L776",
-      "workflow": "",
-      "repo": "xyb-openharness-dsh-plugins/prostate-workbench",
-      "category": "其他",
-      "host": "dataelem",
-      "packagePath": "package.json",
-      "source": "registered",
-      "href": "https://github.com/xyb-openharness-dsh-plugins/prostate-workbench"
-    },
-    {
       "name": "@xyb-community/sarcoma-workbench",
       "description": "软组织肉瘤（STS）患者与照护者的本机病程资料工作台：把散落的病理与分型、手术与切缘记录、治疗线序与副作用、复查影像与功能变化整理成可核对、可回溯的材料，并整理成就诊能带着走的问题清单。",
       "package": "@xyb-community/sarcoma-workbench",
@@ -1642,21 +1750,6 @@ window.workbenchCatalog = {
       "href": "https://github.com/xyb-openharness-dsh-plugins/ttp-workbench"
     },
     {
-      "name": "@xyb-community/vhl-workbench",
-      "description": "服务 Von Hippel-Lindau 综合征患者及家属的本机信息整理与就诊准备工作台，分开保存本人/代记的年度器官筛查结果、影像与生化报告原文、多器官病灶随访记录和医生答复，不输出诊断、风险或处置判断。",
-      "package": "@xyb-community/vhl-workbench",
-      "version": "0.1.0",
-      "manifest": "https://github.com/xyb-openharness-dsh-plugins/vhl-workbench/blob/813055e7572ff7eda6cab7843f014c949ec810d2/package.json",
-      "registration": "https://github.com/xyb-openharness-dsh-plugins/vhl-workbench/blob/813055e7572ff7eda6cab7843f014c949ec810d2/lib/client.js#L38",
-      "workflow": "",
-      "repo": "xyb-openharness-dsh-plugins/vhl-workbench",
-      "category": "其他",
-      "host": "dataelem",
-      "packagePath": "package.json",
-      "source": "registered",
-      "href": "https://github.com/xyb-openharness-dsh-plugins/vhl-workbench"
-    },
-    {
       "name": "留一盏灯 · 癌症心理支持工作台",
       "description": "",
       "package": "dsh-cancer-psych-support-workbench",
@@ -1717,19 +1810,34 @@ window.workbenchCatalog = {
       "href": "https://github.com/zhifanluosheng/dsh-ai-native-company"
     },
     {
-      "name": "决策看板",
+      "name": "游戏制作工作台",
       "description": "",
-      "package": "dsh-decisions-board",
-      "version": "0.5.0",
-      "manifest": "https://github.com/Sandwich-git/dsh-decisions-board/blob/6b774e03a081017460bf677af4e73aac205bc3fe/package.json",
-      "registration": "",
+      "package": "dsh-game-studio",
+      "version": "0.1.18",
+      "manifest": "https://github.com/HR2AY/dsh-game-studio/blob/d1bdc7bbf498dd586f50257ce933022942263381/package.json",
+      "registration": "https://github.com/HR2AY/dsh-game-studio/blob/d1bdc7bbf498dd586f50257ce933022942263381/lib/client.js#L1183",
       "workflow": "",
-      "repo": "sandwich-git/dsh-decisions-board",
-      "category": "效率",
+      "repo": "hr2ay/dsh-game-studio",
+      "category": "开发",
       "host": "dataelem",
       "packagePath": "package.json",
-      "source": "manifest",
-      "href": "https://github.com/Sandwich-git/dsh-decisions-board"
+      "source": "registered",
+      "href": "https://github.com/HR2AY/dsh-game-studio"
+    },
+    {
+      "name": "breast-cancer-workbench",
+      "description": "",
+      "package": "@pinkypal-dsh/breast-cancer-workbench",
+      "version": "0.13.7",
+      "manifest": "https://github.com/xyb-openharness-dsh-plugins/breast-cancer-workbench/blob/ea69650a96956e11878be32d66ac3a2db3ec688e/package.json",
+      "registration": "https://github.com/xyb-openharness-dsh-plugins/breast-cancer-workbench/blob/ea69650a96956e11878be32d66ac3a2db3ec688e/lib/client.js#L574",
+      "workflow": "",
+      "repo": "xyb-openharness-dsh-plugins/breast-cancer-workbench",
+      "category": "其他",
+      "host": "dataelem",
+      "packagePath": "package.json",
+      "source": "registered",
+      "href": "https://github.com/xyb-openharness-dsh-plugins/breast-cancer-workbench"
     },
     {
       "name": "Worktable 项目工作台",
@@ -3350,6 +3458,651 @@ window.workbenchCatalog = {
       "packagePath": "plugin/dsh-cumcm/package.json",
       "source": "web",
       "href": "https://github.com/Rosynb666/dsh-cumcm"
+    },
+    {
+      "name": "决策看板",
+      "description": "从 Dataelem 桌面会话标题栏打开抽屉，跟踪和处理待定决策。",
+      "package": "dsh-decisions-board",
+      "version": "0.5.0",
+      "manifest": "https://github.com/Sandwich-git/dsh-decisions-board/blob/6b774e03a081017460bf677af4e73aac205bc3fe/package.json",
+      "registration": "",
+      "workflow": "https://github.com/Sandwich-git/dsh-decisions-board/blob/6b774e03a081017460bf677af4e73aac205bc3fe/lib/client.js#L1197-L1208",
+      "repo": "sandwich-git/dsh-decisions-board",
+      "category": "效率",
+      "host": "dataelem",
+      "packagePath": "package.json",
+      "source": "dataelem-extension",
+      "href": "https://github.com/Sandwich-git/dsh-decisions-board"
+    },
+    {
+      "name": "DSH 项目开发台",
+      "description": "在会话旁导入项目、浏览代码并使用内置编辑器。",
+      "package": "dsh-ide-workbench",
+      "version": "0.1.0",
+      "manifest": "https://github.com/123chenwentao/dsh-ide-workbench/blob/70e81a2ea83c86f3abdcd437554e11f12a5eb024/package.json",
+      "registration": "",
+      "workflow": "https://github.com/123chenwentao/dsh-ide-workbench/blob/70e81a2ea83c86f3abdcd437554e11f12a5eb024/README.md#L55-L75",
+      "repo": "123chenwentao/dsh-ide-workbench",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/123chenwentao/dsh-ide-workbench"
+    },
+    {
+      "name": "图像生成工作台",
+      "description": "从侧栏打开独立页面，编辑生成参数并查看作品。",
+      "package": "dsh-image-workbench",
+      "version": "1.0.0",
+      "manifest": "https://github.com/1273088489/dsh-image-workbench/blob/c00e0c9799b5bed13c145c07243b37e2c3f42005/package.json",
+      "registration": "",
+      "workflow": "https://github.com/1273088489/dsh-image-workbench/blob/c00e0c9799b5bed13c145c07243b37e2c3f42005/README.md#L4-L13",
+      "repo": "1273088489/dsh-image-workbench",
+      "category": "内容",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/1273088489/dsh-image-workbench"
+    },
+    {
+      "name": "秀米图文台",
+      "description": "把 Word 材料转成图文，在面板预览和编辑排版。",
+      "package": "dsh-xiumi-studio",
+      "version": "0.1.0",
+      "manifest": "https://github.com/27Synthesis/dsh-xiumi-studio/blob/ea98690539670ae4ba9ba0f06824bea0f826a266/package.json",
+      "registration": "",
+      "workflow": "https://github.com/27Synthesis/dsh-xiumi-studio/blob/ea98690539670ae4ba9ba0f06824bea0f826a266/README.md#L4-L17",
+      "repo": "27synthesis/dsh-xiumi-studio",
+      "category": "内容",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/27Synthesis/dsh-xiumi-studio"
+    },
+    {
+      "name": "WooDy 剧本工作室",
+      "description": "管理短剧作品和草稿，用 Markdown 编辑器保存和查看版本。",
+      "package": "dsh-woody-studio",
+      "version": "1.1.0",
+      "manifest": "https://github.com/984049373-cyber/DSH-woody-studio/blob/6839abb813236a3656796e353cdb117ede9fc970/package.json",
+      "registration": "",
+      "workflow": "https://github.com/984049373-cyber/DSH-woody-studio/blob/6839abb813236a3656796e353cdb117ede9fc970/README.md#L57-L70",
+      "repo": "984049373-cyber/dsh-woody-studio",
+      "category": "内容",
+      "host": "deepseek-desktop",
+      "packagePath": "package.json",
+      "source": "deepseek-desktop",
+      "href": "https://github.com/984049373-cyber/DSH-woody-studio"
+    },
+    {
+      "name": "SlideStudio",
+      "description": "生成和编辑演示文稿，并导出可继续修改的 PPTX。",
+      "package": "dsh-slidestudio",
+      "version": "0.2.9",
+      "manifest": "https://github.com/aa2246740/dsh-slidestudio/blob/ccdebf9ca45eda5d9909a9e7e13b622dbb26eb2a/dsh-slidestudio/package.json",
+      "registration": "",
+      "workflow": "https://github.com/aa2246740/dsh-slidestudio/blob/ccdebf9ca45eda5d9909a9e7e13b622dbb26eb2a/dsh-slidestudio/README.md#L27-L42",
+      "repo": "aa2246740/dsh-slidestudio",
+      "category": "内容",
+      "host": "web",
+      "packagePath": "dsh-slidestudio/package.json",
+      "source": "web",
+      "href": "https://github.com/aa2246740/dsh-slidestudio"
+    },
+    {
+      "name": "考研工作台",
+      "description": "管理错题、复习队列和不同科目的备考进度。",
+      "package": "kaoyan-workbench",
+      "version": "0.2.0",
+      "manifest": "https://github.com/Aceared0829/kaoyan-workbench/blob/a1a880d70f0a3c6abab3d827cab3a2b5f0356fb7/package.json",
+      "registration": "",
+      "workflow": "https://github.com/Aceared0829/kaoyan-workbench/blob/a1a880d70f0a3c6abab3d827cab3a2b5f0356fb7/README.md#L3-L17",
+      "repo": "aceared0829/kaoyan-workbench",
+      "category": "效率",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/Aceared0829/kaoyan-workbench"
+    },
+    {
+      "name": "珊莎待办",
+      "description": "把任务和材料整理到工作台，与相关 DSH 会话关联。",
+      "package": "shansha-workbench",
+      "version": "0.1.112",
+      "manifest": "https://github.com/abvhdi/shansha-workbench/blob/1b9c567d88bdd8cde03f8821a9d4aec2ae829713/package.json",
+      "registration": "",
+      "workflow": "https://github.com/abvhdi/shansha-workbench/blob/1b9c567d88bdd8cde03f8821a9d4aec2ae829713/README.md#L23-L37",
+      "repo": "abvhdi/shansha-workbench",
+      "category": "效率",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/abvhdi/shansha-workbench"
+    },
+    {
+      "name": "3D 模型工作室",
+      "description": "在右侧栏预览三维模型并转换常见文件格式。",
+      "package": "dsh-3d-model-studio",
+      "version": "0.3.1",
+      "manifest": "https://github.com/act27/dsh-3d-model-studio/blob/12d7118878793759d613fdd991be5b1e4aa22831/package.json",
+      "registration": "",
+      "workflow": "https://github.com/act27/dsh-3d-model-studio/blob/12d7118878793759d613fdd991be5b1e4aa22831/README.md#L13-L21",
+      "repo": "act27/dsh-3d-model-studio",
+      "category": "内容",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/act27/dsh-3d-model-studio"
+    },
+    {
+      "name": "Coding Workspace",
+      "description": "用项目侧栏和 Git 工作树组织多个并行开发会话。",
+      "package": "dsh-coding-workspace",
+      "version": "0.10.1",
+      "manifest": "https://github.com/Aealen/dsh-coding-workspace/blob/d7d78cad3af53ba49123d9d0bfa967fa58ec1c2d/package.json",
+      "registration": "",
+      "workflow": "https://github.com/Aealen/dsh-coding-workspace/blob/d7d78cad3af53ba49123d9d0bfa967fa58ec1c2d/README.md#L5-L18",
+      "repo": "aealen/dsh-coding-workspace",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/Aealen/dsh-coding-workspace"
+    },
+    {
+      "name": "生图批次工作台",
+      "description": "配置提示词模板，生成和管理多个图像批次。",
+      "package": "dsh-image-studio",
+      "version": "0.2.0",
+      "manifest": "https://github.com/aEboli/dsh-image-studio/blob/2dc37fb20091ddff3e3c4be465ca30c30e3f812b/package.json",
+      "registration": "",
+      "workflow": "https://github.com/aEboli/dsh-image-studio/blob/2dc37fb20091ddff3e3c4be465ca30c30e3f812b/README.md#L3-L16",
+      "repo": "aeboli/dsh-image-studio",
+      "category": "内容",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/aEboli/dsh-image-studio"
+    },
+    {
+      "name": "OriOS 内容工作台",
+      "description": "跟踪选题、长文和平台版本，在各阶段审阅内容产物。",
+      "package": "@orios/dsh-creator",
+      "version": "0.3.0",
+      "manifest": "https://github.com/Backctrl/orios-content-workbench/blob/52505bb310b3e85ed4a9b189c2fdd65edebaa04b/package.json",
+      "registration": "",
+      "workflow": "https://github.com/Backctrl/orios-content-workbench/blob/52505bb310b3e85ed4a9b189c2fdd65edebaa04b/README.md#L5-L16",
+      "repo": "backctrl/orios-content-workbench",
+      "category": "内容",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/Backctrl/orios-content-workbench"
+    },
+    {
+      "name": "研报撰写工作台",
+      "description": "整理研报结构、PDF 摘录和图表，在专题卡片中组织材料。",
+      "package": "research-report-workbench",
+      "version": "0.12.13",
+      "manifest": "https://github.com/baymaxbill/research-report-workbench/blob/3800781fbc76e8c0e080bbe1a0b101597dd0d826/package.json",
+      "registration": "",
+      "workflow": "https://github.com/baymaxbill/research-report-workbench/blob/3800781fbc76e8c0e080bbe1a0b101597dd0d826/README.md#L3-L17",
+      "repo": "baymaxbill/research-report-workbench",
+      "category": "调研",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/baymaxbill/research-report-workbench"
+    },
+    {
+      "name": "多会话工作台",
+      "description": "在一个面板并排打开和操作多个原生会话。",
+      "package": "dsh-session-workbench",
+      "version": "1.0.0",
+      "manifest": "https://github.com/best0127/dsh-session-workbench/blob/3bcf7e96a98884bac0f3c0f332341c89ea036edd/package.json",
+      "registration": "",
+      "workflow": "https://github.com/best0127/dsh-session-workbench/blob/3bcf7e96a98884bac0f3c0f332341c89ea036edd/README.md#L68-L81",
+      "repo": "best0127/dsh-session-workbench",
+      "category": "效率",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/best0127/dsh-session-workbench"
+    },
+    {
+      "name": "Obsidian 工作台",
+      "description": "在 DSH 中浏览、编辑并保存 Obsidian Markdown 笔记。",
+      "package": "obsidian-workbench",
+      "version": "0.1.0-beta.1",
+      "manifest": "https://github.com/Bob-Bo1/obsidian-workbench/blob/b2ec41a0ad51ea9ea6fad85101619959b4b9c2f9/package.json",
+      "registration": "",
+      "workflow": "https://github.com/Bob-Bo1/obsidian-workbench/blob/b2ec41a0ad51ea9ea6fad85101619959b4b9c2f9/README.md#L3-L12",
+      "repo": "bob-bo1/obsidian-workbench",
+      "category": "内容",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/Bob-Bo1/obsidian-workbench"
+    },
+    {
+      "name": "微信读书工作台",
+      "description": "同步书架和划线记录，导入本地书籍并在面板内阅读。",
+      "package": "dsh-weread-studio",
+      "version": "0.1.0",
+      "manifest": "https://github.com/Castile/dsh-weread-studio/blob/d54729e545283e08b26772748f611d84cb995fc3/package.json",
+      "registration": "",
+      "workflow": "https://github.com/Castile/dsh-weread-studio/blob/d54729e545283e08b26772748f611d84cb995fc3/README.md#L3-L19",
+      "repo": "castile/dsh-weread-studio",
+      "category": "效率",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/Castile/dsh-weread-studio"
+    },
+    {
+      "name": "提示词工作台",
+      "description": "编辑、迭代和复用提示词，并从工作台开始新会话。",
+      "package": "dsh-prompt-studio",
+      "version": "0.2.0",
+      "manifest": "https://github.com/CECILIALOVE0616/dsh-prompt-studio/blob/3c2c6b91385d93a785ecab8531c65f7d679b57e9/package.json",
+      "registration": "",
+      "workflow": "https://github.com/CECILIALOVE0616/dsh-prompt-studio/blob/3c2c6b91385d93a785ecab8531c65f7d679b57e9/README.md#L3-L15",
+      "repo": "cecilialove0616/dsh-prompt-studio",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/CECILIALOVE0616/dsh-prompt-studio"
+    },
+    {
+      "name": "需求交付工作台",
+      "description": "查看开发任务和进度，把需求与本地项目关联后进入开发流程。",
+      "package": "dsh-requirement-dev-workbench",
+      "version": "4.5.4",
+      "manifest": "https://github.com/chdepanghu/dsh-worker-plug/blob/368ed3a5ea936b2b7303e1ffe0be68b18c23d62e/package.json",
+      "registration": "",
+      "workflow": "https://github.com/chdepanghu/dsh-worker-plug/blob/368ed3a5ea936b2b7303e1ffe0be68b18c23d62e/README.md#L14-L28",
+      "repo": "chdepanghu/dsh-worker-plug",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/chdepanghu/dsh-worker-plug"
+    },
+    {
+      "name": "内容写作工作区",
+      "description": "管理 Markdown 草稿，在编辑器调整不同平台的发布稿。",
+      "package": "dsh-book",
+      "version": "0.1.0",
+      "manifest": "https://github.com/ChenYichener/dsh-book/blob/e482fb04e73dbb36eade0e728f403c7e3e0a5096/package.json",
+      "registration": "",
+      "workflow": "https://github.com/ChenYichener/dsh-book/blob/e482fb04e73dbb36eade0e728f403c7e3e0a5096/README.md#L60-L76",
+      "repo": "chenyichener/dsh-book",
+      "category": "内容",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/ChenYichener/dsh-book"
+    },
+    {
+      "name": "任务账本",
+      "description": "在看板中查看任务、负责人和进度，任务记录保存在工作区。",
+      "package": "dsh-task-ledger",
+      "version": "0.2.5",
+      "manifest": "https://github.com/cq-guojia/dsh-task-ledger/blob/16fa35a2b7d31b970d9b96cdb279355eb2bab826/packages/plugin/package.json",
+      "registration": "",
+      "workflow": "https://github.com/cq-guojia/dsh-task-ledger/blob/16fa35a2b7d31b970d9b96cdb279355eb2bab826/packages/plugin/README.md#L21-L35",
+      "repo": "cq-guojia/dsh-task-ledger",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "packages/plugin/package.json",
+      "source": "web",
+      "href": "https://github.com/cq-guojia/dsh-task-ledger"
+    },
+    {
+      "name": "规划大管家",
+      "description": "从 DSH 左栏管理项目规划的各阶段和参考文档。",
+      "package": "dsh-business-planner",
+      "version": "0.2.0",
+      "manifest": "https://github.com/cunzailv/shangyeruanjiankaifa/blob/9b1a9984d0a57272b8ee5efd46c4c3c4c2f092ad/package.json",
+      "registration": "",
+      "workflow": "https://github.com/cunzailv/shangyeruanjiankaifa/blob/9b1a9984d0a57272b8ee5efd46c4c3c4c2f092ad/README.md#L63-L75",
+      "repo": "cunzailv/shangyeruanjiankaifa",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/cunzailv/shangyeruanjiankaifa"
+    },
+    {
+      "name": "Git 审阅工作台",
+      "description": "查看工作区变更和提交历史，暂存、提交并管理分支。",
+      "package": "dsh-wending-git-workbench",
+      "version": "0.2.0",
+      "manifest": "https://github.com/dd2673/dsh-wending-git-workbench/blob/d9cbb9cf1b1666b0f18149f7f0c77049bbc8e5c9/package.json",
+      "registration": "",
+      "workflow": "https://github.com/dd2673/dsh-wending-git-workbench/blob/d9cbb9cf1b1666b0f18149f7f0c77049bbc8e5c9/README.md#L3-L12",
+      "repo": "dd2673/dsh-wending-git-workbench",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/dd2673/dsh-wending-git-workbench"
+    },
+    {
+      "name": "DSH 项目画布",
+      "description": "在工作区渲染和查看可持久保存的项目画布。",
+      "package": "@demxyuanli/dsh-canvas",
+      "version": "0.2.0",
+      "manifest": "https://github.com/demxyuanli/dsh-canvas/blob/6237d90265c2458a7fe1b1ff1a1ee1f117e81910/package.json",
+      "registration": "",
+      "workflow": "https://github.com/demxyuanli/dsh-canvas/blob/6237d90265c2458a7fe1b1ff1a1ee1f117e81910/README.md#L1-L14",
+      "repo": "demxyuanli/dsh-canvas",
+      "category": "效率",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/demxyuanli/dsh-canvas"
+    },
+    {
+      "name": "Research Studio",
+      "description": "在 DSH 中组织调研工作，查看来源和已记录的研究成果。",
+      "package": "dsh-research-studio",
+      "version": "0.3.4",
+      "manifest": "https://github.com/DSH-Extensions-list/dsh-research-studio/blob/0f2a17060c3bba5cc095f0cf0334ba8508d6b140/package.json",
+      "registration": "",
+      "workflow": "https://github.com/DSH-Extensions-list/dsh-research-studio/blob/0f2a17060c3bba5cc095f0cf0334ba8508d6b140/README.md#L7-L22",
+      "repo": "dsh-extensions-list/dsh-research-studio",
+      "category": "调研",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/DSH-Extensions-list/dsh-research-studio"
+    },
+    {
+      "name": "Git 工作树工作室",
+      "description": "把会话与工作树任务关联，在看板中查看交付和审核状态。",
+      "package": "dsh-worktree-studio",
+      "version": "0.1.1",
+      "manifest": "https://github.com/Palaiologos1453/dsh-worktree-studio/blob/6265c9691d297a559498ca81327b07c0140d7c8f/package.json",
+      "registration": "",
+      "workflow": "https://github.com/Palaiologos1453/dsh-worktree-studio/blob/6265c9691d297a559498ca81327b07c0140d7c8f/README.md#L14-L26",
+      "repo": "palaiologos1453/dsh-worktree-studio",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/Palaiologos1453/dsh-worktree-studio"
+    },
+    {
+      "name": "交付工作台",
+      "description": "预览 HTML 交付稿，添加批注并运行版面检查。",
+      "package": "dsh-deliver-studio",
+      "version": "0.2.1",
+      "manifest": "https://github.com/passenfall/dsh-deliver-studio/blob/92b6003d1ec59d4024e08b1732d5787b7c9d61b7/package.json",
+      "registration": "",
+      "workflow": "https://github.com/passenfall/dsh-deliver-studio/blob/92b6003d1ec59d4024e08b1732d5787b7c9d61b7/README.md#L3-L16",
+      "repo": "passenfall/dsh-deliver-studio",
+      "category": "内容",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/passenfall/dsh-deliver-studio"
+    },
+    {
+      "name": "Superagent 工单台",
+      "description": "在侧栏查看工单、相关交付分支和文档。",
+      "package": "dsh-superagent-workbench",
+      "version": "0.1.1",
+      "manifest": "https://github.com/person-clouds/superagent-workbench/blob/e15843dd63099305db276169cc802b2bb12e084e/package.json",
+      "registration": "",
+      "workflow": "https://github.com/person-clouds/superagent-workbench/blob/e15843dd63099305db276169cc802b2bb12e084e/README.md#L23-L41",
+      "repo": "person-clouds/superagent-workbench",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/person-clouds/superagent-workbench"
+    },
+    {
+      "name": "个人计划工作台",
+      "description": "拆解计划目标、记录进度并保留历史版本。",
+      "package": "dsh-workbench",
+      "version": "0.5.0",
+      "manifest": "https://github.com/powerseven/dsh-workbench/blob/a29383eb3a8d0fad5ccc2148f34628a8c5d464ea/package.json",
+      "registration": "",
+      "workflow": "https://github.com/powerseven/dsh-workbench/blob/a29383eb3a8d0fad5ccc2148f34628a8c5d464ea/README.md#L5-L16",
+      "repo": "powerseven/dsh-workbench",
+      "category": "效率",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/powerseven/dsh-workbench"
+    },
+    {
+      "name": "智能任务看板",
+      "description": "管理任务卡片、任务依赖和执行者与验收者的分工。",
+      "package": "dsh-agent-board",
+      "version": "1.9.8",
+      "manifest": "https://github.com/PPawnsir/task-board-plugin/blob/099efcbaeb59bf3da4c15a1e3a1f91188061a2fe/packages/dsh-agent-board/package.json",
+      "registration": "",
+      "workflow": "https://github.com/PPawnsir/task-board-plugin/blob/099efcbaeb59bf3da4c15a1e3a1f91188061a2fe/packages/dsh-agent-board/README.md#L128-L146",
+      "repo": "ppawnsir/task-board-plugin",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "packages/dsh-agent-board/package.json",
+      "source": "web",
+      "href": "https://github.com/PPawnsir/task-board-plugin"
+    },
+    {
+      "name": "对话看板工作台",
+      "description": "保存会话生成的 Markdown、表格和计量看板，并从侧栏重新打开。",
+      "package": "@dsh-desktop/dsh-workbench",
+      "version": "0.1.0",
+      "manifest": "https://github.com/PrajnaWisdom/dsh-workbench/blob/7aefbcd5161cb389961bb013ee311b2d1d438208/package.json",
+      "registration": "",
+      "workflow": "https://github.com/PrajnaWisdom/dsh-workbench/blob/7aefbcd5161cb389961bb013ee311b2d1d438208/README.md#L3-L17",
+      "repo": "prajnawisdom/dsh-workbench",
+      "category": "数据",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/PrajnaWisdom/dsh-workbench"
+    },
+    {
+      "name": "个人 Bot 工作台",
+      "description": "跟踪个人 Bot 任务、交接和中断后的恢复。",
+      "package": "dsh-bot-workbench",
+      "version": "0.1.0-rc.1",
+      "manifest": "https://github.com/RoketrP/dsh-bot-workbench/blob/1e5c0638e5f0f21835a06793886e92ab2a1cbf82/package.json",
+      "registration": "",
+      "workflow": "https://github.com/RoketrP/dsh-bot-workbench/blob/1e5c0638e5f0f21835a06793886e92ab2a1cbf82/README.md#L35-L45",
+      "repo": "roketrp/dsh-bot-workbench",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/RoketrP/dsh-bot-workbench"
+    },
+    {
+      "name": "拼豆工作台",
+      "description": "在本地编辑拼豆图纸并整理配色。",
+      "package": "@sanmumu/dsh-bead-studio",
+      "version": "0.5.2-beta.1",
+      "manifest": "https://github.com/sanmumu-325/dsh-bead-studio/blob/621adbe66dcf91cb0d658b6efaa9d0413b612a30/package.json",
+      "registration": "",
+      "workflow": "https://github.com/sanmumu-325/dsh-bead-studio/blob/621adbe66dcf91cb0d658b6efaa9d0413b612a30/README.md#L9-L22",
+      "repo": "sanmumu-325/dsh-bead-studio",
+      "category": "内容",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/sanmumu-325/dsh-bead-studio"
+    },
+    {
+      "name": "企业 AI 专家工作台",
+      "description": "将资料关联到任务，跟踪跨部门工作流程和交付文件。",
+      "package": "dsh-enterprise-expert-workspace",
+      "version": "1.6.1",
+      "manifest": "https://github.com/shudi729/dsh-enterprise-expert-workspace/blob/ce43a1c7795f3161041ead747b0aa148f258e594/package.json",
+      "registration": "",
+      "workflow": "https://github.com/shudi729/dsh-enterprise-expert-workspace/blob/ce43a1c7795f3161041ead747b0aa148f258e594/README.md#L71-L89",
+      "repo": "shudi729/dsh-enterprise-expert-workspace",
+      "category": "运营",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/shudi729/dsh-enterprise-expert-workspace"
+    },
+    {
+      "name": "个人工作台",
+      "description": "在 DSH 侧栏管理待办、笔记、书签与会话统计。",
+      "package": "dsh-personal-studio",
+      "version": "0.1.0",
+      "manifest": "https://github.com/siungolai/dsh-personal-studio/blob/53af4b388941ff92b91d7c3327e0483c3810eab1/package.json",
+      "registration": "",
+      "workflow": "https://github.com/siungolai/dsh-personal-studio/blob/53af4b388941ff92b91d7c3327e0483c3810eab1/README.md#L3-L22",
+      "repo": "siungolai/dsh-personal-studio",
+      "category": "效率",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/siungolai/dsh-personal-studio"
+    },
+    {
+      "name": "日报封面工作台",
+      "description": "使用无限画布编辑日报封面、摆放素材并对齐。",
+      "package": "dsh-cover-studio",
+      "version": "1.0.0",
+      "manifest": "https://github.com/siweimidu/dsh-cover-studio/blob/67347dd9c5062764ba42bef739e3100816d56e36/package.json",
+      "registration": "",
+      "workflow": "https://github.com/siweimidu/dsh-cover-studio/blob/67347dd9c5062764ba42bef739e3100816d56e36/README.md#L26-L38",
+      "repo": "siweimidu/dsh-cover-studio",
+      "category": "内容",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/siweimidu/dsh-cover-studio"
+    },
+    {
+      "name": "需求管理工作台",
+      "description": "从对话和本地文档整理需求，管理子任务及截止时间。",
+      "package": "@dsh-community/dsh-req-workbench",
+      "version": "0.1.0",
+      "manifest": "https://github.com/Songran241/dsh-req-workbench/blob/e2210ec15f85973564e0581bd536b212005e5a2e/package.json",
+      "registration": "",
+      "workflow": "https://github.com/Songran241/dsh-req-workbench/blob/e2210ec15f85973564e0581bd536b212005e5a2e/README.md#L7-L15",
+      "repo": "songran241/dsh-req-workbench",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/Songran241/dsh-req-workbench"
+    },
+    {
+      "name": "投标工作台",
+      "description": "在会话中整理招标要求、核对材料并推进投标工作流。",
+      "package": "dsh-tender-workbench",
+      "version": "0.3.0-beta.1",
+      "manifest": "https://github.com/Sunhh3221/dsh-tender-workbench/blob/e5e7b7898eac80963f02faa9c32e7c6743cdda6b/package.json",
+      "registration": "",
+      "workflow": "https://github.com/Sunhh3221/dsh-tender-workbench/blob/e5e7b7898eac80963f02faa9c32e7c6743cdda6b/README.md#L17-L30",
+      "repo": "sunhh3221/dsh-tender-workbench",
+      "category": "运营",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/Sunhh3221/dsh-tender-workbench"
+    },
+    {
+      "name": "Agent 配置台",
+      "description": "在图形界面组合提示词、工具、技能和子代理并保存预设。",
+      "package": "dsh-agent-studio",
+      "version": "0.2.2",
+      "manifest": "https://github.com/thissensen/dsh-agent-studio/blob/2a5666b0e652f62bee9eb10a1eb83fedb6eb50ab/package.json",
+      "registration": "",
+      "workflow": "https://github.com/thissensen/dsh-agent-studio/blob/2a5666b0e652f62bee9eb10a1eb83fedb6eb50ab/README.en.md#L95-L116",
+      "repo": "thissensen/dsh-agent-studio",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/thissensen/dsh-agent-studio"
+    },
+    {
+      "name": "TongFlow",
+      "description": "在 DSH 中打开工作流程，查看运行记录，并编辑和重跑。",
+      "package": "dsh-tongflow",
+      "version": "1.0.0",
+      "manifest": "https://github.com/tong-io/tongflow/blob/f7aae7743b3046ebd783f4e704d454ebe3566f2d/packages/dsh-tongflow/package.json",
+      "registration": "",
+      "workflow": "https://github.com/tong-io/tongflow/blob/f7aae7743b3046ebd783f4e704d454ebe3566f2d/packages/dsh-tongflow/README.md#L25-L42",
+      "repo": "tong-io/tongflow",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "packages/dsh-tongflow/package.json",
+      "source": "web",
+      "href": "https://github.com/tong-io/tongflow"
+    },
+    {
+      "name": "Remotion 模板工作台",
+      "description": "收集视频素材，审查解析结果并保存可复用的动画模板。",
+      "package": "ds-remotion-dashboard",
+      "version": "0.1.0",
+      "manifest": "https://github.com/VitoBeijing/ds-remotion-dashboard/blob/2af0789bfe0d523a45a4f46aff65623a37e9ea4a/package.json",
+      "registration": "",
+      "workflow": "https://github.com/VitoBeijing/ds-remotion-dashboard/blob/2af0789bfe0d523a45a4f46aff65623a37e9ea4a/README.md#L3-L30",
+      "repo": "vitobeijing/ds-remotion-dashboard",
+      "category": "内容",
+      "host": "deepseek-desktop",
+      "packagePath": "package.json",
+      "source": "deepseek-desktop",
+      "href": "https://github.com/VitoBeijing/ds-remotion-dashboard"
+    },
+    {
+      "name": "PSD 批量制作台",
+      "description": "在画布中调整 PSD 商品模板，批量生成和管理图片。",
+      "package": "dsh-psd-batch-studio",
+      "version": "0.2.6",
+      "manifest": "https://github.com/vinkwork/dsh-psd-batch-studio/blob/bedc613d9dd45af609573294db0cb365306f68f1/package.json",
+      "registration": "",
+      "workflow": "https://github.com/vinkwork/dsh-psd-batch-studio/blob/bedc613d9dd45af609573294db0cb365306f68f1/README.md#L43-L59",
+      "repo": "vinkwork/dsh-psd-batch-studio",
+      "category": "内容",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/vinkwork/dsh-psd-batch-studio"
+    },
+    {
+      "name": "法学文献工作台",
+      "description": "从侧栏组织本地法律文献，搜索、分段阅读并保存笔记。",
+      "package": "dsh-plugin-cnki-assist",
+      "version": "0.5.2",
+      "manifest": "https://github.com/violin-i/dsh-plugin-cnki-assist/blob/9a94943ab88fe75ab9e113e48eb41e433c0a28f6/package.json",
+      "registration": "",
+      "workflow": "https://github.com/violin-i/dsh-plugin-cnki-assist/blob/9a94943ab88fe75ab9e113e48eb41e433c0a28f6/README.md#L5-L17",
+      "repo": "violin-i/dsh-plugin-cnki-assist",
+      "category": "调研",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/violin-i/dsh-plugin-cnki-assist"
+    },
+    {
+      "name": "DPIA 评估工作台",
+      "description": "在 DSH 主面板组织隐私影响评估的材料、回填事实、复评并生成报告。",
+      "package": "dsh-dpia-workbench",
+      "version": "0.3.11-beta.7",
+      "manifest": "https://github.com/The-Data-Galaxy/dsh-dpia-workbench/blob/93b7e8aaf9124e87a366ea8146bee701be93ae53/package.json",
+      "registration": "",
+      "workflow": "https://github.com/The-Data-Galaxy/dsh-dpia-workbench/blob/93b7e8aaf9124e87a366ea8146bee701be93ae53/client.js#L271-L280",
+      "repo": "the-data-galaxy/dsh-dpia-workbench",
+      "category": "运营",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/The-Data-Galaxy/dsh-dpia-workbench"
     }
   ]
 };

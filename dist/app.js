@@ -4,6 +4,7 @@ const form = document.querySelector("#filters");
 const query = document.querySelector("#query");
 const category = document.querySelector("#category");
 const source = document.querySelector("#source");
+const withPreview = document.querySelector("#with-preview");
 const results = document.querySelector("#results");
 const status = document.querySelector("#result-status");
 const empty = document.querySelector("#empty");
@@ -13,14 +14,35 @@ const labels = {
   official: "Dataelem 市场",
   registered: "Dataelem · 注册已核",
   manifest: "Dataelem · 清单候选",
+  "dataelem-extension": "Dataelem · 会话扩展",
   web: "DSH Web · 已核",
   "deepseek-desktop": "DeepSeek 官方桌面 · 已核",
 };
-const order = {registered: 0, web: 1, "deepseek-desktop": 2, official: 3, manifest: 4};
+const order = {registered: 0, "dataelem-extension": 1, web: 2, "deepseek-desktop": 3, official: 4, manifest: 5};
 
-function renderListing(item) {
+function renderListing(item, position) {
   const node = template.content.cloneNode(true);
-  node.querySelector("li").dataset.kind = item.source;
+  const listing = node.querySelector("li");
+  listing.dataset.kind = item.source;
+  if (item.preview) {
+    const link = node.querySelector("[data-preview]");
+    const image = link.querySelector("img");
+    const description = item.preview.alt || `${item.name}的界面截图`;
+    const hidePreview = () => {
+      link.hidden = true;
+      delete listing.dataset.hasPreview;
+    };
+    link.href = item.preview.url;
+    link.setAttribute("aria-label", `查看原图：${description}（新标签页）`);
+    image.alt = description;
+    image.width = item.preview.width;
+    image.height = item.preview.height;
+    if (position > 0) image.loading = "lazy";
+    image.addEventListener("error", hidePreview, {once: true});
+    link.hidden = false;
+    listing.dataset.hasPreview = "";
+    image.src = item.preview.url;
+  }
   const title = node.querySelector("[data-title]");
   title.textContent = item.name;
   title.href = item.href;
@@ -48,10 +70,11 @@ function render(entries) {
   const filtered = entries.filter(item =>
     (!source.value || item.source === source.value) &&
     (!category.value || item.category === category.value) &&
+    (!withPreview.checked || item.preview) &&
     terms.every(term => item.searchable.includes(term))
   );
   const list = document.createDocumentFragment();
-  for (const item of filtered) list.append(renderListing(item));
+  filtered.forEach((item, position) => list.append(renderListing(item, position)));
   results.replaceChildren(list);
   status.textContent = `${filtered.length} / ${entries.length} 个工作台`;
   empty.hidden = filtered.length > 0;
@@ -81,6 +104,7 @@ if (catalog?.entries?.length) {
   query.addEventListener("compositionend", refresh);
   category.addEventListener("change", refresh);
   source.addEventListener("change", refresh);
+  withPreview.addEventListener("change", refresh);
   form.addEventListener("reset", () => requestAnimationFrame(() => {
     refresh();
     query.focus();
@@ -88,5 +112,5 @@ if (catalog?.entries?.length) {
   refresh();
 } else {
   status.textContent = "目录数据未加载。请刷新页面。";
-  form.querySelectorAll("input, select, button").forEach(control => { control.disabled = true; });
+  for (const control of form.elements) control.disabled = true;
 }

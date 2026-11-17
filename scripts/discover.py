@@ -207,7 +207,8 @@ def pages(kind, query, results, errors, per_page=100, first=None):
             meta["incomplete"] |= bool(data.get("incomplete_results"))
             fetched += len(items)
             yield from items
-            if len(items) < per_page or fetched >= min(data["total_count"], 1000):
+            # A partial page can precede further results when GitHub omits individual hits.
+            if not items or fetched >= min(data["total_count"], 1000):
                 break
         if results[query]["matched"] > fetched:
             results[query]["incomplete"] = True
