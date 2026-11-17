@@ -30,5 +30,13 @@
     "commit": "84f932ff3f60988329970474a1357699d4fef94e",
     "reason": "随包界面只展示合成数据，宿主只有静态文件和 health，同版本文档确认业务数据和 API 尚未实现。",
     "evidence": "https://github.com/xyb-openharness-dsh-plugins/prostate-workbench/blob/84f932ff3f60988329970474a1357699d4fef94e/README.md#L3-L7"
+  },
+  {
+    "repo": "siom126/opsworkstation",
+    "packagePath": "package.json",
+    "source": "registered",
+    "commit": "9cca07d8be2a877129a45ccf48f182cab154c5c5",
+    "reason": "与较早发布的 siom126/dsh-workbench-xiaohongshu-ops 共享同一提交和完整 Git 树，保留较早的仓库。",
+    "evidence": "https://github.com/Siom126/OpsWorkstation/tree/9cca07d8be2a877129a45ccf48f182cab154c5c5"
   }
 ]
