@@ -1,0 +1,122 @@
+[
+  {
+    "repo": "Aisland-SJL/dsh-worktable",
+    "name": "Worktable 项目工作台",
+    "description": "从项目抽屉打开可停靠的分屏，集中查看各项目的会话、资料和运行状态。",
+    "category": "开发",
+    "version": "0.5.1",
+    "package": "dsh-worktable",
+    "manifest": "https://github.com/Aisland-SJL/dsh-worktable/blob/f98246ef0cd10173cabfdb4d7070eb245b12b42d/01_content/package.json",
+    "workflow": "https://github.com/Aisland-SJL/dsh-worktable/blob/f98246ef0cd10173cabfdb4d7070eb245b12b42d/README.md#L25-L52"
+  },
+  {
+    "repo": "loadingvx/deepseek-harness-workbench-plugin",
+    "name": "会话开发工作台",
+    "description": "在会话旁使用文件编辑器、终端和 Git。",
+    "category": "开发",
+    "version": "0.1.38",
+    "package": "dsh-workbench-plugin",
+    "manifest": "https://github.com/loadingvx/deepseek-harness-workbench-plugin/blob/421282dc771c72ccf5fac60d70e3d6571a4e62e3/package.json",
+    "workflow": "https://github.com/loadingvx/deepseek-harness-workbench-plugin/blob/421282dc771c72ccf5fac60d70e3d6571a4e62e3/README.md#L5-L17"
+  },
+  {
+    "repo": "LiPu-jpg/Openwrite",
+    "name": "OpenWrite 小说创作台",
+    "description": "在 DSH 中管理小说项目，进行写作、修改和审阅。",
+    "category": "内容",
+    "version": "0.1.0",
+    "package": "@dsh-novel/studio-panel",
+    "manifest": "https://github.com/LiPu-jpg/Openwrite/blob/3635a1e5ca5ab9398e8adb7c3a91526826184a30/packages/studio-panel/package.json#L20-L35",
+    "workflow": "https://github.com/LiPu-jpg/Openwrite/blob/3635a1e5ca5ab9398e8adb7c3a91526826184a30/packages/studio-panel/README.md#L1-L7"
+  },
+  {
+    "repo": "Harzva/dsh-wemedia-workbench",
+    "name": "自媒体工作台",
+    "description": "管理不同渠道的内容、修改版本、审阅、审批及发布任务。",
+    "category": "内容",
+    "version": "0.1.0",
+    "package": "dsh-wemedia-workbench",
+    "manifest": "https://github.com/Harzva/dsh-wemedia-workbench/blob/52747b792b6602ccdd3d95a0b951ca3a21a3b70d/package.json",
+    "workflow": "https://github.com/Harzva/dsh-wemedia-workbench/blob/52747b792b6602ccdd3d95a0b951ca3a21a3b70d/README.md#L3-L30"
+  },
+  {
+    "repo": "gulagala001/dsh-deepseek-workbench",
+    "name": "DeepSeek Workbench",
+    "description": "在 DSH 中使用临时侧栏聊天和工作台，并把可复用的对话转为常规会话。",
+    "category": "效率",
+    "version": "0.1.11-dsh.0.2.2-rc.3",
+    "package": "dsh-deepseek-workbench",
+    "manifest": "https://github.com/gulagala001/dsh-deepseek-workbench/blob/8b96322a95cfac535977dcbf9d046a8a4beb379c/package.json",
+    "workflow": "https://github.com/gulagala001/dsh-deepseek-workbench/blob/8b96322a95cfac535977dcbf9d046a8a4beb379c/README.md#L16-L45"
+  },
+  {
+    "repo": "bandung-circuits/pomasa-studio",
+    "name": "POMASA Studio",
+    "description": "组织研究对象和多智能体流程，运行并回看研究过程。",
+    "category": "调研",
+    "version": "0.3.2",
+    "package": "pomasa-studio",
+    "manifest": "https://github.com/bandung-circuits/pomasa-studio/blob/e6830c714380ec0485b93be3399e434841f697dd/package.json",
+    "workflow": "https://github.com/bandung-circuits/pomasa-studio/blob/e6830c714380ec0485b93be3399e434841f697dd/README.md#L5-L16"
+  },
+  {
+    "repo": "ZSeven-W/dsh-openpencil",
+    "name": "OpenPencil 设计工作台",
+    "description": "在 DSH 中预览和编辑多画板设计文件，管理图层与属性。",
+    "category": "内容",
+    "version": "0.1.0-rc.15",
+    "package": "@zseven-w/dsh-openpencil",
+    "manifest": "https://github.com/ZSeven-W/dsh-openpencil/blob/56650083e8b1ea01c625b73a4a5c15b98ef53965/package.json",
+    "workflow": "https://github.com/ZSeven-W/dsh-openpencil/blob/56650083e8b1ea01c625b73a4a5c15b98ef53965/README.md#L30-L63"
+  },
+  {
+    "repo": "yang0/dsh-handraw-style",
+    "name": "图像创作工作台",
+    "description": "从 DSH 左栏打开图片创作项目，选择画风、版式和参考素材。",
+    "category": "内容",
+    "version": "0.7.9",
+    "package": "dsh-plugin-pose-studio",
+    "manifest": "https://github.com/yang0/dsh-handraw-style/blob/4e959966464e0b3b7aa8fb39ef535946b5362ff1/package.json",
+    "workflow": "https://github.com/yang0/dsh-handraw-style/blob/4e959966464e0b3b7aa8fb39ef535946b5362ff1/README.md#L19-L39"
+  },
+  {
+    "repo": "omdsh-dev/DSH-better-sidebar",
+    "name": "Better Sidebar",
+    "description": "在右侧栏或底部面板浏览和编辑文件、使用终端，并查看 Git 和侧边会话。",
+    "category": "开发",
+    "version": "0.32.1",
+    "package": "dsh-better-sidebar",
+    "manifest": "https://github.com/omdsh-dev/DSH-better-sidebar/blob/2811573c9c0bad51d77db6c3c94d78f5aed8d38a/package.json",
+    "workflow": "https://github.com/omdsh-dev/DSH-better-sidebar/blob/2811573c9c0bad51d77db6c3c94d78f5aed8d38a/README.md#L17-L29"
+  },
+  {
+    "repo": "dream-num/dsh-univer-office",
+    "name": "Univer 办公工作台",
+    "description": "在 DSH 中打开表格、文档、演示和关系表，查看或编辑办公文件。",
+    "category": "效率",
+    "version": "0.4.0",
+    "package": "dsh-univer-office",
+    "manifest": "https://github.com/dream-num/dsh-univer-office/blob/f34c329e15818c069321f7109bc8af1a6ca891fe/package.json",
+    "workflow": "https://github.com/dream-num/dsh-univer-office/blob/f34c329e15818c069321f7109bc8af1a6ca891fe/README.md#L168-L188"
+  },
+  {
+    "repo": "Uid-762/dsh-ai-workbench",
+    "name": "AI 工作台",
+    "description": "在 DSH 中用自然语言创建可交互的小工具，保存后重新打开使用。",
+    "category": "效率",
+    "version": "0.8.3",
+    "package": "dsh-ai-workbench",
+    "manifest": "https://github.com/Uid-762/dsh-ai-workbench/blob/f472a8266d879710f92977cffe1de946da0efedf/package.json",
+    "workflow": "https://github.com/Uid-762/dsh-ai-workbench/blob/f472a8266d879710f92977cffe1de946da0efedf/README.md#L14-L39"
+  },
+  {
+    "repo": "LongerWu2026/dsh-dev-workbench",
+    "name": "DSH 智能工作台",
+    "description": "在 DSH 中集中查看工作区、会话和开发任务。",
+    "category": "开发",
+    "version": "0.4.10",
+    "package": "dsh-dev-workbench",
+    "manifest": "https://github.com/LongerWu2026/dsh-dev-workbench/blob/d7f3b3e551f13fa92f542eb95dcde63315b20c84/package.json",
+    "workflow": "https://github.com/LongerWu2026/dsh-dev-workbench/blob/d7f3b3e551f13fa92f542eb95dcde63315b20c84/README.md#L1-L16"
+  }
+]

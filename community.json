@@ -1,0 +1,424 @@
+[
+  {
+    "repo": "peckerpro/pecker-dsh-workbench",
+    "name": "本地创作",
+    "description": "",
+    "package": "pecker-dsh-workbench",
+    "version": "0.1.11",
+    "manifest": "https://github.com/peckerpro/pecker-dsh-workbench/blob/master/package.json",
+    "category": "内容",
+    "registration": "https://github.com/peckerpro/pecker-dsh-workbench/blob/master/lib/client.js#L521"
+  },
+  {
+    "repo": "tobiasrocksr9999/dsh-inapp-browser",
+    "name": "内置浏览器",
+    "description": "在 DSH Desktop 工作台中浏览网页。",
+    "package": "dsh-inapp-browser",
+    "version": "0.3.0",
+    "manifest": "https://github.com/tobiasrocksr9999/dsh-inapp-browser/blob/main/package.json",
+    "category": "效率",
+    "registration": "https://github.com/tobiasrocksr9999/dsh-inapp-browser/blob/main/lib/client.js#L58"
+  },
+  {
+    "repo": "x68x78-cyber/xga6878",
+    "name": "私域社群运营台",
+    "description": "整理私域运营任务和社群资料。",
+    "package": "siyu-private-operation-workbench",
+    "version": "0.2.2",
+    "manifest": "https://github.com/x68x78-cyber/xga6878/blob/main/package.json",
+    "category": "运营",
+    "registration": "https://github.com/x68x78-cyber/xga6878/blob/main/lib/client.js#L42"
+  },
+  {
+    "repo": "DavidLiu12-code/reader-workbench",
+    "name": "阅读器工作台",
+    "description": "",
+    "package": "dsh-reader-workbench",
+    "version": "0.1.0",
+    "manifest": "https://github.com/DavidLiu12-code/reader-workbench/blob/main/package.json",
+    "category": "效率",
+    "registration": "https://github.com/DavidLiu12-code/reader-workbench/blob/main/lib/client.js#L1559"
+  },
+  {
+    "repo": "oaham777-hub/genesis-cosmos-cauldron-workbench",
+    "name": "造化乾坤鼎工作台",
+    "description": "",
+    "package": "cauldron-workbench",
+    "version": "0.13.1",
+    "manifest": "https://github.com/oaham777-hub/genesis-cosmos-cauldron-workbench/blob/main/package.json",
+    "registration": "https://github.com/oaham777-hub/genesis-cosmos-cauldron-workbench/blob/main/lib/client.js#L715"
+  },
+  {
+    "repo": "Sandwich-git/dsh-decisions-board",
+    "name": "决策看板",
+    "description": "",
+    "package": "dsh-decisions-board",
+    "version": "0.5.0",
+    "manifest": "https://github.com/Sandwich-git/dsh-decisions-board/blob/main/package.json",
+    "category": "效率"
+  },
+  {
+    "repo": "Siom126/dsh-workbench-xiaohongshu-ops",
+    "name": "小红书运营工作台",
+    "description": "在工作台中管理小红书运营任务。",
+    "package": "dsh-workbench-xiaohongshu-ops",
+    "version": "0.2.0",
+    "manifest": "https://github.com/Siom126/dsh-workbench-xiaohongshu-ops/blob/main/package.json",
+    "category": "运营",
+    "registration": "https://github.com/Siom126/dsh-workbench-xiaohongshu-ops/blob/main/lib/client.js#L2261"
+  },
+  {
+    "repo": "ASwang2205/dsh-xiaomi-ocr",
+    "name": "小米 OCR",
+    "description": "",
+    "package": "dsh-xiaomi-ocr",
+    "version": "0.2.0",
+    "manifest": "https://github.com/ASwang2205/dsh-xiaomi-ocr/blob/main/package.json",
+    "category": "效率"
+  },
+  {
+    "repo": "Siom126/OpsWorkstation",
+    "name": "小红书运营工作台",
+    "description": "在工作台中管理小红书运营任务。",
+    "package": "dsh-workbench-xiaohongshu-ops",
+    "version": "0.2.0",
+    "manifest": "https://github.com/Siom126/OpsWorkstation/blob/main/package.json",
+    "category": "运营",
+    "registration": "https://github.com/Siom126/OpsWorkstation/blob/main/lib/client.js#L2261"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/xiaoxinbao-workbench",
+    "name": "留一盏灯 · 癌症心理支持工作台",
+    "description": "",
+    "package": "dsh-cancer-psych-support-workbench",
+    "version": "0.3.15",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/xiaoxinbao-workbench/blob/main/package.json",
+    "registration": "https://github.com/xyb-openharness-dsh-plugins/xiaoxinbao-workbench/blob/main/src/client.js#L519"
+  },
+  {
+    "repo": "roninni/dsh-central-editor",
+    "name": "资源管理器",
+    "description": "在对话旁浏览、编辑和审阅工作区文件。",
+    "package": "dsh-central-editor",
+    "version": "0.3.0",
+    "manifest": "https://github.com/roninni/dsh-central-editor/blob/main/package.json",
+    "category": "开发",
+    "registration": "https://github.com/roninni/dsh-central-editor/blob/main/lib/client.js#L2451"
+  },
+  {
+    "repo": "ludwen/dsh-issue-roundtable",
+    "name": "议题圆桌",
+    "description": "将议题和讨论集中在一个工作台。",
+    "package": "dsh-issue-roundtable",
+    "version": "0.4.0",
+    "manifest": "https://github.com/ludwen/dsh-issue-roundtable/blob/main/package.json",
+    "category": "效率",
+    "registration": "https://github.com/ludwen/dsh-issue-roundtable/blob/main/lib/client.js#L1686"
+  },
+  {
+    "repo": "narkco-kang/dsh-team-workbench",
+    "name": "dsh-team-workbench · 智能体团队工作台",
+    "description": "",
+    "package": "dsh-team-workbench",
+    "version": "3.5.7",
+    "manifest": "https://github.com/narkco-kang/dsh-team-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "weixiurui/dsh-firefly-forest",
+    "name": "萤火森林",
+    "description": "带工作台入口的萤火森林主题。",
+    "package": "dsh-firefly-forest",
+    "version": "0.10.1",
+    "manifest": "https://github.com/weixiurui/dsh-firefly-forest/blob/main/package.json",
+    "category": "其他",
+    "registration": "https://github.com/weixiurui/dsh-firefly-forest/blob/main/lib/client.js#L2594"
+  },
+  {
+    "repo": "AnJingJingC/SYMBIO-workbench",
+    "name": "SYMBIO 工作台",
+    "description": "",
+    "package": "symbio-workbench",
+    "version": "0.5.5",
+    "manifest": "https://github.com/AnJingJingC/SYMBIO-workbench/blob/main/package.json",
+    "registration": "https://github.com/AnJingJingC/SYMBIO-workbench/blob/main/lib/client.js#L1103"
+  },
+  {
+    "repo": "MistyRn/dsh-experience",
+    "name": "dsh-experience · 智能体自学习经验库",
+    "description": "",
+    "package": "dsh-experience",
+    "version": "0.1.3",
+    "manifest": "https://github.com/MistyRn/dsh-experience/blob/main/package.json"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/xyb-workbench",
+    "name": "小胰宝工作台",
+    "description": "",
+    "package": "@xyb-openharness-dsh-plugins/xyb-workbench",
+    "version": "0.1.36",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/xyb-workbench/blob/main/package.json",
+    "registration": "https://github.com/xyb-openharness-dsh-plugins/xyb-workbench/blob/main/lib/client.js#L1627"
+  },
+  {
+    "repo": "caisiyang123/dsh-media-desk-bisheng",
+    "name": "毕昇新媒体工作台",
+    "description": "",
+    "package": "dsh-media-desk-bisheng",
+    "version": "1.0.0",
+    "manifest": "https://github.com/caisiyang123/dsh-media-desk-bisheng/blob/main/package.json",
+    "category": "运营"
+  },
+  {
+    "repo": "atlasmarkz/dsh-personal-finance-workbench",
+    "name": "个人财务工作台",
+    "description": "",
+    "package": "dsh-personal-finance-workbench",
+    "version": "0.1.0",
+    "manifest": "https://github.com/atlasmarkz/dsh-personal-finance-workbench/blob/main/package.json",
+    "category": "数据",
+    "registration": "https://github.com/atlasmarkz/dsh-personal-finance-workbench/blob/main/client.js#L955"
+  },
+  {
+    "repo": "atlasmarkz/dsh-finops-workbench",
+    "name": "FinOps 工作台",
+    "description": "",
+    "package": "dsh-finops-workbench",
+    "version": "0.1.0",
+    "manifest": "https://github.com/atlasmarkz/dsh-finops-workbench/blob/main/package.json",
+    "category": "数据",
+    "registration": "https://github.com/atlasmarkz/dsh-finops-workbench/blob/main/client.js#L950"
+  },
+  {
+    "repo": "ttttstc/dsh-workbench-intel-center",
+    "name": "羊毛大王",
+    "description": "",
+    "package": "dsh-workbench-intel-center",
+    "version": "1.34.0",
+    "manifest": "https://github.com/ttttstc/dsh-workbench-intel-center/blob/main/package.json",
+    "registration": "https://github.com/ttttstc/dsh-workbench-intel-center/blob/main/lib/client.js#L1989"
+  },
+  {
+    "repo": "zhifanluosheng/dsh-ai-native-company",
+    "name": "新媒体工作室",
+    "description": "",
+    "package": "dsh-agent-new-media-studio",
+    "version": "0.2.0",
+    "manifest": "https://github.com/zhifanluosheng/dsh-ai-native-company/blob/main/package.json",
+    "category": "内容",
+    "registration": "https://github.com/zhifanluosheng/dsh-ai-native-company/blob/51f866f9686fae8f67a1f9ee106548ac088db0e3/lib/client.js#L1198"
+  },
+  {
+    "repo": "liuhao11223/githb-ranking",
+    "name": "GitHub 排行",
+    "description": "",
+    "package": "githb-ranking",
+    "version": "0.1.1",
+    "manifest": "https://github.com/liuhao11223/githb-ranking/blob/main/package.json",
+    "category": "数据"
+  },
+  {
+    "repo": "DavidLiu12-code/nihaixia-dsh-desktop",
+    "name": "nihaixia-dsh-desktop",
+    "description": "",
+    "package": "dsh-workbench-nihaixia",
+    "version": "0.1.0",
+    "manifest": "https://github.com/DavidLiu12-code/nihaixia-dsh-desktop/blob/main/package.json"
+  },
+  {
+    "repo": "lineex/dsh-research-workbench",
+    "name": "研究工作台",
+    "description": "",
+    "package": "dsh-research-workbench",
+    "version": "3.10.0",
+    "manifest": "https://github.com/lineex/dsh-research-workbench/blob/main/package.json",
+    "category": "调研"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/glioblastoma-workbench",
+    "name": "glioblastoma-workbench",
+    "description": "",
+    "package": "@xyb-community/glioblastoma-workbench",
+    "version": "0.1.9",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/glioblastoma-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "HR2AY/dsh-game-studio",
+    "name": "游戏制作工作台",
+    "description": "",
+    "package": "dsh-game-studio",
+    "version": "0.1.18",
+    "manifest": "https://github.com/HR2AY/dsh-game-studio/blob/main/package.json",
+    "category": "开发"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/gastric-workbench",
+    "name": "gastric-workbench",
+    "description": "",
+    "package": "@xyb-community/gastric-workbench",
+    "version": "0.1.5",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/gastric-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/breast-cancer-workbench",
+    "name": "breast-cancer-workbench",
+    "description": "",
+    "package": "@pinkypal-dsh/breast-cancer-workbench",
+    "version": "0.13.7",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/breast-cancer-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "caisiyang123/kimi-signature-workbench",
+    "name": "kimi-signature-workbench",
+    "description": "",
+    "package": "dsh-kimi-signature-workbench",
+    "version": "2.2.1",
+    "manifest": "https://github.com/caisiyang123/kimi-signature-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "yangzizai873/creativity",
+    "name": "创意大厅",
+    "description": "",
+    "package": "dsh-creativity-hall",
+    "version": "0.6.0",
+    "manifest": "https://github.com/yangzizai873/creativity/blob/main/package.json",
+    "category": "内容"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/colorectal-workbench",
+    "name": "colorectal-workbench",
+    "description": "",
+    "package": "@xyb-community/colorectal-workbench",
+    "version": "0.1.3",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/colorectal-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/esophageal-workbench",
+    "name": "esophageal-workbench",
+    "description": "",
+    "package": "@xyb-community/esophageal-workbench",
+    "version": "0.1.5",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/esophageal-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "chdepanghu/dsh-worker",
+    "name": "需求开发工作台",
+    "description": "",
+    "package": "dsh-requirement-dev-workbench",
+    "version": "4.5.0",
+    "manifest": "https://github.com/chdepanghu/dsh-worker/blob/main/package.json",
+    "category": "开发"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/cold-agglutinin-workbench",
+    "name": "cold-agglutinin-workbench",
+    "description": "",
+    "package": "@xyb-community/cold-agglutinin-workbench",
+    "version": "0.2.2",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/cold-agglutinin-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/cervical-workbench",
+    "name": "cervical-workbench",
+    "description": "",
+    "package": "@xyb-community/cervical-workbench",
+    "version": "0.1.6",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/cervical-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/primary-immunodeficiency-workbench",
+    "name": "primary-immunodeficiency-workbench",
+    "description": "",
+    "package": "@xyb-community/primary-immunodeficiency-workbench",
+    "version": "0.2.0",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/primary-immunodeficiency-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/neuroendocrine-workbench",
+    "name": "neuroendocrine-workbench",
+    "description": "",
+    "package": "@community/neuroendocrine-workbench",
+    "version": "0.1.11",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/neuroendocrine-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/neurofibromatosis-workbench",
+    "name": "neurofibromatosis-workbench",
+    "description": "",
+    "package": "@xyb-community/neurofibromatosis-workbench",
+    "version": "0.1.20",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/neurofibromatosis-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/lung-cancer-workbench",
+    "name": "lung-cancer-workbench",
+    "description": "",
+    "package": "@xyb-openharness-dsh-plugins/lung-cancer-workbench",
+    "version": "0.1.2-rc.25",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/lung-cancer-workbench/blob/codex/records-slice/package.json"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/myeloma-workbench",
+    "name": "myeloma-workbench",
+    "description": "",
+    "package": "@xyb-community/myeloma-workbench",
+    "version": "0.1.2-rc.1",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/myeloma-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "Westergren/pm-plan",
+    "name": "项目计划",
+    "description": "",
+    "package": "dsh-workbench-pm-plan",
+    "version": "1.7.3",
+    "manifest": "https://github.com/Westergren/pm-plan/blob/master/package.json",
+    "category": "效率"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/gist-workbench",
+    "name": "gist-workbench",
+    "description": "",
+    "package": "@xyb-community/gist-workbench",
+    "version": "0.1.3",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/gist-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/melanoma-workbench",
+    "name": "melanoma-workbench",
+    "description": "",
+    "package": "@xyb-community/melanoma-workbench",
+    "version": "0.3.7",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/melanoma-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/fshd-workbench",
+    "name": "fshd-workbench",
+    "description": "",
+    "package": "@xyb-community/fshd-workbench",
+    "version": "0.1.6",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/fshd-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/aml-workbench",
+    "name": "aml-workbench",
+    "description": "",
+    "package": "@xyb-community/aml-workbench",
+    "version": "0.6.5",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/aml-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/attr-workbench",
+    "name": "attr-workbench",
+    "description": "",
+    "package": "@xyb-community/attr-workbench",
+    "version": "0.6.5",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/attr-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "xyb-openharness-dsh-plugins/biliary-tract-workbench",
+    "name": "biliary-tract-workbench",
+    "description": "",
+    "package": "@xyb-community/biliary-tract-workbench",
+    "version": "0.1.4",
+    "manifest": "https://github.com/xyb-openharness-dsh-plugins/biliary-tract-workbench/blob/main/package.json"
+  }
+]

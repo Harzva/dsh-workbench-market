@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="按名称、用途或仓库搜索 DSH 工作台，浏览 Dataelem 原生和 DSH Web 的公开项目。">
+  <title>DSH 工作台市场</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./catalog.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="frame header-inner">
+      <a class="brand" href="./index.html">DSH 工作台市场</a>
+      <nav aria-label="相关资源">
+        <a href="https://github.com/Harzva/dsh-workbench-market/blob/main/docs/workbench-definition.md">收录标准 ↗</a>
+        <a href="https://github.com/Harzva/dsh-workbench-market">GitHub ↗</a>
+        <a href="https://www.dshdesktop.com/tutorials/guide-workbench-install.html">安装指南 ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main class="frame">
+    <h1>发现 DSH 工作台</h1>
+    <p class="intro">按任务查找 Dataelem DSH Desktop 原生工作台和 DSH Web 工作台。</p>
+    <search aria-label="搜索和筛选工作台">
+      <form id="filters" method="get">
+        <div class="query">
+          <label for="query">搜索工作台</label>
+          <input type="search" id="query" name="q" placeholder="例如 资源管理器、OCR、projectHub" autocomplete="off" autocapitalize="none" spellcheck="false">
+        </div>
+        <div>
+          <label for="source">工作台类型</label>
+          <select id="source" name="source">
+            <option value="">全部类型</option>
+            <option value="official">Dataelem 市场收录</option>
+            <option value="registered">Dataelem · 已核对注册</option>
+            <option value="web">DSH Web · 已核对</option>
+            <option value="manifest">Dataelem · 清单候选</option>
+          </select>
+        </div>
+        <div>
+          <label for="category">分类</label>
+          <select id="category" name="category"><option value="">全部分类</option></select>
+        </div>
+        <button type="reset" class="reset">清除筛选</button>
+      </form>
+    </search>
+    <noscript><p>请启用 JavaScript 搜索工作台，或打开<a href="https://github.com/dataelement/awesome-dsh-workbench">官方目录</a>。</p></noscript>
+    <section aria-label="工作台列表">
+      <div class="list-header">
+        <p id="result-status" role="status"></p>
+        <time id="date"></time>
+      </div>
+      <p id="empty" hidden>没有匹配的工作台。可以换个关键词或清除筛选。</p>
+      <ul id="results"></ul>
+    </section>
+    <footer>条目附有来源或源码证据。版本兼容性以相应宿主的实测为准。
+      <a href="https://market.dshdesktop.com/index.json">Dataelem 索引 ↗</a>
+      <a href="./index.json">目录 JSON ↗</a>
+    </footer>
+  </main>
+  <template id="listing">
+    <li class="listing">
+      <div class="listing-main">
+        <h2><a data-title></a></h2>
+        <p data-description class="description"></p>
+        <p data-repo class="repo"></p>
+      </div>
+      <div class="listing-meta">
+        <div class="meta-line"><span data-source class="status"></span><span data-category></span><span data-version></span></div>
+        <div class="evidence"><a data-manifest>插件清单 ↗</a><a data-registration>注册代码 ↗</a><a data-workflow>工作流依据 ↗</a></div>
+      </div>
+    </li>
+  </template>
+</body>
+</html>
