@@ -13,6 +13,8 @@
 - [通用插件发现页](https://github.com/deepseek-ai/deepseek-harness/blob/ca33fd6843b205e279c7ccb6cb73a472c78f5760/docs/user/guide/plugin-market.md#L19-L28)
 - [通用插件发布协议](https://github.com/deepseek-ai/deepseek-harness/blob/ca33fd6843b205e279c7ccb6cb73a472c78f5760/docs/user/develop/basic/publish.md#L11-L16)
 
+上游实验插件 Timeline 在会话中提供可打开的任务时间线，用户可以浏览任务树、筛选定时报告、提交反馈以及导入或导出记录。本目录据此把 Timeline 收录为一个工作台实例。[DeepSeek Timeline 的任务界面](https://github.com/deepseek-ai/deepseek-harness/blob/ca33fd6843b205e279c7ccb6cb73a472c78f5760/packages/experimental/timeline/README.md#L29-L57)
+
 Dataelem 的 DSH Desktop 提供自己的原生工作台服务。工作台包是 DSH bundle，导出客户端，声明 `dsh-desktop-workbenches` 注入，并通过 `desktopWorkbenches.register()` 或其可核对的别名注册业务界面。[Dataelem 工作台开发规范](https://github.com/dataelement/dsh-desktop/blob/bbc7494aa9ed1cda0b89888264d7ee74a26ec50e/packages/dsh-desktop-workbenches/development-guide.zh.md#L57-L63) · [Dataelem 市场验收规范](https://dshdesktop.com/workbench/docs/market-acceptance/)
 
 ## 收录标准
