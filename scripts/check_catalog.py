@@ -1,6 +1,7 @@
 """Verify the static JSON/JS artifacts and public evidence link structure."""
 import json
 import re
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 from update_catalog import screenshot_preview
@@ -21,6 +22,14 @@ def pinned_link(url, repo):
 
 
 def main():
+    exclusions = json.loads((ROOT / "catalog-exclusions.json").read_text())
+    for row in exclusions:
+        if "observedAt" not in row:
+            continue
+        revision, _ = pinned_link(row["evidence"], row["repo"])
+        assert revision == row["commit"] and row["source"] in {"web", "deepseek-desktop"}, row
+        assert datetime.fromisoformat(row["observedAt"]).tzinfo is not None, row
+        assert row["version"] and row["reason"], row
     raw = (ROOT / "dist" / "index.json").read_text()
     prefix = "window.workbenchCatalog = "
     assert (ROOT / "dist" / "catalog.js").read_text() == prefix + raw.rstrip() + ";\n"

@@ -38,5 +38,45 @@
     "commit": "9cca07d8be2a877129a45ccf48f182cab154c5c5",
     "reason": "与较早发布的 siom126/dsh-workbench-xiaohongshu-ops 共享同一提交和完整 Git 树，保留较早的仓库。",
     "evidence": "https://github.com/Siom126/OpsWorkstation/tree/9cca07d8be2a877129a45ccf48f182cab154c5c5"
+  },
+  {
+    "repo": "aealen/dsh-worktree",
+    "packagePath": "package.json",
+    "source": "web",
+    "version": "0.10.1",
+    "observedAt": "2026-11-17T20:01:42+00:00",
+    "commit": "d7d78cad3af53ba49123d9d0bfa967fa58ec1c2d",
+    "reason": "旧仓库地址重定向至已收录的 Aealen/dsh-coding-workspace。GitHub API 返回相同仓库 ID 1348239040，且两处的固定提交、包名和版本一致。",
+    "evidence": "https://github.com/Aealen/dsh-worktree/blob/d7d78cad3af53ba49123d9d0bfa967fa58ec1c2d/package.json#L1-L4"
+  },
+  {
+    "repo": "meihuaanying/dsh-panel-fold",
+    "packagePath": "package.json",
+    "source": "web",
+    "version": "0.1.0",
+    "observedAt": "2026-11-17T19:51:50+00:00",
+    "commit": "07d3e9c68cf134bd4cc7ee74cc4a0106c6607dbd",
+    "reason": "仅在侧栏「更多」菜单注册折叠与展开全局面板图标的切换项。",
+    "evidence": "https://github.com/meihuaanying/dsh-panel-fold/blob/07d3e9c68cf134bd4cc7ee74cc4a0106c6607dbd/lib/client.js#L134-L201"
+  },
+  {
+    "repo": "yhprime/dsh-sidebar-guide-scroll",
+    "packagePath": "package.json",
+    "source": "web",
+    "version": "0.1.0",
+    "observedAt": "2026-11-17T19:54:29+00:00",
+    "commit": "460197d724962ecb8bbf824f80a331caddb926ae",
+    "reason": "仅对右侧栏现有「开始」页应用滚动样式和同步视口高度。",
+    "evidence": "https://github.com/yhPrime/dsh-sidebar-guide-scroll/blob/460197d724962ecb8bbf824f80a331caddb926ae/client.js#L69-L115"
+  },
+  {
+    "repo": "asuta/dsh-cdx-plus",
+    "packagePath": "packages/conversation-workbench/package.json",
+    "version": "0.1.6",
+    "observedAt": "2026-11-17T20:08:08+00:00",
+    "source": "web",
+    "commit": "6d9647e33e304eff557e1e84de7d66d525b3d4ad",
+    "reason": "提供模型工具与会话导航。客户端仅轮询导航请求后调用现有会话入口，没有注册独立任务界面。",
+    "evidence": "https://github.com/Asuta/dsh-cdx-plus/blob/6d9647e33e304eff557e1e84de7d66d525b3d4ad/packages/conversation-workbench/client.js#L15-L44"
   }
 ]

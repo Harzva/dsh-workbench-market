@@ -32,4 +32,6 @@ Dataelem 的 DSH Desktop 提供自己的原生工作台服务。工作台包是 
 
 由另一个 bundle 装载的 Web 客户端子包，也可按工作台收录。固定提交应同时显示 bundle 对该客户端的装载配置，以及客户端的宿主挂载和实际任务流程。[Better Session 装载会话管理模块](https://github.com/morlay/dsh-plugin/blob/a48fa9ea05a3cd092dc588201f3579b3496350a9/packages/bundles/better-session/cordis.patch.yml#L23-L24) · [会话管理任务说明](https://github.com/morlay/dsh-plugin/blob/a48fa9ea05a3cd092dc588201f3579b3496350a9/packages/session/ui-conversation-manager/README.md#L3-L5)
 
+复核 Web 候选时，从同一 GitHub 提交追踪清单的客户端入口、宿主挂载和界面动作。全局面板可核对导航入口与 `main` 的匹配键；右栏页签可核对类型注册、对应的页签主体，以及从会话或资源再次打开的路径。新增工作台应提供源码挂载和操作证据。仓库改名可用 GitHub 仓库 ID 和固定提交核实，保留现行地址。
+
 目录描述的是公开证据与宿主适用范围。安装、运行、版本兼容性和数据处理权限各自需要实机检查。

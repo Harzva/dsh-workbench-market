@@ -1305,7 +1305,16 @@
     "package": "dsh-coding-workspace",
     "packagePath": "package.json",
     "manifest": "https://github.com/Aealen/dsh-coding-workspace/blob/d7d78cad3af53ba49123d9d0bfa967fa58ec1c2d/package.json",
-    "workflow": "https://github.com/Aealen/dsh-coding-workspace/blob/d7d78cad3af53ba49123d9d0bfa967fa58ec1c2d/README.md#L5-L18"
+    "workflow": "https://github.com/Aealen/dsh-coding-workspace/blob/d7d78cad3af53ba49123d9d0bfa967fa58ec1c2d/README.md#L5-L18",
+    "registration": "https://github.com/Aealen/dsh-coding-workspace/blob/d7d78cad3af53ba49123d9d0bfa967fa58ec1c2d/src/client.tsx#L2904-L2934",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/Aealen/dsh-coding-workspace/d7d78cad3af53ba49123d9d0bfa967fa58ec1c2d/docs/images/workspace-overview.png",
+        "width": 1600,
+        "height": 900,
+        "alt": "代码工作区显示项目侧栏、README 差异编辑区和待提交的文件变更。"
+      }
+    ]
   },
   {
     "repo": "aEboli/dsh-image-studio",
@@ -4873,5 +4882,165 @@
     "manifest": "https://github.com/ZOU2850/dsh-file-launcher/blob/e0942357b70648d258a0c55ea9da4cbd82206455/package.json",
     "workflow": "https://github.com/ZOU2850/dsh-file-launcher/blob/e0942357b70648d258a0c55ea9da4cbd82206455/README.md#L9-L60",
     "registration": "https://github.com/ZOU2850/dsh-file-launcher/blob/e0942357b70648d258a0c55ea9da4cbd82206455/client.js#L3712-L3759"
+  },
+  {
+    "repo": "beiwei91/dsh-paper-reader",
+    "name": "论文阅读器",
+    "description": "在会话右栏打开本地 PDF 或搜索 arXiv，添加标注，并导出带标记的 PDF 副本。",
+    "category": "调研",
+    "version": "0.2.0",
+    "package": "dsh-paper-reader",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/beiwei91/dsh-paper-reader/blob/fa14366bf960b1264a4cce030e2e06b1c8d9fe9d/package.json",
+    "registration": "https://github.com/beiwei91/dsh-paper-reader/blob/fa14366bf960b1264a4cce030e2e06b1c8d9fe9d/client.js#L1241-L1266",
+    "workflow": "https://github.com/beiwei91/dsh-paper-reader/blob/fa14366bf960b1264a4cce030e2e06b1c8d9fe9d/README.md#L50-L80"
+  },
+  {
+    "repo": "ustinian-T/SPARK-SIGHT-plugin",
+    "name": "SPARK SIGHT 科研绘图",
+    "description": "在对话的绘图视图上传数据，预览并选定科研配图方案，提交修改意见后导出复现包。",
+    "category": "数据",
+    "version": "0.5.4",
+    "package": "sparksight-dsh",
+    "packagePath": "apps/dsh/package.json",
+    "manifest": "https://github.com/ustinian-T/SPARK-SIGHT-plugin/blob/b930de08e30c29072ad7ee80b10d0149f14df350/apps/dsh/package.json",
+    "registration": "https://github.com/ustinian-T/SPARK-SIGHT-plugin/blob/b930de08e30c29072ad7ee80b10d0149f14df350/apps/dsh/client.js#L1643-L1666",
+    "workflow": "https://github.com/ustinian-T/SPARK-SIGHT-plugin/blob/b930de08e30c29072ad7ee80b10d0149f14df350/apps/dsh/client.js#L1279-L1315",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/ustinian-T/SPARK-SIGHT-plugin/b930de08e30c29072ad7ee80b10d0149f14df350/apps/dsh/docs/native-plot.png",
+        "width": 1280,
+        "height": 720,
+        "alt": "科研绘图视图展示已加载的数据集、箱线图预览和候选绘图方案。"
+      }
+    ]
+  },
+  {
+    "repo": "alaliqing/dsh-annotate",
+    "name": "界面批注",
+    "description": "在会话右栏预览本地应用，点选界面元素添加批注，再把整批反馈发到当前会话或加入草稿。",
+    "category": "开发",
+    "version": "0.1.15",
+    "package": "dsh-annotate",
+    "packagePath": "packages/dsh-annotate/package.json",
+    "manifest": "https://github.com/alaliqing/dsh-annotate/blob/0428bb9d2803a70ae6107916ac0f665fcd71161c/packages/dsh-annotate/package.json",
+    "registration": "https://github.com/alaliqing/dsh-annotate/blob/0428bb9d2803a70ae6107916ac0f665fcd71161c/packages/dsh-annotate/lib/client.js#L1413-L1442",
+    "workflow": "https://github.com/alaliqing/dsh-annotate/blob/0428bb9d2803a70ae6107916ac0f665fcd71161c/packages/dsh-annotate/src/client.js#L529-L577",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/alaliqing/dsh-annotate/0428bb9d2803a70ae6107916ac0f665fcd71161c/docs/panel-overview.webp",
+        "width": 560,
+        "height": 880,
+        "alt": "本地演示页面显示编号批注标记，底部浮层列出草稿与会话批注。"
+      }
+    ]
+  },
+  {
+    "repo": "dongdonga11/dsh-customer-service",
+    "name": "多平台客服中心",
+    "description": "按平台和账号查看买家会话，发送回复并在自动回复和人工接管之间切换。",
+    "category": "运营",
+    "version": "0.1.0",
+    "package": "dsh-customer-service",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/dongdonga11/dsh-customer-service/blob/eb572f0bd91f6f02109cd304b19d3abc4d966315/package.json",
+    "registration": "https://github.com/dongdonga11/dsh-customer-service/blob/eb572f0bd91f6f02109cd304b19d3abc4d966315/lib/client.js#L1842-L1869",
+    "workflow": "https://github.com/dongdonga11/dsh-customer-service/blob/eb572f0bd91f6f02109cd304b19d3abc4d966315/lib/client.js#L881-L929",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/dongdonga11/dsh-customer-service/eb572f0bd91f6f02109cd304b19d3abc4d966315/docs/screenshots/overview.png",
+        "width": 1584,
+        "height": 905,
+        "alt": "客服中心显示示例店铺、在线状态和可进入的会话数。"
+      }
+    ]
+  },
+  {
+    "repo": "devkaij/dsh-session-recycle-bin",
+    "name": "会话与定时任务回收站",
+    "description": "从侧栏打开回收站，查看、恢复或彻底清除已删除的会话和定时任务。",
+    "category": "效率",
+    "version": "1.4.1",
+    "package": "dsh-session-recycle-bin",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/devkaij/dsh-session-recycle-bin/blob/7f3d215bede7c9c9b303039a4ab6e136a0635645/package.json",
+    "registration": "https://github.com/devkaij/dsh-session-recycle-bin/blob/7f3d215bede7c9c9b303039a4ab6e136a0635645/lib/client.js#L770-L778",
+    "workflow": "https://github.com/devkaij/dsh-session-recycle-bin/blob/7f3d215bede7c9c9b303039a4ab6e136a0635645/lib/client.js#L1034-L1062"
+  },
+  {
+    "repo": "chenzhenhong/English-Reader",
+    "name": "English Reader 英语精读",
+    "description": "采集或导入文章，逐句精读，将词汇、短语和句子收进知识库与复习队列。",
+    "category": "学习",
+    "version": "1.0.1",
+    "package": "english-reader",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/chenzhenhong/English-Reader/blob/4fda16727a5a6fc049e0f5608c4d907935fa0dd9/package.json",
+    "registration": "https://github.com/chenzhenhong/English-Reader/blob/4fda16727a5a6fc049e0f5608c4d907935fa0dd9/lib/client.js#L6912-L6933",
+    "workflow": "https://github.com/chenzhenhong/English-Reader/blob/4fda16727a5a6fc049e0f5608c4d907935fa0dd9/lib/client.js#L6472-L6510",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/chenzhenhong/English-Reader/4fda16727a5a6fc049e0f5608c4d907935fa0dd9/pics/%E9%A6%96%E9%A1%B5.png",
+        "width": 1638,
+        "height": 1046,
+        "alt": "英语精读首页显示最近阅读、学习统计和学习热图。"
+      }
+    ]
+  },
+  {
+    "repo": "wenliang9527/quick-send",
+    "name": "Quick-Send 常用语管理",
+    "description": "从侧栏管理常用语，搜索、分类、排序和导入导出，再把选中的短语插入当前对话草稿。",
+    "category": "效率",
+    "version": "0.4.2",
+    "package": "@wenliang9527/dsh-quick-send",
+    "packagePath": "plugins/dsh-quick-send/package.json",
+    "manifest": "https://github.com/wenliang9527/quick-send/blob/98ec1c63e5efc2a31da0b95393c97c2e4f2cb9db/plugins/dsh-quick-send/package.json",
+    "registration": "https://github.com/wenliang9527/quick-send/blob/98ec1c63e5efc2a31da0b95393c97c2e4f2cb9db/plugins/dsh-quick-send/src/client.js#L1661-L1669",
+    "workflow": "https://github.com/wenliang9527/quick-send/blob/98ec1c63e5efc2a31da0b95393c97c2e4f2cb9db/plugins/dsh-quick-send/README.md#L18-L26"
+  },
+  {
+    "repo": "GMH13552/dsh-mc-art",
+    "name": "MC 资产面板",
+    "description": "打开 MC 资产页，筛选并预览项目里的 Minecraft 资源，编辑并保存像素贴图和方块结构。",
+    "category": "开发",
+    "version": "0.3.6",
+    "package": "dsh-mc-art-panel",
+    "packagePath": "panel/package.json",
+    "manifest": "https://github.com/GMH13552/dsh-mc-art/blob/bf32a6927b9597dbb7ae455f4c2fc0d7b3400f60/panel/package.json",
+    "registration": "https://github.com/GMH13552/dsh-mc-art/blob/bf32a6927b9597dbb7ae455f4c2fc0d7b3400f60/panel/lib/client.js#L4551-L4576",
+    "workflow": "https://github.com/GMH13552/dsh-mc-art/blob/bf32a6927b9597dbb7ae455f4c2fc0d7b3400f60/README.md#L76-L92"
+  },
+  {
+    "repo": "tdccccc/arxiv-daily",
+    "name": "arXiv Daily 论文跟踪",
+    "description": "从侧栏打开论文阅读台，按日期、研究主题和阅读状态筛选，收藏论文与生成研究日报。",
+    "category": "调研",
+    "version": "0.1.20",
+    "package": "dsh-arxiv-daily",
+    "packagePath": "extensions/dsh-arxiv-daily/package.json",
+    "manifest": "https://github.com/tdccccc/arxiv-daily/blob/0626be37d16c3c0d62c06523ed9421ea8b14e24a/extensions/dsh-arxiv-daily/package.json",
+    "registration": "https://github.com/tdccccc/arxiv-daily/blob/0626be37d16c3c0d62c06523ed9421ea8b14e24a/extensions/dsh-arxiv-daily/src/client.mjs#L79-L88",
+    "workflow": "https://github.com/tdccccc/arxiv-daily/blob/0626be37d16c3c0d62c06523ed9421ea8b14e24a/docs/workbench.zh-CN.md#L21-L37"
+  },
+  {
+    "repo": "SteelUnion/dsh-kb-plugin",
+    "name": "插件设计局",
+    "description": "从侧栏打开 Cordis 服务图，搜索依赖与方法，设计插件链并导出 Markdown 方案。",
+    "category": "开发",
+    "version": "0.2.0",
+    "package": "dsh-kb-plugin",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/SteelUnion/dsh-kb-plugin/blob/e26478c92217b5d7ae81a492dfb1e06bded7bf90/package.json",
+    "registration": "https://github.com/SteelUnion/dsh-kb-plugin/blob/e26478c92217b5d7ae81a492dfb1e06bded7bf90/client.js#L2294-L2304",
+    "workflow": "https://github.com/SteelUnion/dsh-kb-plugin/blob/e26478c92217b5d7ae81a492dfb1e06bded7bf90/README.md#L98-L116",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/SteelUnion/dsh-kb-plugin/e26478c92217b5d7ae81a492dfb1e06bded7bf90/docs/images/05-chain.png",
+        "width": 2271,
+        "height": 1404,
+        "alt": "插件设计局显示节点连线及右侧的插件链配置和生成方案面板。"
+      }
+    ]
   }
 ]
