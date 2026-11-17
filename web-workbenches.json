@@ -5238,5 +5238,209 @@
     "manifest": "https://github.com/yhbcode000/mathematica-mcp/blob/e77cf91d4c9a5596714e5582ebd9729dea0c085e/notebook/package.json",
     "registration": "https://github.com/yhbcode000/mathematica-mcp/blob/e77cf91d4c9a5596714e5582ebd9729dea0c085e/notebook/client.js#L3147-L3220",
     "workflow": "https://github.com/yhbcode000/mathematica-mcp/blob/e77cf91d4c9a5596714e5582ebd9729dea0c085e/notebook/README.md#L68-L85"
+  },
+  {
+    "repo": "ChordXD/dsh-image-compare",
+    "name": "图片对比面板",
+    "description": "从会话右栏选取工作区图片，拖动缩略图排列顺序，并排查看并同步缩放和平移。",
+    "category": "内容",
+    "package": "dsh-image-compare",
+    "version": "0.4.0",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/ChordXD/dsh-image-compare/blob/d05ac99baf5ae75a470e2884b29b4d61475f9918/package.json",
+    "registration": "https://github.com/ChordXD/dsh-image-compare/blob/d05ac99baf5ae75a470e2884b29b4d61475f9918/lib/client.js#L2824-L2843",
+    "workflow": "https://github.com/ChordXD/dsh-image-compare/blob/d05ac99baf5ae75a470e2884b29b4d61475f9918/README.md#L84-L115",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/ChordXD/dsh-image-compare/d05ac99baf5ae75a470e2884b29b4d61475f9918/assets/horizontal-layout.png",
+        "width": 1308,
+        "height": 1851,
+        "alt": "图片对比面板并排显示三张图片，提供缩放、平移和同步控件。"
+      }
+    ]
+  },
+  {
+    "repo": "ximiluoer/dsh-simple-notes",
+    "name": "随手记笔记本",
+    "description": "从侧栏写入或编辑本地笔记，按日期和标签回看，并批量合并或移动记录。",
+    "category": "效率",
+    "package": "dsh-simple-notes",
+    "version": "1.0.0",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/ximiluoer/dsh-simple-notes/blob/bfa00713ae1ebdc6c96a4a80eca8f07731a42dab/package.json",
+    "registration": "https://github.com/ximiluoer/dsh-simple-notes/blob/bfa00713ae1ebdc6c96a4a80eca8f07731a42dab/client.js#L2241-L2263",
+    "workflow": "https://github.com/ximiluoer/dsh-simple-notes/blob/bfa00713ae1ebdc6c96a4a80eca8f07731a42dab/README.md#L9-L19",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/ximiluoer/dsh-simple-notes/bfa00713ae1ebdc6c96a4a80eca8f07731a42dab/docs/screenshot-panel.png",
+        "width": 1300,
+        "height": 1027,
+        "alt": "随手记面板显示笔记录入区、按日期排列的笔记、标签切换和批量选择。"
+      }
+    ]
+  },
+  {
+    "repo": "yhu314/dsh-reader",
+    "name": "Markdown 电子书批注",
+    "description": "在右栏把 Markdown 文件夹当作一本书阅读，跳转章节、全文搜索，保存可回访的段落批注。",
+    "category": "学习",
+    "package": "dsh_reader",
+    "version": "0.6.0",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/yhu314/dsh-reader/blob/e33f8762da54027faaeb275d6f8b5b957b258a56/package.json",
+    "registration": "https://github.com/yhu314/dsh-reader/blob/e33f8762da54027faaeb275d6f8b5b957b258a56/client.js#L3287-L3312",
+    "workflow": "https://github.com/yhu314/dsh-reader/blob/e33f8762da54027faaeb275d6f8b5b957b258a56/README.md#L19-L29"
+  },
+  {
+    "repo": "EwanMa0821/dsh-plugin-session-graph",
+    "name": "会话分叉图谱",
+    "description": "在会话图谱按轮次查看分支，从指定轮次新开分支，给节点连线并导出思维导图。",
+    "category": "效率",
+    "package": "dsh-plugin-session-graph",
+    "version": "0.1.0",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/EwanMa0821/dsh-plugin-session-graph/blob/0b7c670543a1416816dd65bac55997df1e5b2c7a/package.json",
+    "registration": "https://github.com/EwanMa0821/dsh-plugin-session-graph/blob/0b7c670543a1416816dd65bac55997df1e5b2c7a/client.js#L4378-L4412",
+    "workflow": "https://github.com/EwanMa0821/dsh-plugin-session-graph/blob/0b7c670543a1416816dd65bac55997df1e5b2c7a/README.md#L150-L166"
+  },
+  {
+    "repo": "vecnode/vn-code",
+    "name": "VN Code Research 研究记录",
+    "description": "在 VN Code 的 DSH Web 右栏打开已有研究，查看来源和声明，回答审核问题、编辑研究文件并生成文稿。适用于装配 VN Code 右栏的 DSH Web 0.2.0-rc.2。",
+    "category": "调研",
+    "version": "0.1.0-alpha.6",
+    "package": "dsh-research",
+    "packagePath": "packages/dsh-research/package.json",
+    "manifest": "https://github.com/vecnode/vn-code/blob/af8f40796457531d9a62627e926ceb1f2a6de878/packages/dsh-research/package.json",
+    "registration": "https://github.com/vecnode/vn-code/blob/af8f40796457531d9a62627e926ceb1f2a6de878/packages/dsh-research/lib/client.js#L1650-L1687",
+    "workflow": "https://github.com/vecnode/vn-code/blob/af8f40796457531d9a62627e926ceb1f2a6de878/packages/dsh-research/lib/client.js#L1547-L1602",
+    "assembly": "https://github.com/vecnode/vn-code/blob/af8f40796457531d9a62627e926ceb1f2a6de878/scripts/setup/install-all.sh#L488-L516"
+  },
+  {
+    "repo": "vecnode/vn-code",
+    "name": "VN Code Diagrams 图表工作台",
+    "description": "在 VN Code 的 DSH Web 右栏浏览会话与共享图表，编辑并验证 Mermaid 或 TikZ 源码，打开设计示例并导出。适用于装配 VN Code 右栏的 DSH Web 0.2.0-rc.2。",
+    "category": "开发",
+    "version": "0.1.0-alpha.8",
+    "package": "dsh-diagrams",
+    "packagePath": "packages/dsh-diagrams/package.json",
+    "manifest": "https://github.com/vecnode/vn-code/blob/af8f40796457531d9a62627e926ceb1f2a6de878/packages/dsh-diagrams/package.json",
+    "registration": "https://github.com/vecnode/vn-code/blob/af8f40796457531d9a62627e926ceb1f2a6de878/packages/dsh-diagrams/lib/client.js#L2656-L2710",
+    "workflow": "https://github.com/vecnode/vn-code/blob/af8f40796457531d9a62627e926ceb1f2a6de878/packages/dsh-diagrams/README.md#L27-L38",
+    "assembly": "https://github.com/vecnode/vn-code/blob/af8f40796457531d9a62627e926ceb1f2a6de878/scripts/setup/install-all.sh#L488-L516"
+  },
+  {
+    "repo": "HongBai2333/DSH-Writing-Plugin",
+    "name": "写作与世界观工作台",
+    "description": "在侧栏打开写作工作台，编辑树状世界设定、保存和发布设定版本，并从 Wiki 追溯来源。需先初始化本地 SQLite 数据库。",
+    "category": "内容",
+    "version": "0.1.2",
+    "package": "dsh-writing-workbench",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/HongBai2333/DSH-Writing-Plugin/blob/e59a28b9e3dca4c00dfc75111c44690aefff1f1d/package.json",
+    "registration": "https://github.com/HongBai2333/DSH-Writing-Plugin/blob/e59a28b9e3dca4c00dfc75111c44690aefff1f1d/src/client/index.ts#L27-L54",
+    "workflow": "https://github.com/HongBai2333/DSH-Writing-Plugin/blob/e59a28b9e3dca4c00dfc75111c44690aefff1f1d/src/modules/worldbuilding/client/WorldPage.tsx#L53-L72"
+  },
+  {
+    "repo": "xujian519/dsh-patent-workbench",
+    "name": "专利案卷工作台",
+    "description": "从侧栏打开案卷，扫描导入本地案卷目录、登记官文，并在案件时间线和看板跟踪期限。自动计算期限需宿主提供专利期限引擎。",
+    "category": "效率",
+    "version": "1.17.0",
+    "package": "dsh-patent-workbench",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/xujian519/dsh-patent-workbench/blob/cc7f14a638a447db2971f6bb0bf544d4f0e23551/package.json",
+    "registration": "https://github.com/xujian519/dsh-patent-workbench/blob/cc7f14a638a447db2971f6bb0bf544d4f0e23551/src/client/index.tsx#L4671-L4701",
+    "workflow": "https://github.com/xujian519/dsh-patent-workbench/blob/cc7f14a638a447db2971f6bb0bf544d4f0e23551/README.md#L24-L38"
+  },
+  {
+    "repo": "LINinLIN-0079/godot-asset-planner-public",
+    "name": "Godot 资产与项目管理",
+    "description": "在 Better Sidebar 切换 Godot 项目，登记、预览和筛选资产，把资产关联到目标看板，并打开场景树。需要 dsh-better-sidebar。",
+    "category": "开发",
+    "version": "0.1.0",
+    "package": "godot-asset-planner",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/LINinLIN-0079/godot-asset-planner-public/blob/a0e70b004a51c216bd98358ccb5021f1a696f470/package.json",
+    "registration": "https://github.com/LINinLIN-0079/godot-asset-planner-public/blob/a0e70b004a51c216bd98358ccb5021f1a696f470/lib/client.js#L4294-L4321",
+    "workflow": "https://github.com/LINinLIN-0079/godot-asset-planner-public/blob/a0e70b004a51c216bd98358ccb5021f1a696f470/README.md#L162-L186",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/LINinLIN-0079/godot-asset-planner-public/a0e70b004a51c216bd98358ccb5021f1a696f470/assets/screenshot-3.png",
+        "width": 1079,
+        "height": 1107,
+        "alt": "Godot 项目的 Git 面板显示仓库状态、分支选择和未跟踪文件。"
+      }
+    ]
+  },
+  {
+    "repo": "kikulmj/dsh-jupyter",
+    "name": "Jupyter 交互笔记本",
+    "description": "在项目文件树打开 .ipynb，从会话右栏编辑和运行 Python 单元格，查看输出并保存回原文件。",
+    "category": "开发",
+    "version": "0.2.3",
+    "package": "@kikulmj/dsh-jupyter",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/kikulmj/dsh-jupyter/blob/2f1ee3e1edefbcef1a07cfb86150a283ce7ab2b0/package.json",
+    "registration": "https://github.com/kikulmj/dsh-jupyter/blob/2f1ee3e1edefbcef1a07cfb86150a283ce7ab2b0/src/client/index.ts#L76-L94",
+    "workflow": "https://github.com/kikulmj/dsh-jupyter/blob/2f1ee3e1edefbcef1a07cfb86150a283ce7ab2b0/README.zh.md#L53-L68",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/kikulmj/dsh-jupyter/2f1ee3e1edefbcef1a07cfb86150a283ce7ab2b0/docs/demo.webp",
+        "width": 2000,
+        "height": 1250,
+        "alt": "Jupyter 笔记本显示 Python 单元格和下方绘制的衰减正弦曲线。"
+      }
+    ]
+  },
+  {
+    "repo": "YunYouJun/el-bot",
+    "name": "el-bot 人物卡管理",
+    "description": "在「机器人」侧栏导入 Markdown 或公开人物卡，预览并启用；配置 QQ 集成后可从同一面板进入手动接管和定时群发。",
+    "category": "运营",
+    "version": "0.1.0",
+    "package": "@el-bot/dsh",
+    "packagePath": "packages/dsh/package.json",
+    "manifest": "https://github.com/YunYouJun/el-bot/blob/9a29a22b2944ef73133baf8acd82bb6cb5589095/packages/dsh/package.json",
+    "registration": "https://github.com/YunYouJun/el-bot/blob/9a29a22b2944ef73133baf8acd82bb6cb5589095/packages/dsh/src/client.ts#L50-L80",
+    "workflow": "https://github.com/YunYouJun/el-bot/blob/9a29a22b2944ef73133baf8acd82bb6cb5589095/packages/dsh/README.md#L12-L33"
+  },
+  {
+    "repo": "qianhaoq/qh-dsh-dota-coach",
+    "name": "Dota 教练",
+    "description": "选择比赛或输入录像编号，按回放证据复盘关键决策，保存下局训练目标，并回看已保存的复盘与回答。",
+    "category": "学习",
+    "version": "0.6.5",
+    "package": "@qianhaoq/dsh-dota-coach",
+    "packagePath": "packages/coach/package.json",
+    "manifest": "https://github.com/qianhaoq/qh-dsh-dota-coach/blob/782910a0497e71d73c3eac812b238d9995b78f86/packages/coach/package.json",
+    "registration": "https://github.com/qianhaoq/qh-dsh-dota-coach/blob/782910a0497e71d73c3eac812b238d9995b78f86/packages/coach/src/client/index.ts#L98-L115",
+    "workflow": "https://github.com/qianhaoq/qh-dsh-dota-coach/blob/782910a0497e71d73c3eac812b238d9995b78f86/README.md#L38-L52"
+  },
+  {
+    "repo": "ysgao/deepseek-harness-plugins",
+    "name": "会话文件编辑与 Git 对照",
+    "description": "通过 Workspace Git 组合包，从文件树在会话的「文件」页打开工作区文件，预览和编辑文本，并并排核对 Git 差异。",
+    "category": "开发",
+    "version": "0.0.0",
+    "package": "dsh-plugins-client-ui-conversation-files",
+    "packagePath": "packages/workspace-git/client-ui-conversation-files/package.json",
+    "manifest": "https://github.com/ysgao/deepseek-harness-plugins/blob/cf4bb2cb6c855e0af8ae22b15a51db300ef6bf5f/packages/workspace-git/client-ui-conversation-files/package.json",
+    "registration": "https://github.com/ysgao/deepseek-harness-plugins/blob/cf4bb2cb6c855e0af8ae22b15a51db300ef6bf5f/packages/workspace-git/client-ui-conversation-files/src/apply.ts#L155-L173",
+    "workflow": "https://github.com/ysgao/deepseek-harness-plugins/blob/cf4bb2cb6c855e0af8ae22b15a51db300ef6bf5f/packages/workspace-git/client-ui-conversation-files/src/FileView.tsx#L1-L45",
+    "assembly": "https://github.com/ysgao/deepseek-harness-plugins/blob/cf4bb2cb6c855e0af8ae22b15a51db300ef6bf5f/packages/workspace-git/bundle-workspace-git/cordis.patch.yml#L137-L148"
+  },
+  {
+    "repo": "cryptocurpays/dsh-sidebar-changes",
+    "name": "会话文件改动查看",
+    "description": "安装 Sidebar Changes 组合包后，在会话右栏文档预览中选择「改动」，切换仅看增删行或在完整文件中定位改动。",
+    "category": "开发",
+    "version": "0.1.0",
+    "package": "@cryptocurpays/dsh-file-change-view",
+    "packagePath": "packages/file-change-view/package.json",
+    "manifest": "https://github.com/cryptocurpays/dsh-sidebar-changes/blob/83024ad31f0766e59c216bdc43f08efff4ae974d/packages/file-change-view/package.json",
+    "registration": "https://github.com/cryptocurpays/dsh-sidebar-changes/blob/83024ad31f0766e59c216bdc43f08efff4ae974d/packages/file-change-view/src/client/index.tsx#L64-L88",
+    "workflow": "https://github.com/cryptocurpays/dsh-sidebar-changes/blob/83024ad31f0766e59c216bdc43f08efff4ae974d/README.zh.md#L7-L16",
+    "assembly": "https://github.com/cryptocurpays/dsh-sidebar-changes/blob/83024ad31f0766e59c216bdc43f08efff4ae974d/cordis.patch.yml#L8-L10"
   }
 ]

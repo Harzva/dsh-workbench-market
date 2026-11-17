@@ -439,15 +439,16 @@ def inventory(existing, skip_code, all_plugin_index=False, previous=(), index_on
     return candidates, searches, indices, errors
 
 
-def web_signal(package):
+def web_client(package):
     dsh = package.get("dsh")
     if not isinstance(dsh, dict):
         return False
-    client, bundle = dsh.get("client"), dsh.get("bundle")
-    return (
-        isinstance(client, dict) and client.get("platform") == "web"
-        and bundle_has_patch(bundle) and bool(client_entry(package))
-    )
+    client = dsh.get("client")
+    return isinstance(client, dict) and client.get("platform") == "web" and bool(client_entry(package))
+
+
+def web_signal(package):
+    return web_client(package) and bundle_has_patch(package["dsh"].get("bundle"))
 
 
 def inspect(candidate):
@@ -469,11 +470,19 @@ def inspect(candidate):
                 claimed_files.update(hinted_files)
             contract = manifest_contract(package) if package else None
             if not contract:
-                if package and web_signal(package):
+                standalone = package is not None and web_signal(package)
+                # A nested client can be installed through another bundle.
+                # A source hit also lets us find client-only repository roots.
+                needs_assembly = (
+                    not standalone and package is not None and web_client(package)
+                    and (bool(local_hints) or path != "package.json")
+                )
+                if standalone or needs_assembly:
                     web_candidates.append({
                         "repo": repo, "packagePath": path, "package": package.get("name"),
                         "version": package.get("version"), "ref": ref, "sources": sorted(candidate["sources"]),
                         "description": package.get("description", ""),
+                        **({"requiresAssembly": True} if needs_assembly else {}),
                     })
                 continue
             if commit is None:

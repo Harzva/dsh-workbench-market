@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T20:56:42+00:00",
+  "checkedAt": "2026-11-17T21:14:06+00:00",
   "repositoriesInspected": 14324,
   "repositoryCountScope": "largest individual inspection pass",
   "counts": {
@@ -979,6 +979,64 @@
         }
       },
       "errors": []
+    },
+    {
+      "checkedAt": "2026-11-17T21:11:52+00:00",
+      "repositoriesInspected": 3,
+      "manifestPathsInspected": 3,
+      "indexes": {
+        "Known assembled Web workbench package recovery check": 3
+      },
+      "searches": {},
+      "errors": []
+    },
+    {
+      "checkedAt": "2026-11-17T21:11:57+00:00",
+      "repositoriesInspected": 145,
+      "manifestPathsInspected": 1667,
+      "indexes": {},
+      "searches": {
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:TypeScript": {
+          "matched": 232,
+          "read": 363,
+          "returned": 363,
+          "incomplete": true
+        },
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:JavaScript": {
+          "matched": 17,
+          "read": 17,
+          "returned": 17,
+          "incomplete": false
+        }
+      },
+      "errors": [
+        {
+          "repo": "LiaoHan5426/Engineering-Automation-Platform",
+          "path": "dsh-personal/packages/experimental/client-ui-stats/src/package.json",
+          "error": "Remote end closed connection without response"
+        }
+      ]
+    },
+    {
+      "checkedAt": "2026-11-17T21:14:06+00:00",
+      "repositoriesInspected": 170,
+      "manifestPathsInspected": 1220,
+      "indexes": {},
+      "searches": {
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file": {
+          "matched": 556,
+          "read": 833,
+          "returned": 833,
+          "incomplete": true
+        }
+      },
+      "errors": [
+        {
+          "repo": "dake6767/dsh-phalanx",
+          "path": "src/package.json",
+          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+        }
+      ]
     }
   ],
   "matches": [
@@ -7589,6 +7647,19 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "2671321688-tech/deepseek-harness",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.7-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "2710586329/dsh-qq",
       "packagePath": "package.json",
       "package": "dsh-qq-onebot",
@@ -10691,6 +10762,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "990466307/mirsa",
+      "packagePath": "dsh-plugin/package.json",
+      "package": "dsh-mirsa",
+      "version": "0.1.6",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "DSH plugin: run MIRSA on Rust source annotations and render verdicts with evidence",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "991206772-debug/dsh-prompt-enhancer",
       "packagePath": "package.json",
       "package": "dsh-prompt-enhancer",
@@ -10893,6 +10976,18 @@
       ],
       "description": "Render Mermaid diagrams inside Markdown document previews with Pele",
       "observedAt": "2026-11-17T18:35:01+00:00"
+    },
+    {
+      "repo": "a-zou666/dsh-agent-teams",
+      "packagePath": "package.json",
+      "package": "@nanmicoder/dsh-agent-teams",
+      "version": "0.1.21",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "AgentTeams for DeepSeek Harness: multi-agent team collaboration (captain, members, tasks with dependencies, messaging) driven by natural language, with a tree monitor in the web GUI",
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "a0035s/dsh-workspace-mgr",
@@ -11469,11 +11564,13 @@
       "version": "0.3.0-rc.1",
       "ref": "HEAD",
       "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:JavaScript",
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:TypeScript",
         "DeepSeek Harness discussion #6881",
         "plugin index"
       ],
       "description": "一个面向 DeepSeek Harness 的长篇角色扮演插件，支持角色卡、世界线、长期记忆、混合检索和 SillyTavern 兼容。",
-      "observedAt": "2026-11-17T18:26:55+00:00"
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "A8Chann/dsh-pet-live2d",
@@ -11927,12 +12024,13 @@
       "version": "0.77.0",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "dsh-plugin.org",
         "dshplugin.org (2026-10-31 snapshot)",
         "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DSH provider plugin for Codex access through a ChatGPT subscription.",
-      "observedAt": "2026-11-17T19:15:15+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "aa728848/dsh-llm-verifier",
@@ -13555,10 +13653,11 @@
       "version": "0.4.2",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "DeepSeek Harness discussion #7408"
       ],
       "description": "Interactive STL/3MF viewer plugin for the DeepSeek Harness Web GUI: sidebar document preview, live session drawer, CAD navigation, orthographic dimension labels, 3MF part colors.",
-      "observedAt": "2026-11-17T18:26:55+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "addozhang/dsh-discord",
@@ -13688,10 +13787,11 @@
       "version": "0.3.0",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "dsh-plugin.org"
       ],
       "description": "Files-tab previews for DeepSeek Harness: .blend (headless local Blender export to a cached GLB), .glb/.gltf/.obj in a WebGL viewport, plus .svg, video and audio; depends on dsh-blender with a read-only boot self-check; no network calls, no telemetry, no postinstall; uninstall removes the row.",
-      "observedAt": "2026-11-17T18:32:04+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "adithyanraj03/dsh-cite-lens",
@@ -13700,10 +13800,11 @@
       "version": "0.3.1",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "plugin index"
       ],
       "description": "Cite Lens for dsh: select text in a PDF in the Files tab to quote or ask about it in the current chat, and turn the model's [main.pdf p.7 \"exact words\"] citations into links that open the PDF and highlight the passage; /cite-links makes a chat cite every claim.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "adithyanraj03/dsh-delete-plugin",
@@ -22054,6 +22155,19 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "APUS-AI-Lab/APUS-Reflex-Agent",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.7-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "apzx7/dsh-prompt-templates",
       "packagePath": "package.json",
       "package": "dsh-prompt-templates",
@@ -23016,6 +23130,19 @@
       "observedAt": "2026-11-17T20:56:42+00:00"
     },
     {
+      "repo": "arzvaak/BharatCode-Harness",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.0-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "Asaiuta/dsh-blackhole",
       "packagePath": "package.json",
       "package": "dsh-blackhole",
@@ -23551,6 +23678,18 @@
     },
     {
       "repo": "astahmer/dshfiles",
+      "packagePath": "plugins/@dshfiles/chat/package.json",
+      "package": "@dshfiles/chat",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:TypeScript"
+      ],
+      "description": "Owned fork of DSH's native Chat plugin that mounts only the transcript rows near the viewport.",
+      "observedAt": "2026-11-17T21:11:57+00:00"
+    },
+    {
+      "repo": "astahmer/dshfiles",
       "packagePath": "plugins/@dshfiles/deliverables/package.json",
       "package": "@dshfiles/deliverables",
       "version": "0.1.0",
@@ -23560,6 +23699,18 @@
       ],
       "description": "Owned native changed-files card, review tab and delivery cards that preview changed images instead of the binary placeholder.",
       "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
+      "repo": "astahmer/dshfiles",
+      "packagePath": "plugins/@dshfiles/rich-composer/package.json",
+      "package": "@dshfiles/rich-composer",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:TypeScript"
+      ],
+      "description": "Owned fork of DSH's native Conversation plugin with structured session-reference paste.",
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "astahmer/dshfiles",
@@ -24341,6 +24492,19 @@
       ],
       "description": "Customize the PC mouse cursor for every UI state inside DeepSeek Harness. 在 DSH 里自定义鼠标各种状态的图案。",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "Aukora-xyz/aukora-x7",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "AumiSatori/dsh-ui-beautify",
@@ -25393,6 +25557,19 @@
       ],
       "description": "Reasoning-effort setup page for DeepSeek Harness: detects models that expose no thinking levels and edits their llm-pi-ai reasoningEfforts declaration from a settings page",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "AyerElysia/Elysia-Harness",
+      "packagePath": "dsh/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "AyerElysia/Elysia-Harness",
@@ -27786,12 +27963,26 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "Baorui-Qin/AgentForChip",
+      "packagePath": "deepseek-harness/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.5-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "baosfeng/my-dsh-plugins",
       "packagePath": "plugins/dsh-file-activity/package.json",
       "package": "dsh-file-activity",
       "version": "0.5.16",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:<=32768",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:>32768",
@@ -27799,7 +27990,7 @@
         "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DSH 侧边栏文件活动插件：按 LRU 记录文件读取/新增/修改事件（最近访问），按绝对路径树形统计（文件统计），点击文件浮窗预览（代码高亮/Markdown/图片/PDF）。DSH web plugin: file activity tracker — LRU recent-access list plus per-file read/create/modify counts in a folder tree, with floating preview.",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "baosfeng/my-dsh-plugins",
@@ -28037,17 +28228,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
-      "repo": "baroncyrus/dsh-packycode-api",
+      "repo": "BaronCyrus/dsh-packycode-api",
       "packagePath": "package.json",
       "package": "dsh-packycode-api",
       "version": "1.4.13",
       "ref": "HEAD",
       "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:JavaScript",
         "dsh-plugin.org",
         "dshplugin.org (2026-10-31 snapshot)"
       ],
       "description": "Use PackyCode API keys in DeepSeek Harness with multi-protocol models, image generation and editing, separate key rings, and balance display",
-      "observedAt": "2026-11-17T18:32:04+00:00"
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "Barry-1212/dsh-webscout",
@@ -29313,6 +29505,19 @@
       "observedAt": "2026-11-17T17:53:20+00:00"
     },
     {
+      "repo": "Bestbbb/deepseek-harness-desktop",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.5-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "bestlike093/dsh-cyrene-balance",
       "packagePath": "package.json",
       "package": "dsh-cyrene-pet",
@@ -29671,6 +29876,19 @@
       ],
       "description": "Windows XP Luna skin for the DeepSeek Harness Web UI, with a full Settings page for wallpaper and window material (wallpaper stored on the Host, not bundled).",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "bhjia-phys/AITP-agent",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.1-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "bhjia-phys/aitp-research-desk",
@@ -30443,10 +30661,11 @@
       "version": "0.7.1",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "plugin index"
       ],
       "description": "DeepSeek Harness plugin that fuses pptwise's DSH-native front end with ppt-master's native DrawingML engine",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "bingying-project/dsh-provider-model-switcher",
@@ -31419,10 +31638,11 @@
       "version": "1.0.1",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Right-sidebar file preview for DeepSeek Harness (dsh), rendering Markdown and code with the docu.md engine inside a sandboxed iframe.",
-      "observedAt": "2026-11-17T19:15:15+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "Blueteemo/dsh-audio-rail-macos",
@@ -32497,6 +32717,19 @@
       ],
       "description": "Three hand-tuned skins for DeepSeek Harness (DSH): Aurora (deep navy + electric cyan + warm coral), Paper (cool white + deep teal, daytime reading), and Hologram (near-black + lime-cyan, terminal vibes). Pure --dsw-alias-* token system, no core patches, persisted in localStorage.",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "BreakfastDaPaiDang/saki",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.6-alpha.1",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "BreakFree003/dsh-clinepass-deepseek",
@@ -33874,6 +34107,19 @@
       "observedAt": "2026-11-17T17:53:20+00:00"
     },
     {
+      "repo": "BytePioneer-AI/codex-host",
+      "packagePath": "apps/web-ui/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.1-alpha.1",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "Byton-Patrica/dsh-super-image",
       "packagePath": "package.json",
       "package": "dsh-super-image",
@@ -35175,10 +35421,11 @@
       "version": "0.3.17",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "plugin index"
       ],
       "description": "Application Dock, global search, completion inbox, draft-first Home, split panes, floating conversations and video previews for DeepSeek Harness.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "capxh73/dsh-plugin-herdr-win",
@@ -36616,10 +36863,11 @@
       "version": "0.1.34",
       "ref": "HEAD",
       "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:TypeScript",
         "plugin index"
       ],
       "description": "Adds a Worktree view to DSH Web UI that groups Sessions by Git worktree while keeping DSH as the source of truth.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "cerrda/dsh-cerrda-theme",
@@ -38943,6 +39191,19 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "chenlaiyi/TapgoAICoding",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "chenluoi/dsh-auth-remote",
       "packagePath": "package.json",
       "package": "dsh-auth-remote",
@@ -38998,10 +39259,11 @@
       "version": "0.3.1",
       "ref": "HEAD",
       "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:JavaScript",
         "dshplugin.org (2026-10-31 snapshot)"
       ],
       "description": "Composable multi-model agent roles and legacy Luna/Sol reasoning routing for DeepSeek Harness",
-      "observedAt": "2026-11-17T18:39:05+00:00"
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "chenpengye/dsh-balance-local",
@@ -42936,17 +43198,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
-      "repo": "cnseniorious000/dsh-py-codeact",
+      "repo": "CNSeniorious000/dsh-py-codeact",
       "packagePath": "package.json",
       "package": "dsh-py-codeact",
       "version": "0.6.4",
       "ref": "HEAD",
       "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:JavaScript",
         "dsh-plugin.org",
         "dshplugin.org (2026-10-31 snapshot)"
       ],
       "description": "CodeAct agent loop for the DeepSeek Harness: a persistent IPython session as the model's action space, with harness tools bridged in as a virtual `__dsh__.tools` module.",
-      "observedAt": "2026-11-17T18:32:04+00:00"
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "cny1230/deskpet-guard",
@@ -43405,16 +43668,31 @@
     },
     {
       "repo": "coffeefreehans/HarnessX",
+      "packagePath": "deepseek-harness/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.5-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
+      "repo": "coffeefreehans/HarnessX",
       "packagePath": "package.json",
       "package": "harnessx-desktop",
       "version": "0.1.9",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "\"sidebar.panellist\" \"selectPanel\" in:file language:TypeScript size:<=65536",
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:TypeScript",
         "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DeepSeek HarnessX: an Electron desktop client composed around DeepSeek Harness",
-      "observedAt": "2026-11-17T20:56:42+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "coffeiz/dsh-qqchat",
@@ -45170,6 +45448,19 @@
       ],
       "description": "微信官方 ilink 机器人网关绑定+通知+监听+上报（ClawBot）：扫码绑定、微信在线/断线状态、自动通知开关、批准/选择提醒、微信消息监听并自动处理、webhook 上报",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "cryptocurpays/dsh-sidebar-changes",
+      "packagePath": "packages/file-change-view/package.json",
+      "package": "@cryptocurpays/dsh-file-change-view",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Sidebar document view rendering the agent's recorded hunks for one file",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "crystal-hang/dsh-branch-flow",
@@ -48621,6 +48912,45 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "Darthph0enix7/Enpoi-harness",
+      "packagePath": "packages/client/ui-deliverables/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-deliverables",
+      "version": "0.1.7-enpoi.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Changed-files card with per-file comparison tabs, delivery cards, and clickable final-response file references for Web",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
+      "repo": "Darthph0enix7/Enpoi-harness",
+      "packagePath": "packages/client/ui-enpoi-editor/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-enpoi-editor",
+      "version": "0.1.7-enpoi.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Enpoi editable file workbench for right-Sidebar session files: CodeMirror editing over the fenced /sidebar/fsops routes with optimistic saves and external-change protection",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
+      "repo": "Darthph0enix7/Enpoi-harness",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.7-enpoi.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "Darwin-2002/dsh-multi-persona",
       "packagePath": "package.json",
       "package": "dsh-multi-persona",
@@ -49360,6 +49690,18 @@
       ],
       "description": "DeepSeek Harness Web plugin with per-session notes, a draggable key-information panel, fork inheritance of notes and key information, workspace-scoped session groups, highlighting, running-workspace prioritization, and bulk close actions for every right-sidebar tab.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "dayvidpham/dsh-plugins",
+      "packagePath": "packages/sidebar-video-preview/package.json",
+      "package": "@dsh-plugins/sidebar-video-preview",
+      "version": "1.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Plays MP4 and other browser-playable video files in the right Sidebar.",
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "DazzzleKK/dsh-code-git-workbench",
@@ -50524,6 +50866,19 @@
       ],
       "description": "Local image and looping-video wallpapers for the DeepSeek Harness Desktop and Web UI",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "deepseek-ai/deepseek-harness",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-rc.4",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "deepseek-ai/deepseek-harness",
@@ -52560,6 +52915,19 @@
       "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
+      "repo": "DigiStrique-Solutions/strique-harness",
+      "packagePath": "harness/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.1-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "dikxingmengya/dsh-computer-control",
       "packagePath": "package.json",
       "package": "@local/dsh-computer-control",
@@ -53329,10 +53697,11 @@
       "version": "0.1.8",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "dshplugin.org (2026-10-31 snapshot)"
       ],
       "description": "PDF reading, annotations, navigation and selection translation for DeepSeek Harness",
-      "observedAt": "2026-11-17T18:39:05+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "dingyiliao/dsh-bundle-pi-ai-auth",
@@ -54709,12 +55078,13 @@
       "version": "1.2.0",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:>32768",
         "plugin index"
       ],
       "description": "Edit, create, rename, copy, delete and paste workspace files in the DSH web GUI: an editable document renderer, a file-tree sidebar tool with its own clipboard, and six trusted host routes.",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "dongasai/dsh_setting_pro",
@@ -60526,6 +60896,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "eightHundreds/dsh-plugins",
+      "packagePath": "packages/vscode-editor/package.json",
+      "package": "@dshx/vscode-editor",
+      "version": "0.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Monaco previews for code files, integrated with DSH themes.",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "Eileenes/dsh-reel",
       "packagePath": "package.json",
       "package": "dsh-reel-studio",
@@ -61944,6 +62326,19 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "EPetHome/Promax",
+      "packagePath": "promax-project/deepseek-harness/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.7-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "EphoReal/my-skin-for-DeepSeek-Harness",
       "packagePath": "package.json",
       "package": "my-skin",
@@ -62295,12 +62690,13 @@
       "version": "4.11.3",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:<=32768",
         "plugin index"
       ],
       "description": "StudyHub: turn your lecture slides into questions that each link back to their page, plus cross-discipline Interactive Companions (offline MathML & sandboxes), review books, mock exams, and FSRS-6 spaced review.",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "Ericwong5021/deepseek-plugin-store",
@@ -63302,6 +63698,18 @@
       ],
       "description": "Matrix agent bridge for DeepSeek Harness (dsh): multi-twin per-room agent sessions, in-chat approval, media/rich-text/reply/edit-aware message intake",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "EwanMa0821/dsh-plugin-session-graph",
+      "packagePath": "package.json",
+      "package": "dsh-plugin-session-graph",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:JavaScript"
+      ],
+      "description": "会话图谱：把 DSH 会话组织成块与连线的图谱视图，点块分叉，并导出为思维导图",
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "Ewfrewfaf/dsh-fast-react",
@@ -66375,6 +66783,19 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "felir7at62co-wq/muse-med",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "felix-lj-ct/dsh-mcp-workspace-scope",
       "packagePath": "package.json",
       "package": "dsh-mcp-workspace-scope",
@@ -66902,10 +67323,11 @@
       "sources": [
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:<=32768",
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:JavaScript",
         "plugin index"
       ],
       "description": "Leader-driven dispatch for DeepSeek Harness: protocol skills, project bootstrap, and a delivery board.",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "fengshenx/dsh-leader-kit",
@@ -67794,11 +68216,12 @@
       "version": "0.12.7",
       "ref": "HEAD",
       "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:TypeScript",
         "plugin index",
         "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Core plugin of the agentic roleplay bundle for DeepSeek Harness: roleplay UI, orchestration and storage.",
-      "observedAt": "2026-11-17T19:15:15+00:00"
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "Firefox2100/dsh-ai-providers",
@@ -68075,13 +68498,14 @@
       "version": "1.1.0",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:<=32768",
         "dsh-plugin.org",
         "dshplugin.org (2026-10-31 snapshot)"
       ],
       "description": "AgentTeams 多智能体团队协作（DeepSeek Harness 插件）：自然语言组队、成员与任务依赖 DAG、信箱通信、右侧栏树状监测 —— 上游 NanmiCoder/dsh-agent-teams 的补充版，新增自定义美术目录、十八厂商头像（十个有厂商 × 岗位全套）与厂商商标徽标。",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "fish-under-sea/dsh-better-reasoning-effort-fish",
@@ -68616,6 +69040,19 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "flechanzo/dsh-auto-research-agent",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.7-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "fleekelon/dsh-fintax",
       "packagePath": "package.json",
       "package": "dsh-fintax",
@@ -69072,12 +69509,13 @@
       "version": "0.2.0",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "plugin index",
         "topic:dsh-plugin workbench in:readme",
         "topic:dsh-plugin 工作台 in:readme"
       ],
       "description": "Tabbed workspace panel for DeepSeek Harness: a project sidebar with per-project tabs for session, files, search, terminal, source control and notes",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "FlyGame91/dsh-helper",
@@ -70968,6 +71406,19 @@
       "observedAt": "2026-11-17T19:49:41+00:00"
     },
     {
+      "repo": "fsw2781890522/dsh-desktop",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.5-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "fthuu/my-skin-for-DeepSeek-Harness",
       "packagePath": "package.json",
       "package": "my-skin",
@@ -71135,6 +71586,19 @@
       ],
       "description": "DSH sidebar tab that lists and resolves git merge conflicts (accept current / incoming / both).",
       "observedAt": "2026-11-17T19:51:50+00:00"
+    },
+    {
+      "repo": "fufankeji/FF-FDE-Delivery-Workbench",
+      "packagePath": "upstream/deepseek-harness/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "fufengyuan/dsh-council",
@@ -75790,6 +76254,18 @@
       "observedAt": "2026-11-17T18:42:30+00:00"
     },
     {
+      "repo": "golimix/dsh-graphviz",
+      "packagePath": "package.json",
+      "package": "@limix/dsh-graphviz",
+      "version": "0.3.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "TypeScript Graphviz viewer for DSH Chat: renders dot, graphviz, and gv fences as interactive SVG diagrams.",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "golitter/dsh-deepseek-billing",
       "packagePath": "package.json",
       "package": "dsh-deepseek-billing",
@@ -78135,12 +78611,13 @@
       "version": "2.4.0-dsh.0.2.2-rc.3",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:>32768",
         "dshplugin.org (2026-10-31 snapshot)"
       ],
       "description": "Let the AI in DeepSeek Harness operate browsers and desktop apps, with live previews and annotations. You can step in at any time. macOS, Windows and Linux.",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "guli-lab/dsh-element-source",
@@ -78615,6 +79092,19 @@
       ],
       "description": "Left sidebar disk panel for the DeepSeek Harness Web UI: volume free space, per-Workspace folder sizes, moving build artifacts to the macOS Trash with an audit log and restore, agent hand-off, and a host-side low-space watchdog with OS notifications.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "guzhou079-arch/deepseek-harness-android",
+      "packagePath": "plugins/dsh-doc-media/package.json",
+      "package": "dsh-doc-media",
+      "version": "0.1.1",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "让 DSH 的文件预览直接播放视频（mp4/webm/mov/m4v/mkv），并给文档预览加「位置」动作",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "guzi2005/dsh-whale-combo",
@@ -79450,6 +79940,19 @@
     },
     {
       "repo": "haigepor/dsh-AutoFlow",
+      "packagePath": "custom-plugins/workspace/dsh-plugin-afp/package.json",
+      "package": "dsh-plugin-afp",
+      "version": "0.1.14",
+      "ref": "HEAD",
+      "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:JavaScript",
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:TypeScript"
+      ],
+      "description": "AFP photo curation for DSH Agents: resumable visual dry-runs and approved private-collection writes",
+      "observedAt": "2026-11-17T21:11:57+00:00"
+    },
+    {
+      "repo": "haigepor/dsh-AutoFlow",
       "packagePath": "custom-plugins/workspace/dsh-plugin-style-prompt/package.json",
       "package": "dsh-plugin-style-prompt",
       "version": "0.2.1",
@@ -79467,10 +79970,25 @@
       "version": "0.2.25",
       "ref": "HEAD",
       "sources": [
-        "\"sidebar.panellist\" \"selectPanel\" in:file language:TypeScript size:<=65536"
+        "\"sidebar.panellist\" \"selectPanel\" in:file language:TypeScript size:<=65536",
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:JavaScript",
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:TypeScript"
       ],
       "description": "Versioned visual styles, human feedback, image search and reviewed crops for DSH",
-      "observedAt": "2026-11-17T20:56:42+00:00"
+      "observedAt": "2026-11-17T21:11:57+00:00"
+    },
+    {
+      "repo": "haigepor/dsh-AutoFlow",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "HaijieChen/dsh-image-resizer",
@@ -84419,6 +84937,18 @@
       "observedAt": "2026-11-17T20:56:42+00:00"
     },
     {
+      "repo": "hicms/EasyWork",
+      "packagePath": "packages/plugins/office/package.json",
+      "package": "easywork-plugin-office",
+      "version": "0.1.0-alpha.9",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Creates and edits document working copies in EasyWork.",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "HiddenPuppy/dsh-plugin-discovery",
       "packagePath": "package.json",
       "package": "dsh-plugin-discovery",
@@ -84599,6 +85129,18 @@
       ],
       "description": "网易云歌词背景层：hook 桌面歌词窗口取词，在壁纸层与聊天层之间渲染随机特效歌词（含原文/译文配对四种显示模式）。",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "hikarioyama/Smart-DSH",
+      "packagePath": "dsh-tasks/package.json",
+      "package": "dsh-tasks",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:JavaScript"
+      ],
+      "description": "Task delegation for DeepSeek Harness: four roles, sibling hub, durable logs, and a subagent tab",
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "hilariouhiss/dsh-hiss-plugins",
@@ -85171,6 +85713,19 @@
       ],
       "description": "Independent novel-writing tools, versioned artifacts and review workflows for DSH.",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "hlh-syd/moji-paper-agent",
+      "packagePath": "dsh-frontend/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.1-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "HLhhh/dsh-changelog-panel",
@@ -100622,6 +101177,19 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "JinPen-G/Nativark",
+      "packagePath": "clients/agent-desktop/harness/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.1-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "jinplu/dsh-plugin-discussion-intent",
       "packagePath": "package.json",
       "package": "@jinplu/dsh-plugin-discussion-intent",
@@ -102448,6 +103016,19 @@
       ],
       "description": "让 dsh 用独立的 OpenAI 兼容视觉模型读图：主对话历史只保留纯文本描述，图片字节不进上下文，纯文本模型也能读图。",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "JohnPitter/openharness",
+      "packagePath": "deepseek-harness/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-rc.1",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "JohnshyCY/dsh-multi-window",
@@ -104684,6 +105265,19 @@
       "observedAt": "2026-11-17T18:42:30+00:00"
     },
     {
+      "repo": "jzh-1228/dsh-desk",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.6-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Office, Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "jzhha/dsh-bili-asr",
       "packagePath": "package.json",
       "package": "dsh-bili-asr",
@@ -105550,6 +106144,19 @@
       "observedAt": "2026-11-17T18:42:30+00:00"
     },
     {
+      "repo": "KalharPandya/bond-vaultai-deepseek-harness",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.6-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Office, Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "Kalospacer/dsh-model-capabilities",
       "packagePath": "package.json",
       "package": "dsh-model-capabilities",
@@ -106076,6 +106683,19 @@
       "observedAt": "2026-11-17T20:08:41+00:00"
     },
     {
+      "repo": "karaka-ai/karaka",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "KaramachiA217/dsh-bundle-manager",
       "packagePath": "package.json",
       "package": "dsh-bundle-manager",
@@ -106100,6 +106720,18 @@
       ],
       "description": "DSH web plugin: unified settings-page UI kit. Provides the ctx.settingsUi client service — official-aligned card/field primitives (pointer-reusing @deepseek-ai/dsh-client-ui-primitives icons + --dsw-* tokens), a settings store, and a declarative form — so plugins register settings surfaces that match the official Plugins tab without hand-rolling UI. pluginCard chrome defaults to the official card model (collapsed layer-3 → expanded layer-2, disclosure header, field dividers, discard/save footer).",
       "observedAt": "2026-11-17T18:26:55+00:00"
+    },
+    {
+      "repo": "Karbo123/DSH-EvoResearch",
+      "packagePath": "packages/evoresearch-app/package.json",
+      "package": "@evoresearch/dsh-app",
+      "version": "0.1.0-rc.1",
+      "ref": "HEAD",
+      "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:TypeScript"
+      ],
+      "description": "EvoResearch 自定义浏览器表面 bundle：复用 DSH host 引擎（dsh-base 的全部服务与工具），自建前端工作台（不加载官方 ui-* 外壳，替换官方 dsh-web-app 表面）",
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "Karbo123/DSH-EvoResearch",
@@ -108117,6 +108749,18 @@
       "observedAt": "2026-11-17T18:11:58+00:00"
     },
     {
+      "repo": "KHWLGH/dsh-better-viewer",
+      "packagePath": "package.json",
+      "package": "dsh-better-viewer",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "GitHub-style Markdown and media previews, archive and Jupyter Notebook browsing, workspace content search and in-document find for the DeepSeek Harness sidebar. Includes a writable file explorer, instant context menus, native file drag, and a Git panel with commit graphs, diffs, staging, stash management and remote sync.",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "khwlgh/dsh-lightweight-wallpaper",
       "packagePath": "package.json",
       "package": "dsh-lightweight-wallpaper",
@@ -109403,12 +110047,13 @@
       "version": "0.9.0-beta.11",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "DeepSeek Harness discussion #4649",
         "plugin index",
         "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Explore source conversations in private Topics with citations, drafts, visual boards, and learning cards.",
-      "observedAt": "2026-11-17T19:15:15+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "kirkchinese/CiteCiter",
@@ -109417,11 +110062,12 @@
       "version": "0.9.0-beta.11",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "plugin index",
         "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Explore source conversations in private Topics with citations, drafts, visual boards, and learning cards.",
-      "observedAt": "2026-11-17T19:15:15+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "kirkchinese/dsh-capability-catalog",
@@ -110021,6 +110667,30 @@
       ],
       "description": "My Files for DeepSeek Harness Web: a sidebar entry listing every file produced across all conversations, grouped by session, openable from one panel",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "KKUCODES/deepseek-harness-mobile",
+      "packagePath": "tests/fixtures/live-attachment-document-plugin/package.json",
+      "package": "@dsh-mobile/attachment-document-verification",
+      "version": "0.0.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Temporary DSHM attachment document API verification",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
+      "repo": "KKUCODES/deepseek-harness-mobile",
+      "packagePath": "tests/fixtures/live-document-ui-plugin/package.json",
+      "package": "@dsh-mobile/document-ui-verification",
+      "version": "0.0.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "DSHM temporary original document renderer verification",
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "KKUCODES/deepseek-harness-mobile",
@@ -112440,6 +113110,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "kybernos-app/kybernos-plugins",
+      "packagePath": "packages/dsh-media-player/package.json",
+      "package": "@local/dsh-media-player",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Universal media player for the DSH document preview: audio and video in the right sidebar.",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "kydon-ai/dsh-kydon-bilibili",
       "packagePath": "package.json",
       "package": "@kydon/dsh-kydon-bilibili",
@@ -112682,6 +113364,19 @@
       ],
       "description": "Git-backed long-term memory and evolution plugin for DeepSeek Harness",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "KyuuKyuuStone/cadre-heihei",
+      "packagePath": "desktop/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "1.5.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "kyya/dsh-deepseek-balance",
@@ -113277,6 +113972,18 @@
       ],
       "description": "Mailbox-scoped email tools and local OAuth connection for DeepSeek Harness",
       "observedAt": "2026-11-17T18:26:55+00:00"
+    },
+    {
+      "repo": "LamplitIsles/dsh-plugins",
+      "packagePath": "packages/dsh-companion/package.json",
+      "package": "@lamplitisles/dsh-companion",
+      "version": "0.4.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:TypeScript"
+      ],
+      "description": "A calm, one-to-one Svelte companion surface for DeepSeek Harness",
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "lamplitisles/kepos-hindsight",
@@ -114485,6 +115192,19 @@
       ],
       "description": "",
       "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
+      "repo": "lb-aigc/LDD-build",
+      "packagePath": "upstream/deepseek-harness/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.1-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "lb290/dsh-db-connections",
@@ -116342,6 +117062,19 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "lengo0951/deepseek-harness-custom",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.6-alpha.1",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "lengrufeng2008/dsh-trading-floor",
       "packagePath": "package.json",
       "package": "dsh-trading-floor",
@@ -116474,6 +117207,19 @@
       ],
       "description": "DSH 桌面守望提醒：模型需要你操作（审批 / 方案确认 / 提问）或后台回复完成时，弹出系统通知与提示音，点击通知直接跳转到对应会话。另含出错 / 中断 / 用量上限提醒、安静时段、子代理过滤、当轮统计（token / 缓存命中率 / TPS）、工作流进展、SSE 桥与 Webhook（企微 / 飞书 / 钉钉 / 通用）、远程触发，以及「设置 → 消息通知」图形设置页。 Desktop notifications for DeepSeek Harness (DSH): a system toast, a per-kind chime and a title marker when the agent needs your input or a reply finishes in the background — click the notification to jump straight to that session. Also covers errors, interrupts and usage limits, with per-turn token/cache/TPS stats, workflow progress alerts, SSE bridge, Webhooks (WeCom/Feishu/DingTalk/generic), remote trigger, subagent filtering and quiet hours.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "Leo-sail/dsh-plugin-agent-collaboration",
+      "packagePath": "packages/ui/ui-agent-community/package.json",
+      "package": "@dsh-plugin-agent-community/ui-agent-community",
+      "version": "0.5.0",
+      "ref": "HEAD",
+      "sources": [
+        "Known assembled Web workbench package recovery check"
+      ],
+      "description": "Agent Community UI — Bot list, room list, chat panel, run status",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:11:52+00:00"
     },
     {
       "repo": "leoan698-tom/dsh-sessivra",
@@ -117020,6 +117766,19 @@
       ],
       "description": "Session management for DeepSeek Harness: archived chats and GUI deletion, with agent tools to list, inspect, create and fork sessions.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "Leostrange/DeepSeek-Harness-Desktop-RU",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.0-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "leotier196/dsh-lifeboard",
@@ -118813,6 +119572,19 @@
     },
     {
       "repo": "LiaoHan5426/Engineering-Automation-Platform",
+      "packagePath": "dsh-personal/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
+      "repo": "LiaoHan5426/Engineering-Automation-Platform",
       "packagePath": "dsh-personal/packages/experimental/timeline/package.json",
       "package": "@deepseek-ai/dsh-timeline",
       "version": "0.2.2-rc.3",
@@ -119375,6 +120147,19 @@
       ],
       "description": "Project secret management for the DeepSeek Harness: discover every .env file across a monorepo (root and workspace packages), edit keys safely in a Settings page, and hand the model a DSH_ENV_FILE / DSH_ENV_FILES pointer so shell commands can source the right environment.",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "lifecoder1988/dsh-video-preview",
+      "packagePath": "package.json",
+      "package": "dsh-video-preview",
+      "version": "0.2.1",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Video previews for the DeepSeek Harness right-Sidebar document viewer: mp4, m4v, mov, webm, and ogv stream in place from the Host file route",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "lifefloating/dsh-doudizhu",
@@ -121256,6 +122041,19 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "LINGTIAN303/WorldSea",
+      "packagePath": "dsh/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "Linguage/deepsounds",
       "packagePath": "package.json",
       "package": "deepsounds-dsh",
@@ -122318,6 +123116,18 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "LiPu-jpg/Openwrite",
+      "packagePath": "packages/studio-panel/package.json",
+      "package": "@dsh-novel/studio-panel",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:TypeScript"
+      ],
+      "description": "Native dsh writing workbenches backed by the headless OpenWrite domain service",
+      "observedAt": "2026-11-17T21:11:57+00:00"
+    },
+    {
       "repo": "liqiaohuia/dsh-proxy-routes",
       "packagePath": "package.json",
       "package": "dsh-proxy-routes",
@@ -122923,6 +123733,19 @@
       ],
       "description": "跨会话目标清单：项目 → 目标 → 条目，每轮自动提醒 agent 该做什么、做到哪了，完成后归档。",
       "observedAt": "2026-11-17T19:51:50+00:00"
+    },
+    {
+      "repo": "Little-Red-Cre-Org/RedSparkHarness",
+      "packagePath": "rsh/Programs/Web/client/ui-sidebar-documentpreview/package.json",
+      "package": "@redspark/rsh-client-ui-sidebar-documentpreview",
+      "version": "1.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "Little-Star888/dsh-pelican",
@@ -125660,6 +126483,19 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "lll0807/dsh-personal",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "lllirunze/dsh-codecraft",
       "packagePath": "package.json",
       "package": "dsh-codecraft",
@@ -126841,11 +127677,12 @@
       "version": "0.2.3",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:<=32768"
       ],
       "description": "A live 3D molecular structure viewer for DeepSeek Harness, controlled by the agent and the user.",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "lonelycrab888/dsh-remote-dc",
@@ -126866,11 +127703,12 @@
       "version": "0.2.6",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:<=32768"
       ],
       "description": "Biological sequence and multiple-alignment workbench for DeepSeek Harness.",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "lonelycrab888/roundtable-bots",
@@ -128378,12 +129216,13 @@
       "version": "0.25.1",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:>32768",
         "plugin index"
       ],
       "description": "Zero-dependency molecular-biology plugin bundle for the DeepSeek Harness: sequence analysis, primer design (incl. cross-intron qPCR primers, TaqMan hydrolysis/MGB probes with ordering CSV and multiplex compatibility), in-silico PCR, cloning simulation, SnapGene .dna parsing and plasmid maps, Sanger verification, protein tools (incl. helical wheel, hydropathy and charge-pH plots), methylation-aware restriction analysis with double-digest buffer checks, qPCR analysis and plotting, multiple sequence alignment that conserves every input residue, conservation analysis, sequence logos, codon-usage analysis, phylogenetic trees with bootstrap support, Newick I/O and long-name label wrapping, CpG-island/GC-skew composition analysis, k-mer dotplots, read-level FASTQ QC, vector/adapter contamination screening, FASTQ trimming/filtering, batch file analysis with CSV export, silent restriction-site mutagenesis, family-aware CRISPR gRNA design (SpCas9/SaCas9/Cas12a/Cas13) with off-target search, an opt-in hand-off that shows a generated plot to the model as an attached image, plus a browser-side right-sidebar panel (plasmid maps, sequence logos, and a rotatable realistic 3D ball-and-stick/space-filling preview of PDB/mmCIF/SDF structures drawn in the Web GUI) and a literature/protocol/experiment record system.",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "lovy2004/dsh-molbio-tools",
@@ -132274,6 +133113,19 @@
       "observedAt": "2026-11-17T18:29:34+00:00"
     },
     {
+      "repo": "lynxlangya/merine-rebuild",
+      "packagePath": "apps/agent/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.1-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "Lyoko-Jeremie/dsh-compaction-threshold",
       "packagePath": "package.json",
       "package": "dsh-compaction-threshold",
@@ -132928,6 +133780,19 @@
       "observedAt": "2026-11-17T20:08:41+00:00"
     },
     {
+      "repo": "M-24rjgc/SciPaper-Harness",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.3.3",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "M-eang/dsh-lab",
       "packagePath": "package.json",
       "package": "dsh-lab",
@@ -133227,6 +134092,19 @@
       ],
       "description": "DSH 客户端插件 + 配套 skill：/ask 直接把五段结构化空白模板写进输入框草稿（零模型调用）",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "maceip/zode-agent",
+      "packagePath": "deepseek-harness/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.1-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "machi12/dsh-gundam-graphite-theme",
@@ -138383,6 +139261,18 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "mermergi/deepseek-harness-termux",
+      "packagePath": "video-preview/package.json",
+      "package": "@local/dsh-video-preview",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Sidebar preview for video and audio files, streamed through /api/file with byte ranges.",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "merusu/better-notice",
       "packagePath": "package.json",
       "package": "dsh-better-notice",
@@ -138514,10 +139404,11 @@
       "version": "0.3.7",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "plugin index"
       ],
       "description": "Meshy skills for DeepSeek Harness: textured, rigged and animated 3D models or print-ready files from text or images, through meshy-cli, with a Meshy settings page and a 3D preview for GLB files.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "Meta-Virgo/dsh-profile-gist-sync",
@@ -139524,6 +140415,19 @@
       ],
       "description": "Discover, install, and upgrade curated plugins from the OpenHarness catalog in DeepSeek Harness",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "microvoid/convax",
+      "packagePath": "libs/dsh/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.1-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "MicroWearld/dsh-quick-restart-desktop",
@@ -140806,6 +141710,19 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "minhtuancn/deepseek-harness",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.6-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Office, Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "miniluckybull/dsh-ui-toolbox",
       "packagePath": "package.json",
       "package": "dsh-ui-toolbox",
@@ -141381,6 +142298,19 @@
       ],
       "description": "Genshin Impact Hu Tao (往生堂) skin for the DeepSeek Harness web GUI (dsh web): crimson/ink/gold palette, plum-blossom and spirit-butterfly ambience.",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "mithun50/ghost-code",
+      "packagePath": "harness/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "mitian233/dsh-plugin-commandcode-provider",
@@ -143647,10 +144577,11 @@
       "version": "0.1.0",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "dshplugin.org (2026-10-31 snapshot)"
       ],
       "description": "Inline and tabbed video/audio playback for DeepSeek Harness: a player under the reply, a full player in the right sidebar, and a minimal recent list. No ffmpeg required.",
-      "observedAt": "2026-11-17T18:32:04+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "Moosphan/dsh-qq-farm",
@@ -143904,6 +144835,19 @@
       ],
       "description": "专为 DSH 的下载任务做的进度指示器：会话头里的常驻下载图标，自动发现正在跑的下载与后台任务，环形进度 + 动画进度条 + 速率 + 剩余时间。不依赖任何其它插件。",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "morlay/dsh-plugin",
+      "packagePath": "packages/session/ui-conversation-manager/package.json",
+      "package": "@morlay/ui-conversation-manager",
+      "version": "0.1.14",
+      "ref": "HEAD",
+      "sources": [
+        "Known assembled Web workbench package recovery check"
+      ],
+      "description": "「对话管理」全局面板页（浏览器半）：会话与统计两层 Tabs——会话视图给出全量会话（含已归档）的搜索、分页、归档 / 取消归档 / 导出 / 删除、导入为新会话与整理数据（孤儿回收 + 统计重算），统计视图给出全部对话的 token 用量。",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:11:52+00:00"
     },
     {
       "repo": "morning-cml/dsh-doorman",
@@ -147643,11 +148587,12 @@
       "version": "0.1.0",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:>32768"
       ],
       "description": "Rumi brand occupants for the DeepSeek Harness web client",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "nadirabid/rumi",
@@ -147656,11 +148601,12 @@
       "version": "0.1.0",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:>32768"
       ],
       "description": "Print Studio: detection and guided Bambu Lab setup for Rumi's 3D print workflow",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "Nafiygond/dsh-file-drop",
@@ -148206,12 +149152,13 @@
       "version": "0.1.30",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:<=32768",
         "plugin index"
       ],
       "description": "AgentTeams for DeepSeek Harness: multi-agent team collaboration (captain, members, tasks with dependencies, messaging) driven by natural language, with a tree monitor in the web GUI",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "NanmiCoder/dsh-auto-mode",
@@ -153094,6 +154041,19 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "NovemberFalls/plexar-harness-oss",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.7-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "novick1212/dsh-physics-lab",
       "packagePath": "package.json",
       "package": "dsh-physics-lab",
@@ -154419,6 +155379,19 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "OJamals/fi",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "1.0.1",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "OK-wx/dsh-ocgo-lite",
       "packagePath": "package.json",
       "package": "dsh-ocgo-lite",
@@ -154489,6 +155462,19 @@
       ],
       "description": "DeepSeek Harness plugin: a one-line provider dock (Ollama Cloud credit, ChatGPT Codex quota, DeepSeek API balance with its off-peak phase) that opens into per-provider cards, plus the Ollama Settings section.",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "Oklahomawhore/AgentHarness",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.5-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "OkliaoliO/dsh-token-counter",
@@ -155474,10 +156460,12 @@
       "version": "0.1.0",
       "ref": "HEAD",
       "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:JavaScript",
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:TypeScript",
         "dshplugin.org (2026-10-31 snapshot)"
       ],
       "description": "A live, searchable trace waterfall for DeepSeek Harness.",
-      "observedAt": "2026-11-17T18:45:48+00:00"
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "omdsh-dev/dsh-ui-progress",
@@ -156110,6 +157098,30 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "onlynight/AuraLang",
+      "packagePath": "tools/dsh-plugins/aura-dsh-highlight/package.json",
+      "package": "@aura-lang/dsh-highlight-aura",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "DSH Web GUI client plugin: Aura language syntax highlighting. Reuses the VSCode extension's TextMate grammar verbatim and renders it with Shiki against DSH's live theme.",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
+      "repo": "onlynight/AuraLang",
+      "packagePath": "tools/dsh-plugins/hat-dsh-highlight/package.json",
+      "package": "@aura-lang/dsh-highlight-hat",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "DSH Web GUI client plugin: HAT v3.0 SSA IR syntax highlighting. Reuses the VSCode extension's TextMate grammar verbatim and renders it with Shiki against DSH's live theme.",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "onlyqzq/dsh-riskproof",
       "packagePath": "package.json",
       "package": "dsh-riskproof",
@@ -156540,10 +157552,11 @@
       "version": "0.1.10",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "npm package version repository.directory"
       ],
       "description": "Local previews for 450 file formats with a session file workspace, including Office, PDF, iWork, CAD/3D, RAW and 360° media.",
-      "observedAt": "2026-11-17T19:52:01+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "orchiddream/dsh-code-workspace",
@@ -156747,6 +157760,19 @@
       ],
       "description": "A guided social design studio for companies, campaigns and weekly creative work.",
       "observedAt": "2026-11-17T18:11:58+00:00"
+    },
+    {
+      "repo": "origin-labs-ai/code",
+      "packagePath": "windows/sonar/merger/deepseek-harness-master/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "oriliz/agent-crop",
@@ -158581,6 +159607,19 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "ParaDD-dd/DSH_VideoAgent",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.6-alpha.1",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "Paradeluxe/dsh-live-markdown",
       "packagePath": "package.json",
       "package": "@paradeluxe/dsh-live-markdown",
@@ -160376,10 +161415,11 @@
       "version": "1.0.0-rc.1",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "IntelliJ 风格 Git 工作台：DSH Web 右侧栏双面 bundle 插件",
-      "observedAt": "2026-11-17T19:15:15+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "ph0ryn/dsh-plugins",
@@ -160615,6 +161655,19 @@
       ],
       "description": "Workbench shell for DeepSeek Harness: a view/page module API, shared UI primitives and a top-bar switcher.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "philuo/colaw",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.6-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "PhilYue/dsh-llm-manage",
@@ -162493,6 +163546,19 @@
       "observedAt": "2026-11-17T19:38:34+00:00"
     },
     {
+      "repo": "potatofamilyli1979/deepseek-harness-linux",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "potoior/dsh-bull-bear",
       "packagePath": "package.json",
       "package": "dsh-bull-bear",
@@ -162741,6 +163807,19 @@
       ],
       "description": "OpenCode Go usage in the composer dock: plan meters, session cost, and a usage ring.",
       "observedAt": "2026-11-17T19:51:50+00:00"
+    },
+    {
+      "repo": "PrathamPrasad148/SaathiAI",
+      "packagePath": "deepseek-harness-master/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.5-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "Preference-cmd/dsh-antigravity",
@@ -162996,6 +164075,19 @@
       ],
       "description": "Prompt Studio plugin for DeepSeek Harness: compose runtime prompts, overrides, and request-local synthetic turns in one live editor",
       "observedAt": "2026-11-17T18:29:34+00:00"
+    },
+    {
+      "repo": "pro-deploy/shmipseek-harness",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "Pro12447890/rus-image-percent-gen",
@@ -166830,6 +167922,19 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "quockhangluong1012/deepseek-harness",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.7-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "quophic/dsh-persona-memory",
       "packagePath": "package.json",
       "package": "dsh-persona-memory",
@@ -167574,6 +168679,19 @@
       ],
       "description": "Linkr Bee (BLE/UART wireless serial bridge) as a DeepSeek Harness plugin: a live xterm console in the right column, driven by keystrokes, plus agent tools that run commands on the target board through bee-cli.",
       "observedAt": "2026-11-17T19:52:01+00:00"
+    },
+    {
+      "repo": "raghubirmahato/Hack-Dev-Code",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@hackdevcode/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "raghubirmahato/Hack-Dev-Code",
@@ -171933,6 +173051,19 @@
       "observedAt": "2026-11-17T18:48:43+00:00"
     },
     {
+      "repo": "Ronitron007/deepWidgets",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "Ronnie-Young/dsh-scnet-plan",
       "packagePath": "package.json",
       "package": "dsh-scnet-plan",
@@ -172431,6 +173562,19 @@
       ],
       "description": "Windows desktop shortcut that boots `dsh web` inside your WSL distribution and opens the browser: one double-click entry point for the DeepSeek Harness Web UI in WSL, plus a wsl_launcher model tool (install / status / open / uninstall).",
       "observedAt": "2026-11-17T18:48:43+00:00"
+    },
+    {
+      "repo": "RRHodge/deepseek-harness",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "RrOrange/dsh-qqbot",
@@ -174695,6 +175839,19 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "Samera2022/TK-DSH",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.7-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "Samge0/dsh-plugin-nexterm",
       "packagePath": "package.json",
       "package": "dsh-plugin-nexterm",
@@ -174825,6 +175982,19 @@
       ],
       "description": "Annotate passages in a DSH conversation; annotations persist per session and ride the next turn as hidden context.",
       "observedAt": "2026-11-17T19:49:41+00:00"
+    },
+    {
+      "repo": "samuelrubiodev/deepseek-harness-community",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.1-rc.4",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "samxiabing/dsh-adb",
@@ -175379,6 +176549,19 @@
       ],
       "description": "Remaining provider limits in the DSH sidebar footer: credit balance, quota bars or percentages, and a one-click request for unsupported providers.",
       "observedAt": "2026-11-17T19:49:41+00:00"
+    },
+    {
+      "repo": "savvyer/nullcode",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "SAXEM1997/dsh-cherry-bridge",
@@ -175956,6 +177139,19 @@
       ],
       "description": "DeepSeek Harness 通知中心：标签页鲸鱼状态灯（绿=跑完 / 琥珀=待处理）+ 浏览器系统通知（完成/待处理提示、45 个 opencode 音效可选、音量可配）。",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "ScriptSage1/Honeycomb-v2",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.6-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Office, Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "scriptsnet/dsh-fleet",
@@ -177830,6 +179026,19 @@
       ],
       "description": "LAN and Tailscale remote access for DeepSeek Harness: QR pairing, device tokens, REST + SSE bridge for the DSH Remote Android app. Zero runtime dependencies.",
       "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "shanchuann/Panoptic-Super-Agent",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.1-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "Shane-Jay/dsh-self-update",
@@ -179848,6 +181057,19 @@
       "observedAt": "2026-11-17T20:54:01+00:00"
     },
     {
+      "repo": "shishir-katakam/adya-ai",
+      "packagePath": "deepseek-harness/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.1-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "ShiTan-677/dsh-linux-desktop-entry",
       "packagePath": "package.json",
       "package": "dsh-linux-desktop-entry",
@@ -180378,6 +181600,19 @@
       ],
       "description": "Delete one complete closed turn from a DeepSeek Harness session without deleting the session. Self-contained, decoupled, removable.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "shuaweng/OmniCut",
+      "packagePath": "engines/agent/source/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.0-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "shudaozhang/dsh-connect-zcode",
@@ -183706,6 +184941,19 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "SmartisanNaive/MOSS-Lab",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "SmartRead666/dsh-xhs-pipeline",
       "packagePath": "package.json",
       "package": "dsh-xhs-pipeline",
@@ -184370,10 +185618,11 @@
       "version": "0.1.0",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "dshplugin.org (2026-10-31 snapshot)"
       ],
       "description": "Image and video generation for DeepSeek Harness, reusing the providers configured in DSH",
-      "observedAt": "2026-11-17T18:48:43+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "soarGuo/dsh-skin-lab",
@@ -185874,6 +187123,18 @@
       "observedAt": "2026-11-17T18:48:43+00:00"
     },
     {
+      "repo": "sp-yduck/dsh-audio-preview",
+      "packagePath": "package.json",
+      "package": "@local/audio-preview",
+      "version": "1.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Play audio files (mp3, wav, m4a, ogg, flac, ...) in the right Sidebar file preview.",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "space-spacee-clamation/dsh-package-manager",
       "packagePath": "package.json",
       "package": "@dsh-ext/dsh-package-manager",
@@ -185957,6 +187218,19 @@
       ],
       "description": "Certificate trust for DeepSeek Harness: a Settings section that skips TLS certificate verification for a specific host, so a private model gateway behind a self-signed certificate connects.",
       "observedAt": "2026-11-17T18:48:43+00:00"
+    },
+    {
+      "repo": "SparkElf/deepseek-harness-plus",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.6-alpha.1",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "SparkElf/dsh-plugins-plus",
@@ -188764,12 +190038,13 @@
       "version": "1.1.20",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:>32768",
         "dshplugin.org (2026-10-31 snapshot)"
       ],
       "description": "DSH 的 Manim 动画工作室：侧边栏「动画」行 + 右侧栏「动画工作室」tab，用论文/方法生成讲解视频。宿主半边管工作区门控、渲染引擎（自带的 Python venv 里跑 manim 0.22）、视频/分镜的 Range 流式回放，外加三个 agent 工具 manim_scene / manim_render / manim_frames。",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "STRlantian/dsh-bonsai",
@@ -190852,6 +192127,19 @@
       ],
       "description": "Orihime (井上织姬) golden-hour anime skin for DeepSeek Harness: a two-layer illustrated backdrop, a sidebar workshop for tuning it, amber message bubbles and a warm letter-paper composer.",
       "observedAt": "2026-11-17T18:48:43+00:00"
+    },
+    {
+      "repo": "SuperJJ007/papermachine",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.5-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "SuperLS-X/dsh-minecraft-theme",
@@ -194141,6 +195429,18 @@
       ],
       "description": "Composes the WorkDSH workspace, capabilities and default DSH plugins.",
       "observedAt": "2026-11-17T20:56:42+00:00"
+    },
+    {
+      "repo": "techflag/workdsh",
+      "packagePath": "packages/plugins/office/package.json",
+      "package": "workdsh-plugin-office",
+      "version": "0.1.0-alpha.10",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Creates and edits document working copies in WorkDSH.",
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "tedcriss/dsh-matlab",
@@ -199357,6 +200657,19 @@
       ],
       "description": "Permanently delete archived DeepSeek Harness conversations: removes the stored session log, its projection cache, the archive mark, and the workspace membership, with a bulk cleanup page for dangling entries.",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "trinity667/deepseek-harness",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.1-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "Triple3h/dsh-reasoning-effort",
@@ -206286,6 +207599,19 @@
       "observedAt": "2026-11-17T18:51:37+00:00"
     },
     {
+      "repo": "Waitforw1nd/NoHumanCode",
+      "packagePath": "references/dsh-v0.1.6-alpha.2/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.6-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Office, Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "waizzie/dsh_papersearch",
       "packagePath": "package.json",
       "package": "dsh-papersearch",
@@ -207112,6 +208438,19 @@
       ],
       "description": "团队协作插件 v0.4.0 - 常驻 Agent 进程，Captain 指挥分工，工件引用传递 + 任务账本看门狗重试",
       "observedAt": "2026-11-17T18:51:37+00:00"
+    },
+    {
+      "repo": "wanghongjian0119/deepseek-harness-desktop",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.0-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "wanghs09/dsh-plugin-kindle-book",
@@ -208132,6 +209471,19 @@
       "observedAt": "2026-11-17T18:51:37+00:00"
     },
     {
+      "repo": "wardtaem09344/pp",
+      "packagePath": "deepseek-harness-source/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "warment/deepseek-harness-locale-ru",
       "packagePath": "package.json",
       "package": "deepseek-harness-locale-ru",
@@ -208226,6 +209578,19 @@
       ],
       "description": "DeepSeek Harness 插件：本地优先的播客播放器 + 转写 + 双语字幕 + 字幕翻译。",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "Water-Run/deepseek-harness-uncensored",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "water2004/dsh-liang-transformer-vote",
@@ -209639,6 +211004,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "WeipengMO/dsh-plugin-remote-ssh",
+      "packagePath": "package.json",
+      "package": "dsh-plugin-remote-ssh",
+      "version": "1.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Remote Linux workspaces for DeepSeek Harness via SSH/SFTP, with scoped Agent tools, approval-gated remote Bash, file search, Git and native terminal integration, plus an optional read-only Jupyter Notebook Viewer.",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "WeirLabs/weir",
       "packagePath": "plugins/weir-harness/package.json",
       "package": "weir-harness",
@@ -210895,6 +212272,19 @@
       ],
       "description": "OpenBiliClaw for DSH: a sidebar recommendation panel (feed, library, dialogue, profile, settings) plus 22 Agent Bridge tools, so the agent can read recommendations, answer probes and close the loop. OpenBiliClaw DSH 客户端插件：侧边栏推荐面板 + 22 个 Agent Bridge 工具。",
       "observedAt": "2026-11-17T18:51:37+00:00"
+    },
+    {
+      "repo": "whitelunatix/harness-desktop",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.1-alpha.1",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "WhitePlusMS/dsh-git-graph",
@@ -212977,6 +214367,18 @@
       ],
       "description": "Real-taskbar-browser agent for DSH: drives the user's OWN Chrome/Edge window (real profile, real logins) through a bundled MV3 extension bridge with a visible whale-maid (鲸鱼娘) cursor — click/fill/read/snapshot/screenshot with the user watching; no profile copy, no cookie reading, no auto-login. The original cloned-profile agent browser (32 ego_* tools) remains as a fallback for unattended automation.",
       "observedAt": "2026-11-17T18:51:37+00:00"
+    },
+    {
+      "repo": "wjszjm/ComputerUse-DSH",
+      "packagePath": "dsh-wdc-computer-use/package.json",
+      "package": "dsh-wdc-computer-use",
+      "version": "2.3.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:JavaScript"
+      ],
+      "description": "ComputerUse-DSH：为 DeepSeek Harness 提供 Windows 截图、鼠标、键盘和窗口操作。",
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "wjt0321/dsh-git-proxy",
@@ -217035,10 +218437,11 @@
       "version": "0.3.0",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "plugin index"
       ],
       "description": "Zero-friction quick ask for DeepSeek Harness: select text in chat, Markdown/code, rendered HTML reports, or the right-sidebar editor and get a fast, isolated, one-shot explanation that follows the main model and never writes to the main session.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "wzciczw/dsh-jj-panel",
@@ -217234,6 +218637,19 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "WZZNNE/DSH-CyberWorkStation",
+      "packagePath": "core/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.5-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "x-000001/dsh-memory-plugin",
       "packagePath": "package.json",
       "package": "dsh-plugin-memory",
@@ -217416,6 +218832,19 @@
       ],
       "description": "Share this DSH over the LAN and open other computers' DSH from one settings page.",
       "observedAt": "2026-11-17T18:51:37+00:00"
+    },
+    {
+      "repo": "x1d0/deepseek-harness-termux",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.6-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Office, Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "x1shang/dsh-koin-lily-news",
@@ -223820,6 +225249,19 @@
       "observedAt": "2026-11-17T18:51:37+00:00"
     },
     {
+      "repo": "xshi0035/hongyang-dsh",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.5-rc.1",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible document previews for Sidebar files: Markdown, highlighted code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "XSJUSTC/dsh-favourite",
       "packagePath": "package.json",
       "package": "@xsj/dsh-favourite",
@@ -227316,6 +228758,18 @@
       "observedAt": "2026-11-17T18:29:34+00:00"
     },
     {
+      "repo": "YanzuoLu/dsh-video-panel",
+      "packagePath": "package.json",
+      "package": "dsh-video-panel",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Native right-panel video preview for DeepSeek Harness with authenticated Range streaming",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "yanzwzz/dsh-whale-girl-pet",
       "packagePath": "package.json",
       "package": "dsh-whale-girl-pet",
@@ -227327,6 +228781,19 @@
       ],
       "description": "🐋 DeepSeek 娘桌宠：住进 DeepSeek Harness Web 界面的蓝发鲸鱼女仆。工作链路（开工/轮播/收工庆祝）、任务完成统计气泡（用时/消耗/花费）、会话与单轮费用 pill（缓存命中/未命中/输出三桶 + 谷峰）、📊 分时段花费看板（北京小时·日趋势、三桶堆叠柱、缓存命中率、可拖动缩放）、睡眠系统、时间感知、余额/天气/喂食按钮与完整设置面板。A whale-girl desktop pet for the DeepSeek Harness Web UI.",
       "observedAt": "2026-11-17T18:29:34+00:00"
+    },
+    {
+      "repo": "Yao920127/claude-code-harness",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "2.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "yaoay/dsh-conversation-accents",
@@ -227711,10 +229178,11 @@
       "version": "0.3.0",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "plugin index"
       ],
       "description": "Preview 3D models and textures from the session workspace in DSH's right sidebar. Supported formats include FBX, OBJ, glTF, GLB, DAE, and STL models, plus PNG, JPEG, TGA, EXR, and HDR textures.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "ycAlphi/dsh-dokuwiki",
@@ -228050,10 +229518,11 @@
       "sources": [
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:>32768",
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:JavaScript",
         "plugin index"
       ],
       "description": "划词提问 + 右栏问题树：选区浮出动作栏、引用 chip、树形追问，装一次即完整可用",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "yeasen-z/dsh-focusing",
@@ -228117,6 +229586,18 @@
       ],
       "description": "VSCode 风格的工作区编辑器：文件树 + Monaco 编辑器 + 子 Agent 面板。由 @supanexus/dsh-plugin-file-explorer 本地分支改造，适配 DSH 0.2.0。",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "yee94/opencode-eficy",
+      "packagePath": "packages/dsh-plugin/package.json",
+      "package": "@eficy/dsh-plugin",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Eficy interactive TSX previews, reports, skills and export for DeepSeek Harness",
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "yeee-eh/dsh-unreal-engine",
@@ -228311,6 +229792,19 @@
       ],
       "description": "Native roleplay runtime and SillyTavern compatibility plugin for DeepSeek Harness.",
       "observedAt": "2026-11-17T18:11:58+00:00"
+    },
+    {
+      "repo": "yellowpeachxgp/xpeach-harness",
+      "packagePath": "packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@xpeach/xph-client-ui-sidebar-documentpreview",
+      "version": "0.0.25-beta",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "Yellster/dsh-regenerate",
@@ -229130,11 +230624,12 @@
       "version": "0.6.0",
       "ref": "HEAD",
       "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript",
         "\"sidebarRightTabs.register\" \"sidebar.right.pane.tab\" in:file language:JavaScript size:>32768"
       ],
       "description": "Continuous markdown book reader with inline annotations for the DeepSeek Harness Web GUI: opens .md files as one scrollable book in the right Sidebar.",
-      "observedAt": "2026-11-17T20:54:01+00:00"
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "yhuan416/dsh-remote-hub",
@@ -232986,6 +234481,32 @@
       ],
       "description": "Colored session tags for the DeepSeek Harness sidebar: tag any session from its row, see the tag at a glance, and filter the whole history by tag from a dedicated sidebar panel.",
       "observedAt": "2026-11-17T18:52:54+00:00"
+    },
+    {
+      "repo": "ysgao/deepseek-harness-plugins",
+      "packagePath": "packages/workspace-git/client-ui-conversation-files/package.json",
+      "package": "dsh-plugins-client-ui-conversation-files",
+      "version": "0.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "The File conversation tab: in-app preview, edit, and side-by-side git diff for a session's opened workspace paths, registered into dsh-client-ui-conversation's pristine conversation.view slot",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
+      "repo": "ysgao/deepseek-harness-plugins",
+      "packagePath": "packages/workspace-git/client-ui-document-host/package.json",
+      "package": "dsh-plugins-client-ui-document-host",
+      "version": "0.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Replaces the ui-sidebar-documentpreview row: runs @deepseek-ai/dsh-client-ui-sidebar-documentpreview's own apply() from an out-of-tree browser bundle and redirects one registration, so its renderers (pdf.js worker + assets, FortuneSheet excel worker, office, html, image) draw in the conversation's File tab instead of the right Sidebar, with no renderer forked. Its `.` entry re-exports that row's Host half so the preview config still reaches the page.",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "ysl289/dsh-alert",
@@ -237779,10 +239300,11 @@
       "version": "0.1.0",
       "ref": "HEAD",
       "sources": [
+        "\"uiConversation.views.register\" \"conversation.view\" in:file language:TypeScript",
         "plugin index"
       ],
       "description": "Project collaboration, conversation continuity, records and shared memory for DeepSeek Harness.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T21:11:57+00:00"
     },
     {
       "repo": "Zai-G/dsh-preset-workshop",
@@ -238393,6 +239915,18 @@
       ],
       "description": "DeepSeek Harness plugin: upload/paste images in the chat box; on send, transcribe via a vision model (dashscope) or offline Windows OCR, then inject the description into the message as 【解析了提供图片，图片内容是<描述>】.",
       "observedAt": "2026-11-17T18:52:54+00:00"
+    },
+    {
+      "repo": "zcong1993/dsh-excalidraw-plugin",
+      "packagePath": "package.json",
+      "package": "@zcong/dsh-excalidraw-plugin",
+      "version": "0.4.2",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Excalidraw canvas for DeepSeek Harness: natural-language diagrams, sidebar editing, PNG/SVG export.",
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "zcr-133/dsh-follow-edits",
@@ -239843,6 +241377,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "Zersya/dsh-plugins",
+      "packagePath": "video-preview-plugin/package.json",
+      "package": "@local/dsh-video-preview",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Inline video preview for the right Sidebar's Files panel (mp4, webm, mov, m4v, ogv, mkv).",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "Zestful-ss/dsh-research-workbench",
       "packagePath": "package.json",
       "package": "dsh-research-workbench",
@@ -241017,6 +242563,19 @@
       ],
       "description": "Memo settings section for DeepSeek Harness Web: a Settings page that edits the memo plugin's AI route, archived-session summary copy, and GitHub repository through the deployment's own settings surface, with per-field reset and live application",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "zhangj1164/dsh-mega-plugins",
+      "packagePath": "packages/client/ui-memo/package.json",
+      "package": "@zhangj1164/dsh-client-ui-memo",
+      "version": "0.6.1",
+      "ref": "HEAD",
+      "sources": [
+        "Known assembled Web workbench package recovery check"
+      ],
+      "description": "Memo panel for DeepSeek Harness: a sidebar entry and main panel with a four-dimension (week/month/quarter/year) card board over the memo Host Remote, with AI analysis, report export, GitHub issue generation, and archived-session summaries",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:11:52+00:00"
     },
     {
       "repo": "zhangj1164/dsh-mega-plugins",
@@ -242256,6 +243815,18 @@
       "observedAt": "2026-11-17T20:10:49+00:00"
     },
     {
+      "repo": "zhen-yang-cn/dsh-xmind-mindmap",
+      "packagePath": "package.json",
+      "package": "dsh-xmind-mindmap",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "XMind mindmap plugin for DeepSeek Harness: right-sidebar .xmind preview, Markdown<->tree conversion, incremental node editing, and read-only chat cards.",
+      "observedAt": "2026-11-17T21:14:06+00:00"
+    },
+    {
       "repo": "zhen622/dsh-ui-switcher",
       "packagePath": "package.json",
       "package": "@dsh-external/dsh-ui-switcher",
@@ -243393,6 +244964,18 @@
       ],
       "description": "Usage & cost dashboard plugin for DSH (DeepSeek Harness): per-session token metrics, 84-day heatmap, balance burn-down, and detail table with CSV export.",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "zhming0/dsh-yawn",
+      "packagePath": "control-plane/package.json",
+      "package": "@zhming0/dsh-yawn",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Remote sandbox lifecycle and control plane for DeepSeek Harness",
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "Zhong0118/dsh-remote-ssh",
@@ -244815,6 +246398,19 @@
       ],
       "description": "DeepSeek Harness 编程模式组合包：标准模式之上强制执行 Superpowers 工程纪律（TDD、系统化调试、先计划后编码、完成前验证、代码审查），常驻 Ponytail 代码量纪律，内置全套 superpowers 与 ponytail 技能，dsh plugin add 一键安装。",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "zifeiyu2025/SHANIU",
+      "packagePath": "src/dsh/packages/client/ui-sidebar-documentpreview/package.json",
+      "package": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.2.2-rc.1",
+      "ref": "HEAD",
+      "sources": [
+        "\"documentPreviews.register\" \"sidebar.right.tab.document\" in:file"
+      ],
+      "description": "Extensible Sidebar previews for Office documents, spreadsheets, Markdown, code, images, PDF, HTML, and plain text",
+      "requiresAssembly": true,
+      "observedAt": "2026-11-17T21:14:06+00:00"
     },
     {
       "repo": "ZiFeng11/dsh-playmate",

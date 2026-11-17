@@ -6,7 +6,7 @@ import re
 import urllib.error
 from pathlib import Path
 
-from discover import REPO, ROOT, clean_path, client_entry, fetch, raw_url, web_signal
+from discover import REPO, ROOT, clean_path, client_entry, fetch, raw_url, web_client, web_signal
 
 TASK_HINT = re.compile(
     r"工作[台臺]|看板|画布|编辑器|编辑台|仪表[盘盤]|管理台|"
@@ -56,7 +56,10 @@ def collect(row):
         if not raw:
             return {**record, "status": "manifest_missing"}
         manifest = json.loads(raw)
-        if not isinstance(manifest, dict) or not web_signal(manifest):
+        if not isinstance(manifest, dict) or not web_client(manifest):
+            return {**record, "status": "manifest_changed"}
+        needs_assembly = not web_signal(manifest)
+        if needs_assembly and not row.get("requiresAssembly"):
             return {**record, "status": "manifest_changed"}
         directory = path.rpartition("/")[0]
         prefix = directory + "/" if directory else ""
@@ -80,6 +83,7 @@ def collect(row):
             "name": manifest.get("name"), "version": manifest.get("version"),
             "description": manifest.get("description", ""), "client": prefix + client_entry(manifest),
             "documents": sources, "errors": errors,
+            **({"requiresAssembly": True} if needs_assembly else {}),
         }
     except (OSError, UnicodeError, ValueError) as error:
         return {**record, "status": "fetch_error", "error": str(error)}

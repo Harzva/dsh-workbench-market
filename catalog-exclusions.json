@@ -128,5 +128,65 @@
     "reason": "这是验证 DSH 能同时加载宿主与客户端的测试包。右栏只打印文件地址，没有 KiCad 查看、编辑或验证流程。",
     "evidence": "https://github.com/LuYanFCP/dsh-kicad/blob/e0f1d21a5de694eed1a9571f6440692543dc5970/spike/hello/client.js#L7-L22",
     "observedAt": "2026-11-17T20:54:01+00:00"
+  },
+  {
+    "repo": "arzvaak/bharatcode-harness",
+    "packagePath": "integrations/workflows/packages/task-board/package.json",
+    "source": "web",
+    "commit": "091701ca5a621697bf357a7eb654d699468c6200",
+    "version": "0.4.5-bharatcode.1",
+    "observedAt": "2026-11-17T20:56:42+00:00",
+    "reason": "与 BharatCode-Extensions 的 extensions/task-board 为同版内置副本。固定树中的代码、测试和资源一致，保留分发仓库候选。",
+    "evidence": "https://github.com/arzvaak/BharatCode-Harness/blob/091701ca5a621697bf357a7eb654d699468c6200/integrations/workflows/packages/task-board/README.md#L5-L17"
+  },
+  {
+    "repo": "buhuikongpan/dsh-project-context",
+    "packagePath": "package.json",
+    "source": "web",
+    "version": "0.9.2",
+    "observedAt": "2026-11-17T18:32:04+00:00",
+    "commit": "4fbb59743db1d8dff3b36349761cf65526bb3fdb",
+    "reason": "侧栏按钮将新会话打开到固定临时工作区，会话标题栏显示徽标。主区域注册只返回空值。",
+    "evidence": "https://github.com/buhuikongpan/dsh-project-context/blob/4fbb59743db1d8dff3b36349761cf65526bb3fdb/lib/client.js#L342-L362"
+  },
+  {
+    "repo": "lovezi0/dsh-open-in-androidstudio",
+    "packagePath": "package.json",
+    "source": "web",
+    "version": "0.1.1",
+    "observedAt": "2026-11-17T17:53:20+00:00",
+    "commit": "2a1c8cbb7445ff3c29dcd30525aac7cd833463fd",
+    "reason": "把本机 Android Studio 版本加到现有「Open In」入口，并在插件管理器提供路径设置。实际工作在外部 Android Studio 进行。",
+    "evidence": "https://github.com/lovezi0/dsh-open-in-androidstudio/blob/2a1c8cbb7445ff3c29dcd30525aac7cd833463fd/lib/client.js#L216-L241"
+  },
+  {
+    "repo": "yunyoujun/el-bot",
+    "packagePath": "packages/yunlefun/package.json",
+    "source": "web",
+    "version": "0.1.0",
+    "observedAt": "2026-11-17T20:56:42+00:00",
+    "commit": "9a29a22b2944ef73133baf8acd82bb6cb5589095",
+    "reason": "此页面用于配置云乐坊模型渠道、授权扣点、查看余额和处理该渠道的请求回执，属于提供商设置。",
+    "evidence": "https://github.com/YunYouJun/el-bot/blob/9a29a22b2944ef73133baf8acd82bb6cb5589095/packages/yunlefun/README.md#L1-L22"
+  },
+  {
+    "repo": "raosiyu/dsh-whale-todos",
+    "packagePath": "upstream/dely0-v1.17.2/package.json",
+    "source": "web",
+    "version": "1.17.2",
+    "observedAt": "2026-11-17T20:56:42+00:00",
+    "commit": "510f848de1412f0be79a09ac78952b9c55ea6a2a",
+    "reason": "这是 Dely0/dsh-personal-workbench 1.17.2 的上游快照，沿用上游包名，仅有路径规范化修复。上游工作台已收录。",
+    "evidence": "https://github.com/raosiyu/dsh-whale-todos/blob/510f848de1412f0be79a09ac78952b9c55ea6a2a/README.md#L41-L55"
+  },
+  {
+    "repo": "ysgao/deepseek-harness-plugins",
+    "packagePath": "packages/workspace-git/client-ui-document-host/package.json",
+    "source": "web",
+    "version": "0.0.0",
+    "observedAt": "2026-11-17T21:14:06+00:00",
+    "commit": "cf4bb2cb6c855e0af8ae22b15a51db300ef6bf5f",
+    "reason": "将上游文档预览渲染器接入同一组合包的「文件」页签，右栏入口将用户转交该页签。独立任务界面由已收录的文件页签提供。",
+    "evidence": "https://github.com/ysgao/deepseek-harness-plugins/blob/cf4bb2cb6c855e0af8ae22b15a51db300ef6bf5f/packages/workspace-git/client-ui-document-host/src/client/index.ts#L68-L100"
   }
 ]

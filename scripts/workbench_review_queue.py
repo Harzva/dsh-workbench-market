@@ -105,6 +105,7 @@ def build_queue(candidates, published, dossiers, exclusions=()):
             "description": dossier.get("description") or candidate.get("description") or "",
             "priority": priority(candidate, dossier if status in {"with_client_hint", "with_dossier"} else {}),
             "status": status,
+            **({"requiresAssembly": True} if candidate.get("requiresAssembly") else {}),
         })
     queue.sort(key=lambda row: (-row["priority"], key(row)))
     return counts, queue
