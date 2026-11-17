@@ -35,13 +35,14 @@
   {
     "repo": "Harzva/dsh-wemedia-workbench",
     "name": "自媒体工作台",
-    "description": "管理不同渠道的内容、修改版本、审阅、审批及发布任务。",
+    "description": "集中管理选题、改稿、排版、审批和公众号草稿回执。0.2.0 预览版适用于 DeepSeek Harness 0.2.0-rc.2。",
     "category": "内容",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "package": "dsh-wemedia-workbench",
-    "manifest": "https://github.com/Harzva/dsh-wemedia-workbench/blob/52747b792b6602ccdd3d95a0b951ca3a21a3b70d/package.json",
-    "workflow": "https://github.com/Harzva/dsh-wemedia-workbench/blob/52747b792b6602ccdd3d95a0b951ca3a21a3b70d/README.md#L3-L30",
-    "packagePath": "package.json"
+    "packagePath": "package.json",
+    "manifest": "https://github.com/Harzva/dsh-wemedia-workbench/blob/42a9b087a9d07017bdfd3845ed16e1ccdab3c7e1/package.json",
+    "workflow": "https://github.com/Harzva/dsh-wemedia-workbench/blob/42a9b087a9d07017bdfd3845ed16e1ccdab3c7e1/README.md#L12-L38",
+    "registration": "https://github.com/Harzva/dsh-wemedia-workbench/blob/42a9b087a9d07017bdfd3845ed16e1ccdab3c7e1/src/client/lifecycle.ts#L29-L38"
   },
   {
     "repo": "gulagala001/dsh-deepseek-workbench",
@@ -2382,5 +2383,18 @@
     "packagePath": "package.json",
     "manifest": "https://github.com/amumulam/dsh-tldraw-canvas/blob/4e2ece1dffea9e26bed16acedbeeb2ec0a03fd6d/package.json",
     "workflow": "https://github.com/amumulam/dsh-tldraw-canvas/blob/4e2ece1dffea9e26bed16acedbeeb2ec0a03fd6d/README.md#L7-L28",
-    "registration": "https://github.com/amumulam/dsh-tldraw-canvas/blob/4e2ece1dffea9e26bed16acedbeeb2ec0a03fd6d/src/client-entry.js#L506-L536"  }
+    "registration": "https://github.com/amumulam/dsh-tldraw-canvas/blob/4e2ece1dffea9e26bed16acedbeeb2ec0a03fd6d/src/client-entry.js#L506-L536"
+  },
+  {
+    "repo": "Harzva/dsh-interview-workbench",
+    "name": "面试与笔试练习工作台",
+    "description": "在 DSH 选题、答题、交卷、自评和复盘。仓库提供两道合成示例，源码可公开阅读，其他权利保留。",
+    "category": "学习",
+    "version": "0.1.0-alpha.21",
+    "package": "dsh-interview-workbench",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/Harzva/dsh-interview-workbench/blob/b47223550d0cd534d610e4fc85f76bb36b2253e4/package.json",
+    "workflow": "https://github.com/Harzva/dsh-interview-workbench/blob/b47223550d0cd534d610e4fc85f76bb36b2253e4/README.md#L1-L9",
+    "registration": "https://github.com/Harzva/dsh-interview-workbench/blob/b47223550d0cd534d610e4fc85f76bb36b2253e4/src/client/index.mjs#L118-L137"
+  }
 ]
