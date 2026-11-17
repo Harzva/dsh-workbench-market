@@ -32,9 +32,11 @@ def build_catalog(index, community, checked_at, web=(), discoveries=()):
     seen_packages = set()
     known_repos = {item["id"].lower() for item in index["workbenches"]}
     excluded = {
+        "aswang2205/dsh-xiaomi-ocr",  # Pinned client only registers a settings section.
         "weixiurui/dsh-firefly-forest",  # Theme interface.
         "nikolay-leukhin/dsh_multiagent_system_monitoring_performance_plugin",  # Duplicate of projectHub.
     }
+    web_panel_replacements = {"mistyrn/dsh-experience", "narkco-kang/dsh-team-workbench"}
     for item in index["workbenches"]:
         repo = item["id"].lower()
         source = item.get("distribution") or {}
@@ -82,6 +84,8 @@ def build_catalog(index, community, checked_at, web=(), discoveries=()):
         host = item.get("host", "web") if is_web else "dataelem"
         package_path = item.get("packagePath", "package.json")
         if repo in excluded or (not is_web and canonical in known_repos and canonical != repo):
+            continue
+        if not is_web and not item.get("registration") and repo in web_panel_replacements:
             continue
         identity = (repo, package_path, host)
         if identity in seen_repos or (package, host) in seen_packages:

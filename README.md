@@ -12,7 +12,7 @@
 
 - `community.json` 保存逐项复核、名称和分类。新条目提供仓库、包名、版本、GitHub 清单及注册代码链接。
 - `web-workbenches.json` 保存使用 DeepSeek 客户端接口的工作台。请附固定提交的插件清单与用户任务或挂载的源码证据。
-- `discovery.json` 保存最近一次发现扫描的命中、覆盖范围及失败。GitHub 搜索只覆盖可见且已索引的内容，漏收项目可提交 PR。
+- `discovery.json` 保存发现扫描的命中及各轮覆盖范围与失败。GitHub 搜索只覆盖可见且已索引的内容，漏收项目可提交 PR。
 - `dist/` 是无需构建依赖的站点。也可直接打开 `dist/index.html` 离线使用。
 
 ```sh
@@ -21,6 +21,13 @@ python3 scripts/discover.py
 python3 scripts/update_catalog.py
 ```
 
-扩展扫描可运行 `python3 scripts/discover.py --all-plugin-index --expand-from discovery.json --output .scan/expanded.json`。它会检查通用插件索引链接的全部公开仓库，并检查上一轮发现多个工作台的维护者的其他项目。比较新旧报告后更新 `discovery.json`，再生成站点。报告里的 `webCandidates` 要人工核对任务界面。
+扩展扫描会检查通用插件索引链接的公开仓库，以及上一轮发现多个工作台的维护者的其他项目。补扫可以单独检查 npm 包索引声明的 GitHub 子目录。使用 `--plugin-index-only` 可以在跳过 GitHub 搜索时检查通用插件索引的根目录及子包。合并报告会保留已定位的注册证据和逐轮覆盖范围。报告里的 `webCandidates` 需要人工核对任务界面。
 
-发现流程只读 GitHub 的公开搜索、上游索引与源码，不安装插件。GitHub 搜索有索引延迟、结果上限和速率限制。分类与版本证据可按 [收录标准](docs/workbench-definition.md) 复核。
+```sh
+python3 scripts/discover.py --all-plugin-index --expand-from discovery.json --output .scan/expanded.json
+python3 scripts/discover.py --index-subpackages --output .scan/subpackages.json
+python3 scripts/merge_discoveries.py discovery.json .scan/expanded.json .scan/subpackages.json --output discovery.json
+python3 scripts/update_catalog.py
+```
+
+发现流程只读 GitHub 的公开搜索、上游索引与源码，不安装插件。GitHub 搜索有索引延迟、结果上限和速率限制。REST 代码搜索主要覆盖默认分支和小于 384 KB 的文件，公开 fork 也有额外限制。同一仓库可在多轮出现，因此报告保留各轮的计数。[GitHub 代码搜索说明](https://docs.github.com/en/search-github/searching-on-github/searching-code#considerations-for-code-search)分类与版本证据可按 [收录标准](docs/workbench-definition.md) 复核。

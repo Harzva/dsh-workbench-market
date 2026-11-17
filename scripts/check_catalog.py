@@ -1,7 +1,8 @@
 """Verify the static JSON/JS artifacts and public evidence link structure."""
 import json
+import re
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -9,6 +10,13 @@ ROOT = Path(__file__).resolve().parent.parent
 def check_link(value):
     parsed = urlsplit(value)
     assert parsed.scheme == "https" and parsed.netloc == "github.com" and parsed.path.count("/") >= 2, value
+
+
+def pinned_link(url, repo):
+    check_link(url)
+    match = re.fullmatch(r"/([^/]+/[^/]+)/blob/([a-f0-9]{40})/(.+)", urlsplit(url).path)
+    assert match and match[1].lower() == repo, url
+    return match[2], unquote(match[3])
 
 
 def main():
@@ -27,11 +35,14 @@ def main():
         assert source in {"official", "registered", "manifest", "web", "deepseek-desktop"}, source
         assert entry["host"] == (source if source in {"web", "deepseek-desktop"} else "dataelem"), entry
         if source != "official":
-            check_link(entry["manifest"])
-        if source == "registered":
-            check_link(entry["registration"])
-        if source in {"web", "deepseek-desktop"}:
-            check_link(entry["workflow"])
+            revision, path = pinned_link(entry["manifest"], entry["repo"])
+            assert path == entry["packagePath"], entry["manifest"]
+            evidence = entry["registration"] if source == "registered" else entry["workflow"]
+            if evidence:
+                evidence_revision, _ = pinned_link(evidence, entry["repo"])
+                assert evidence_revision == revision, evidence
+            if source != "manifest":
+                assert evidence, entry
     print(f"{len(keys)} entries, matching JSON and browser data, valid evidence links")
 
 

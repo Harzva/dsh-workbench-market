@@ -420,5 +420,38 @@
     "package": "@xyb-community/biliary-tract-workbench",
     "version": "0.1.4",
     "manifest": "https://github.com/xyb-openharness-dsh-plugins/biliary-tract-workbench/blob/main/package.json"
+  },
+  {
+    "repo": "cinderzhan/dsh-huaxue-workbench",
+    "name": "花学工作台 · Desktop 适配版",
+    "description": "基于花少2花学工作台的派生版本，添加 Desktop 会话与业务面板的连接。",
+    "category": "其他",
+    "version": "0.3.6-desktop.1",
+    "package": "dsh-huaxue-workbench",
+    "manifest": "https://github.com/cinderzhan/dsh-huaxue-workbench/blob/304ecb24ebb6e1dbe56be5d7b0e1545fa49c7325/package.json",
+    "registration": "https://github.com/cinderzhan/dsh-huaxue-workbench/blob/304ecb24ebb6e1dbe56be5d7b0e1545fa49c7325/desktop-client.js#L777",
+    "packagePath": "package.json"
+  },
+  {
+    "repo": "cinderzhan/dsh-ming-life",
+    "name": "玄学人生工作台 · Desktop 适配版",
+    "description": "基于 Dataelem 玄学人生工作台的派生版本，通过 Desktop 关联解读请求和项目会话。",
+    "category": "其他",
+    "version": "1.2.0",
+    "package": "ming-life",
+    "manifest": "https://github.com/cinderzhan/dsh-ming-life/blob/e1c6d6d5195b4111d2fa679ff663475eff66f3d5/package.json",
+    "registration": "https://github.com/cinderzhan/dsh-ming-life/blob/e1c6d6d5195b4111d2fa679ff663475eff66f3d5/lib/client.js#L395",
+    "packagePath": "package.json"
+  },
+  {
+    "repo": "cinderzhan/dsh-site-selection",
+    "name": "门店选址 · 会话桥接版",
+    "description": "基于 Dataelem 门店选址的派生版本，添加 Desktop 会话关联并保留当前门店项目。",
+    "category": "数据",
+    "version": "1.2.0",
+    "package": "dsh-site-selection",
+    "manifest": "https://github.com/cinderzhan/dsh-site-selection/blob/f243be388d71eeca41311fc3c4c2705863f6b431/package.json",
+    "registration": "https://github.com/cinderzhan/dsh-site-selection/blob/f243be388d71eeca41311fc3c4c2705863f6b431/lib/client.js#L615",
+    "packagePath": "package.json"
   }
 ]

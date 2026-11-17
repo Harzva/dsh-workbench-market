@@ -96,18 +96,25 @@ def bundle_has_patch(bundle):
     return bool(paths) and all(clean_path(path) for path in paths)
 
 
+def client_entry(package):
+    exports = package.get("exports")
+    if not isinstance(exports, dict):
+        return None
+    entry = exports.get("./client")
+    if isinstance(entry, dict):
+        entry = entry.get("default")
+    return clean_path(entry)
+
+
 def manifest_contract(package):
     dsh = package.get("dsh")
     if not isinstance(dsh, dict):
         return None
-    client, bundle, exports = dsh.get("client"), dsh.get("bundle"), package.get("exports")
-    if not all(isinstance(field, dict) for field in (client, bundle, exports)):
+    client, bundle = dsh.get("client"), dsh.get("bundle")
+    if not isinstance(client, dict):
         return None
     inject = client.get("inject")
-    entry = exports.get("./client")
-    if isinstance(entry, dict):
-        entry = entry.get("default") or entry.get("import")
-    entry = clean_path(entry)
+    entry = client_entry(package)
     if not isinstance(inject, list) or SERVICE not in inject or not entry or not bundle_has_patch(bundle):
         return None
     if not all(isinstance(package.get(key), str) and package[key] for key in ("name", "version")):
@@ -115,18 +122,37 @@ def manifest_contract(package):
     return entry
 
 
+JS_MESSAGE = re.compile(
+    r"""//[^\n]*|/\*[\s\S]*?\*/|"(?:\\[\s\S]|[^"\\])*"|'(?:\\[\s\S]|[^'\\])*'|`(?:\\[\s\S]|[^`\\])*`"""
+)
+SERVICE_NAME = """['"]desktopWorkbenches['"]"""
+SERVICE_EXPRESSION = (
+    rf"(?:\bdesktopWorkbenches\b|\[\s*{SERVICE_NAME}\s*\]"
+    rf"|\bget\s*\(\s*{SERVICE_NAME}\s*\)|\bdesktopWorkbenchesOf\s*\([^)]*\))"
+)
+
+
 def registration_line(source):
-    # Keep line numbers intact and remove comments before searching for a call.
-    source = re.sub(r"/\*[\s\S]*?\*/", lambda m: "\n" * m.group().count("\n"), source)
-    source = re.sub(r"(?m)^\s*//[^\n]*", lambda m: "\n" * m.group().count("\n"), source)
-    source = re.sub(r"""(?:"(?:\\.|[^"\\\n])*"|'(?:\\.|[^'\\\n])*')""", "", source)
+    def mask(match):
+        value = match.group()
+        if value in ('"desktopWorkbenches"', "'desktopWorkbenches'", '"register"', "'register'"):
+            return value
+        return re.sub(r"[^\n]", " ", value)
+
+    # Match direct service accesses and locally assigned aliases outside comments and strings.
+    code = JS_MESSAGE.sub(mask, source)
     aliases = re.findall(
-        r"\b([\w$]+)\s*=\s*(?:[\w$]+\.)?(?:desktopWorkbenches\b(?!\s*\.)|desktopWorkbenchesOf\s*\()",
-        source,
+        rf"(?<![.\w$])([\w$]+)\s*=\s*(?:[\w$]+\s*\??\.\s*|[\w$]+(?=\s*\[)\s*)?"
+        rf"{SERVICE_EXPRESSION}(?!\s*\??\.\s*register\b)",
+        code,
     )
-    names = "|".join(re.escape(item) for item in ["desktopWorkbenches", *aliases])
-    match = re.search(r"(?<![\w$])(?:" + names + r")\s*\??\.\s*register\s*\(", source)
-    return source.count("\n", 0, match.start()) + 1 if match else None
+    aliases += re.findall(r"\{[^{}]*?\bdesktopWorkbenches\s*:\s*([\w$]+)[^{}]*\}\s*=", code)
+    alias_pattern = "".join("|" + re.escape(item) + r"(?![\w$])" for item in sorted(set(aliases)))
+    match = re.search(
+        rf"(?<![\w$])(?:{SERVICE_EXPRESSION}{alias_pattern})"
+        r"""\s*(?:\??\.\s*register\b|(?:\?\.)?\s*\[\s*['"]register['"]\s*\])\s*\(""", code
+    )
+    return code.count("\n", 0, match.start()) + 1 if match else None
 
 
 def package_at(repo, ref, path):
@@ -198,7 +224,9 @@ def repository_search(query, results, errors):
         errors.append({"query": query, "error": str(error)})
         results[query] = {"read": 0, "incomplete": True}
         return
-    if initial["total_count"] <= 1000:
+    if initial["total_count"] <= 1000 and not (
+        initial.get("incomplete_results") and initial["total_count"] > 100
+    ):
         yield from pages("repositories", query, results, errors, first=initial)
         return
 
@@ -213,7 +241,9 @@ def repository_search(query, results, errors):
             errors.append({"query": scoped, "error": str(error)})
             results[scoped] = {"read": 0, "incomplete": True}
             return
-        if page["total_count"] > 1000 and start < end:
+        capped = page["total_count"] > 1000
+        incomplete = page.get("incomplete_results") and page["total_count"] > 100
+        if (capped and start < end) or (incomplete and (end - start).days > 7):
             split = start + (end - start) // 2
             yield from read_range(start, split)
             yield from read_range(split + dt.timedelta(days=1), end)
@@ -230,7 +260,13 @@ def repository_search(query, results, errors):
     }
 
 
-def inventory(existing, skip_code, all_plugin_index=False, previous=()):
+def plugin_package_path(metadata):
+    directory = metadata.get("directory")
+    path = clean_path(directory.rstrip("/")) if isinstance(directory, str) else None
+    return f"{path}/package.json" if path else None
+
+
+def inventory(existing, skip_code, all_plugin_index=False, previous=(), index_only=False, index_subpackages=False):
     candidates = {}
     searches = {}
     indices = {}
@@ -261,23 +297,35 @@ def inventory(existing, skip_code, all_plugin_index=False, previous=()):
                 errors.append({"source": f"owner:{owner}", "error": "owner repository page limit reached"})
         except (OSError, RuntimeError, subprocess.TimeoutExpired, KeyError, ValueError) as error:
             errors.append({"source": f"owner:{owner}", "error": str(error)})
-    for url, source in ((OFFICIAL_INDEX, "desktop market"), (PLUGIN_INDEX, "plugin index")):
+    index_feeds = [(PLUGIN_INDEX, "plugin index")]
+    if not index_only:
+        index_feeds.insert(0, (OFFICIAL_INDEX, "desktop market"))
+    for url, source in index_feeds:
         try:
             index = json.loads(fetch(url, limit=24_000_000))
             rows = index["workbenches" if source == "desktop market" else "plugins"]
             indices[source] = len(rows)
             for row in rows:
-                repo_url = row.get("url") or (row.get("repository") or {}).get("url")
-                repo = repo_id(repo_url)
+                metadata = row.get("repository") or {}
+                repo = repo_id(row.get("url") or metadata.get("url"))
+                subpackage = plugin_package_path(metadata)
+                if index_subpackages:
+                    if repo and subpackage:
+                        add(repo, subpackage, source=source)
+                    continue
                 relevant = source == "desktop market" or all_plugin_index or re.search(
                     r"workbench|worktable|工作台|工作臺|desktopWorkbenches|dshdesktop|research studio|控制台", json.dumps(
                         [row.get("name"), row.get("title"), row.get("description"), row.get("metadata")],
                         ensure_ascii=False), re.I)
                 if repo and relevant:
                     add(repo, source=source)
+                    if subpackage:
+                        add(repo, subpackage, source=source)
         except (OSError, ValueError, AttributeError, KeyError) as error:
             errors.append({"source": source, "error": str(error)})
 
+    if index_only:
+        return candidates, searches, indices, errors
     for query in REPO_QUERIES:
         print(f"Searching GitHub repositories: {query}", file=sys.stderr, flush=True)
         for row in repository_search(query + " is:public", searches, errors):
@@ -313,14 +361,10 @@ def web_signal(package):
     if not isinstance(dsh, dict):
         return False
     client, bundle = dsh.get("client"), dsh.get("bundle")
-    if not isinstance(client, dict) or not bundle_has_patch(bundle):
-        return False
-    description = " ".join(str(package.get(field) or "") for field in ("name", "description", "keywords"))
-    inject = client.get("inject")
-    return isinstance(inject, list) and any(
-        isinstance(service, str) and service.startswith("@deepseek-ai/dsh-client-")
-        for service in inject
-    ) and bool(re.search(r"workbench|worktable|工作台|工作臺|studio|console|dashboard|创作台", description, re.I))
+    return (
+        isinstance(client, dict) and client.get("platform") == "web"
+        and bundle_has_patch(bundle) and bool(client_entry(package))
+    )
 
 
 def inspect(candidate):
@@ -338,6 +382,7 @@ def inspect(candidate):
                     web_candidates.append({
                         "repo": repo, "packagePath": path, "package": package.get("name"),
                         "version": package.get("version"), "ref": ref, "sources": sorted(candidate["sources"]),
+                        "description": package.get("description", ""),
                     })
                 continue
             if commit is None:
@@ -390,7 +435,12 @@ def main():
     parser.add_argument("--all-plugin-index", action="store_true",
                         help="Check every public GitHub repository linked by the general plugin index.")
     parser.add_argument("--expand-from", type=Path, help="Read a previous snapshot and also inspect related owners.")
-    parser.add_argument("--only-existing", action="store_true", help="Revalidate recorded community repositories only.")
+    scope = parser.add_mutually_exclusive_group()
+    scope.add_argument("--only-existing", action="store_true", help="Revalidate recorded community repositories only.")
+    scope.add_argument("--index-subpackages", action="store_true",
+                       help="Check only subpackage paths declared in the general plugin index.")
+    scope.add_argument("--plugin-index-only", action="store_true",
+                       help="Check the general plugin index with no repository or code search.")
     args = parser.parse_args()
     if not 1 <= args.workers <= 24:
         parser.error("--workers must be between 1 and 24")
@@ -405,8 +455,11 @@ def main():
         searches, indices, errors = {}, {}, []
     else:
         previous = json.loads(args.expand_from.read_text())["matches"] if args.expand_from else []
+        index_only = args.index_subpackages or args.plugin_index_only
         candidates, searches, indices, errors = inventory(
-            existing, args.skip_code_search, args.all_plugin_index, previous)
+            [] if index_only else existing,
+            args.skip_code_search, args.all_plugin_index or index_only,
+            [] if index_only else previous, index_only, args.index_subpackages)
     print(f"Inspecting {len(candidates)} public repositories", file=sys.stderr, flush=True)
     matches = []
     web_candidates = []
@@ -423,6 +476,7 @@ def main():
     snapshot = {
         "checkedAt": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "repositoriesInspected": len(candidates), "indexes": indices, "searches": searches,
+        "manifestPathsInspected": sum(len(row["paths"]) for row in candidates.values()),
         "counts": dict(counts), "errors": sorted(errors, key=lambda row: json.dumps(row, sort_keys=True)),
         "matches": sorted(matches, key=lambda row: (row["repo"].lower(), row["packagePath"])),
         "webCandidates": sorted(web_candidates, key=lambda row: (row["repo"].lower(), row["packagePath"])),
