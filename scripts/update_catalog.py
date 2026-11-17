@@ -133,6 +133,7 @@ def build_catalog(index, community, checked_at, web=(), discoveries=(), exclusio
         if identity in seen_repos or package_identity in seen_packages:
             continue
         preview = screenshot_preview(item.get("screenshots"), repo)
+        assembly = github_link(item.get("assembly"))
         entries.append({
             **{key: item[key] for key in ("name", "description", "package", "version") if key in item},
             **links,
@@ -142,6 +143,7 @@ def build_catalog(index, community, checked_at, web=(), discoveries=(), exclusio
             "packagePath": package_path,
             "source": source,
             "href": github_link("https://github.com/" + item["repo"]),
+            **({"assembly": assembly} if assembly else {}),
             **({"preview": preview} if preview else {}),
         })
         seen_repos.add(identity)

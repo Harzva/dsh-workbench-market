@@ -13,7 +13,7 @@
 ## 维护目录
 
 - `community.json` 保存逐项复核、名称和分类。新条目提供仓库、包名、版本、GitHub 清单及注册代码链接。
-- `web-workbenches.json` 保存使用客户端插槽或面板接口的工作台，包括 Dataelem 会话扩展。请附固定提交的插件清单与任务流程或源码挂载证据。
+- `web-workbenches.json` 保存使用客户端插槽或面板接口的工作台，包括 Dataelem 会话扩展。请附固定提交的插件清单、任务流程和源码挂载证据。由另一 bundle 装载的子包可在 `assembly` 填入同提交的装载配置链接。
 - `catalog-exclusions.json` 记录已核实的占位、演示和官方索引重复项，以及对应版本或工作台身份的证据。
 - `discovery.json` 保存发现扫描的命中及各轮覆盖范围与失败。GitHub 搜索只覆盖可见且已索引的内容，漏收项目可提交 PR。
 - `dist/` 是无需构建依赖的站点。也可直接打开 `dist/index.html` 离线使用。
@@ -51,7 +51,7 @@ python3 scripts/merge_discoveries.py discovery.json .scan/discussions.json --out
 
 公开 npm registry 的 `dsh-plugin`、`deepseek-harness` 和 `dsh-desktop` 关键词搜索也用于反查 GitHub 源仓库。搜索页出现重复时，按实际返回的唯一包统计。根清单扫描之外，可从 npm 版本元数据的 `repository.directory` 取出子包路径，再到 GitHub 核实对应清单、界面挂载和任务流程。[npm Registry 搜索接口](https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md) · [npm repository 字段](https://docs.npmjs.com/cli/v11/configuring-npm/package-json#repository)
 
-DSH Desk 和 DSH Open 的公开索引也参与发现。下载索引后，按 GitHub 仓库与包清单路径去重，再补扫此前未覆盖的路径。[DSH Desk 索引](https://plugin.dshdesk.com/data/plugin-index.json) · [DSH Open 索引](https://dshopen.org/index.json)
+DSH Desk、DSH Open、DPHarness 和 DSHPlugin 的公开索引也参与发现。下载索引后，按 GitHub 仓库与包清单路径去重，再补扫此前未覆盖的路径。[DSH Desk 索引](https://plugin.dshdesk.com/data/plugin-index.json) · [DSH Open 索引](https://dshopen.org/index.json) · [DPHarness 索引](https://dpharness.com/market/index.json) · [DSHPlugin 数据](https://github.com/tjsdyy/dshplugin/blob/027ea85e0c717a1256c9d9412bce7667a9aa70c3/app/plugins.json)
 
 如果要从客户端接口反查名称中看不出用途的项目，可单独执行 `python3 scripts/discover.py --code-query 'sidebarRightTabs.register in:file language:TypeScript' --output .scan/right-sidebar.json`。扫描会从命中的源码路径向上查找插件清单，并在报告里记录搜索读到的条数。
 

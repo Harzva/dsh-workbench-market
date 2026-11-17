@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T19:54:38+00:00",
+  "checkedAt": "2026-11-17T20:02:54+00:00",
   "repositoriesInspected": 14324,
   "repositoryCountScope": "largest individual inspection pass",
   "counts": {
@@ -857,6 +857,38 @@
       "manifestPathsInspected": 1,
       "indexes": {
         "retry from last plugin.dshdesk.com and dshopen.org batch": 1
+      },
+      "searches": {},
+      "errors": []
+    },
+    {
+      "checkedAt": "2026-11-17T20:01:42+00:00",
+      "repositoriesInspected": 922,
+      "manifestPathsInspected": 922,
+      "indexes": {
+        "dpharness.com market index": 3334,
+        "dshplugin.io public GitHub dataset": 3729
+      },
+      "searches": {},
+      "errors": [
+        {
+          "repo": "hccccc01333/dsh-excel-chat",
+          "path": "package.json",
+          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+        },
+        {
+          "repo": "zehenk/dsh-tu4-notification",
+          "path": "package.json",
+          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+        }
+      ]
+    },
+    {
+      "checkedAt": "2026-11-17T20:02:54+00:00",
+      "repositoriesInspected": 2,
+      "manifestPathsInspected": 2,
+      "indexes": {
+        "retry from DPHarness and DSHPlugin public indexes": 2
       },
       "searches": {},
       "errors": []
@@ -4583,6 +4615,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "1204244136/dsh-model-detector",
+      "packagePath": "package.json",
+      "package": "dsh-model-detector",
+      "version": "0.0.12",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "DSH 模型检测：对任意 pi-ai 提供方（含 DeepSeek 官方 API 路由），拉取线上最新模型并用 models.dev 自动富化模态/容量/推理后写入；支持手动编辑现有模型参数（多模态、思考档位等）",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "1207291706/dsh-restart-foot",
       "packagePath": "package.json",
       "package": "dsh-restart-foot",
@@ -7754,6 +7798,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "3361805598-gif/dsh-usage-insights",
+      "packagePath": "package.json",
+      "package": "dsh-usage-analytics",
+      "version": "0.2.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Local-first personal usage insights for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "3361805598-gif/dsh-workspace-archive",
       "packagePath": "package.json",
       "package": "@local/dsh-workspace-archive",
@@ -9358,6 +9414,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "6Mikao9/dsh-wsl-workspace",
+      "packagePath": "package.json",
+      "package": "dsh-wsl-workspace",
+      "version": "0.7.13",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "WSL workspace support for DeepSeek Harness: add a WSL workspace from the web GUI and run the whole agent session (bash + file tools) inside the WSL distribution, VS Code Remote-WSL style. No toolchain install inside WSL required. Works on DSH Desktop as well as dsh web.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "6mt/dsh-control",
       "packagePath": "package.json",
       "package": "dsh-control",
@@ -9981,6 +10049,30 @@
       ],
       "description": "An unofficial DSH port of VS Code's Blobby chat pet, built from its logic and sprite assets.",
       "observedAt": "2026-11-17T18:35:01+00:00"
+    },
+    {
+      "repo": "969246694/dsh-transparent",
+      "packagePath": "package.json",
+      "package": "dsh-transparent",
+      "version": "1.4.6",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Unofficial DSH desktop plugin: makes the window translucent so the desktop wallpaper shows through. Windows only. Also ships a genuinely refracting liquid-glass composer, though the app's layout keeps it barely visible.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
+      "repo": "969246694/dsh-wisp",
+      "packagePath": "package.json",
+      "package": "dsh-wisp",
+      "version": "1.56.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "DeepSeek娘 — an unofficial floating desktop companion for the DeepSeek Harness UI. Zero dependencies; sprites inlined as data URIs; schedules on the Client timer service instead of the trapped browser timer globals.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "96bearli/dsh-cloudflared-manager",
@@ -11727,6 +11819,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "abc12524/dsh-openviking",
+      "packagePath": "package.json",
+      "package": "dsh-openviking",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DeepSeek Harness plugin that serves OpenViking memory retrieval as the `openviking` Cordis service: `find()` and `profile()` return finished blocks tagged `<openviking>` / `<openviking_index>`, with a Plugins-page settings card for host, port, API key, score threshold, and hit count.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "AbcdefgXW/dsh-toolbox-web",
       "packagePath": "package.json",
       "package": "dsh-toolbox-web",
@@ -12583,6 +12687,18 @@
       "observedAt": "2026-11-17T19:49:41+00:00"
     },
     {
+      "repo": "AdaJyao/dsh-api-balance",
+      "packagePath": "package.json",
+      "package": "dsh-api-balance",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "API 余额：只读展示 DeepSeek API 账户余额的悬浮挂件与设置页，查询节奏与官方更新节奏一致",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Adamaik/dsh-better-display",
       "packagePath": "package.json",
       "package": "dsh-better-display",
@@ -13286,6 +13402,18 @@
         "topic:dsh-plugin 工作台 in:readme"
       ],
       "observedAt": "2026-11-17T17:53:20+00:00"
+    },
+    {
+      "repo": "Aealen/dsh-worktree",
+      "packagePath": "package.json",
+      "package": "dsh-coding-workspace",
+      "version": "0.10.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DeepSeek Harness 插件:coding 工作台——git worktree 并行开发管理、跨会话协作原语、项目分组侧栏与官方右侧栏工作区面板(资源管理器 / Git Changes·Logs)。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "aEboli/dsh-image-studio",
@@ -15242,6 +15370,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "Ajwyunsx/dsh-cmdgo-provider",
+      "packagePath": "package.json",
+      "package": "dsh-cmdgo-provider",
+      "version": "0.9.4",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "CommandCode Go 套餐供应商：/alpha/generate CLI 网关（官方 CLI 指纹伪装）接入 DSH 模型列表 + OAuth 登录（多账号池轮询/故障转移）+ 每账号 5 小时/周/月额度显示 + 会话右上角额度 HUD（全部账号合计 + 实测平均单次消耗推算的理论调用次数 + 会话级缓存读/写与命中率台账）+ 视觉模型多模态（图像输入）+ 工具调用双射与请求形状自愈",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "AJYDX-swj/dsh-deepseek-web-dock",
       "packagePath": "package.json",
       "package": "@local/dsh-deepseek-web",
@@ -16575,6 +16715,18 @@
       ],
       "description": "Keep a coding agent working until the project check passes: turn-end checks, failure steering, tools, and a composer dock.",
       "observedAt": "2026-11-17T18:35:01+00:00"
+    },
+    {
+      "repo": "Alian-Prot0s5/dsh-screenshot",
+      "packagePath": "package.json",
+      "package": "@alain-prot0s5/dsh-screenshot",
+      "version": "1.0.4",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Screenshot-to-input for DeepSeek Harness: composer camera button + global hotkey (Alt+A) + listener bound to the app lifecycle, configurable in settings. 截图自动粘贴到 DSH 输入框：相机按钮 + 全局快捷键 + 生命周期绑定 + 设置页配置。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Aliang-code/dsh-fusion-lean",
@@ -19308,6 +19460,42 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "ankhishtar2-lang/dsh-sakurafrp",
+      "packagePath": "package.json",
+      "package": "dsh-sakurafrp",
+      "version": "1.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "手机 ↔ 电脑互通（SakuraFrp 隧道 + dsh-mobile 移动网关）的图形化管理插件",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
+      "repo": "ankhishtar2-lang/dsh-wallpaper-position",
+      "packagePath": "package.json",
+      "package": "dsh-wallpaper-position",
+      "version": "1.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "dsh-dream-skin 的附属插件：在「设置 → 外观」里按图片记忆调整壁纸位移（X/Y 像素微调）",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
+      "repo": "ankhishtar2-lang/dsh-whale-tools",
+      "packagePath": "package.json",
+      "package": "dsh-whale-tools",
+      "version": "1.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "dsh-whale-widget 的附属插件：任意图片自动抠图替换小鲸鱼 + 会话头部「重启 dsh」按钮 + 浏览器心跳 + 可选挂件补丁",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "AnkoCD/dsh-time-router",
       "packagePath": "package.json",
       "package": "dsh-time-router",
@@ -19524,6 +19712,18 @@
       ],
       "description": "DeepSeek API balance display in the DSH web session header (balance capsule beside the Session log button)",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "anonRTtty/dsh-plugin-balance",
+      "packagePath": "package.json",
+      "package": "dsh-plugin-balance",
+      "version": "0.1.2",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DeepSeek API balance display in the DSH web session header (balance capsule beside the Session log button)",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "anonyjcy/dsh-plugin-mobile-touch",
@@ -19937,6 +20137,18 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "antonio-mastropaolo/dsh-model-hub",
+      "packagePath": "package.json",
+      "package": "dsh-model-hub",
+      "version": "3.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Model hub for DeepSeek Harness: provider sign-in, per-model cost ledger and spend caps, prompt-cache checks, an optional GPU-server panel and the dsh-hub CLI.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "antonkoatl/dsh-message-handoff",
       "packagePath": "package.json",
       "package": "dsh-message-handoff",
@@ -20280,6 +20492,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "aorucshiea/dsh-browser-close",
+      "packagePath": "package.json",
+      "package": "@dsh-external/dsh-easy-start",
+      "version": "0.3.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH Web easy start: one-click desktop launcher, restart and shutdown service controls",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "aorucshiea/dsh-easy-start",
       "packagePath": "package.json",
       "package": "@dsh-external/dsh-easy-start",
@@ -20313,6 +20537,18 @@
         "topic:dsh-plugin 工作台 in:readme"
       ],
       "observedAt": "2026-11-17T17:53:20+00:00"
+    },
+    {
+      "repo": "aosi526/dsh-workbuddy-xdpool",
+      "packagePath": "package.json",
+      "package": "dsh-xdpool",
+      "version": "2.7.5",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "One DSH model pool for every free quota you have: merge all locally signed-in WorkBuddy accounts with auto-failover, sign in to 13 vendors by QR/web, aggregate 76 vendors' free tiers, plus a usage dashboard, model routing, a local OpenAI-compatible gateway and a points-automation suite.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "aowind/dsh-super-agent",
@@ -20864,6 +21100,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "ArcaneOrion/dsh-stage-panel",
+      "packagePath": "package.json",
+      "package": "@arcaneorion/dsh-teaching-board",
+      "version": "0.6.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH teaching surface: project agent-generated self-contained HTML into a sandboxed in-session board with handwriting annotation and a built-in screenshot that returns to the conversation as a real user message. Ships its own usage skill (skills/stage-panel).",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "ArcaneOrion/dsh-teaching-board",
       "packagePath": "package.json",
       "package": "@arcaneorion/dsh-teaching-board",
@@ -21187,6 +21435,18 @@
       ],
       "description": "Agent & Skill management UI for DeepSeek Harness: list agent presets and skills from Settings.",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "arkme-senx/arkme-dsh-plugin",
+      "packagePath": "package.json",
+      "package": "@senguoyun/dsh-arkme",
+      "version": "3.0.67",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Arkme account, records, chat and interwoven-moments integration for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Arlenman/dsh-backup-sync",
@@ -28463,6 +28723,18 @@
       "observedAt": "2026-11-17T17:53:20+00:00"
     },
     {
+      "repo": "Bin-top1/dsh-searchhub",
+      "packagePath": "package.json",
+      "package": "@wilson.liu.cn/dsh-searchhub",
+      "version": "1.0.2",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Stop paying for your agent's web search. dsh-searchhub is a pluggable search hub for the DeepSeek Harness — swap in mainstream search providers behind ctx.web, with a beautifully polished native Settings card. Ships with Tavily (1,000 free credits/month) out of the box.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Binaryinject/dsh-review-checkout",
       "packagePath": "package.json",
       "package": "dsh-review-checkout",
@@ -30986,6 +31258,18 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "btspoony/dsh-advisor",
+      "packagePath": "package.json",
+      "package": "dsh-advisor",
+      "version": "0.7.4",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "dsh plugin bundle porting the omp advisor subsystem: a per-session reviewer model that observes the primary transcript and injects severity-ranked advice (nit/concern/blocker).",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "btspoony/dsh-keys-manager",
       "packagePath": "package.json",
       "package": "dsh-keys-manager",
@@ -30997,6 +31281,18 @@
       ],
       "description": "Multi-key management for DSH providers: sticky per-session round-robin, retry failover, cooldown recovery, and searchable extra providers.",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "btspoony/dsh-llm-fallbacks",
+      "packagePath": "package.json",
+      "package": "dsh-llm-fallbacks",
+      "version": "0.8.9",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Automatic provider/model fallback chains for DeepSeek Harness agents when LLM requests keep failing (retry exhausted, auth, quota, rate limit)",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "btspoony/dsh-supervision",
@@ -31494,6 +31790,18 @@
       ],
       "description": "Vaultwarden/Bitwarden real-time sync for DeepSeek Harness: WebSocket push notifications, on-disk vault cache with revision probing, read/write tools and an entry browser panel. Independent implementation; see THIRD-PARTY-NOTICES.md.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "Buyi-wsgzg/dsh-sidechain",
+      "packagePath": "package.json",
+      "package": "@dsh-external/dsh-sidechain",
+      "version": "0.2.2-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH side-conversation plugin: /side and /btw start isolated forked child sessions (Codex /side & /btw semantics).",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "buyou-claw/dsh-ths-ai",
@@ -33078,6 +33386,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "Carrick-K7/dsh-plugin-source",
+      "packagePath": "package.json",
+      "package": "dsh-plugin-source",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "增强官方「插件列表」tab：按来源分组（官方/内置/自装），显示版本、上游仓库（org/repo 一键跳转）与本地开发标记。只读，零网络。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "CarrotFish/dsh-file-and-terminal",
       "packagePath": "package.json",
       "package": "dsh-plugin-file-and-terminal",
@@ -34528,6 +34848,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "CH4ACKO3/dsh-harmony",
+      "packagePath": "package.json",
+      "package": "dsh-harmony",
+      "version": "0.8.19",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "A library for patching, replacing and decorating DeepSeek Harness plugins during runtime",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "CH4ACKO3/dsh-render-engine",
       "packagePath": "packages/code-render/package.json",
       "package": "@ch4acko3/dsh-code-render",
@@ -34614,6 +34946,18 @@
       ],
       "description": "macOS 桌面版一键重启 / One-click restart for the DeepSeek Harness desktop app.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "chai1110/dsh-ssh-remote",
+      "packagePath": "package.json",
+      "package": "dsh-ssh-remote",
+      "version": "0.6.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "SSH 远程工作区插件（多机并行版）：管理多台服务器、同时保持多个 SSH 连接，在每台上选择远程工作区，Agent 用 rw_* 工具直接查看/修改/执行远程文件。基于 dsh-remote (MIT) 改造，支持多池并行连接。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Chaiyahang/dsh-scratchpad",
@@ -35617,6 +35961,18 @@
       "observedAt": "2026-11-17T18:11:58+00:00"
     },
     {
+      "repo": "chemmy-11/dsh-xuegulin",
+      "packagePath": "package.json",
+      "package": "@dsh-external/dsh-nautilus",
+      "version": "0.0.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Vault 观测插件：Obsidian vault 元数据快照 + 编辑统计 + 观测面板（可配置任意 vault）",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Chen-en-run/dsh-whale-cursor",
       "packagePath": "package.json",
       "package": "dsh-whale-cursor",
@@ -35699,6 +36055,18 @@
       ],
       "description": "同步已配置供应商的模型清单：定期问上游要目录，由你在设置面板里逐项确认后再写回 providers.<route>.models —— 永不新增 provider 键。Keep the models a configured provider serves in step with what it advertises upstream, without ever adding a provider.",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "chen6896qqwee/dsh-workflow-console",
+      "packagePath": "package.json",
+      "package": "dsh-workflow-console",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Workflow Console for DeepSeek Harness: a sidebar speed-rail with plan/execute switch, goal lifecycle, token occupancy, and workflow launcher.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "chen704290901chen/dsh-newapi-video",
@@ -36445,6 +36813,18 @@
       ],
       "description": "DSH 插件：GUI 管理任意会话的智能体团队 —— 查看成员、删除角色并清理其持久会话（进回收站，可恢复）、回收成员名额、过滤已删除成员；新旧两版智能体团队都支持",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "chenkezhen480/dsh-world",
+      "packagePath": "package.json",
+      "package": "dsh-world",
+      "version": "0.7.6",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Cross-session memory, persona and life routines for DSH, with a world console, tool-free compaction, native QQ and Windows WeChat messaging, group history and quoted replies",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "chenkui-luo/dsh-plugin-restart",
@@ -37194,6 +37574,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "cherrchen/dsh-client-ui-details-host",
+      "packagePath": "package.json",
+      "package": "@dsh-electron/dsh-client-ui-details-host",
+      "version": "0.3.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Portable DSH client plugin that hosts one active details surface in the AppFrame details column",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "cherrchen/dsh-plugin-git",
       "packagePath": "package.json",
       "package": "@dsh-electron/dsh-plugin-git",
@@ -37543,6 +37935,18 @@
       ],
       "description": "Save the current Session to a .dsproj file from the Session header, Word-style: first save asks where, later saves overwrite the same file. Also opens a .dsproj from disk and switches to that Session.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "chinaRXQ/dsh-wallpaper",
+      "packagePath": "package.json",
+      "package": "dsh-wallpaper",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Wallpaper skin for the DeepSeek Harness web UI: image background with opacity, mask and blur controls.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "chinazkk/dsh-console",
@@ -37992,6 +38396,18 @@
       "observedAt": "2026-11-17T19:49:41+00:00"
     },
     {
+      "repo": "cholf5/dsh-plugin-file-actions",
+      "packagePath": "package.json",
+      "package": "dsh-plugin-file-actions",
+      "version": "0.1.7-alpha.2",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Extends the presented-file card menu in the DSH web GUI on macOS, Windows, and Linux: copy relative/absolute path, open the file in detected editors (VS Code, Sublime Text, Rider, ...), open its folder in the platform file manager (Finder/Explorer), and run it in a terminal or open its directory. Right-click (long-press on touch) over session-message links opens type-aware menus: file paths, mailto, http(s) (built-in/system browser), and git/svn clone-to with the official directory picker. App resolution reuses the official open-in-app catalog resolver; visibility follows the official open-in-app probe; icons come from the official icon route.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "cholot-Zhou/dsh-ui-overrides",
       "packagePath": "package.json",
       "package": "dsh-ui-overrides",
@@ -38134,6 +38550,18 @@
       ],
       "description": "Blue Glass Theme (ocean fantasy) for DeepSeek Harness Web — a static profile bundle. 海洋幻想主题：海洋背景、玻璃气泡、海洋侧边栏、鲸鱼设置按钮、炫彩模型文字。",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "chouxiaohuai/uiskin-theme",
+      "packagePath": "package.json",
+      "package": "uiskin-theme",
+      "version": "1.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Blue Glass Theme (ocean fantasy) for DeepSeek Harness Web — a static profile bundle. 海洋幻想主题：海洋背景、玻璃气泡、海洋侧边栏、鲸鱼设置按钮、炫彩模型文字。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "chouyong/dsh-branch-review",
@@ -39235,6 +39663,18 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "CJYLZS/dsh-commandcode-plan-autosync",
+      "packagePath": "package.json",
+      "package": "dsh-commandcode-provider",
+      "version": "0.2.4",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Sync CommandCode plan models (goat/pro/max) from the official models API + GOAT plan catalog into llm-pi-ai providers commandcode-<plan>-autosync (one-click create/update in settings).",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "CJYLZS/dsh-commandcode-provider",
       "packagePath": "package.json",
       "package": "dsh-commandcode-provider",
@@ -39616,6 +40056,18 @@
       ],
       "description": "Yunoseek pink skin for the DeepSeek Harness web GUI (pink --dsw-* token layer, yunoseek brand artwork, assistant avatar) plus the Yunoseek system-prompt injection: the identity prompt rendered as the first system-prompt section.",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "clclyzybzjsq/dsh-collab-score-based-on-mscore",
+      "packagePath": "package.json",
+      "package": "@local/dsh-collab-score",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH 乐谱协作插件：会话内可开关的乐谱编辑/预览/播放面板 + agent 乐谱工具（score-collab 乐谱模式预设）。MuseScore 文件格式兼容，不依赖桌面端。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Clearailhc/clearai-dsh",
@@ -42516,6 +42968,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "cslht11/dsh-ssh-remote",
+      "packagePath": "package.json",
+      "package": "dsh-ssh-remote",
+      "version": "0.6.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "SSH 远程工作区插件（多机并行版）：管理多台服务器、同时保持多个 SSH 连接，在每台上选择远程工作区，Agent 用 rw_* 工具直接查看/修改/执行远程文件。基于 dsh-remote (MIT) 改造，支持多池并行连接。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "cslkkl/dsh-cpa-switch",
       "packagePath": "package.json",
       "package": "dsh-cpa-switch",
@@ -43509,6 +43973,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "CyberMind-labs/dsh-skill-detective",
+      "packagePath": "package.json",
+      "package": "dsh-skill-detective",
+      "version": "1.5.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Auto skill butler for DeepSeek Harness: model-assisted need detection, full-directory security review, a cached skill index, and installed-skill management in a Web panel.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "CyberryRe/lx_music-for-dsh",
       "packagePath": "package.json",
       "package": "lx-music-for-dsh",
@@ -43761,6 +44237,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "CypherNaught-0x/dsh-subagent-dynamic-model",
+      "packagePath": "package.json",
+      "package": "dsh-subagent-model-router",
+      "version": "0.8.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Model-selectable subagents and guided model routing setup for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "CypherNaught-0x/DSH-Subagent-Model-Router",
       "packagePath": "package.json",
       "package": "dsh-subagent-model-router",
@@ -43916,6 +44404,18 @@
       ],
       "description": "DSH 插件：提示词工具，规范模型的思维链与回答内容，提供 Web UI 编辑 module.yml 与 AGENTS.md，并随包分发内置技能。",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "czhzz/dsh-input-history",
+      "packagePath": "package.json",
+      "package": "dsh-session-input-history",
+      "version": "0.1.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH 会话隔离的输入历史导航插件（纯 client 双面）：对话输入框中按 ↑/↓ 方向键遍历当前会话发送过的消息（shell history 式交互），浏览中编辑或发送即退出。与全局历史插件的区别是历史严格限定在当前会话内。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "czhzz/dsh-net-access",
@@ -45817,6 +46317,18 @@
       "observedAt": "2026-11-17T19:38:34+00:00"
     },
     {
+      "repo": "Dawn388887/dsh-fileview",
+      "packagePath": "package.json",
+      "package": "dsh-fileview",
+      "version": "1.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "In-GUI file viewer/editor for remote browsers: /dsh-fileview HTTP endpoints + client overlay that intercepts workspace file links",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Dawn388887/dsh-notify",
       "packagePath": "package.json",
       "package": "dsh-notify",
@@ -45973,6 +46485,18 @@
       ],
       "description": "DeepSeek Harness 极简余额监视器：常驻余额徽章、每分钟自动刷新、高峰/空闲时段倒计时、余额分级配色。A minimal balance monitor for DeepSeek Harness.",
       "observedAt": "2026-11-17T18:57:11+00:00"
+    },
+    {
+      "repo": "DaYanQAQ/DSH-Balance-Mini",
+      "packagePath": "package.json",
+      "package": "dsh-balance-mini",
+      "version": "1.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DeepSeek Harness 极简余额监视器：常驻余额徽章、每分钟自动刷新、高峰/空闲时段倒计时、余额分级配色。A minimal balance monitor for DeepSeek Harness.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "daybreakcold/dsh-theme-nebula-glass",
@@ -46694,6 +47218,18 @@
       ],
       "description": "Xiaomi MiMo TTS voice plugin for DeepSeek Harness: speak a line through the local speakers or an ESP32 board, with a system-prompt reminder so the model speaks every turn, plus API key / voice design / preview controls in settings.",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "ddedook/dsh-novel",
+      "packagePath": "package.json",
+      "package": "dsh-novel",
+      "version": "0.1.3",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Standard DSH plugin: novel workspace, PGlite canon, tools, skills, and content tab",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "ddGuo/dsh-workbuddy-switcher",
@@ -48441,6 +48977,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "devmom/dsh-chat-import",
+      "packagePath": "package.json",
+      "package": "dsh-session-import",
+      "version": "0.1.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Cross-tool session migration plugin for the DeepSeek Harness (dsh): high-fidelity ingest, continue, knowledge extraction, bidirectional export, privacy redaction.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "devmom/dsh-session-import",
       "packagePath": "package.json",
       "package": "dsh-session-import",
@@ -49090,6 +49638,30 @@
       ],
       "description": "DSH 插件市场：将 git 仓库作为 agent 内容插件市场，加载 Codex / Claude 技能，并以显式授权注册受支持的 Codex hooks。",
       "observedAt": "2026-11-17T18:26:55+00:00"
+    },
+    {
+      "repo": "Diluka/dsh-persona",
+      "packagePath": "package.json",
+      "package": "dsh-persona",
+      "version": "0.4.2-dsh.0.2.0-rc.2",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Configurable coding collaboration style prompts and settings UI for DeepSeek Harness.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
+      "repo": "Diluka/dsh-side-session",
+      "packagePath": "package.json",
+      "package": "@dsh-external/dsh-side-session",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH side temporary session: fork the main session (completed history + recent-context completion) into a side panel with main-session-quality UI (Claude Code /btw-style).",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "dimensionlesslu-dotcom/cybersyn-for-dsh",
@@ -50120,6 +50692,18 @@
       ],
       "description": "DeepSeek Harness plugin: browse host files and folders in the Web composer and insert their absolute paths",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "DKKD13/dsh-finance",
+      "packagePath": "package.json",
+      "package": "deepseek-harness-finance-plugin",
+      "version": "0.1.0-dev.2",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "A local-first finance research workspace for DeepSeek Harness: evidence library, research Skills, stock analysis and paper-fund research desks.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "dleaf6211-hash/dsh-whale-pet",
@@ -52050,6 +52634,18 @@
       "observedAt": "2026-11-17T18:11:58+00:00"
     },
     {
+      "repo": "dream-num/dsh-univer-plugin",
+      "packagePath": "package.json",
+      "package": "dsh-univer-office",
+      "version": "0.4.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH × Univer integration with a bundled collaboration Gateway and Viewer: inline previews, live floating Worktree windows, and session-end review actions in DeepSeek Harness.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Dream-swift/dsh-cursor-suite",
       "packagePath": "package.json",
       "package": "dsh-cursor-suite",
@@ -52376,6 +52972,18 @@
       ],
       "description": "Let an agent send the user a native desktop notification (macOS Notification Center, Windows toast, Linux desktop alert) raised by the DeepSeek Harness itself.",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "Drhushi/dsh-plugin-tav2",
+      "packagePath": "package.json",
+      "package": "dsh-plugin-tav2",
+      "version": "0.2.3",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DeepSeek Harness 插件：对话式游戏本地化，把 tav2（TranslateAgent v2）翻译流水线接入 dsh。引擎适配器架构，首发支持 Ren'Py。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "drifter-yh/dsh-think-summary",
@@ -53736,6 +54344,18 @@
       "observedAt": "2026-11-17T18:29:34+00:00"
     },
     {
+      "repo": "DSH43/dsh-image-preview",
+      "packagePath": "package.json",
+      "package": "dsh-image-preview",
+      "version": "0.2.2",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "在 dsh Web 对话正文中直接渲染本地图片与视频路径的插件（host 改写路径 + 客户端渲染播放器/拦截点击）",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "DSH43/dsh-version-check",
       "packagePath": "package.json",
       "package": "dsh-version-check",
@@ -54470,6 +55090,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "dushaobindoudou/dsh-recovery",
+      "packagePath": "package.json",
+      "package": "dsh-recovery",
+      "version": "0.6.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Diagnose and repair a DeepSeek Harness (dsh) installation — duplicated profile modules, unusable model configuration, broken settings — from the settings page, a slash command, or a standalone CLI that works even when dsh cannot start.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "dushaobindoudou/dsh-refine",
       "packagePath": "package.json",
       "package": "dsh-refine",
@@ -55065,6 +55697,18 @@
       ],
       "description": "可弹出侧边栏 · A DeepSeek Harness sidebar that shows artifacts and pops out into a larger web tab.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "e2mcc/dsh-standalone-tab-sidebar",
+      "packagePath": "package.json",
+      "package": "dsh-popout-sidebar",
+      "version": "1.0.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "可弹出侧边栏 · A DeepSeek Harness sidebar that shows artifacts and pops out into a larger web tab.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "EAbird-Z/dsh-script-library",
@@ -56174,6 +56818,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "eg-bole/dsh-better-sidebar-icons",
+      "packagePath": "package.json",
+      "package": "dsh-better-sidebar-icons",
+      "version": "0.2.2",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "VSCode-style file/folder icon theme for the DSH right-Sidebar explorer: registers the whole theme through dsh-better-sidebar's public registerFileIcon API, and falls back to a pure DOM overlay (unload-safe) on a host without that service.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "eghrhegpe/dsh-connect-agnes-token-plan",
       "packagePath": "package.json",
       "package": "dsh-connect-agnes-token-plan",
@@ -56378,6 +57034,18 @@
       ],
       "description": "DSH session management: panel with archive/trash/delete/undo, automatic rename and interrupted-session resume, six-way session-log repair (structure, zstd frames, seq gaps, EIO blocks, dual-format conflict, tool arguments), value analysis, full-text search, plan/closing template injection, and AI team tooling (per-member model and permission switching, member execution traces, cross-session messaging, memory recall, context usage).",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "EIGHTfs/dsh-session-manager",
+      "packagePath": "package.json",
+      "package": "dsh-session-conductor",
+      "version": "1.5.3",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH session management: panel with archive/trash/delete/undo, automatic rename and interrupted-session resume, six-way session-log repair (structure, zstd frames, seq gaps, EIO blocks, dual-format conflict, tool arguments), value analysis, full-text search, plan/closing template injection, and AI team tooling (per-member model and permission switching, member execution traces, cross-session messaging, memory recall, context usage).",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "EIGHTfs/dsh-session-migrate",
@@ -57077,6 +57745,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "elonnzhang/dsh-digital-life",
+      "packagePath": "package.json",
+      "package": "dsh-expert-ai",
+      "version": "0.1.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DeepSeek Harness 的可配置专家 Host / Client 插件",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "elonnzhang/dsh-expert-ai",
       "packagePath": "package.json",
       "package": "dsh-expert-ai",
@@ -57331,6 +58011,18 @@
       ],
       "description": "Dotline for DeepSeek Harness: turn the current DSH session into an editable thought graph on an infinite canvas.",
       "observedAt": "2026-11-17T19:52:01+00:00"
+    },
+    {
+      "repo": "emuco/dsh-project-env",
+      "packagePath": "package.json",
+      "package": "dsh-venv",
+      "version": "0.3.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Per-project runtime environments for DeepSeek Harness: auto-adopt or create a project-local Python venv (.venv_local/python) and wire in the toolchains/env vars for the runtimes each project uses.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "emuco/dsh-venv",
@@ -57610,6 +58302,18 @@
       ],
       "description": "dsh网页端网络优化（已废弃）：DeepSeek Harness ≥0.1.2 官方已内置 gzip 压缩、client bundle 内容寻址缓存与自动重连；本插件仅适用于 dsh ≤0.1.1-rc.2 的旧版。",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "Entity-Him/dsh-doc-quick",
+      "packagePath": "package.json",
+      "package": "dsh-doc-quick",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "文档快处插件: 拖拽文档进 Web 对话框 → Agent 直接读取处理 → 完成时右侧弹出侧栏展示产出与文件路径。host 端直读本地文件系统(支持 PDF/Word/PPT/EPUB/Notebook/Markdown/文本),提供 doc_list / doc_read / doc_complete 工具与任务侧栏。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "entrehuihui/brain-mem-think",
@@ -59270,6 +59974,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "ExploringBB/dsh-plugin-edit-regenerate",
+      "packagePath": "package.json",
+      "package": "dsh-plugin-edit-regenerate",
+      "version": "1.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Edit a user message in conversation history: confirm the revision, drop everything after it, and regenerate from the revised prompt in a forked session.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "EXstarAmazing/dsh-aqua-0.2-adapt",
       "packagePath": "package.json",
       "package": "dsh-client-ui-aqua",
@@ -59910,6 +60626,18 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "Fanch-hui/dsh-plugin-chatgpt-siwc",
+      "packagePath": "package.json",
+      "package": "dsh-plugin-chatgpt-siwc",
+      "version": "0.9.7",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "ChatGPT plan connection for DeepSeek Harness through official Sign in with ChatGPT",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "fanch-hui/dsh-workbuddy-manager",
       "packagePath": "package.json",
       "package": "dsh-workbuddy-manager",
@@ -59969,6 +60697,18 @@
       ],
       "description": "Let the DeepSeek Harness agent smartly drive a local or remote ComfyUI to generate anything, with workflow and asset management panels, per-workflow skill packs, a companion skill and a same-origin media proxy. / 让 DeepSeek Harness 的 Agent 智能驱动本地或远程 ComfyUI 生成任何内容。附带工作流、资产管理面板与技能包管理挂载。配套 skill 与同源媒体代理。",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "fandc520/dsh-openreelbench",
+      "packagePath": "package.json",
+      "package": "dsh-openreelbench",
+      "version": "0.1.0-alpha.1",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "OpenReelbench, the open video creative bench for DeepSeek Harness: a gated four-stage pipeline (brief -> script -> assets -> compose) that turns one sentence into a narrated explainer video; generation via ComfyUI workflows, assembly with FFmpeg. / DSH 开源视频创意台：四段带审批闸的管线，把一句话变成一条带配音、配图和字幕的解说片；生成走 ComfyUI，合成走 FFmpeg。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Fandral618/dsh-project-teams",
@@ -63416,6 +64156,18 @@
       "observedAt": "2026-11-17T18:42:30+00:00"
     },
     {
+      "repo": "firestige/wsr-dsh",
+      "packagePath": "package.json",
+      "package": "dsh-crystra",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Crystra workflow execution and analysis for DeepSeek Harness.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "FiretrUCK666/dsh-task-board",
       "packagePath": "package.json",
       "package": "@firetruck666/dsh-task-board",
@@ -63488,6 +64240,18 @@
       ],
       "description": "第三方模型的思考强度与输入模态设置（DeepSeek Harness 插件，Fish 补充版）：每模型声明思考档位与图片输入，由内置模型知识库 + 线协议推断自动适配，直接在官方「模型」页卡片内编辑。基于上游 dsh-better-reasoning-effort 0.5.4，修复了与 dsh-web 模型能力插件的席位冲突。 默认启用八大模型家族的大肥鱼奔跑主题。",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "Fish-under-sea/dsh-our-free-model-fish",
+      "packagePath": "package.json",
+      "package": "dsh-our-free-model-fish",
+      "version": "2.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Our Free Model（上游 Ebony-Vinyl/dsh-our-free-model 的社区改版，非原创）—— 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型，桌面端另有 EAC 协付渠道；2.0 起接入 CodeArts、CodeBuddy、WorkBuddy、LobsterAI、Qoder、TRAE、Cline、Loomy、Raccoon、MiniMax、ZCode、Gemini 十三个账号渠道（原有匿名免费通道保留）（登录、账号池、积分领取、本地 OpenAI 网关与局域网转发、数据看板与运行日志），六页毛玻璃界面统一呈现。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Fish-under-sea/dshpet-dshwe",
@@ -66103,6 +66867,30 @@
       "observedAt": "2026-11-17T19:49:41+00:00"
     },
     {
+      "repo": "fthuu/my-skin-for-DeepSeek-Harness",
+      "packagePath": "package.json",
+      "package": "my-skin",
+      "version": "2.0.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
+      "repo": "fthuu/Tokan-dsh-token-analytics",
+      "packagePath": "package.json",
+      "package": "tokan-dsh-token-analytics",
+      "version": "0.37.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH plugin for token usage analytics, cost tracking, and optimization signals",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "ftima-w/dsh-plugin-manager",
       "packagePath": "package.json",
       "package": "dsh-plugin-manager",
@@ -66453,6 +67241,18 @@
       ],
       "description": "给 DSH 网页右下角请一个 Live2D 角色：会眨眼、会呼吸、视线跟着鼠标、点她有反应、说话时嘴动、心情变了眉毛跟着动。模型不用内置——谁装谁放自己的文件夹；支持自定义 .exp3.json 表情和 .motion3.json 动作，卡片能拖能缩，背景可换。",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "fujunchao/dsh-session-vault",
+      "packagePath": "package.json",
+      "package": "dsh-session-vault",
+      "version": "0.1.9",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "面向 DSH rc.7 的安全会话管理插件：归档恢复、无限制回收站、批量操作与永久清除。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Fulisike/dsh-provider-quota",
@@ -67061,6 +67861,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "fuzz1og/dsh-model-capabilities",
+      "packagePath": "package.json",
+      "package": "dsh-model-capabilities",
+      "version": "0.12.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH web plugin: a dedicated 模型能力 settings page for llm-pi-ai — per-model thinking tiers (reasoningEfforts) with a one-click provider-level 标准档位 rollout, provider default reasoning effort, request headers and gateway compat switches. 模型能力独立设置页：思考档位（含一键标准档位）+ 请求头 + 兼容开关。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "FuzzySoul/dsh-chatvoice",
       "packagePath": "package.json",
       "package": "dsh-chatvoice",
@@ -67262,6 +68074,18 @@
       ],
       "description": "Fylar Office Editor integration for the DeepSeek Harness Web profile, powered by Fylar Office SDK",
       "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
+      "repo": "FylarOpen/fylar-office-editor",
+      "packagePath": "package.json",
+      "package": "@fylar/dsh-fylar-office-editor",
+      "version": "0.1.6",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Fylar Office Editor integration for the DeepSeek Harness Web profile, powered by Fylar Office SDK",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "FYTXY/dsh-empty-turn-guard",
@@ -67564,6 +68388,18 @@
       ],
       "description": "Remote-control the local DSH through Tailscale: expose the running DSH Web UI to your tailnet. The settings page checks every prerequisite, then shows the login link and QR; /remote does the same from the command line.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "GameGeek-Saikel/dsh-cost-meter",
+      "packagePath": "package.json",
+      "package": "@gamegeek-saikel/dsh-cost-meter",
+      "version": "0.6.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Cost tracking plugin for the DeepSeek Harness Web GUI — snapshot-anchored per-turn pricing, account balance, and live cost estimates.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "gamelongtim-ux/dsh-workflow-runner",
@@ -68305,6 +69141,18 @@
       ],
       "description": "按工作区分级列出 DeepSeek Harness 的全部会话，支持单选/多选删除。",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "gcry13067381632-jpg/dsh-qqbot",
+      "packagePath": "package.json",
+      "package": "@zaofan/dsh-qqbot",
+      "version": "1.13.16",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "QQ Bot IM channel plugin for deepseek-harness (dsh)",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "gcwarmman/dsh-sidebar-narrator",
@@ -70102,6 +70950,18 @@
       "observedAt": "2026-11-17T17:53:20+00:00"
     },
     {
+      "repo": "GLFzr/dsh-drop-file-to-path",
+      "packagePath": "package.json",
+      "package": "dsh-file-upload",
+      "version": "2.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Codex-style drag-drop for DSH web GUI: drag any file, it lands in ~/.dsh-dropbox, and the path lands in the composer as a whole blue chip (the mandatory .b64 suffix is display-hidden; the real path serializes on submit). Hot-pluggable: install with `dsh plugin --profile web add ./plugins/file-upload`, no dsh source changes.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "GLFzr/dsh-file-upload",
       "packagePath": "package.json",
       "package": "dsh-file-upload",
@@ -70885,6 +71745,18 @@
       ],
       "description": "Fail-closed runtime tool-call loop guard for DeepSeek Harness.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "GooDAnDReaDY/dsh-agent-orchestrator",
+      "packagePath": "package.json",
+      "package": "@goodandready/dsh-agent-orchestrator",
+      "version": "0.1.13",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Deprecated: orchestration is built into DeepSeek Harness since 0.1.5 - use the built-in workflow tool, subagent with agentPreset, ralph and agent teams.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "GooDAnDReaDY/dsh-approval-gate",
@@ -73657,6 +74529,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "H1Kariiiiiii/dsh-desktop-launcher2",
+      "packagePath": "package.json",
+      "package": "dsh-icon-console",
+      "version": "1.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH 桌面端图标控制台：自定义应用窗口/系统托盘/桌面与开始菜单快捷方式图标，支持图标库管理与一键重启、优雅退出",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "H1Kariiiiiii/dsh-icon-console",
       "packagePath": "package.json",
       "package": "dsh-icon-console",
@@ -73999,6 +74883,18 @@
       "observedAt": "2026-11-17T18:42:30+00:00"
     },
     {
+      "repo": "haibala-aii/dsh-haibala-ui-extensions",
+      "packagePath": "package.json",
+      "package": "@haibala-aii/dsh-extensions-extensionshub",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Haibala DeepSeek Harness extension center: sidebar nav plus a GitHub plugin catalog",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "haibiandefengshu/dsh-trpg",
       "packagePath": "package.json",
       "package": "dsh-trpg",
@@ -74131,6 +75027,18 @@
       ],
       "description": "Lightweight, self-contained desktop pet for DeepSeek Harness — an in-app floating pet driven by session activity, a settings panel, and a transparent always-on-top window that reuses the DSH host's Electron runtime (path resolution mirrors dsh-pet).",
       "observedAt": "2026-11-17T19:38:34+00:00"
+    },
+    {
+      "repo": "hairyf/dsh-third-kernel",
+      "packagePath": "package.json",
+      "package": "dsh-third-kernel",
+      "version": "0.2.1",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Third-party kernels for DeepSeek Harness: switch the whole app to local Codex or Claude Code, each with its own native interface.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "hairyf/dsh-tool-activator",
@@ -74798,6 +75706,18 @@
       ],
       "description": "Multi-dimensional token guard for DSH. Measures what a session actually spends and what it actually produces, then nudges or blocks only the wasteful part. Defaults to advise mode: it cannot deny anything until enforce is explicitly enabled and shadow-backtest misfire rate is under 0.5%.",
       "observedAt": "2026-11-17T19:51:50+00:00"
+    },
+    {
+      "repo": "Hanice404/dsh-Session-Manage",
+      "packagePath": "package.json",
+      "package": "dsh-session-state",
+      "version": "1.0.2",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH web 插件：折叠思考过程直接输出回答内容；在会话输入框上方增加会话活动状态条，展示 Think / Edit / Bash / Read，可展开与收起。 / DSH web plugin: folds the thinking process so answers render directly, and adds a session-activity status bar above the composer showing Think / Edit / Bash / Read, expandable and collapsible.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Hanice404/dsh-Session-State",
@@ -75468,6 +76388,30 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "HaowenCang/dsh-document-selection-ask",
+      "packagePath": "package.json",
+      "package": "dsh-document-selection-ask",
+      "version": "0.1.2",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "DSH client plugin: select content in TXT/Markdown/code/CSV/PDF/DOCX/PPTX/XLSX document previews and append a provenance-aware quote to the current conversation draft.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
+      "repo": "HaowenCang/dsh-turn-performance-meter",
+      "packagePath": "package.json",
+      "package": "dsh-turn-performance-meter",
+      "version": "0.1.8",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Turn-level live and completed throughput/latency telemetry for DeepSeek Harness agent workflows.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Haoxiang-Fant/dsh-task-notice",
       "packagePath": "package.json",
       "package": "dsh-task-notice",
@@ -76053,6 +76997,18 @@
       ],
       "description": "DSH SuperTerminal: natural-language tasks, resizable terminals, and a local agent library",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "Harzva/dsh-terminal",
+      "packagePath": "package.json",
+      "package": "@harzva/dsh-terminal",
+      "version": "0.1.0-alpha.17",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH SuperTerminal: natural-language tasks, resizable terminals, and a local agent library",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Harzva/dsh-uvm",
@@ -77552,6 +78508,18 @@
       "observedAt": "2026-11-17T19:51:50+00:00"
     },
     {
+      "repo": "henry-y-c/dsh-whyai",
+      "packagePath": "package.json",
+      "package": "dsh-whyai",
+      "version": "0.3.1",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "面向 DeepSeek Harness 的安全受限 WhyAI CLI 工具插件",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "henry1996-yl/dsh-reply-timer",
       "packagePath": "package.json",
       "package": "dsh-reply-timer",
@@ -78569,6 +79537,18 @@
       ],
       "description": "Edit text documents in place inside the Sidebar document preview, saving through an authenticated Host route.",
       "observedAt": "2026-11-17T18:29:34+00:00"
+    },
+    {
+      "repo": "hhb1028/dsh-client-ui-timeline",
+      "packagePath": "package.json",
+      "package": "dsh-client-ui-timeline",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH Web GUI 会话问题导航条：聊天区左缘一问一杠，随滚动高亮当前问题、悬停显示问答预览气泡、点击把该问平滑滚到视口顶（未渲染的更早历史自动翻页加载），无需改动 dsh 本体源码",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "HHHEEEWWW/dsh-mcp-console",
@@ -81494,6 +82474,18 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "huahai0202/dsh-ui-archived-panel",
+      "packagePath": "package.json",
+      "package": "dsh-better-archive",
+      "version": "0.9.3",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Sidebar Archived entry + archived-session panel with unarchive and delete, for the DeepSeek Harness web GUI",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "huahuazz/DSH_question_map",
       "packagePath": "package.json",
       "package": "dsh-question-map",
@@ -84221,6 +85213,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "hyperion2144/dsh-desktop-tauriapp",
+      "packagePath": "package.json",
+      "package": "dsh-desktop-tauriapp",
+      "version": "0.12.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH 桌面壳「DeepSeek Harness Desktop Desktop」技能包：把 DeepSeek Harness 封装成 Tauri 2 桌面应用（macOS+Windows），含托盘常驻、任务通知、鲸鱼娘桌宠、国内镜像加速、Windows 无管理员工具链",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "hyperion2144/dsh-hashline-edittool",
       "packagePath": "package.json",
       "package": "dsh-hashline-edittool",
@@ -84714,6 +85718,18 @@
       ],
       "description": "Sets a CNY spending cap for each DeepSeek Harness turn — ¥5 by default — and stops the run before the next model request once the cap is reached; the switch and amount sit at the right end of the composer dock. | 给 DeepSeek Harness 的每一轮对话设人民币花费上限（默认 5 元），到上限在下一个模型请求前自动停下；开关与金额在输入框下方最右侧。",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "i1j/dsh-deepsea-theme",
+      "packagePath": "package.json",
+      "package": "dsh-krill-theme",
+      "version": "1.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Deep Sea (深海世界) + Shallow Sea (浅海世界) 双模式主题插件 —— 一个插件覆盖 DSH 深/亮两套外观：深海深色（亮度编码信息层级）+ 浅海亮色（清澈度编码），含浮游生物动画背景、深潜工作态增强、水母参数入口。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "i1j/dsh-krill-theme",
@@ -91217,6 +92233,18 @@
       "observedAt": "2026-11-17T18:42:30+00:00"
     },
     {
+      "repo": "Jemius/dsh-session-admin",
+      "packagePath": "package.json",
+      "package": "dsh-session-admin",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "DSH web plugin: session management - a per-session Delete (archive) action in the conversation header and an Archived chats manager in Settings (view, restore, export, or permanently delete).",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Jensen-Yao/dsh-model-palette",
       "packagePath": "package.json",
       "package": "dsh-model-palette",
@@ -92587,6 +93615,18 @@
       ],
       "description": "DSH Web 客户端插件：在会话左侧显示用户消息快速跳转竖带（类 Codex 会话目录）。",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "jiangnanquan/dsh-ux",
+      "packagePath": "package.json",
+      "package": "dsh-uxexo",
+      "version": "2.0.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH web 界面增强：设置页里每一项都能即时开关（中文优先 / 0.5 窄体等宽字体方案、Solarized 浅色配色、紧凑布局、思考/工具链折叠胶囊、官方余额 + 本轮成本 + 用量图表）",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "jiangnanquan/dsh-uxexo",
@@ -95920,6 +96960,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "jojoman2024/dsh-workbuddy-connect",
+      "packagePath": "package.json",
+      "package": "@jojoman2024/dsh-workbuddy-connect-patched",
+      "version": "0.2.6",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "将 WorkBuddy 桌面 App 包含的模型自动接入 DeepSeek Harness — bring WorkBuddy desktop app models into DeepSeek Harness with zero configuration.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Jokasa7/dsh-product-subagent-console",
       "packagePath": "package.json",
       "package": "dsh-product-subagent-console",
@@ -96545,6 +97597,18 @@
       "observedAt": "2026-11-17T19:54:29+00:00"
     },
     {
+      "repo": "jsoncode/dsh-free-model",
+      "packagePath": "package.json",
+      "package": "dsh-model-list",
+      "version": "0.1.3",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "OpenRouter free-models browser plugin (dual-face): fetch OpenRouter models, filter the free ones (price 0 or :free), list them newest-first in a Settings tab with local search and full model info, and create a ready-to-use DSH model config (settings.yaml route + stored credential) in one click. Bilingual UI (zh/en), no hardcoded paths, publishable to npm / GitHub",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "jsoncode/dsh-get-balance",
       "packagePath": "package.json",
       "package": "dsh-get-balance",
@@ -96618,6 +97682,18 @@
       ],
       "description": "Voice input plugin (dual-face): mic button beside the composer send action, live recording bubble streaming PCM to a local Qwen3-ASR python service managed by the host, plus an ASR environment settings page (clone runtime/model repos, create venv, run server). Bilingual UI (zh/en)",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "Jstn-1g/dsh-guarded-live-voice",
+      "packagePath": "package.json",
+      "package": "dsh-live-voice",
+      "version": "0.3.0-preview.5",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DeepSeek Harness live voice preview with exact-session consent, a local synthetic demo, and one bounded manual turn",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Jstn-1g/dsh-live-voice",
@@ -98406,6 +99482,18 @@
       ],
       "description": "VSCode-style file explorer for the DeepSeek Harness web client: a body-mounted, draggable right sidebar with virtualized lazy file tree and text / Markdown / image preview. Does not depend on the native details slot, so it works on blank sessions.",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "kaikaichumi/dsh-skill-manager",
+      "packagePath": "package.json",
+      "package": "@kaikaichumi/dsh-skill-manager",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Policy-aware skill installation and management for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "kaine380/dsh-mcp-unified-panel",
@@ -100868,6 +101956,18 @@
       "observedAt": "2026-11-17T18:42:30+00:00"
     },
     {
+      "repo": "KhalilYamber/dsh-lens",
+      "packagePath": "package.json",
+      "package": "dsh-prism",
+      "version": "1.14.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH 界面三档模式（原生/整洁/白话）：整洁档走产品原版行语言，白话档走大白话，工具调用按 step 分段归组折叠 / Three-tier UI mode (native/tidy/plain) for DeepSeek Harness: the product's own row language or plain speech, with step-segmented tool groups",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "khalilyamber/dsh-tidewatch",
       "packagePath": "package.json",
       "package": "dsh-tidewatch",
@@ -101138,6 +102238,18 @@
       ],
       "description": "提示词附魔棒 (dsh-prompt-enchant):DSH Web 对话输入框的灵活自适应提示词增强插件(磁盘常驻版,重启自动加载;支持人设模式切换)",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "Kian-Oraish/dsh-prompt-enhance",
+      "packagePath": "package.json",
+      "package": "dsh-prompt-enhance",
+      "version": "0.7.7",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "提示词附魔棒 (dsh-prompt-enchant):DSH Web 对话输入框的灵活自适应提示词增强插件(磁盘常驻版,重启自动加载;支持人设模式切换)",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "kichare/dsh-local-dba",
@@ -103665,6 +104777,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "kongchengavg/dsh-StatusLight",
+      "packagePath": "package.json",
+      "package": "dsh-pet-statuslight",
+      "version": "1.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DeepSeek Harness status-light plugin: character expressions follow the model state, chat-bubble notifications, and a Windows always-on-top mini-window. 状态灯插件：角色表情跟随模型状态 + 聊天框气泡 + 系统级置顶小窗。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "kongchenhui/dsh-prompt-tuner",
       "packagePath": "package.json",
       "package": "@kongchenhui/dsh-prompt-tuner",
@@ -104646,6 +105770,18 @@
       "observedAt": "2026-11-17T18:42:30+00:00"
     },
     {
+      "repo": "KuramiWan/dshp-plugin-panel",
+      "packagePath": "package.json",
+      "package": "@super_camel/dsh-plugin-panel",
+      "version": "0.3.1",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "DSHP session-scoped skill control and plugin management: session_skill_* tools, /skill-* commands, and a browser panel for skills, session MCP, and host-composition plugins (enable/disable, bundle→patch promote)",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "KureKaruna/dsh-open-folder",
       "packagePath": "package.json",
       "package": "dsh-open-folder",
@@ -104873,6 +106009,18 @@
       ],
       "description": "Animated whale particle background for the DeepSeek Harness (dsh) Web UI: the WHALE-silhouette particle field with a decaying pointer-wake field plus the official dot-grid layer, registered into the frame-wide shell.overlay seat.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "kvmem/dsh-advisor",
+      "packagePath": "package.json",
+      "package": "dsh-super-advisor",
+      "version": "0.1.11",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH SuperAdvisor: on-demand second opinions with manual, model-tag, independent AI or approve-all policies",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "kvmem/dsh-super-advisor",
@@ -106894,6 +108042,18 @@
       ],
       "description": "Context-aware emotional avatar presentation for DeepSeek Harness",
       "observedAt": "2026-11-17T19:51:50+00:00"
+    },
+    {
+      "repo": "lazybot114514/dsh-token-budget",
+      "packagePath": "package.json",
+      "package": "dsh-token-budget",
+      "version": "0.2.1",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "A per-conversation total-token safety fuse for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "lazyra/dsh-session-trash",
@@ -110244,6 +111404,18 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "Li-0803/dsh-session-search",
+      "packagePath": "package.json",
+      "package": "dsh-session-search",
+      "version": "0.1.1",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "会话全文搜索浮窗 · 给 DeepSeek Harness 侧边栏加一个搜索入口，按关键词搜 DSH 里的全部历史会话（主机端直读 session.jsonl.zstd，零第三方依赖），点击命中可精准定位到那条消息行并高亮。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "LI-Huaa/dsh-workspace-upload",
       "packagePath": "package.json",
       "package": "dsh-workspace-upload",
@@ -111577,6 +112749,18 @@
       ],
       "description": "Project secret management for the DeepSeek Harness: discover every .env file across a monorepo (root and workspace packages), edit keys safely in a Settings page, and hand the model a DSH_ENV_FILE / DSH_ENV_FILES pointer so shell commands can source the right environment.",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "lifefloating/dsh-doudizhu",
+      "packagePath": "package.json",
+      "package": "dsh-poker",
+      "version": "0.1.8",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "斗地主房间插件。三人/四人、经典/癞子，Host 权威房间 + 欢迎积分账本。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "lifeipkg/dsh-gitlab-workstation",
@@ -114283,6 +115467,30 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "Liora2050348900/dsh-behavior-enhancer",
+      "packagePath": "package.json",
+      "package": "@zoria-lind/dsh-behavior-enhancer",
+      "version": "1.3.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "行为管理插件:系统提示词行为约束 / 失败收敛并行度 / 连续失败用户介入 / 写后检查与 .bak 回滚 / 项目记忆写后校验,基于 DSH 真实插件 API",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
+      "repo": "Liora2050348900/dsh-token-optimizer",
+      "packagePath": "package.json",
+      "package": "@zoria-lind/dsh-token-optimizer",
+      "version": "3.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "分层 Token 优化管道:输出阶梯 / 工具裁剪与 MCP 懒加载 / 压缩设置与状态 / runtime 原文归档,基于 DSH 真实插件 API",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Lipraty/dsh-session-import",
       "packagePath": "package.json",
       "package": "dsh-session-import",
@@ -114955,6 +116163,18 @@
       ],
       "description": "DSH 社区热门悬浮面板：24 小时热门话题 + 热门插件 TOP10，悬浮可拖动、置顶、点击居中展开、列表直达内容页。",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "LittleCar30/dsh-deepseek-web",
+      "packagePath": "package.json",
+      "package": "dsh-deepseek-web-littlecar30",
+      "version": "0.2.17",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "DeepSeek Harness 桌面版网页通道插件：通过真实 Edge/Chrome 使用 DeepSeek 免费网页版，支持可选 Kimi/GLM 审核和中文配置页。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "LittleChenLiya/dsh-superagent",
@@ -115888,6 +117108,18 @@
       ],
       "description": "The strongest free web search plugin for coding agents. Plug-in web search, X search, and page fetch for models without native web access. Free out of the box: no signup, no API key (Firecrawl keyless, 1,000 free credits/month)",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "liustack/pptfast",
+      "packagePath": "package.json",
+      "package": "@liustack/pptwise",
+      "version": "0.49.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "A real PowerPoint, not HTML. Editable .pptx decks for AI agents, rendered on your own machine.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "liustack/pptwise",
@@ -117787,6 +119019,18 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "Ln1m/dsh-side-tasks",
+      "packagePath": "package.json",
+      "package": "dsh-lt-tasks",
+      "version": "0.7.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Multi-window long-running task management plugin for DeepSeek Harness: a task is a persistent folder (7-document archive with a fact-only immutable list, numbered checklist items and milestones, plus a minimal handoff index), with lock-based concurrency, content snapshots, a 6-state machine, and a left-sidebar Tasks view.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Ln1m/dsh-wallet",
       "packagePath": "package.json",
       "package": "dsh-wallet",
@@ -119032,6 +120276,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "Loping151/dsh-nekowhale-stickers",
+      "packagePath": "package.json",
+      "package": "dsh-nekowhale-stickers",
+      "version": "1.1.2",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "大肥鱼 / GPT娘 sticker knowledge, search and local meme templates for DeepSeek Harness (dsh) and any bot",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Loping151/dsh-vibeos",
       "packagePath": "package.json",
       "package": "dsh-vibeos",
@@ -119524,6 +120780,18 @@
       "observedAt": "2026-11-17T19:38:34+00:00"
     },
     {
+      "repo": "louke6572/dsh-Balance-Whale-Widget",
+      "packagePath": "package.json",
+      "package": "dsh-dfy",
+      "version": "0.7.9",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "QQ × B站 × 桌宠一体化插件：统一设置窗口、小鲸鱼余额挂件、106 段透明动画桌宠、QQ 消息卡与双向脱敏记忆。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "louke6572/dsh-Dfy",
       "packagePath": "package.json",
       "package": "dsh-dfy",
@@ -119887,6 +121155,18 @@
       ],
       "description": "Lovstudio in-place application restart for the DeepSeek Harness web surface: a host half exposing restart/status routes and a settings-header button with live running-conversation monitoring, confirmation dialog, and in-flight spinner.",
       "observedAt": "2026-11-17T18:29:34+00:00"
+    },
+    {
+      "repo": "lovstudio/dsh-model-select-search",
+      "packagePath": "package.json",
+      "package": "@lovstudio/dsh-search-model",
+      "version": "0.2.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Composer model seat takeover: sticky search + fuzzy matching over the shared model directory",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "lovstudio/dsh-plugin-marketplace",
@@ -122904,6 +124184,18 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "LWLAymh/dsh-guardian",
+      "packagePath": "package.json",
+      "package": "dsh-edit-guardian",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH plugin: file-change diff bar with keep/undo summary, and a dangerous-command approval gate with red highlighting for bash/pwsh",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "LWLAymh/dsh-tool-emoji",
       "packagePath": "package.json",
       "package": "dsh-tool-emoji",
@@ -123403,6 +124695,18 @@
       ],
       "description": "dsh 体验增强四件套 = Jupyter风格SideBar + 中央文件预览Tab + 多行GoalBar + 实时Token流速徽标",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "lyhue1991/dsh-tree",
+      "packagePath": "package.json",
+      "package": "@lyhue1991/dsh-soup",
+      "version": "0.7.4",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "dsh 体验增强四件套 = Jupyter风格SideBar + 中央文件预览Tab + 多行GoalBar + 实时Token流速徽标",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "lyingice/dsh-client-ui-mc-skin",
@@ -124948,6 +126252,42 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "Magiczerowxy/dsh-balance",
+      "packagePath": "package.json",
+      "package": "@magiczerowxy/dsh-balance",
+      "version": "0.1.4",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "DeepSeek balance floating widget for the dsh web GUI: a small overlay window pinned bottom-left showing the account balance from the official API, with a collapse chip and 5-minute auto refresh.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
+      "repo": "Magiczerowxy/dsh-modef",
+      "packagePath": "package.json",
+      "package": "@magiczerowxy/dsh-modef",
+      "version": "0.9.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "模型选择 + 推理强度滑块 + 可选提供商开关：模型保持下拉菜单，推理强度改为 Claude 风格滑块，最高档可选四种动画（喷射流光 / 暗流涌动 / 流体 / 晚霞，后两者每次打开浮层随机重掷；晚霞配色采自参考图）；设置-模型 底部多一个「可选提供商」面板，逐个启用/停用模型提供商（提供商配置原样保留）。已适配 DSH 0.1.7-rc.1 与 0.2.0-rc.1/rc.2（plugins.item / configForms / settings.models.footer）。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
+      "repo": "Magiczerowxy/dsh-ocgo-usage",
+      "packagePath": "package.json",
+      "package": "@magiczerowxy/dsh-ocgo-usage",
+      "version": "0.1.4",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "OpenCode Go subscription quota widget for the dsh web GUI: a floating window showing rolling/weekly/monthly usage with progress bars, refreshed every 5 minutes.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "MAGMA27/dsh-calendar",
       "packagePath": "package.json",
       "package": "@magma27/dsh-calendar",
@@ -125928,6 +127268,18 @@
       ],
       "description": "DeepSeek Harness desktop hub — Tauri 2.x shell + dsh web plugin layer. This npm package ships the plugin half (client UI + HTTP routes + cordis.patch.yml); the desktop shell ships as the NSIS installer (see build/).",
       "observedAt": "2026-11-17T18:35:01+00:00"
+    },
+    {
+      "repo": "MarecGents/marec-dsh-desktop",
+      "packagePath": "package.json",
+      "package": "@marecgents/dsh-hub",
+      "version": "0.1.6",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DeepSeek Harness desktop hub — Tauri 2.x shell + dsh web plugin layer. This npm package ships the plugin half (client UI + HTTP routes + cordis.patch.yml); the desktop shell ships as the NSIS installer (see build/).",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "MaRi23333/dsh-agent-instructions-editor",
@@ -126964,6 +128316,18 @@
       ],
       "description": "NapCat / OneBot 11 通道插件：把 DeepSeek Harness 变成 QQ 机器人（私聊 + 群聊、@门控、白名单、长文分段、工具主动发送、设置页配置）。",
       "observedAt": "2026-11-17T19:38:34+00:00"
+    },
+    {
+      "repo": "mattheliu/dsh-accessibility",
+      "packagePath": "package.json",
+      "package": "@oh-my-dsh/dsh-accessibility",
+      "version": "0.1.3-rc.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Screen-reader guidance and in-app accessibility diagnostics for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Matthew-Laplace/dsh-ark-pet",
@@ -130937,6 +132301,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "mimimaster/dsh-devin-search",
+      "packagePath": "package.json",
+      "package": "dsh-devin-search",
+      "version": "0.2.10",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "DSH Devin OAuth + shared web_search / code_search bundle",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "mimiqiao/DSH-Dock",
       "packagePath": "package.json",
       "package": "@local/desk-workbench",
@@ -131261,6 +132637,18 @@
       ],
       "description": "DeepSeek Harness (DSH) 官方与开源生态「插件与 Skill 市场」（Plugins & Skills Market）",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "Minglink/dsh-infinite-gen-2",
+      "packagePath": "package.json",
+      "package": "dsh-infinite-gen-5",
+      "version": "1.3.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "无限五代（IG5）：DeepSeek Harness 统一 Reverse / Ghidra 静态分析与 x64dbg 无头调试工作台。独立 HTTP/HTTPS 流量采集与分析。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Minglink/dsh-infinite-gen-5",
@@ -131803,6 +133191,18 @@
       ],
       "description": "xAI Grok SuperGrok / X Premium OAuth for DeepSeek Harness",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "mirelconstantin/dsh-opencode-router",
+      "packagePath": "package.json",
+      "package": "dsh-opencode-router",
+      "version": "1.1.1",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "OpenCode Zen free models for DeepSeek Harness: a native dsh-llm adapter that needs no API key, with a proxy exit pool that rotates, probes and scales to hundreds of exits.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "mirelconstantin/dsh-subagents-model",
@@ -133586,6 +134986,30 @@
       ],
       "description": "DSH 插件: 归档会话定期清理 —— 物理归档堆与页面归档会话超保留期(默认7天,页面可配置天/小时)自动物理删除",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "Momojie-S/dsh-right-dock",
+      "packagePath": "package.json",
+      "package": "@momojie-s/dsh-right-dock",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Right dock platform for DeepSeek Harness web UI: a pushing (non-overlay) right panel with multi-tab seats — other plugins contribute tabs through the rightdock.tab slot",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
+      "repo": "Momojie-S/dsh-workspace-files",
+      "packagePath": "package.json",
+      "package": "@momojie-s/dsh-workspace-files",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Workspace file explorer for DeepSeek Harness web UI: right-side resizable file tree with recursive search (skips .git/node_modules), Markdown rendering and multi-language syntax highlighting",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "momonaka/commandcode-dash",
@@ -135965,6 +137389,18 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "MST19711/dsh-opencode-go-usage",
+      "packagePath": "package.json",
+      "package": "@deepseek-ai/dsh-balance-panel",
+      "version": "0.3.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Extensible balance/usage panel for the DeepSeek Harness Web UI: a floating card on the right edge that auto-selects a backend by the current session's provider. Backends: OpenCode Go (subscription quota windows with progress bars), Zhipu open platform (pay-as-you-go cash balance, money-only rows), and DeepSeek open platform (pay-as-you-go cash balance via the official /user/balance endpoint). Adding a provider = registering one backend object.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "MST19711/dsh-session-files",
       "packagePath": "package.json",
       "package": "@deepseek-ai/dsh-session-files",
@@ -136098,6 +137534,18 @@
       ],
       "description": "Browse and manage project-level and global skills from the DSH right sidebar.",
       "observedAt": "2026-11-17T19:51:50+00:00"
+    },
+    {
+      "repo": "mtdx2001/dsh-think-translate",
+      "packagePath": "package.json",
+      "package": "dsh-think-translate",
+      "version": "1.0.10",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Display-layer translation for the DSH web app: thinking chain, task cards, and optional answer text, in 8 target languages (local Ollama / Google / Bing, fail-open)",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "mtty-ai/mmx-quota-tool",
@@ -137713,6 +139161,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "n2kkrd/dsh-locale-ru",
+      "packagePath": "package.json",
+      "package": "dsh-locale-ru",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Russian localization for the DeepSeek Harness (DSH) web interface: adds the ru language and translates all 2596 UI strings",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "N3kOk0/dsh-acrylic",
       "packagePath": "package.json",
       "package": "dsh-acrylic",
@@ -138236,6 +139696,18 @@
       ],
       "description": "DSH 插件榜单：每天整理 dsh-plugin 生态 Top 10 / Top 100，按热度（GitHub Star）或下载量（npm 周下载）降序排序，默认按热度；数据聚合自 GitHub dsh-plugin 主题、Oh-My-DSH 聚合目录、awesome-dsh 精选清单与 npm 下载统计，入口集成在设置页",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "nanami-0713/dsh-remote-public",
+      "packagePath": "package.json",
+      "package": "dsh-remote",
+      "version": "0.6.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH plugin that brings the dsh-remote bridge and QR device pairing into the DSH web UI, exposed as a native \"手机遥控\" section inside Settings.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "nanami-0713/dsh-usage",
@@ -139903,6 +141375,18 @@
       ],
       "description": "CLI Bridge for DeepSeek Harness (DSH): one package bridging six local coding-CLI agents — agy (Google Antigravity CLI), Tencent CodeBuddy Code, Xiaomi MiMo (MiMoCode), OpenCode, Claude Code, and OpenAI Codex CLI. Each provider keeps its own agent preset (cordis-agy / codebuddy-first / cordis-mimo / opencode-first / claude-first / codex-first), tools (<id>_run / <id>_continue / <id>_status, plus per-provider model listing), rate-limit/network fallback dialog, and zero-dependency MCP server, unified under a single home-level status light, one settings file, and one bundle patch. Merges agy-first-bridge, codebuddy-first-bridge and mimo-first-bridge.",
       "observedAt": "2026-11-17T19:38:34+00:00"
+    },
+    {
+      "repo": "new-256/codebuddy-bridge",
+      "packagePath": "package.json",
+      "package": "codebuddy-first-bridge",
+      "version": "1.6.2",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "codebuddy-first bridge for DeepSeek Harness (DSH): prioritize the local codebuddy CLI in every mode (full DSH control, no prompts), with a rate-limit/network fallback dialog, a live status light (dynamic form + home-level plugin), per-project token usage accounting, and a zero-dependency MCP server so any MCP-capable agent (Claude Code / Codex / Cherry Studio …) discovers codebuddy itself. Single npm package: install the home-level status light via `dsh plugin --profile web add codebuddy-first-bridge`.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "new-Beginner/dsh-cliproxyapi",
@@ -142127,6 +143611,18 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "NOirBRight/dsh-ponytail",
+      "packagePath": "package.json",
+      "package": "dsh-ponytail",
+      "version": "0.2.12",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Ponytail modes, skills, commands, and GUI integration for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "NOirBRight/dsh-usage-monitor",
       "packagePath": "package.json",
       "package": "dsh-usage-monitor",
@@ -142293,6 +143789,18 @@
       ],
       "description": "Catppuccin themes + a toggleable glassmorphism skin for the DeepSeek Harness web GUI — Latte, Frappé, Macchiato and Mocha registered into the official theme system (Appearance settings), fully remapping the --dsw-* token ladder, with adjustable frosted glass for the top bar, sidebar, composer and trajectory view.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "NonchalantLudens/dsh-side-dir",
+      "packagePath": "package.json",
+      "package": "dsh-side-dir",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Project directory preview panel for the DeepSeek Harness web GUI: lazy directory tree + read-only file preview in the details column, toggled from the sidebar. Data flows through a fenced /dirpreview host command over the official command.execute RPC.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "nonchalantludens/dsh-skin-collection",
@@ -143637,6 +145145,18 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "O7starv1/dsh-opencode-usage",
+      "packagePath": "package.json",
+      "package": "dsh-opencode-usage",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "OpenCode Go 订阅用量可视化：在 DSH Web 输入框内（发送键左侧）显示同款用量圆环，点击弹出 5小时/周/月用量明细面板",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "OahzOb/dsh-blank-handoff",
       "packagePath": "package.json",
       "package": "dsh-blank-handoff",
@@ -144145,6 +145665,18 @@
       ],
       "description": "持续监听并记录本地 Harness 调用 LLM 的全过程：完整提示词（用户输入 + DSH/插件注入）、技能加载、工具调用与命令执行、本地文件读写、联网搜索抓取。按「轮次 → 步骤」依时间汇总为高可读 Markdown，落在会话对应工作区内，序号加时间命名。内置审阅页与可调配置。",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "Oii6111/dsh-pond",
+      "packagePath": "package.json",
+      "package": "dsh-pond",
+      "version": "2.4.1",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "DSH 插件：每天替你刷一轮 B站 —— 读字幕挑出值得的、写一份日报，值得的就 @ 你（dsh-bili-scroll 的独立 fork）",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "oil-oil/dsh-vision",
@@ -144683,6 +146215,18 @@
       ],
       "description": "DSH Web selection-annotation plugin: select assistant text, annotate (optional), and press Enter to send the annotation block with your message — the model replies to each annotation by number, with hoverable chips in the reply.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "omdsh-dev/dsh-at-file",
+      "packagePath": "package.json",
+      "package": "dsh-at-file",
+      "version": "0.7.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Codex-style @path references for the DeepSeek Harness web GUI: search workspace paths without injecting file content",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "omdsh-dev/dsh-auto-chess",
@@ -145957,6 +147501,18 @@
       ],
       "description": "DeepSeek Harness plugin: control the Unity Editor through the unity CLI — project management, live-editor pipeline commands, and C# eval as agent tools.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "open-dsh-plugins/dsh-open-in-app",
+      "packagePath": "package.json",
+      "package": "dsh-open-in-app",
+      "version": "0.1.2",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Open the current workspace folder with an installed application (Finder, Terminal, VS Code, Ghostty, Zed, ...) from the session header of the dsh web UI",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "open-dshai/dsh-employee",
@@ -151060,6 +152616,18 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "Player047/dsh-token-bubbles",
+      "packagePath": "package.json",
+      "package": "dsh-token-bubbles",
+      "version": "0.4.5",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Token usage visualizer for the DeepSeek Harness web GUI: watch colorful bubbles pop up from the bottom-right corner while your agent generates tokens.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "PlayerOneD/dsh-theme-matrix",
       "packagePath": "package.json",
       "package": "dsh-theme-matrix",
@@ -153161,6 +154729,18 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "Q04291/dsh-ambient-ui",
+      "packagePath": "package.json",
+      "package": "dsh-ambient-ui",
+      "version": "1.3.2",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Ambient UI for DeepSeek Harness Web: a glassmorphism balance/token floating widget plus a pixel-art agent-trail animation.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "q253595422/dsh-imagegen-video",
       "packagePath": "package.json",
       "package": "@q253595422/dsh-imagegen-video",
@@ -153454,6 +155034,18 @@
       ],
       "description": "Model failover for DeepSeek Harness with a Web UI seat beside the composer model picker: pick one or more providers, pool = all models inside them; on request failure (RATE_LIMIT/QUOTA/TIMEOUT/...) auto-retry with the next untried model. Runtime tool model_failover (status/set/clear/enable/disable) plus an in-page panel.",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "qgx1992/dsh-model-select-style",
+      "packagePath": "package.json",
+      "package": "dsh-model-select-style",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH web UI 插件：把输入框官方「模型选择」控件替换为两个独立按钮（供应商选择 + 模型选择，两级联动），保留推理等级调节；只动这一处控件，不改 DSH 源码。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "qgx1992/dsh-notify",
@@ -157013,6 +158605,18 @@
       "observedAt": "2026-11-17T18:48:43+00:00"
     },
     {
+      "repo": "raktim-mondol/dsh-researchcraft",
+      "packagePath": "package.json",
+      "package": "academic-harness",
+      "version": "0.54.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Academic Harness as a DeepSeek Harness profile: DSH web UI and agent, scientific skills, lab notebook, specialist subagents.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "rakutek/dsh-intelligent-ui",
       "packagePath": "package.json",
       "package": "@rakutek/dsh-intelligent-ui",
@@ -157867,6 +159471,30 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "Ready22Race/team-task",
+      "packagePath": "package.json",
+      "package": "@ready22race/dsh-team-task",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "team-task for DeepSeek Harness: long-horizon multi-agent tasks — a lead plans a reviewed DAG, durable members execute, an event log is the single truth, and a resident reconciler survives crashes and restarts.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
+      "repo": "Real-WangLe/dsh-voice-local",
+      "packagePath": "package.json",
+      "package": "dsh-voice-local",
+      "version": "0.4.1",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "DSH WebUI 本地语音输入插件：点击麦克风录音 → 浏览器静音检测断句 → 本地 SenseVoice 离线转写 → 文本追加到输入框草稿（音频不出本机）",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "realchendahuang/dsh-provider-studio",
       "packagePath": "package.json",
       "package": "dsh-provider-studio",
@@ -158655,6 +160283,18 @@
       ],
       "description": "Conversation history recall for DeepSeek Harness: search the original text of every session (like searching chat records) — literal/fuzzy/semantic retrieval, fully local & offline. AI never forgets what you told it.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "Rellopn/dsh-p2p-lan",
+      "packagePath": "package.json",
+      "package": "@rellopn/dsh-p2p-lan",
+      "version": "0.1.0-rc.30",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "LAN P2P AI-to-AI collaboration messaging (host node + browser gate panel)",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "ReLuckyLucy/dsh-Rhine-Lab-theme",
@@ -160806,6 +162446,18 @@
       "observedAt": "2026-11-17T18:48:43+00:00"
     },
     {
+      "repo": "RootAndSource/dsh-preset-four-images-model",
+      "packagePath": "package.json",
+      "package": "dsh-preset-four-images-model",
+      "version": "1.5.1",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "四象模型·DSH智能体 — 主体/环境/地位/行为/才能/心态 六维（主体置首）（才能与心态各自独立、不合并）、A诊断+B方案两段式的管理问题分析与方案生成 Preset；零第三方依赖，使用 DSH 官方 subagent 派发",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "rootkiller6788/dsh-flow",
       "packagePath": "package.json",
       "package": "dsh-flow",
@@ -161608,6 +163260,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "Ruler4396/dsh-launcher-lifetime",
+      "packagePath": "package.json",
+      "package": "dsh-launcher-lifetime",
+      "version": "0.2.2",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "DeepSeek Harness (dsh) plugin: control how long the dsh service (node) stays alive when using the dsh-launcher shell. Writes DSH_HOME\\dsh-launcher\\settings.json (serviceLifetime: 0 always-on, 1 tray-resident, 2 follow-window); the shell applies it on window close / tray exit. No runtime dependencies.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "RuMemory/deepseek-harness-ru",
       "packagePath": "package.json",
       "package": "dsh-locale-ru",
@@ -162273,6 +163937,18 @@
       ],
       "description": "Collect and summarize local token usage from DeepSeek Harness, Codex and OpenCode logs, with a WebUI dashboard tab.",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "RyzeZhou/dsh-ui-mobile-layout",
+      "packagePath": "package.json",
+      "package": "dsh-ui-mobile-layout",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH 移动端布局层：窄视口单栏布局 + 左侧抽屉 + 官方设置改造成手机原生两层导航（全屏条目列表→详情→返回），桌面不受影响。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "RZ-0410/dsh-theme-quartet",
@@ -163816,6 +165492,18 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "saya-ch/dsh-mobile-iroh",
+      "packagePath": "package.json",
+      "package": "dsh-mobile-iroh",
+      "version": "0.1.0-alpha.1",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Independent iroh transport and Android companion for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "sayhia/shiguang-reader",
       "packagePath": "package.json",
       "package": "shiguang-reader",
@@ -163910,6 +165598,18 @@
       ],
       "description": "Renders LaTeX math in the DeepSeek Harness chat view and makes the model write $...$ / $$...$$ instead of fenced code blocks.",
       "observedAt": "2026-11-17T18:48:43+00:00"
+    },
+    {
+      "repo": "sc3294145287-beep/dsh-doctor",
+      "packagePath": "package.json",
+      "package": "dsh-doctor",
+      "version": "0.4.3",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Deterministic diagnostics and recovery for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "scarf1985566475-cloud/dsh-voice",
@@ -167914,6 +169614,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "shittass/dsh-gui-browser",
+      "packagePath": "package.json",
+      "package": "dsh-gui-browser",
+      "version": "2.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Operable live view of the Session's built-in Chromium in the GUI right Sidebar, with the viewer's input reported to the model",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "ShiXiangYu2/dsh-siliconflow-vision",
       "packagePath": "package.json",
       "package": "dsh-siliconflow-vision",
@@ -168277,6 +169989,18 @@
       ],
       "description": "OpenCode GO subscription usage corner widget for DeepSeek Harness: rolling/weekly/monthly usage with reset countdowns, collapsible to a right-edge tab",
       "observedAt": "2026-11-17T18:48:43+00:00"
+    },
+    {
+      "repo": "Shtukbase/elephant-memory",
+      "packagePath": "package.json",
+      "package": "dsh-elephant-memory",
+      "version": "0.4.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Elephant Memory: source-backed recall across DeepSeek chats, with a bounded summary view, ranked passages and an incremental decision journal (after Victor Taelin's OptChat specification).",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Shuai-S/dsh-sub2api-sync",
@@ -168782,6 +170506,18 @@
       ],
       "description": "DeepSeek Harness 用量监控：7 个白名单供应商（DeepSeek／OpenRouter／OpenCode／Command Code／Fireworks／OpenDesign）的周期限额、余额、报告费用与本地今日用量；控制台会话与官方 HTTP 方法分离，范围收敛为代码级冻结白名单。",
       "observedAt": "2026-11-17T18:48:43+00:00"
+    },
+    {
+      "repo": "shxtmaker/dsh-usage-monitor",
+      "packagePath": "package.json",
+      "package": "dsh-token-quota",
+      "version": "2.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DeepSeek Harness 用量监控：7 个白名单供应商（DeepSeek／OpenRouter／OpenCode／Command Code／Fireworks／OpenDesign）的周期限额、余额、报告费用与本地今日用量；控制台会话与官方 HTTP 方法分离，范围收敛为代码级冻结白名单。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "shy3130/dsh-quota",
@@ -169794,6 +171530,18 @@
       ],
       "description": "个人工作台 —— DSH 侧边栏插件：待办 / 笔记 / 书签 / 会话统计 / 服务器状态",
       "observedAt": "2026-11-17T18:11:58+00:00"
+    },
+    {
+      "repo": "Sivan757/dsh-agent-plugin-market",
+      "packagePath": "package.json",
+      "package": "dsh-agent-plugins-market",
+      "version": "0.15.3",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "One-stop skills, subagent, MCP and LSP manager inside DeepSeek Harness (DSH), compatible with Claude Code, Codex, Cursor, Kimi and other agent plugin layouts.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Sivan757/dsh-agent-plugins-market",
@@ -172903,6 +174651,18 @@
       "observedAt": "2026-11-17T18:48:43+00:00"
     },
     {
+      "repo": "songoao25/dsh-chatgpt-subscription",
+      "packagePath": "package.json",
+      "package": "dsh-chatgpt-sub",
+      "version": "0.8.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Sign in with your ChatGPT account to use ChatGPT models in DSH.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "songofhawk/dsh-alpha",
       "packagePath": "package.json",
       "package": "dsh-alpha",
@@ -175036,6 +176796,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "STARDUSTLC666/dsh-secure-review",
+      "packagePath": "package.json",
+      "package": "dsh-code-security",
+      "version": "0.8.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH 代码安全工作台：本地静态检查、Git 改动审查、证据与修复复核，可选增强扫描器。欢迎提交 issues 和 PR。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "STARDUSTLC666/dsh-slack",
       "packagePath": "package.json",
       "package": "dsh-slack",
@@ -175493,6 +177265,18 @@
       ],
       "description": "星愿 XingYuan for DeepSeek Harness: 对话创建愿望/任务、机会日打卡、微行动、记忆与图表的 Agent Preset 组合包",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "Starxer/chatterbox4dsh",
+      "packagePath": "package.json",
+      "package": "@starxer/chatterbox4dsh",
+      "version": "0.4.2",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "A Feishu/Lark channel plugin for DeepSeek Harness (dsh): use the same agent from Feishu chat, with every step (reasoning, tool calls, results, timing) shown as a card.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "staryu5463/dsh-starter-packs",
@@ -177489,6 +179273,18 @@
       ],
       "description": "Three switchable per-session modes for DeepSeek Harness: discussion, adversarial review, and task execution",
       "observedAt": "2026-11-17T19:51:50+00:00"
+    },
+    {
+      "repo": "sunligh91/dsh-helper",
+      "packagePath": "package.json",
+      "package": "dsh-helper",
+      "version": "0.5.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH task notifier plugin: pops Windows toast notifications when an agent session finishes, errors, needs confirmation, or asks for approval. Self-registers the required AppUserModelID shortcut so notifications are delivered even when the app is not focused.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "SunlitCrack/dsh-compaction-threshold",
@@ -179697,6 +181493,18 @@
       ],
       "description": "Agnes image and video generation for DeepSeek Harness: two agent tools, an AI prompt optimizer, and a sidebar panel whose API key is entered in the panel and never shipped in the code.",
       "observedAt": "2026-11-17T18:35:01+00:00"
+    },
+    {
+      "repo": "szymonsheng2045/dsh-carbon-club",
+      "packagePath": "package.json",
+      "package": "dsh-human-buffer",
+      "version": "0.6.8",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "A zero-model-cost human waiting room embedded in DeepSeek Harness",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "szymonsheng2045/dsh-carbonclub",
@@ -183678,6 +185486,18 @@
       "observedAt": "2026-11-17T19:49:41+00:00"
     },
     {
+      "repo": "tianyhjg-lab/dsh-font",
+      "packagePath": "package.json",
+      "package": "dsh-font",
+      "version": "1.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Font switcher for DeepSeek Harness Web GUI: 99 UI fonts (CJK sans/serif/kai-fangsong/display + Latin serif/sans/display, WPS classics included) and 31 code fonts, with CJK-Latin pairing stacks, instant apply and localStorage persistence",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Tianyu209/dsh-browser-companion",
       "packagePath": "package.json",
       "package": "dsh-browser-companion",
@@ -184149,6 +185969,18 @@
       ],
       "description": "Codex-style model + reasoning-effort controls in the DSH composer tool row: adaptive effort slider with snap, Pi-Harness-inspired effort colours on the track and composer border, and Shift+Tab cycling.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "TimYuann/orchestra-dsh",
+      "packagePath": "package.json",
+      "package": "orchestra-dsh",
+      "version": "0.7.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "A2A messaging and independent peer Sessions for DSH, with timely step-boundary delivery, durable model selection and optional user-approved Orchestra teams.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "tinchak0207/dsh-emu-workbench",
@@ -186308,6 +188140,18 @@
       "observedAt": "2026-11-17T18:48:43+00:00"
     },
     {
+      "repo": "trewvip-arch/dsh-open-in-app",
+      "packagePath": "package.json",
+      "package": "dsh-open-in-app",
+      "version": "0.1.2",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "Open the current workspace folder with an installed application (Finder, Terminal, VS Code, Ghostty, Zed, ...) from the session header of the dsh web UI",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "triagmas/dsh-project-evolution",
       "packagePath": "package.json",
       "package": "dsh-project-evolution",
@@ -186487,6 +188331,18 @@
       ],
       "description": "File-defined subagent roles for DeepSeek Harness: project (.dsh/roles) and global (~/.dsh/roles) role files, a compact role catalog, real per-role tool filtering, and a per-role tool-call budget.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "trrrrrryg/dsh-remote-workspace",
+      "packagePath": "package.json",
+      "package": "@dsh-remote/workspace-plugin",
+      "version": "0.6.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH SSH Forge — secure SSH-backed remote workspaces for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "trrrrrryg/dsh-ssh-forge",
@@ -186965,6 +188821,18 @@
       ],
       "description": "Assistant reply-body translation for the DeepSeek Harness Web UI (OpenAI-compatible channel)",
       "observedAt": "2026-11-17T19:54:29+00:00"
+    },
+    {
+      "repo": "TtTRz/dsh-a2a",
+      "packagePath": "package.json",
+      "package": "dsh-a2a",
+      "version": "0.7.2",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "dsh-a2a: A2A v1.0 for DeepSeek Harness — expose the harness as an A2A agent and call remote A2A agents from agent tools.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "tttrz/dsh-wecom",
@@ -197104,6 +198972,18 @@
       "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
+      "repo": "WhitePlusMS/dsh-input-plus",
+      "packagePath": "package.json",
+      "package": "dsh-input-plus",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH 输入框强化 (DSH Input+): @ file/directory reference and native composer status for the DeepSeek Harness Web UI.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "whiteS18/dsh-bing-search",
       "packagePath": "package.json",
       "package": "dsh-bing-search",
@@ -198038,6 +199918,18 @@
       ],
       "description": "鲸宝 Q 版桌宠：DSH 页面右下角置顶显示、卖萌动作、气泡框、确认提醒与语音播报（Web 端 + DSH 桌面端通用）",
       "observedAt": "2026-11-17T18:51:37+00:00"
+    },
+    {
+      "repo": "winditer/dsh-elf",
+      "packagePath": "package.json",
+      "package": "dsh-temp-chat",
+      "version": "2.3.2",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH 临时聊天插件：页面悬浮一只缓慢游动的半透明 DeepSeek 鲸鱼（官方 favicon 轮廓 + 蓝紫绿渐变），点击打开可拖动/最小化的临时聊天浮窗；默认跟随会话模型，支持插件内单独配置 OpenAI 兼容模型，流式输出、复制、清空。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "winditer/dsh-intertidal",
@@ -200445,6 +202337,18 @@
       "observedAt": "2026-11-17T18:51:37+00:00"
     },
     {
+      "repo": "WoYun520/dsh-purge",
+      "packagePath": "package.json",
+      "package": "dsh-purge",
+      "version": "1.1.71",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "wpc0323/deepseek-web-import",
       "packagePath": "package.json",
       "package": "deepseek-web-import",
@@ -200797,6 +202701,18 @@
       ],
       "description": "A model-aware reasoning slider with polished light, dark, and per-model colors for DeepSeek Harness",
       "observedAt": "2026-11-17T18:51:37+00:00"
+    },
+    {
+      "repo": "WSL043/dsh-native-session-delete",
+      "packagePath": "package.json",
+      "package": "dsh-chat-manager",
+      "version": "2.0.3",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DeepSeek Harness archive content search and confirmed cleanup of unloaded local sessions",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "wsl043/dsh-native-session-manager",
@@ -209295,6 +211211,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "xswt442-cmd/dsh-easy-port-manager",
+      "packagePath": "package.json",
+      "package": "dsh-instance-manager",
+      "version": "0.13.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH 实例管理面板：从侧边栏左下的图标打开，列出本机 3080-3129 与 19387 端口的全部 dsh web 实例（端口 / PID / 运行时长 / 会话数），支持优雅停止、两步确认停止当前实例、一键全部结束与新实例启动。Sidebar-launched instance panel for DeepSeek Harness: list every local dsh web instance on ports 3080-3129 and 19387 (port/PID/uptime/sessions) with graceful stop, Task-Manager-style stop of the current instance, stop-all, and one-click launch of a new instance.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "xswt442-cmd/dsh-instance-manager",
       "packagePath": "package.json",
       "package": "dsh-instance-manager",
@@ -209461,6 +211389,18 @@
       ],
       "description": "Replaces the composer's model menu with a recent-models list, an all-providers flyout, and a draggable reasoning-effort slider.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "xuanfengtechx/dsh-openrouter-provider-advisor",
+      "packagePath": "package.json",
+      "package": "dsh-openrouter-provider-advisor",
+      "version": "0.1.4",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH web plugin that ranks OpenRouter upstream providers by quality, speed, cache-heavy price, context, and uptime, then safely switches the active route.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "xuanfu-web/dsh-metaphysics",
@@ -211370,6 +213310,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "Yancey2023/dsh-fold",
+      "packagePath": "package.json",
+      "package": "dsh-fold",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH Web UI plugin: fold consecutive tool calls in one assistant turn into a single line (Codex-style), with live running-tool label, call count, and expand/collapse. Pure Slot/React implementation, no DOM patching.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "yanfei0725/dsh-qwen-paint",
       "packagePath": "package.json",
       "package": "dsh-qwen-paint",
@@ -212568,6 +214520,18 @@
       "observedAt": "2026-11-17T19:49:41+00:00"
     },
     {
+      "repo": "Yari-tuber/dsh-remote-gateway",
+      "packagePath": "package.json",
+      "package": "dsh-remote-gateway",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "One-click authenticated phone access for DeepSeek Harness through a managed Cloudflare Quick Tunnel",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Yaronluo/dsh-plugin-git-workbench",
       "packagePath": "package.json",
       "package": "dsh-plugin-git-workbench",
@@ -212840,6 +214804,18 @@
       ],
       "description": "DeepSeek Harness desktop and web notifications for approvals, structured questions, and task outcomes.",
       "observedAt": "2026-11-17T18:51:37+00:00"
+    },
+    {
+      "repo": "Ycet/dsh-open-workspace",
+      "packagePath": "package.json",
+      "package": "dsh-session-plus",
+      "version": "0.8.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "会话增强插件：模型选择菜单顶部实时展示当前模型提供商名称；账户菜单顶部提供「跟随系统 / 浅色 / 深色」主题快捷切换（Rubber Segment 动效）；官方模型菜单「推理等级」一行改造为 Codex 风格连续滑条（一档一色 + 最高档能量层）；新建会话页标题栏补上官方「在应用中打开」分体按钮（固定定位在标题栏按钮簇最左侧，右侧面板展开时隐藏）；「设置 → 通用」里为以上每一项提供独立开关（复用官方 Switch 组件，样式与官方行一致），切换即时生效。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Ycet/dsh-session-plus",
@@ -214015,6 +215991,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "yhshzh/dsh-cline-pass",
+      "packagePath": "package.json",
+      "package": "dsh-cline-pass",
+      "version": "0.2.15",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "Self-contained Cline Pass provider for dsh: register Cline Pass subscription models on the harness LLM seam, enumerate and validate the upstream channels behind each model, pin or exclude them with failover, and drive an account pool. No proxy process and no external cline-pass-switcher install required.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "yhuan416/dsh-remote-hub",
       "packagePath": "package.json",
       "package": "dsh-remote-hub",
@@ -214380,6 +216368,18 @@
       "observedAt": "2026-11-17T18:52:54+00:00"
     },
     {
+      "repo": "Yihong89/dsh-sister",
+      "packagePath": "package.json",
+      "package": "dsh-companion",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH companion plugin: a fully customizable voice-and-personality companion. Configure any name, personality, and TTS voice per chat session -- no forking or publishing a new package required.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Yihong89/dsh-teacher",
       "packagePath": "package.json",
       "package": "dsh-teacher",
@@ -214463,6 +216463,18 @@
       ],
       "description": "DSH plugin: API retry settings page - view and edit each LLM provider's request retry policy (mode, maxRetries) over the settings wire",
       "observedAt": "2026-11-17T18:52:54+00:00"
+    },
+    {
+      "repo": "Yiklek/dsh-settings-manager",
+      "packagePath": "package.json",
+      "package": "dsh-settings-manager",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH web plugin: manage how other plugins' sections appear in the global Settings dialog — show/hide, reorder, rename — without touching upstream. Every settings.section registration passes through the manager policy (registration-time + read-path interception).",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "Yiklek/dsh-slots-manager",
@@ -218496,6 +220508,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "yudaxia1/one-dark-pro-dsh-plugin",
+      "packagePath": "package.json",
+      "package": "one-dark-pro-dsh-plugin",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "One Dark Pro theme for DeepSeek Harness Web UI",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "Yue-Lyu123/dsh-as-macOS",
       "packagePath": "package.json",
       "package": "dsh-as-macos",
@@ -220216,6 +222240,18 @@
       ],
       "description": "DSH 技能/插件仓库浏览器：在设置→仓库中浏览管理技能与插件（自定义显示名/标签/简介/GitHub/AI 双语介绍、启用/禁用/卸载），含新装红点确认与安装/更新日期存储（v0.2.0 起并入原 dsh-plugin-repo-inventory）",
       "observedAt": "2026-11-17T18:52:54+00:00"
+    },
+    {
+      "repo": "yustillrain/dsh-skill-browser",
+      "packagePath": "package.json",
+      "package": "dsh-skill-browser",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "DSH 技能/插件仓库浏览器：在设置→仓库中浏览管理技能与插件（自定义显示名/标签/简介/GitHub/AI 双语介绍、启用/禁用/卸载），含新装红点确认与安装/更新日期存储（v0.2.0 起并入原 dsh-plugin-repo-inventory）",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "yusufameri/dsh-t3-model-picker",
@@ -223038,6 +225074,18 @@
       "observedAt": "2026-11-17T18:52:54+00:00"
     },
     {
+      "repo": "zehenk/dsh-tu4-inline-images",
+      "packagePath": "package.json",
+      "package": "dsh-tu4-inline-images",
+      "version": "1.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "对话内联图片 DSH 插件 — 输入框/用户消息/LLM 回复中的本地图片路径直接渲染为图片(回环路由 + 强 token + 多根白名单 + 尺寸三档)。Inline local images in DSH web conversations.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "zehuan-huang/dsh-codex-runs",
       "packagePath": "package.json",
       "package": "dsh-codex-runs",
@@ -225144,6 +227192,18 @@
       "observedAt": "2026-11-17T18:52:54+00:00"
     },
     {
+      "repo": "zhanghao3693/dsh-nokia-pinball",
+      "packagePath": "package.json",
+      "package": "dsh-nokia-pinball",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dpharness.com market index"
+      ],
+      "description": "诺基亚弹珠台 · Pinball —— 竖屏像素台面、重力钢珠、左右弹片、缓冲器/靶子/滚道、发射蓄力、3 球制与高分榜，复刻 07-09 年 J2ME 手机手感。DeepSeek Harness 悬浮插件。",
+      "observedAt": "2026-11-17T20:01:42+00:00"
+    },
+    {
       "repo": "zhanghui6666/paste-as-text-attachment",
       "packagePath": "package.json",
       "package": "paste-as-text-attachment",
@@ -226690,6 +228750,18 @@
       ],
       "description": "Cap how many DeepSeek Harness conversations run at once (FIFO queue for the rest), plus a memory/commit/disk status strip in the web UI.",
       "observedAt": "2026-11-17T19:54:29+00:00"
+    },
+    {
+      "repo": "zhengmz/dsh-auto-fold",
+      "packagePath": "package.json",
+      "package": "dsh-auto-fold",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "官方回合折叠模式为 Compact 时，打开会话自动加载全部历史，让官方原生回合折叠立即生效：不新增折叠行、不接管官方设置、数据完整无偏差。When the official turn-folding mode is Compact, auto-loads the full conversation history on session open so the official native per-turn folding engages — no extra fold rows, no takeover, always data-complete.",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "zhengqingjing/dsh-session-tree",
@@ -232140,6 +234212,18 @@
       ],
       "description": "Semantic notification sounds for DeepSeek Harness: complete/approval/question/block/error via BEL or WAV, with Web UI bell toggle ｜ DeepSeek Harness 语义化通知声音：完成/审批/提问/受阻/错误，经 BEL 或 WAV 播放，带 Web 铃铛开关",
       "observedAt": "2026-11-17T18:26:55+00:00"
+    },
+    {
+      "repo": "Zyc20010326/dsh-token-budget",
+      "packagePath": "package.json",
+      "package": "dsh-token-budget",
+      "version": "0.2.1",
+      "ref": "HEAD",
+      "sources": [
+        "dshplugin.io public GitHub dataset"
+      ],
+      "description": "A per-conversation total-token safety fuse for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:01:42+00:00"
     },
     {
       "repo": "zyd232/dsh-compaction-policy",

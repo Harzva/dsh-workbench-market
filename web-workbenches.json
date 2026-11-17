@@ -3929,7 +3929,8 @@
     "packagePath": "packages/session/ui-conversation-manager/package.json",
     "manifest": "https://github.com/morlay/dsh-plugin/blob/a48fa9ea05a3cd092dc588201f3579b3496350a9/packages/session/ui-conversation-manager/package.json",
     "workflow": "https://github.com/morlay/dsh-plugin/blob/a48fa9ea05a3cd092dc588201f3579b3496350a9/packages/session/ui-conversation-manager/README.md#L3-L5",
-    "registration": "https://github.com/morlay/dsh-plugin/blob/a48fa9ea05a3cd092dc588201f3579b3496350a9/packages/session/ui-conversation-manager/src/client/index.ts#L58-L76"
+    "registration": "https://github.com/morlay/dsh-plugin/blob/a48fa9ea05a3cd092dc588201f3579b3496350a9/packages/session/ui-conversation-manager/src/client/index.ts#L58-L76",
+    "assembly": "https://github.com/morlay/dsh-plugin/blob/a48fa9ea05a3cd092dc588201f3579b3496350a9/packages/bundles/better-session/cordis.patch.yml#L23-L24"
   },
   {
     "repo": "Night-ended-dawn-not-broken/dsh-sidebar-editor",
@@ -4184,5 +4185,693 @@
     "manifest": "https://github.com/ZTR66/dsh-design-library/blob/7f8168c1a4d8b0c203ca537292985d92e8ab8ceb/package.json",
     "workflow": "https://github.com/ZTR66/dsh-design-library/blob/7f8168c1a4d8b0c203ca537292985d92e8ab8ceb/README.md#L9-L15",
     "registration": "https://github.com/ZTR66/dsh-design-library/blob/7f8168c1a4d8b0c203ca537292985d92e8ab8ceb/client.js#L1701-L1742"
+  },
+  {
+    "repo": "bettermen/xiashuo",
+    "name": "虾说项目创作台",
+    "description": "在主面板选择课程、公文或长文项目，按项目流程编辑、审阅和导出成果。",
+    "category": "内容",
+    "version": "0.8.0",
+    "package": "@dsh-external/xiashuo",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/bettermen/xiashuo/blob/632119d64b111d20a1dc19b0d178dbc039ed79a5/package.json",
+    "workflow": "https://github.com/bettermen/xiashuo/blob/632119d64b111d20a1dc19b0d178dbc039ed79a5/README.md#L7-L34",
+    "registration": "https://github.com/bettermen/xiashuo/blob/632119d64b111d20a1dc19b0d178dbc039ed79a5/src/client/index.ts#L57-L104",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/bettermen/xiashuo/632119d64b111d20a1dc19b0d178dbc039ed79a5/assets/screenshots/shot-gui.png",
+        "alt": "虾说项目创作台界面",
+        "width": 1280,
+        "height": 633
+      }
+    ]
+  },
+  {
+    "repo": "blindcat-10835/dsh-session-studio",
+    "name": "会话标签与批量管理台",
+    "description": "在主面板按状态和标签浏览会话，管理标签并预览批量重命名。",
+    "category": "效率",
+    "version": "1.2.1",
+    "package": "dsh-session-studio",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/blindcat-10835/dsh-session-studio/blob/0e627f1bcec8a2ea5b4be841eb2cffea030c884f/package.json",
+    "workflow": "https://github.com/blindcat-10835/dsh-session-studio/blob/0e627f1bcec8a2ea5b4be841eb2cffea030c884f/README.md#L19-L32",
+    "registration": "https://github.com/blindcat-10835/dsh-session-studio/blob/0e627f1bcec8a2ea5b4be841eb2cffea030c884f/client.js#L6183-L6201",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/blindcat-10835/dsh-session-studio/0e627f1bcec8a2ea5b4be841eb2cffea030c884f/docs/images/01-overview.png",
+        "alt": "会话标签与批量管理台界面",
+        "width": 883,
+        "height": 870
+      }
+    ]
+  },
+  {
+    "repo": "davidmercer0620-ai/dsh-game-preview",
+    "name": "游戏预览与测试工作台",
+    "description": "在右栏打开游戏预览。在 Windows 可启动引擎、抓取原生窗口、操作并记录结果帧。",
+    "category": "开发",
+    "version": "0.13.4",
+    "package": "@davidmercer0620-ai/dsh-game-preview",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/davidmercer0620-ai/dsh-game-preview/blob/7368b4cfd5b9f2fa8222416b4942dd5b9befaee4/package.json",
+    "workflow": "https://github.com/davidmercer0620-ai/dsh-game-preview/blob/7368b4cfd5b9f2fa8222416b4942dd5b9befaee4/README.md#L130-L153",
+    "registration": "https://github.com/davidmercer0620-ai/dsh-game-preview/blob/7368b4cfd5b9f2fa8222416b4942dd5b9befaee4/client.js#L2369-L2374",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/davidmercer0620-ai/dsh-game-preview/7368b4cfd5b9f2fa8222416b4942dd5b9befaee4/docs/images/panel-pc.png",
+        "alt": "游戏预览与测试工作台界面",
+        "width": 787,
+        "height": 967
+      }
+    ]
+  },
+  {
+    "repo": "ddlwwc/dsh-rag",
+    "name": "本地知识库编辑台",
+    "description": "在主面板管理 Markdown 知识库和目录，用 BlockNote 编辑笔记并批量导入导出。",
+    "category": "调研",
+    "version": "0.1.0",
+    "package": "dsh-rag",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/ddlwwc/dsh-rag/blob/cffa50bc1c75dde5cf861e56eece170a5f18cd97/package.json",
+    "workflow": "https://github.com/ddlwwc/dsh-rag/blob/cffa50bc1c75dde5cf861e56eece170a5f18cd97/README.md#L39-L51",
+    "registration": "https://github.com/ddlwwc/dsh-rag/blob/cffa50bc1c75dde5cf861e56eece170a5f18cd97/client/client.js#L12800"
+  },
+  {
+    "repo": "delock/dsh-pr-board",
+    "name": "PR 与 Issue 审查队列",
+    "description": "从看板查看 PR 和 Issue，认领审查并绑定独立 DSH 会话。",
+    "category": "开发",
+    "version": "0.14.0",
+    "package": "dsh-pr-board",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/delock/dsh-pr-board/blob/7bf5ffcce1c4e4588f00e5a84d87d5f83422e002/package.json",
+    "workflow": "https://github.com/delock/dsh-pr-board/blob/7bf5ffcce1c4e4588f00e5a84d87d5f83422e002/README.md#L91-L108",
+    "registration": "https://github.com/delock/dsh-pr-board/blob/7bf5ffcce1c4e4588f00e5a84d87d5f83422e002/client/client.js#L1866-L1885",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/delock/dsh-pr-board/7bf5ffcce1c4e4588f00e5a84d87d5f83422e002/docs/pr-board.png",
+        "alt": "PR 与 Issue 审查队列界面",
+        "width": 3200,
+        "height": 2458
+      }
+    ]
+  },
+  {
+    "repo": "Eclipse-NotFound/dsh-flow-queue",
+    "name": "Flow Queue 会话流程编排",
+    "description": "在右栏连接提示词、模型和条件节点，保存流程并查看启动、暂停和结束状态。",
+    "category": "开发",
+    "version": "0.8.0",
+    "package": "dsh-flow-queue",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/Eclipse-NotFound/dsh-flow-queue/blob/ceb2f8d5dc38d0d2b4bcae5cea431e8345ae87ca/package.json",
+    "workflow": "https://github.com/Eclipse-NotFound/dsh-flow-queue/blob/ceb2f8d5dc38d0d2b4bcae5cea431e8345ae87ca/README.md#L29-L63",
+    "registration": "https://github.com/Eclipse-NotFound/dsh-flow-queue/blob/ceb2f8d5dc38d0d2b4bcae5cea431e8345ae87ca/client.js#L2868-L2883"
+  },
+  {
+    "repo": "Epsirom/braid",
+    "name": "Braid Agent 作业图",
+    "description": "打开会话右栏的作业图，筛查节点与执行进度，按需暂停或恢复。",
+    "category": "开发",
+    "version": "0.7.0",
+    "package": "@chrok/dsh-braid",
+    "packagePath": "integrations/dsh/package.json",
+    "manifest": "https://github.com/Epsirom/braid/blob/bd837b0cd38b59fc80592f45c10cb52d673517fd/integrations/dsh/package.json",
+    "workflow": "https://github.com/Epsirom/braid/blob/bd837b0cd38b59fc80592f45c10cb52d673517fd/integrations/dsh/README.md#L75-L116",
+    "registration": "https://github.com/Epsirom/braid/blob/bd837b0cd38b59fc80592f45c10cb52d673517fd/integrations/dsh/client/index.tsx#L37-L45"
+  },
+  {
+    "repo": "fcz20060311/dsh-life-planner",
+    "name": "拾光笺生活时间工作台",
+    "description": "从全局面板维护待办、倒计时和日历，启动专注计时并查看统计。",
+    "category": "效率",
+    "version": "0.1.0",
+    "package": "dsh-life-planner",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/fcz20060311/dsh-life-planner/blob/7dcf59123570152fae400be0e16d3b7183092728/package.json",
+    "workflow": "https://github.com/fcz20060311/dsh-life-planner/blob/7dcf59123570152fae400be0e16d3b7183092728/README.md#L6-L26",
+    "registration": "https://github.com/fcz20060311/dsh-life-planner/blob/7dcf59123570152fae400be0e16d3b7183092728/lib/client.js#L1875-L1899"
+  },
+  {
+    "repo": "hgognav233-netizen/agent-workflow-viewer",
+    "name": "Agent 会话流程浏览台",
+    "description": "搜索会话、在画布展开子代理，并查看活动记录及关联对象。",
+    "category": "开发",
+    "version": "0.3.0",
+    "package": "agent-workflow-viewer",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/hgognav233-netizen/agent-workflow-viewer/blob/6d92c0b05067ca0f3e0560653f77ecf7d8637108/package.json",
+    "workflow": "https://github.com/hgognav233-netizen/agent-workflow-viewer/blob/6d92c0b05067ca0f3e0560653f77ecf7d8637108/README.md#L7-L18",
+    "registration": "https://github.com/hgognav233-netizen/agent-workflow-viewer/blob/6d92c0b05067ca0f3e0560653f77ecf7d8637108/client.js#L850-L857",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/hgognav233-netizen/agent-workflow-viewer/6d92c0b05067ca0f3e0560653f77ecf7d8637108/preview.png",
+        "alt": "Agent 会话流程浏览台界面",
+        "width": 1725,
+        "height": 1025
+      }
+    ]
+  },
+  {
+    "repo": "jxhsjxhs/dsh-notes-qiange",
+    "name": "签格便签与任务工作台",
+    "description": "在便签墙和 Markdown 编辑器整理记录，把便签拖入任务泳道并安排执行。",
+    "category": "效率",
+    "version": "0.7.1",
+    "package": "dsh-notes-qiange",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/jxhsjxhs/dsh-notes-qiange/blob/f4e6d995746bb3c930c181b72cd51306a6333b6a/package.json",
+    "workflow": "https://github.com/jxhsjxhs/dsh-notes-qiange/blob/f4e6d995746bb3c930c181b72cd51306a6333b6a/README.md#L6-L20",
+    "registration": "https://github.com/jxhsjxhs/dsh-notes-qiange/blob/f4e6d995746bb3c930c181b72cd51306a6333b6a/src/client/index.ts#L225-L275",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/jxhsjxhs/dsh-notes-qiange/f4e6d995746bb3c930c181b72cd51306a6333b6a/assets/notes-tasks.png",
+        "alt": "签格便签与任务工作台界面",
+        "width": 1966,
+        "height": 1681
+      }
+    ]
+  },
+  {
+    "repo": "kasaki002/dsh-latex-studio",
+    "name": "LaTeX 编译工作室",
+    "description": "在会话页签导入或编写 LaTeX，选择引擎编译，预览并下载 PDF。",
+    "category": "内容",
+    "version": "0.4.0",
+    "package": "@kasaki002/dsh-latex-studio",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/kasaki002/dsh-latex-studio/blob/abee33a695dbe58f62196bd91d2754eb3dd7cdb9/package.json",
+    "workflow": "https://github.com/kasaki002/dsh-latex-studio/blob/abee33a695dbe58f62196bd91d2754eb3dd7cdb9/README.md#L18-L27",
+    "registration": "https://github.com/kasaki002/dsh-latex-studio/blob/abee33a695dbe58f62196bd91d2754eb3dd7cdb9/lib/client.js#L1565-L1579",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/kasaki002/dsh-latex-studio/abee33a695dbe58f62196bd91d2754eb3dd7cdb9/docs/conversation-view.png",
+        "alt": "LaTeX 编译工作室界面",
+        "width": 1473,
+        "height": 789
+      }
+    ]
+  },
+  {
+    "repo": "Leo-sail/dsh-plugin-agent-collaboration",
+    "name": "Agent Community 协作工作台",
+    "description": "管理 Bot 名册、创建或打开群组会话，回看运行记录。",
+    "category": "效率",
+    "version": "0.5.0",
+    "package": "@dsh-plugin-agent-community/ui-agent-community",
+    "packagePath": "packages/ui/ui-agent-community/package.json",
+    "manifest": "https://github.com/Leo-sail/dsh-plugin-agent-collaboration/blob/2144391596ba50f18f3cbefe53b152f6e55a4bf0/packages/ui/ui-agent-community/package.json",
+    "workflow": "https://github.com/Leo-sail/dsh-plugin-agent-collaboration/blob/2144391596ba50f18f3cbefe53b152f6e55a4bf0/packages/bundle/agent-collaboration/README.md#L29-L48",
+    "registration": "https://github.com/Leo-sail/dsh-plugin-agent-collaboration/blob/2144391596ba50f18f3cbefe53b152f6e55a4bf0/packages/ui/ui-agent-community/src/client/index.ts#L767-L799",
+    "assembly": "https://github.com/Leo-sail/dsh-plugin-agent-collaboration/blob/2144391596ba50f18f3cbefe53b152f6e55a4bf0/packages/bundle/agent-collaboration/cordis.patch.yml#L57-L58",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/Leo-sail/dsh-plugin-agent-collaboration/2144391596ba50f18f3cbefe53b152f6e55a4bf0/packages/bundle/agent-collaboration/screenshots/02-group-conversation.png",
+        "alt": "Agent Community 协作工作台界面",
+        "width": 2880,
+        "height": 1800
+      }
+    ]
+  },
+  {
+    "repo": "liancha22/dsh-puzzle-mode",
+    "name": "Puzzle 项目规划与派单台",
+    "description": "在主面板维护项目和模块文档，澄清任务后从看板发起执行会话。",
+    "category": "效率",
+    "version": "2.5.8",
+    "package": "dsh-puzzle-mode",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/liancha22/dsh-puzzle-mode/blob/e9104280a71684871427612d83fe9225b5af3d89/package.json",
+    "workflow": "https://github.com/liancha22/dsh-puzzle-mode/blob/e9104280a71684871427612d83fe9225b5af3d89/README.md#L6-L35",
+    "registration": "https://github.com/liancha22/dsh-puzzle-mode/blob/e9104280a71684871427612d83fe9225b5af3d89/lib/client.js#L10977-L11048",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/liancha22/dsh-puzzle-mode/e9104280a71684871427612d83fe9225b5af3d89/.github/images/00-%E9%A6%96%E9%A1%B5%E9%80%9F%E8%A7%88.png",
+        "alt": "Puzzle 项目规划与派单台界面",
+        "width": 1548,
+        "height": 2670
+      }
+    ]
+  },
+  {
+    "repo": "liangdabiao/dsh-bookwriter",
+    "name": "书稿与章节管理台",
+    "description": "新建书稿和章节清单，跟进章节状态，并在侧栏翻查正文。",
+    "category": "内容",
+    "version": "0.3.1",
+    "package": "dsh-bookwriter",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/liangdabiao/dsh-bookwriter/blob/479c932125e90936ed060b3c3b0c781cd486e8a1/package.json",
+    "workflow": "https://github.com/liangdabiao/dsh-bookwriter/blob/479c932125e90936ed060b3c3b0c781cd486e8a1/README.md#L26-L37",
+    "registration": "https://github.com/liangdabiao/dsh-bookwriter/blob/479c932125e90936ed060b3c3b0c781cd486e8a1/client.js#L86-L96"
+  },
+  {
+    "repo": "liangdabiao/dsh-tiktok-topic",
+    "name": "TikTok 话题研究台",
+    "description": "在侧栏查找话题作品列表，按互动量比较并打开原作品。",
+    "category": "调研",
+    "version": "0.1.0",
+    "package": "dsh-tiktok-topic",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/liangdabiao/dsh-tiktok-topic/blob/6fc352f7e5a2e387be70901a599ceed8267a385f/package.json",
+    "workflow": "https://github.com/liangdabiao/dsh-tiktok-topic/blob/6fc352f7e5a2e387be70901a599ceed8267a385f/README.md#L3-L29",
+    "registration": "https://github.com/liangdabiao/dsh-tiktok-topic/blob/6fc352f7e5a2e387be70901a599ceed8267a385f/client.js#L68-L77"
+  },
+  {
+    "repo": "liangdabiao/dsh-xhs-weeklytop",
+    "name": "小红书周榜研究台",
+    "description": "按内容分类查找近期热门笔记，打开历史榜单和已生成的报告。",
+    "category": "调研",
+    "version": "0.1.0",
+    "package": "dsh-xhs-weeklytop",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/liangdabiao/dsh-xhs-weeklytop/blob/9e8b322fd726e8e001f43e99ef1c4e45df3594a9/package.json",
+    "workflow": "https://github.com/liangdabiao/dsh-xhs-weeklytop/blob/9e8b322fd726e8e001f43e99ef1c4e45df3594a9/README.md#L37-L49",
+    "registration": "https://github.com/liangdabiao/dsh-xhs-weeklytop/blob/9e8b322fd726e8e001f43e99ef1c4e45df3594a9/client.js#L64-L74"
+  },
+  {
+    "repo": "Link-h1j/dsh-comfy",
+    "name": "ComfyUI 原生节点画布",
+    "description": "在会话右栏编辑节点、调参数、提交本地 ComfyUI 队列并查看产物。需要 DeepSeek 官方桌面版和 ComfyUI。",
+    "category": "内容",
+    "version": "1.0.0",
+    "package": "dsh-comfy",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/Link-h1j/dsh-comfy/blob/840dcf8572d7318bf8823b504197ac20fe5817a1/package.json",
+    "workflow": "https://github.com/Link-h1j/dsh-comfy/blob/840dcf8572d7318bf8823b504197ac20fe5817a1/README.md#L15-L50",
+    "registration": "https://github.com/Link-h1j/dsh-comfy/blob/840dcf8572d7318bf8823b504197ac20fe5817a1/client.js#L3563-L3598",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/Link-h1j/dsh-comfy/840dcf8572d7318bf8823b504197ac20fe5817a1/docs/screenshots/01-canvas.png",
+        "alt": "ComfyUI 原生节点画布界面",
+        "width": 650,
+        "height": 960
+      }
+    ],
+    "host": "deepseek-desktop"
+  },
+  {
+    "repo": "liuke-zhu/dsh-toonflow-canvas",
+    "name": "Toonflow 无限画布",
+    "description": "在宿主里打开 Toonflow 画布并继续编辑现有项目。需要本机启动 Toonflow。",
+    "category": "内容",
+    "version": "0.1.0",
+    "package": "dsh-toonflow-canvas",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/liuke-zhu/dsh-toonflow-canvas/blob/e0c9d62630fe4a0f3e3789c459f0cc62f7ea65ab/package.json",
+    "workflow": "https://github.com/liuke-zhu/dsh-toonflow-canvas/blob/e0c9d62630fe4a0f3e3789c459f0cc62f7ea65ab/README.md#L3-L16",
+    "registration": "https://github.com/liuke-zhu/dsh-toonflow-canvas/blob/e0c9d62630fe4a0f3e3789c459f0cc62f7ea65ab/client.js#L104-L115"
+  },
+  {
+    "repo": "lznnnnn1998/dsh-artcraft",
+    "name": "ArtCraft 创作成果预览台",
+    "description": "在主面板分步骤查看 ArtCraft 工具产生的预览，刷新结果或打开原页。",
+    "category": "内容",
+    "version": "0.1.6",
+    "package": "dsh-artcraft-preview-panel",
+    "packagePath": "dsh-plugins/preview-panel/package.json",
+    "manifest": "https://github.com/lznnnnn1998/dsh-artcraft/blob/554a722876ae5bde9e0f4d105bceac691f86f060/dsh-plugins/preview-panel/package.json",
+    "workflow": "https://github.com/lznnnnn1998/dsh-artcraft/blob/554a722876ae5bde9e0f4d105bceac691f86f060/dsh-plugins/preview-panel/README.md#L23-L39",
+    "registration": "https://github.com/lznnnnn1998/dsh-artcraft/blob/554a722876ae5bde9e0f4d105bceac691f86f060/dsh-plugins/preview-panel/src/client.tsx#L656-L666",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/lznnnnn1998/dsh-artcraft/554a722876ae5bde9e0f4d105bceac691f86f060/dsh-plugins/preview-panel/screenshots/panel-in-gui.png",
+        "alt": "ArtCraft 创作成果预览台界面",
+        "width": 1440,
+        "height": 900
+      }
+    ]
+  },
+  {
+    "repo": "mars401/dsh-session-batch-manager",
+    "name": "会话批量管理工作台",
+    "description": "在面板按条件筛查会话和父子关系，多选归档或恢复。",
+    "category": "效率",
+    "version": "0.2.0",
+    "package": "dsh-session-batch-manager",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/mars401/dsh-session-batch-manager/blob/d247cf505ee47c49dd58989a8462201ec380dbf7/package.json",
+    "workflow": "https://github.com/mars401/dsh-session-batch-manager/blob/d247cf505ee47c49dd58989a8462201ec380dbf7/README.md#L10-L46",
+    "registration": "https://github.com/mars401/dsh-session-batch-manager/blob/d247cf505ee47c49dd58989a8462201ec380dbf7/src/client/index.tsx#L65-L102",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/mars401/dsh-session-batch-manager/d247cf505ee47c49dd58989a8462201ec380dbf7/docs/screenshots/03-dashboard-panel.png",
+        "alt": "会话批量管理工作台界面",
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  },
+  {
+    "repo": "MineMahiro/dsh-mahiros-workspace-categories",
+    "name": "分类树工作区管理台",
+    "description": "在工作区侧栏按分类和项目归整会话，并同步显示分类结构。",
+    "category": "效率",
+    "version": "0.8.3",
+    "package": "dsh-mahiros-workspace-categories",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/MineMahiro/dsh-mahiros-workspace-categories/blob/78bc608e8a1d8a7add59389d2fc32b0279fb7175/package.json",
+    "workflow": "https://github.com/MineMahiro/dsh-mahiros-workspace-categories/blob/78bc608e8a1d8a7add59389d2fc32b0279fb7175/README.md#L4-L28",
+    "registration": "https://github.com/MineMahiro/dsh-mahiros-workspace-categories/blob/78bc608e8a1d8a7add59389d2fc32b0279fb7175/lib/client.js#L3556-L3576"
+  },
+  {
+    "repo": "MoonlitDropOfBlood/dsh-deveco",
+    "name": "DevEco 日志与组件调试台",
+    "description": "从会话右栏过滤 HiLog，用设备画面定位 ArkUI 组件及其布局。需要 DevEco 和设备。",
+    "category": "开发",
+    "version": "0.9.0",
+    "package": "@duke-dsh-plugins/dsh-deveco",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/MoonlitDropOfBlood/dsh-deveco/blob/2586bcd84298f62636917531d84d1f11ee731909/package.json",
+    "workflow": "https://github.com/MoonlitDropOfBlood/dsh-deveco/blob/2586bcd84298f62636917531d84d1f11ee731909/README.md#L23-L28",
+    "registration": "https://github.com/MoonlitDropOfBlood/dsh-deveco/blob/2586bcd84298f62636917531d84d1f11ee731909/client.js#L3268-L3329"
+  },
+  {
+    "repo": "msongw-design/dsh-plugin-projects",
+    "name": "项目讨论与验收看板",
+    "description": "邀请成员共同讨论，把需处理的问题加入看板，再查看修复结果和验收。",
+    "category": "效率",
+    "version": "0.1.1",
+    "package": "dsh-plugin-projects",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/msongw-design/dsh-plugin-projects/blob/2f260560be26d32c1223232342ff94d0db31a6a2/package.json",
+    "workflow": "https://github.com/msongw-design/dsh-plugin-projects/blob/2f260560be26d32c1223232342ff94d0db31a6a2/README.md#L9-L28",
+    "registration": "https://github.com/msongw-design/dsh-plugin-projects/blob/2f260560be26d32c1223232342ff94d0db31a6a2/client.js#L2334-L2350"
+  },
+  {
+    "repo": "MYiYang/dsh-pptx-studio",
+    "name": "PPTX 制作工作台",
+    "description": "在会话右栏拆解模板、整理参考、预览 HTML 并生成可编辑的 PPTX。",
+    "category": "内容",
+    "version": "0.3.0",
+    "package": "dsh-pptx-studio",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/MYiYang/dsh-pptx-studio/blob/51308cdc5c904d10ad5926af746071f324a607fa/package.json",
+    "workflow": "https://github.com/MYiYang/dsh-pptx-studio/blob/51308cdc5c904d10ad5926af746071f324a607fa/README.md#L101-L125",
+    "registration": "https://github.com/MYiYang/dsh-pptx-studio/blob/51308cdc5c904d10ad5926af746071f324a607fa/client.js#L5933-L5962",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/MYiYang/dsh-pptx-studio/51308cdc5c904d10ad5926af746071f324a607fa/docs/images/canvas-overview.png",
+        "alt": "PPTX 制作工作台界面",
+        "width": 790,
+        "height": 878
+      }
+    ]
+  },
+  {
+    "repo": "nabin-qq273274877/dsh-database-manager",
+    "name": "数据库管理工作台",
+    "description": "配置数据库连接，在主面板浏览 SQLite、MySQL 表与记录，或检查 Redis 键。",
+    "category": "开发",
+    "version": "0.1.3",
+    "package": "dsh-database-manager",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/nabin-qq273274877/dsh-database-manager/blob/0a512c8744e687d6250550c2838d8b5effcc7a91/package.json",
+    "workflow": "https://github.com/nabin-qq273274877/dsh-database-manager/blob/0a512c8744e687d6250550c2838d8b5effcc7a91/README.md#L8-L36",
+    "registration": "https://github.com/nabin-qq273274877/dsh-database-manager/blob/0a512c8744e687d6250550c2838d8b5effcc7a91/src/client/index.ts#L310-L328",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/nabin-qq273274877/dsh-database-manager/0a512c8744e687d6250550c2838d8b5effcc7a91/docs/images/sql-browse.png",
+        "alt": "数据库管理工作台界面",
+        "width": 2557,
+        "height": 1267
+      }
+    ]
+  },
+  {
+    "repo": "openfcp/dsh-fcp",
+    "name": "金融消保工作台",
+    "description": "在主面板从投诉管理、政策研究等业务入口发起任务，调用对应流程和资料。",
+    "category": "调研",
+    "version": "1.0.0",
+    "package": "dsh-fcp",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/openfcp/dsh-fcp/blob/4d9e3f098aed63d632bf5be258cb4fcdf15afe68/package.json",
+    "workflow": "https://github.com/openfcp/dsh-fcp/blob/4d9e3f098aed63d632bf5be258cb4fcdf15afe68/README.md#L14-L29",
+    "registration": "https://github.com/openfcp/dsh-fcp/blob/4d9e3f098aed63d632bf5be258cb4fcdf15afe68/lib/client.js#L1287-L1306"
+  },
+  {
+    "repo": "royrao2007/dsh-montagex",
+    "name": "MontageX 分镜工作台",
+    "description": "在会话页签编辑分镜卡、连线和分组，与镜头制作和团队协作流程衔接。",
+    "category": "内容",
+    "version": "0.2.5",
+    "package": "dsh-montagex",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/royrao2007/dsh-montagex/blob/c9f20dc0474fb1627ac30b66ce472e903e114cec/package.json",
+    "workflow": "https://github.com/royrao2007/dsh-montagex/blob/c9f20dc0474fb1627ac30b66ce472e903e114cec/README.md#L35-L47",
+    "registration": "https://github.com/royrao2007/dsh-montagex/blob/c9f20dc0474fb1627ac30b66ce472e903e114cec/src/client/index.ts#L129-L153",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/royrao2007/dsh-montagex/c9f20dc0474fb1627ac30b66ce472e903e114cec/docs/assets/canvas.jpg",
+        "alt": "MontageX 分镜工作台界面",
+        "width": 2000,
+        "height": 981
+      }
+    ]
+  },
+  {
+    "repo": "santera-pixel/dsh-scriptorium",
+    "name": "Scriptorium 文档工作台",
+    "description": "编辑和全文搜索工作区文档，在媒体画布、链接图谱和看板之间切换。",
+    "category": "内容",
+    "version": "1.0.1",
+    "package": "dsh-scriptorium",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/santera-pixel/dsh-scriptorium/blob/cc45d714538364627ccd569857ea1db38499e722/package.json",
+    "workflow": "https://github.com/santera-pixel/dsh-scriptorium/blob/cc45d714538364627ccd569857ea1db38499e722/README.md#L9-L52",
+    "registration": "https://github.com/santera-pixel/dsh-scriptorium/blob/cc45d714538364627ccd569857ea1db38499e722/lib/client.js#L7798-L7805",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/santera-pixel/dsh-scriptorium/cc45d714538364627ccd569857ea1db38499e722/docs/media/workspace.png",
+        "alt": "Scriptorium 文档工作台界面",
+        "width": 2160,
+        "height": 1350
+      }
+    ]
+  },
+  {
+    "repo": "TheLiudawei/dsh-codeflow-canvas",
+    "name": "CodeFlow 仓库任务画布",
+    "description": "导入仓库生成任务和模块图，执行选定节点并用快照撤销变更。 执行需要官方桌面版。",
+    "category": "开发",
+    "version": "1.5.0",
+    "package": "dsh-codeflow-canvas",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/TheLiudawei/dsh-codeflow-canvas/blob/7002751298c67555c2d24e77fceeff2908266034/package.json",
+    "workflow": "https://github.com/TheLiudawei/dsh-codeflow-canvas/blob/7002751298c67555c2d24e77fceeff2908266034/README.md#L28-L54",
+    "registration": "https://github.com/TheLiudawei/dsh-codeflow-canvas/blob/7002751298c67555c2d24e77fceeff2908266034/lib/client.js#L229-L241",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/TheLiudawei/dsh-codeflow-canvas/7002751298c67555c2d24e77fceeff2908266034/docs/images/canvas-tasks.png",
+        "alt": "CodeFlow 仓库任务画布界面",
+        "width": 1561,
+        "height": 997
+      }
+    ],
+    "host": "deepseek-desktop"
+  },
+  {
+    "repo": "tongtian027/dsh-oral-canvas",
+    "name": "口播视频分镜画布",
+    "description": "在画布上连接口播稿、音频、字幕、分镜和成片节点，按项目编辑制作流程。",
+    "category": "内容",
+    "version": "0.1.0",
+    "package": "dsh-oral-canvas",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/tongtian027/dsh-oral-canvas/blob/ddffcf4f45f40d5bd1f414cd0971159cfb5240ba/package.json",
+    "workflow": "https://github.com/tongtian027/dsh-oral-canvas/blob/ddffcf4f45f40d5bd1f414cd0971159cfb5240ba/README.md#L33-L56",
+    "registration": "https://github.com/tongtian027/dsh-oral-canvas/blob/ddffcf4f45f40d5bd1f414cd0971159cfb5240ba/lib/client.js#L2805-L2824",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/tongtian027/dsh-oral-canvas/ddffcf4f45f40d5bd1f414cd0971159cfb5240ba/docs/canvas.png",
+        "alt": "口播视频分镜画布界面",
+        "width": 2139,
+        "height": 1257
+      }
+    ]
+  },
+  {
+    "repo": "tzzs/dsh-explore",
+    "name": "会话探索与分支画布",
+    "description": "从会话页签把讨论分叉，并行跟进各分支，搜索、折叠与归档。",
+    "category": "效率",
+    "version": "0.1.0",
+    "package": "@tanzz/dsh-explore",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/tzzs/dsh-explore/blob/1665a96a45f4aea8031a17fedee790739b56d41f/package.json",
+    "workflow": "https://github.com/tzzs/dsh-explore/blob/1665a96a45f4aea8031a17fedee790739b56d41f/README.md#L24-L39",
+    "registration": "https://github.com/tzzs/dsh-explore/blob/1665a96a45f4aea8031a17fedee790739b56d41f/client.js#L3232-L3247"
+  },
+  {
+    "repo": "Velestia-star/dsh-docdesk",
+    "name": "DocDesk 资料台",
+    "description": "从工作区挑选材料、分组整理并打开多格式沉浸阅读。",
+    "category": "调研",
+    "version": "0.7.1",
+    "package": "dsh-docdesk",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/Velestia-star/dsh-docdesk/blob/f1f27a82997c8bef0788224b34538bae226949b5/package.json",
+    "workflow": "https://github.com/Velestia-star/dsh-docdesk/blob/f1f27a82997c8bef0788224b34538bae226949b5/README.md#L9-L26",
+    "registration": "https://github.com/Velestia-star/dsh-docdesk/blob/f1f27a82997c8bef0788224b34538bae226949b5/client.js#L5956-L5999",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/Velestia-star/dsh-docdesk/f1f27a82997c8bef0788224b34538bae226949b5/docs/screenshots/panel.png",
+        "alt": "DocDesk 资料台界面",
+        "width": 1134,
+        "height": 773
+      }
+    ]
+  },
+  {
+    "repo": "WangJialong19/dsh-wsl-sidebar",
+    "name": "WSL 发行版与工作区管理台",
+    "description": "在管理页启动或切换发行版，浏览 Linux 目录、创建工作区或打开终端。需要 Windows 和 WSL。",
+    "category": "开发",
+    "version": "1.7.2",
+    "package": "dsh-wsl-sidebar",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/WangJialong19/dsh-wsl-sidebar/blob/672bb9e9988945aae204e1228005cf7c944c22ad/package.json",
+    "workflow": "https://github.com/WangJialong19/dsh-wsl-sidebar/blob/672bb9e9988945aae204e1228005cf7c944c22ad/README.md#L58-L83",
+    "registration": "https://github.com/WangJialong19/dsh-wsl-sidebar/blob/672bb9e9988945aae204e1228005cf7c944c22ad/client.js#L1333-L1369",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/WangJialong19/dsh-wsl-sidebar/672bb9e9988945aae204e1228005cf7c944c22ad/assets/screenshot-picker.png",
+        "alt": "WSL 发行版与工作区管理台界面",
+        "width": 1563,
+        "height": 942
+      }
+    ]
+  },
+  {
+    "repo": "wangkang183/dsh-pm-workbench",
+    "name": "PM 项目与日历工作台",
+    "description": "在右栏维护任务依赖、甘特图、日历和备忘，整理待办并导出周报。",
+    "category": "效率",
+    "version": "2.5.0",
+    "package": "dsh-pm-workbench",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/wangkang183/dsh-pm-workbench/blob/8d2dc1024aac224d15008456f64747e6da7423f9/package.json",
+    "workflow": "https://github.com/wangkang183/dsh-pm-workbench/blob/8d2dc1024aac224d15008456f64747e6da7423f9/README.md#L8-L16",
+    "registration": "https://github.com/wangkang183/dsh-pm-workbench/blob/8d2dc1024aac224d15008456f64747e6da7423f9/client.js#L5470-L5485"
+  },
+  {
+    "repo": "xarleyn/dsh-plugins",
+    "name": "会话草稿管理台",
+    "description": "从独立标签页新建会话草稿，按需改名、复制和排序，再重新打开继续。",
+    "category": "效率",
+    "version": "0.3.10",
+    "package": "@yadsh/dsh-draft-sessions",
+    "packagePath": "plugins/dsh-draft-sessions/package.json",
+    "manifest": "https://github.com/xarleyn/dsh-plugins/blob/a5dfca4f16dd3508ef2dd5384a889b58c578f277/plugins/dsh-draft-sessions/package.json",
+    "workflow": "https://github.com/xarleyn/dsh-plugins/blob/a5dfca4f16dd3508ef2dd5384a889b58c578f277/plugins/dsh-draft-sessions/README.md#L104-L109",
+    "registration": "https://github.com/xarleyn/dsh-plugins/blob/a5dfca4f16dd3508ef2dd5384a889b58c578f277/plugins/dsh-draft-sessions/src/client/workspace-contribution.ts#L387-L451",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/xarleyn/dsh-plugins/a5dfca4f16dd3508ef2dd5384a889b58c578f277/plugins/dsh-draft-sessions/docs/images/draft-sessions-hero.png",
+        "alt": "会话草稿管理台界面",
+        "width": 300,
+        "height": 339
+      }
+    ]
+  },
+  {
+    "repo": "xarleyn/dsh-plugins",
+    "name": "会话问答与草稿台",
+    "description": "在独立问答界面重开会话、保留草稿，并用原生 Agent 会话继续处理。",
+    "category": "效率",
+    "version": "0.23.5",
+    "package": "@yadsh/dsh-qa-surface",
+    "packagePath": "plugins/dsh-qa-surface/package.json",
+    "manifest": "https://github.com/xarleyn/dsh-plugins/blob/a5dfca4f16dd3508ef2dd5384a889b58c578f277/plugins/dsh-qa-surface/package.json",
+    "workflow": "https://github.com/xarleyn/dsh-plugins/blob/a5dfca4f16dd3508ef2dd5384a889b58c578f277/plugins/dsh-qa-surface/README.md#L924-L936",
+    "registration": "https://github.com/xarleyn/dsh-plugins/blob/a5dfca4f16dd3508ef2dd5384a889b58c578f277/plugins/dsh-qa-surface/src/client/index.tsx#L1339-L1350"
+  },
+  {
+    "repo": "xarleyn/dsh-plugins",
+    "name": "会话审查浏览台",
+    "description": "在会话页签切换结构化结论、详细报告和原始会话树，核对审查结果。",
+    "category": "开发",
+    "version": "0.2.7",
+    "package": "@yadsh/dsh-session-audit",
+    "packagePath": "plugins/dsh-session-audit/package.json",
+    "manifest": "https://github.com/xarleyn/dsh-plugins/blob/a5dfca4f16dd3508ef2dd5384a889b58c578f277/plugins/dsh-session-audit/package.json",
+    "workflow": "https://github.com/xarleyn/dsh-plugins/blob/a5dfca4f16dd3508ef2dd5384a889b58c578f277/plugins/dsh-session-audit/README.md#L18-L30",
+    "registration": "https://github.com/xarleyn/dsh-plugins/blob/a5dfca4f16dd3508ef2dd5384a889b58c578f277/plugins/dsh-session-audit/src/client/index.tsx#L74-L87"
+  },
+  {
+    "repo": "xskhy-kongyi/dsh-conversation-vault",
+    "name": "会话归档与记忆卡工作台",
+    "description": "按工作区整理已归档会话，并把长会话提炼成可编辑的 Markdown 记忆卡。",
+    "category": "效率",
+    "version": "1.0.0",
+    "package": "dsh-conversation-vault",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/xskhy-kongyi/dsh-conversation-vault/blob/bfb77bf0aeed5be155a4cffd6e88e149ee242e09/package.json",
+    "workflow": "https://github.com/xskhy-kongyi/dsh-conversation-vault/blob/bfb77bf0aeed5be155a4cffd6e88e149ee242e09/README.md#L3-L17",
+    "registration": "https://github.com/xskhy-kongyi/dsh-conversation-vault/blob/bfb77bf0aeed5be155a4cffd6e88e149ee242e09/client.js#L1178-L1192"
+  },
+  {
+    "repo": "yangdongzhen590/dsh-knj-reqwork",
+    "name": "需求工坊",
+    "description": "把工作区前端代码带到可编辑画布，在需求文档中补充和导出规格。",
+    "category": "开发",
+    "version": "2026.11.12",
+    "package": "dsh-knj-reqwork",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/yangdongzhen590/dsh-knj-reqwork/blob/e344bbaa38d2a21b4a7a0e45e41c15f0cc07bf2f/package.json",
+    "workflow": "https://github.com/yangdongzhen590/dsh-knj-reqwork/blob/e344bbaa38d2a21b4a7a0e45e41c15f0cc07bf2f/README.md#L3-L26",
+    "registration": "https://github.com/yangdongzhen590/dsh-knj-reqwork/blob/e344bbaa38d2a21b4a7a0e45e41c15f0cc07bf2f/src/client/index.ts#L11-L42"
+  },
+  {
+    "repo": "YansongG-HKU/dsh-design-studio",
+    "name": "设计项目与质检工作室",
+    "description": "在独立面板记录设计需求、迭代方案、编辑画布并在质检后导出。",
+    "category": "内容",
+    "version": "1.3.2",
+    "package": "dsh-design-studio",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/YansongG-HKU/dsh-design-studio/blob/497929491ada54a95bf326784027bacd739a2e07/package.json",
+    "workflow": "https://github.com/YansongG-HKU/dsh-design-studio/blob/497929491ada54a95bf326784027bacd739a2e07/README.md#L21-L59",
+    "registration": "https://github.com/YansongG-HKU/dsh-design-studio/blob/497929491ada54a95bf326784027bacd739a2e07/client.js#L8351-L8379"
+  },
+  {
+    "repo": "yerwan233/dsh-session-atlas",
+    "name": "Session Atlas 会话图谱",
+    "description": "在主面板搜索和分组会话，按需重命名工作区并把会话归入指定项目。",
+    "category": "效率",
+    "version": "0.2.17",
+    "package": "dsh-session-atlas",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/yerwan233/dsh-session-atlas/blob/1b07b2aab0c1dd47c7b1526ff158f099be18f471/package.json",
+    "workflow": "https://github.com/yerwan233/dsh-session-atlas/blob/1b07b2aab0c1dd47c7b1526ff158f099be18f471/README.md#L10-L52",
+    "registration": "https://github.com/yerwan233/dsh-session-atlas/blob/1b07b2aab0c1dd47c7b1526ff158f099be18f471/client.js#L4661-L4690"
+  },
+  {
+    "repo": "zhangj1164/dsh-mega-plugins",
+    "name": "Memo 周期记录工作台",
+    "description": "在面板浏览周、月、季和年卡片，编辑或导出记录并查看日志分析。",
+    "category": "效率",
+    "version": "0.6.1",
+    "package": "@zhangj1164/dsh-client-ui-memo",
+    "packagePath": "packages/client/ui-memo/package.json",
+    "manifest": "https://github.com/zhangj1164/dsh-mega-plugins/blob/f01f6a21eaa6ca6e746c129f6ef60fd4e80afc5e/packages/client/ui-memo/package.json",
+    "workflow": "https://github.com/zhangj1164/dsh-mega-plugins/blob/f01f6a21eaa6ca6e746c129f6ef60fd4e80afc5e/packages/client/ui-memo/README.md#L62-L76",
+    "registration": "https://github.com/zhangj1164/dsh-mega-plugins/blob/f01f6a21eaa6ca6e746c129f6ef60fd4e80afc5e/packages/client/ui-memo/src/client/index.ts#L144-L156",
+    "assembly": "https://github.com/zhangj1164/dsh-mega-plugins/blob/f01f6a21eaa6ca6e746c129f6ef60fd4e80afc5e/packages/memo/dsh-memo/cordis.patch.yml#L25-L28"
+  },
+  {
+    "repo": "ZOU2850/dsh-file-launcher",
+    "name": "会话成果与文件工作台",
+    "description": "按来源和文件类型过滤产物，在右栏预览 Office 或 PDF，固定、归档并查看历史。",
+    "category": "效率",
+    "version": "1.4.13",
+    "package": "dsh-file-launcher",
+    "packagePath": "package.json",
+    "manifest": "https://github.com/ZOU2850/dsh-file-launcher/blob/e0942357b70648d258a0c55ea9da4cbd82206455/package.json",
+    "workflow": "https://github.com/ZOU2850/dsh-file-launcher/blob/e0942357b70648d258a0c55ea9da4cbd82206455/README.md#L9-L60",
+    "registration": "https://github.com/ZOU2850/dsh-file-launcher/blob/e0942357b70648d258a0c55ea9da4cbd82206455/client.js#L3712-L3759"
   }
 ]

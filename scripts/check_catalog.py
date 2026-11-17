@@ -46,6 +46,10 @@ def main():
                 if entry[field]:
                     evidence_revision, _ = pinned_link(entry[field], entry["repo"])
                     assert evidence_revision == revision, entry[field]
+            if "assembly" in entry:
+                assembly_revision, _ = pinned_link(entry["assembly"], entry["repo"])
+                assert source in {"web", "deepseek-desktop"} and assembly_revision == revision, entry["assembly"]
+                assert entry["registration"] and entry["workflow"], entry
             if source != "manifest":
                 assert entry["registration" if source == "registered" else "workflow"], entry
     previews = sum("preview" in entry for entry in entries)
