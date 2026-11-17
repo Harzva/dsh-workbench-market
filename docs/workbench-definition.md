@@ -30,4 +30,6 @@ Dataelem 的 DSH Desktop 提供自己的原生工作台服务。工作台包是 
 
 一般设置页、独立按钮、通知、主题、单独 Skill、MCP 工具、CLI 或仅演示用的文档不计为已核工作台。如果一个插件还注册了具有完整任务流程的界面，可以按那个工作台收录。主题制作器可以按编辑、预览与保存的完整流程收录；同一包的镜像和相同内容分支合并，独立维护且具备不同功能的派生包可单列。连通性骨架须有实际任务功能后才可收录。遇到版本间变化，以固定源码内是否能完成任务作判断。GitHub monorepo 包路径作为独立证据，同一包在不同宿主有独立依据时可分别显示。
 
+由另一个 bundle 装载的 Web 客户端子包，也可按工作台收录。固定提交应同时显示 bundle 对该客户端的装载配置，以及客户端的宿主挂载和实际任务流程。[Better Session 装载会话管理模块](https://github.com/morlay/dsh-plugin/blob/a48fa9ea05a3cd092dc588201f3579b3496350a9/packages/bundles/better-session/cordis.patch.yml#L23-L24) · [会话管理任务说明](https://github.com/morlay/dsh-plugin/blob/a48fa9ea05a3cd092dc588201f3579b3496350a9/packages/session/ui-conversation-manager/README.md#L3-L5)
+
 目录描述的是公开证据与宿主适用范围。安装、运行、版本兼容性和数据处理权限各自需要实机检查。

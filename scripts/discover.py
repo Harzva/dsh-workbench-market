@@ -293,6 +293,39 @@ def plugin_package_path(metadata):
     return f"{path}/package.json" if path else None
 
 
+def repository_export(exported):
+    """Read repository links and any explicit manifest paths from external indexes."""
+    if not isinstance(exported, dict) or not isinstance(exported.get("repositories"), dict):
+        raise ValueError("repositories must be an object")
+    manifests = exported.get("packagePaths", {})
+    if not isinstance(manifests, dict):
+        raise ValueError("packagePaths must be an object")
+    paths_by_repo = {}
+    for repo, paths in manifests.items():
+        if (not REPO.fullmatch(repo) or not isinstance(paths, list) or not paths
+                or not all(isinstance(path, str) and clean_path(path) == path
+                           and (path == "package.json" or path.endswith("/package.json"))
+                           for path in paths)):
+            raise ValueError(f"Invalid package paths for repository: {repo}")
+        paths_by_repo.setdefault(repo.lower(), set()).update(paths)
+    candidates = {}
+    for repo, sources in exported["repositories"].items():
+        if (not REPO.fullmatch(repo) or not isinstance(sources, list) or not sources
+                or not all(isinstance(source, str) and source for source in sources)):
+            raise ValueError(f"Invalid repository export record: {repo}")
+        key = repo.lower()
+        paths = paths_by_repo.get(key, ("package.json",))
+        candidate = candidates.setdefault(key, {
+            "repo": repo, "ref": "HEAD", "sources": set(), "paths": {path: set() for path in paths},
+        })
+        candidate["sources"].update(sources)
+    if paths_by_repo.keys() - candidates.keys():
+        raise ValueError("packagePaths contains a repository missing from repositories")
+    if not candidates:
+        raise ValueError("--repository-export is empty")
+    return candidates
+
+
 def inventory(existing, skip_code, all_plugin_index=False, previous=(), index_only=False, index_subpackages=False,
               code_queries=()):
     candidates = {}
@@ -501,17 +534,10 @@ def main():
         candidates, searches, indices, errors = inventory([], False, code_queries=args.code_query)
     elif args.repository_export:
         exported = json.loads(args.repository_export.read_text())
-        candidates = {}
-        for repo, sources in exported["repositories"].items():
-            if (not REPO.fullmatch(repo) or not isinstance(sources, list) or not sources
-                    or not all(isinstance(source, str) and source for source in sources)):
-                parser.error(f"Invalid repository export record: {repo}")
-            candidate = candidates.setdefault(repo.lower(), {
-                "repo": repo, "ref": "HEAD", "sources": set(), "paths": {"package.json": set()},
-            })
-            candidate["sources"].update(sources)
-        if not candidates:
-            parser.error("--repository-export is empty")
+        try:
+            candidates = repository_export(exported)
+        except ValueError as error:
+            parser.error(str(error))
         searches, indices, errors = {}, exported["indexes"], []
     elif args.discussion_export:
         candidates, discussion_count = discussion_export(args.discussion_export)

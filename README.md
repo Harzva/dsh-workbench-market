@@ -47,9 +47,11 @@ python3 scripts/discover.py --discussion-export .scan/plugin-discussions.jsonl -
 python3 scripts/merge_discoveries.py discovery.json .scan/discussions.json --output discovery.json
 ```
 
-外部索引列出的 GitHub 仓库也可以交给 `discover.py --repository-export` 核查。JSON 的 `indexes` 记录各索引源和条数，`repositories` 把 `owner/repo` 映射到来源列表。索引条目只提供发现线索，仍按同一套源码标准核查。
+外部索引列出的 GitHub 仓库也可以交给 `discover.py --repository-export` 核查。JSON 的 `indexes` 记录各索引源和条数，`repositories` 把 `owner/repo` 映射到来源列表。默认读取仓库根目录的 `package.json`。有 `packagePaths` 记录的仓库只读取列表里的路径。要同时核对根清单和子包，可填写 `["package.json", "plugins/editor/package.json"]`。索引条目只提供发现线索，仍按同一套源码标准核查。
 
-公开 npm registry 的 `dsh-plugin`、`deepseek-harness` 和 `dsh-desktop` 关键词搜索也用于反查 GitHub 源仓库。这轮按实际返回的唯一包去重，搜索页出现重复后按已返回数据统计。核查范围为所指 GitHub 仓库的根清单。[npm Registry 搜索接口](https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md)
+公开 npm registry 的 `dsh-plugin`、`deepseek-harness` 和 `dsh-desktop` 关键词搜索也用于反查 GitHub 源仓库。搜索页出现重复时，按实际返回的唯一包统计。根清单扫描之外，可从 npm 版本元数据的 `repository.directory` 取出子包路径，再到 GitHub 核实对应清单、界面挂载和任务流程。[npm Registry 搜索接口](https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md) · [npm repository 字段](https://docs.npmjs.com/cli/v11/configuring-npm/package-json#repository)
+
+DSH Desk 和 DSH Open 的公开索引也参与发现。下载索引后，按 GitHub 仓库与包清单路径去重，再补扫此前未覆盖的路径。[DSH Desk 索引](https://plugin.dshdesk.com/data/plugin-index.json) · [DSH Open 索引](https://dshopen.org/index.json)
 
 如果要从客户端接口反查名称中看不出用途的项目，可单独执行 `python3 scripts/discover.py --code-query 'sidebarRightTabs.register in:file language:TypeScript' --output .scan/right-sidebar.json`。扫描会从命中的源码路径向上查找插件清单，并在报告里记录搜索读到的条数。
 
