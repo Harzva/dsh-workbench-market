@@ -293,7 +293,8 @@ def plugin_package_path(metadata):
     return f"{path}/package.json" if path else None
 
 
-def inventory(existing, skip_code, all_plugin_index=False, previous=(), index_only=False, index_subpackages=False):
+def inventory(existing, skip_code, all_plugin_index=False, previous=(), index_only=False, index_subpackages=False,
+              code_queries=()):
     candidates = {}
     searches = {}
     indices = {}
@@ -305,6 +306,33 @@ def inventory(existing, skip_code, all_plugin_index=False, previous=(), index_on
             row = candidates.setdefault(key, {"repo": repo, "ref": ref, "paths": {}, "sources": set()})
             row["paths"].setdefault(path, set())
             row["sources"].add(source)
+
+    def search_code(queries):
+        for query in queries:
+            print(f"Searching GitHub code: {query}", file=sys.stderr, flush=True)
+            for row in pages("code", query, searches, errors):
+                repo = row.get("repository", {})
+                name = repo.get("full_name", "")
+                if repo.get("private") is not False or not REPO.fullmatch(name):
+                    continue
+                path = row["path"]
+                if not clean_path(path):
+                    continue
+                add(name, source=query)
+                if path.endswith("/package.json") or path == "package.json":
+                    add(name, path, source=query)
+                elif path.endswith(SOURCE_EXTENSIONS) and not path.endswith(".d.ts"):
+                    parent = path.rpartition("/")[0]
+                    while parent:
+                        manifest = parent + "/package.json"
+                        add(name, manifest, source=query)
+                        candidates[name.lower()]["paths"][manifest].add(path)
+                        parent = parent.rpartition("/")[0]
+                    candidates[name.lower()]["paths"]["package.json"].add(path)
+
+    if code_queries:
+        search_code(code_queries)
+        return candidates, searches, indices, errors
 
     for row in [*existing, *previous]:
         add(row["repo"], row.get("packagePath", "package.json"), source="previous catalog")
@@ -359,27 +387,7 @@ def inventory(existing, skip_code, all_plugin_index=False, previous=(), index_on
             if row.get("private") is False:
                 add(row.get("full_name"), ref=row["default_branch"], source=query)
     if not skip_code:
-        for query in CODE_QUERIES:
-            print(f"Searching GitHub code: {query}", file=sys.stderr, flush=True)
-            for row in pages("code", query, searches, errors):
-                repo = row.get("repository", {})
-                if repo.get("private") is not False or not REPO.fullmatch(repo.get("full_name", "")):
-                    continue
-                path = row["path"]
-                if not clean_path(path):
-                    continue
-                name = repo["full_name"]
-                add(name, source=query)
-                if path.endswith("/package.json") or path == "package.json":
-                    add(name, path, source=query)
-                elif path.endswith(SOURCE_EXTENSIONS) and not path.endswith(".d.ts"):
-                    parent = path.rpartition("/")[0]
-                    while parent:
-                        manifest = parent + "/package.json"
-                        add(name, manifest, source=query)
-                        candidates[name.lower()]["paths"][manifest].add(path)
-                        parent = parent.rpartition("/")[0]
-                    candidates[name.lower()]["paths"]["package.json"].add(path)
+        search_code(CODE_QUERIES)
     return candidates, searches, indices, errors
 
 
@@ -400,9 +408,17 @@ def inspect(candidate):
     web_candidates = []
     failures = []
     commit = None
-    for path, hinted_files in sorted(candidate["paths"].items()):
+    claimed_files = set()
+    # A code hit belongs to the closest package boundary. A parent still gets
+    # checked through its own exported client and conventional source entries.
+    paths = sorted(candidate["paths"], key=lambda path: (-path.count("/"), path))
+    for path in paths:
+        hinted_files = candidate["paths"][path]
+        local_hints = hinted_files - claimed_files
         try:
             package = package_at(repo, ref, path)
+            if package is not None:
+                claimed_files.update(hinted_files)
             contract = manifest_contract(package) if package else None
             if not contract:
                 if package and web_signal(package):
@@ -423,7 +439,7 @@ def inspect(candidate):
             entry = contract
             parent, _, _ = path.rpartition("/")
             base = parent + "/" if parent else ""
-            files = list(dict.fromkeys([base + entry, *sorted(hinted_files), *(
+            files = list(dict.fromkeys([base + entry, *sorted(local_hints), *(
                 base + file for file in (
                     "src/client.ts", "src/client.tsx", "src/client/index.ts", "src/client/index.tsx",
                     "client.ts", "client.tsx", "client.js",
@@ -450,13 +466,14 @@ def inspect(candidate):
             if failure:
                 failures.append({"repo": repo, "path": path, "error": failure})
         except (OSError, RuntimeError, subprocess.TimeoutExpired, KeyError, ValueError) as error:
+            claimed_files.update(hinted_files)
             failures.append({"repo": repo, "path": path, "error": str(error)})
     return matches, web_candidates, failures
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=ROOT / "discovery.json")
+    parser.add_argument("--output", type=Path)
     parser.add_argument("--skip-code-search", action="store_true", help="Use the repository search and indexes only.")
     parser.add_argument("--workers", type=int, default=10)
     parser.add_argument("--all-plugin-index", action="store_true",
@@ -472,11 +489,17 @@ def main():
                        help="Inspect GitHub projects linked from an official plugin showcase JSONL export.")
     scope.add_argument("--repository-export", type=Path,
                        help="Inspect a JSON export of public repositories from external indexes.")
+    scope.add_argument("--code-query", action="append",
+                       help="Inspect GitHub matches for a code search query, including nested package manifests.")
     args = parser.parse_args()
+    if args.output is None:
+        args.output = ROOT / (".scan/code-inspection.json" if args.code_query else "discovery.json")
     if not 1 <= args.workers <= 24:
         parser.error("--workers must be between 1 and 24")
     existing = json.loads((ROOT / "community.json").read_text())
-    if args.repository_export:
+    if args.code_query:
+        candidates, searches, indices, errors = inventory([], False, code_queries=args.code_query)
+    elif args.repository_export:
         exported = json.loads(args.repository_export.read_text())
         candidates = {}
         for repo, sources in exported["repositories"].items():

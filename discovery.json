@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T18:57:11+00:00",
+  "checkedAt": "2026-11-17T19:16:52+00:00",
   "repositoriesInspected": 14324,
   "repositoryCountScope": "largest individual inspection pass",
   "counts": {
@@ -701,6 +701,44 @@
       "indexes": {
         "retry from external registry fetch failures": 26
       },
+      "searches": {},
+      "errors": []
+    },
+    {
+      "checkedAt": "2026-11-17T19:12:28+00:00",
+      "repositoriesInspected": 23,
+      "manifestPathsInspected": 23,
+      "indexes": {
+        "DSH GO public catalog": 342
+      },
+      "searches": {},
+      "errors": []
+    },
+    {
+      "checkedAt": "2026-11-17T19:15:15+00:00",
+      "repositoriesInspected": 213,
+      "manifestPathsInspected": 2538,
+      "indexes": {},
+      "searches": {
+        "sidebarRightTabs.register in:file language:TypeScript": {
+          "matched": 523,
+          "read": 724,
+          "incomplete": false
+        }
+      },
+      "errors": [
+        {
+          "repo": "samuelrubiodev/deepseek-harness-community",
+          "path": "packages/client/ui-sidebar-documentpreview/package.json",
+          "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+        }
+      ]
+    },
+    {
+      "checkedAt": "2026-11-17T19:16:52+00:00",
+      "repositoriesInspected": 1,
+      "manifestPathsInspected": 1,
+      "indexes": {},
       "searches": {},
       "errors": []
     }
@@ -3739,6 +3777,18 @@
     },
     {
       "repo": "0x7A7A6572/dsh-forge-studio",
+      "packagePath": "packages/plugin-agent-studio/package.json",
+      "package": "@zzerx/dsh-plugin-agent-studio",
+      "version": "0.2.2",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "dsh 智能体工坊插件：自定义单 Agent / 团队 Agent，在会话内选择并启动，每个 Agent 可使用独立 preset 与模型，并可调用合适的 subagent。",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
+      "repo": "0x7A7A6572/dsh-forge-studio",
       "packagePath": "packages/plugin-daily-log/package.json",
       "package": "@zzerx/dsh-plugin-daily-log",
       "version": "0.4.5",
@@ -3768,10 +3818,11 @@
       "version": "0.6.1",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "dsh 便签插件：纸卡墙便签板 + Markdown 编辑器，便签能变任务——拖进泳道、交给 AI 在指定工作区执行、按日程定时跑；支持 WebDAV 备份与 agent 工具读写。",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "0x7A7A6572/dsh-forge-studio",
@@ -6084,11 +6135,13 @@
       "packagePath": "package.json",
       "package": "@dsh-external/dsh-sysmon",
       "version": "0.1.0",
-      "ref": "main",
+      "ref": "HEAD",
       "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript",
         "topic:dsh-plugin 工作台 in:readme"
       ],
-      "observedAt": "2026-11-17T17:53:20+00:00"
+      "description": "系统性能看板：小悬浮窗实时展示 CPU/内存/磁盘/网络/负载，占用极小（host 零依赖采集 + client 原生 DOM）",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "21hbguo/dsh-thinking-counter",
@@ -9905,17 +9958,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
-      "repo": "aa728848/dsh-chatgpt-subscription",
+      "repo": "Aa728848/dsh-chatgpt-subscription",
       "packagePath": "package.json",
       "package": "@eddyskywalker/dsh-chatgpt-subscription",
       "version": "0.77.0",
       "ref": "HEAD",
       "sources": [
         "dsh-plugin.org",
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DSH provider plugin for Codex access through a ChatGPT subscription.",
-      "observedAt": "2026-11-17T18:32:04+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "aa728848/dsh-llm-verifier",
@@ -10173,6 +10227,18 @@
       ],
       "description": "DSH Web client plugin: chat content width tiers (standard / medium / wide / ultra / full / custom) with a floating picker button. Mounts into the app's shell.overlay slot on DSH 0.2.x and drives the native width axis, so the built-in drag handles keep working. UI copy follows the app language (zh / en / ja / es / fr / de / ru / pt).",
       "observedAt": "2026-11-17T18:26:55+00:00"
+    },
+    {
+      "repo": "AaronWu77/dsh-SystemMonitor",
+      "packagePath": "package.json",
+      "package": "dsh-system-monitor",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Low-overhead Windows host resource monitoring in the existing DSH sidebar.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "aawef/dsh-skill-manager-tags",
@@ -10697,12 +10763,14 @@
       "packagePath": "package.json",
       "package": "kaoyan-workbench",
       "version": "0.2.0",
-      "ref": "main",
+      "ref": "HEAD",
       "sources": [
         "\"DeepSeek Harness\" workbench in:name,description",
-        "\"DeepSeek Harness\" 工作台 in:name,description"
+        "\"DeepSeek Harness\" 工作台 in:name,description",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
-      "observedAt": "2026-11-17T17:53:20+00:00"
+      "description": "考研工作台：错题本、进度、复习调度，跑在 DSH 侧边栏里。支持多届、多科目组合。",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "acebang0303/dsh-quick-launch",
@@ -19527,6 +19595,42 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "astahmer/dshfiles",
+      "packagePath": "plugins/@dshfiles/deliverables/package.json",
+      "package": "@dshfiles/deliverables",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Owned native changed-files card, review tab and delivery cards that preview changed images instead of the binary placeholder.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
+      "repo": "astahmer/dshfiles",
+      "packagePath": "plugins/@dshfiles/schedule/package.json",
+      "package": "@dshfiles/schedule",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Owned native Tasks page and reminder catalogs that keep each catalog read until a schedule change or reconnect.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
+      "repo": "astahmer/dshfiles",
+      "packagePath": "plugins/@dshfiles/sidebar-terminal/package.json",
+      "package": "@dshfiles/sidebar-terminal",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Native terminal with selection excerpts for the composer",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "Astemiir/dsh-client-locale-ru",
       "packagePath": "package.json",
       "package": "dsh-client-locale-ru",
@@ -22980,10 +23084,11 @@
       "version": "0.5.16",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DSH 侧边栏文件活动插件：按 LRU 记录文件读取/新增/修改事件（最近访问），按绝对路径树形统计（文件统计），点击文件浮窗预览（代码高亮/Markdown/图片/PDF）。DSH web plugin: file activity tracker — LRU recent-access list plus per-file read/create/modify counts in a folder tree, with floating preview.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "baosfeng/my-dsh-plugins",
@@ -23016,10 +23121,11 @@
       "version": "0.4.10",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DSH 插件治理守护：新装/更新插件先进候选区，启动后热挂载——成功转正、失败自动禁用、连续失败冻结，一键安全模式，侧边栏诊断面板。DSH web plugin: staged plugin loading with auto-disable on failure, freeze, safe mode and a sidebar panel.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "baosfeng/my-dsh-plugins",
@@ -23088,10 +23194,11 @@
       "version": "0.4.12",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DSH 任务可靠性保障插件：模型超时/请求失败自动重试、任务未完成自动继续、思考重复干预、休眠重启后任务恢复、锁屏/休眠唤醒自动恢复、ask 超时自动继续、自主决策模式、远程触发、/task 斜杠命令。DSH web plugin: auto-retry, auto-continue, verification agent, repeat detection, resume after restart, stall watchdog, ask timeout, autopilot, remote trigger, /task command.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "BAOXIAOPAI/dsh-glacier",
@@ -25938,6 +26045,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "bluesky8318/dsh-plugin-documd",
+      "packagePath": "package.json",
+      "package": "dsh-plugin-documd",
+      "version": "1.0.1",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Right-sidebar file preview for DeepSeek Harness (dsh), rendering Markdown and code with the docu.md engine inside a sandboxed iframe.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "Blueteemo/dsh-audio-rail-macos",
       "packagePath": "package.json",
       "package": "dsh-audio-rail-macos",
@@ -27225,10 +27344,11 @@
       "version": "4.7.2",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Morning Star harness dsh (DeepSeek Harness) cordis function plugin — in-process engine gates (status/dispatch/lease) with hard refusal channels.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "buaafish/dsh-ai-session-rename",
@@ -28403,6 +28523,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "CallMeGuLab/dsh-purge-safe",
+      "packagePath": "package.json",
+      "package": "dsh-purge-safe",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "DSH GO"
+      ],
+      "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「鸢码」。破解市面上收费 388u 的版本，免费公开。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐",
+      "observedAt": "2026-11-17T19:12:28+00:00"
+    },
+    {
       "repo": "callqh/dsh-codex-oauth",
       "packagePath": "package.json",
       "package": "dsh-codex-oauth",
@@ -29511,6 +29643,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "ccfwwm/zerowall-dsh-plugins",
+      "packagePath": "plugins/dsh-better-sidebar/package.json",
+      "package": "dsh-better-sidebar",
+      "version": "0.28.1-zws.4",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Better Sidebar for DSH — file tree, editor, changes, tasks and side chat in one column, separate for every conversation. Also exposes a service other plugins use to register sidebar tabs and file viewers.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "ccgo26/dsh-app-updater",
       "packagePath": "package.json",
       "package": "dsh-app-updater",
@@ -30105,16 +30249,17 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
-      "repo": "chaaaaa/dsh-devbench-plugin",
+      "repo": "CHAAAAA/dsh-devbench-plugin",
       "packagePath": "package.json",
       "package": "dsh-devbench-plugin",
       "version": "1.0.9",
       "ref": "HEAD",
       "sources": [
-        "dsh-plugin.org"
+        "dsh-plugin.org",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DSH DevBench 插件：按工作区管理 Markdown 需求，AI 提交与代码评审，Git 工作树、后台任务与周报",
-      "observedAt": "2026-11-17T18:32:04+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "ChadCSong/dsh-cliproxyapi-provider",
@@ -35454,6 +35599,18 @@
       "observedAt": "2026-11-17T18:11:58+00:00"
     },
     {
+      "repo": "coffeefreehans/HarnessX",
+      "packagePath": "package.json",
+      "package": "harnessx-desktop",
+      "version": "0.1.9",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "DeepSeek HarnessX: an Electron desktop client composed around DeepSeek Harness",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "coffeiz/dsh-qqchat",
       "packagePath": "package.json",
       "package": "dsh-qqchat",
@@ -35671,10 +35828,11 @@
       "version": "0.1.0",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "会话时间线（右栏页签）：按创建时间从左到右排布本工作区会话，原生 handoff 血缘 + 手工拖拽衔接",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "comecaramelos/dsh-custom-provider",
@@ -40985,6 +41143,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "deepseek-ai/deepseek-harness",
+      "packagePath": "packages/experimental/timeline/package.json",
+      "package": "@deepseek-ai/dsh-timeline",
+      "version": "0.2.2-rc.4",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Replace Todo in long-running sessions with task trees, a live progress bar, and timed reports",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "deepseek-ai/dsh-superagent-prototype",
       "packagePath": "package.json",
       "package": "dsh-superagent",
@@ -42615,6 +42785,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "DigiStrique-Solutions/strique-harness",
+      "packagePath": "dsh-bettersidebar/package.json",
+      "package": "dsh-better-sidebar",
+      "version": "0.28.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Better Sidebar for DSH — file tree, editor, changes, tasks and side chat in one column, separate for every conversation. Also exposes a service other plugins use to register sidebar tabs and file viewers.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "Diluka/dsh-afk",
       "packagePath": "package.json",
       "package": "dsh-afk",
@@ -44235,10 +44417,11 @@
       "version": "0.1.1",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Native, local-first knowledge base for DeepSeek Harness: ingest local documents, retrieve with Chinese n-gram/BM25, and answer with citations",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "domitor-syh/dsh-rollback",
@@ -45304,6 +45487,30 @@
       ],
       "description": "Codex-style right-click menus for the DeepSeek Harness Web UI: copy/cut/paste/select-all on text, copy path and reveal in the file manager for file chips, copy or open for links.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "DreamRealm-Dev/dsh-link",
+      "packagePath": "plugins/dsh-link-markdown/package.json",
+      "package": "dsh-link-markdown",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "右栏的 Markdown 标签类型：渲染工作区里的 .md/.markdown 文件并可原地编辑保存（保存走 Host 半的一条窄路由，版本守卫用内核自己的 FsVersion），公式与代码高亮复用内核客户端已有的 KaTeX/Shiki，自己不带渲染依赖。",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
+      "repo": "DreamRealm-Dev/dsh-link",
+      "packagePath": "plugins/dsh-link-panel/package.json",
+      "package": "dsh-link-panel",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "The panel item registry and the pane that shows it: items are data (id, kind, title, source, order) with a closed kind set, the projection is a pure function that returns the sorted visible items plus every refused item by name, one read-only GET route serves both readings, and the browser half draws them in a right-rail pane (kind pane) beside the note ledger, where one note at a time can be written through /api/dsh-link-notes/add. No persistence, no registry write surface.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "DreamRift/dsh-memory-context-lab",
@@ -46890,10 +47097,11 @@
       "version": "0.1.0",
       "ref": "HEAD",
       "sources": [
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "把本地 KnowledgeNet 知识库（v2 开放文件格式）接进 DSH：知识点与前置依赖工具，加上会话内的图谱卡片",
-      "observedAt": "2026-11-17T18:39:05+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "du460138504/dsh-dual-balance",
@@ -51246,23 +51454,25 @@
       "ref": "HEAD",
       "sources": [
         "DeepSeek Harness discussion #8434",
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Podman-backed execution for DeepSeek Harness (dsh).",
-      "observedAt": "2026-11-17T18:26:55+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
-      "repo": "exagone313/dsh-subagent-sidebar",
+      "repo": "Exagone313/dsh-subagent-sidebar",
       "packagePath": "package.json",
       "package": "@exagone313/dsh-subagent-sidebar",
       "version": "1.0.1",
       "ref": "HEAD",
       "sources": [
         "dsh-plugin.org",
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Subagent catalog tab for the DeepSeek Harness (dsh) right sidebar.",
-      "observedAt": "2026-11-17T18:32:04+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "ExAleks/dsh-locale-ru",
@@ -54782,10 +54992,11 @@
       "version": "0.12.7",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Core plugin of the agentic roleplay bundle for DeepSeek Harness: roleplay UI, orchestration and storage.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "Firefox2100/dsh-ai-providers",
@@ -54914,10 +55125,11 @@
       "version": "0.4.1",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Rider-Waite-Smith tarot for DeepSeek Harness: lay the book's three methods, or a plain draw, three cards or nine in the right dock, then turn the cards and have them read from Waite's Pictorial Key.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "firekula/dsh-token-meter-mood",
@@ -57193,6 +57405,18 @@
       "observedAt": "2026-11-17T18:42:30+00:00"
     },
     {
+      "repo": "frostming/dsh-hongguo",
+      "packagePath": "package.json",
+      "package": "dsh-hongguo",
+      "version": "1.2.1",
+      "ref": "HEAD",
+      "sources": [
+        "DSH GO"
+      ],
+      "description": "摸鱼短剧：右侧边栏短剧播放器，等待 Agent 时提示调出（基于 openhongguo）",
+      "observedAt": "2026-11-17T19:12:28+00:00"
+    },
+    {
       "repo": "fsk2142/dsh-fpga-workbench",
       "packagePath": "package.json",
       "package": "dsh-fpga-workbench",
@@ -58226,17 +58450,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
-      "repo": "fylaropen/dsh-fylar-office-editor",
+      "repo": "FylarOpen/dsh-fylar-office-editor",
       "packagePath": "package.json",
       "package": "@fylar/dsh-fylar-office-editor",
       "version": "0.1.6",
       "ref": "HEAD",
       "sources": [
         "dsh-plugin.org",
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Fylar Office Editor integration for the DeepSeek Harness Web profile, powered by Fylar Office SDK",
-      "observedAt": "2026-11-17T18:29:34+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "FYTXY/dsh-empty-turn-guard",
@@ -63040,6 +63265,18 @@
       "observedAt": "2026-11-17T18:42:30+00:00"
     },
     {
+      "repo": "gulagala001/oh-my-dsh",
+      "packagePath": "package.json",
+      "package": "oh-my-dsh",
+      "version": "0.2.2-rc.3.omd.1.6.0",
+      "ref": "HEAD",
+      "sources": [
+        "DSH GO"
+      ],
+      "description": "DeepSeek Harness 增强插件：上下文压缩与 Dream 记忆、Ultra 多智能体、OpenCU 电脑操作、代码理解、扩展管理、人格和主题。",
+      "observedAt": "2026-11-17T19:12:28+00:00"
+    },
+    {
       "repo": "gulagala001/opencu",
       "packagePath": "package.json",
       "package": "opencu",
@@ -63907,6 +64144,18 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "hackerwei/dsh-demo",
+      "packagePath": "packages/experimental/timeline/package.json",
+      "package": "@deepseek-ai/dsh-timeline",
+      "version": "0.2.2-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Replace Todo in long-running sessions with task trees, a live progress bar, and timed reports",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "hacxy/dsh-live2d",
       "packagePath": "package.json",
       "package": "dsh-live2d",
@@ -64087,6 +64336,18 @@
       ],
       "description": "",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "haigepor/dsh-AutoFlow",
+      "packagePath": "custom-plugins/workspace/dsh-better-sidebar/package.json",
+      "package": "dsh-better-sidebar",
+      "version": "0.28.2",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Better Sidebar for DSH — file tree, editor, changes, tasks and side chat in one column, separate for every conversation. Also exposes a service other plugins use to register sidebar tabs and file viewers.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "haikuotianko/dsh-toolboxes",
@@ -66913,6 +67174,30 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "HelloTomBruce/dsh-workspace-tasks",
+      "packagePath": "package.json",
+      "package": "dsh-workspace-tasks",
+      "version": "0.10.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "DSH 插件：工作区任务与执行结论管理，集成于右侧侧边栏引导页（与工作区文件、新建终端并列）",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
+      "repo": "HelloTomBruce/dsh-zentao",
+      "packagePath": "package.json",
+      "package": "dsh-zentao",
+      "version": "0.3.1",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "DSH 插件：1 个 zentao 薄代理工具（查询/操作禅道数据）+ 对话内表格卡片 + 右侧栏禅道概览 Tab（按工作区 .dsh-zentao.json 绑定展示任务与 Bug）。凭证由 zentao CLI 内部管理，插件不接触凭证。",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "helloworld010234/dsh-fluid-chat-width",
       "packagePath": "package.json",
       "package": "dsh-fluid-chat-width",
@@ -68002,6 +68287,18 @@
         "\"DeepSeek Harness\" 工作台 in:name,description"
       ],
       "observedAt": "2026-11-17T17:53:20+00:00"
+    },
+    {
+      "repo": "hicms/EasyWork",
+      "packagePath": "packages/bundle/package.json",
+      "package": "easywork-bundle",
+      "version": "0.1.0-alpha.54",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Composes the EasyWork workspace, capabilities and default DSH plugins.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "HiddenPuppy/dsh-plugin-discovery",
@@ -70542,6 +70839,30 @@
       "observedAt": "2026-11-17T18:42:30+00:00"
     },
     {
+      "repo": "HuakunShen/refyard",
+      "packagePath": "integrations/dsh/package.json",
+      "package": "dsh-plugin-refyard",
+      "version": "0.1.1",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "The Refyard Git workbench as a DeepSeek Harness panel: history, changes, diffs, commits, branches and stashes for the repository the current session is working in.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
+      "repo": "HuakunShen/space-lens",
+      "packagePath": "apps/dsh/package.json",
+      "package": "dsh-plugin-spacelens",
+      "version": "0.1.3",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "The Space Lens workbench as a DeepSeek Harness panel: the directory the current session is working in, scanned and explored by Space Lens itself.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "hualidan42-beep/dsh-plugin-gzh-studio",
       "packagePath": "package.json",
       "package": "dsh-plugin-gzh-studio",
@@ -72944,6 +73265,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "HypoxanthineOvO/Tandem",
+      "packagePath": "packages/sidebar/package.json",
+      "package": "@tandem-dsh/sidebar",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Better Sidebar for DSH: file tree, editor, changes, tasks and side chat in one column, separate for every conversation. Also exposes the betterSidebar service other plugins use to register sidebar tabs and file viewers. Community fork of dsh-better-sidebar.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "hyqhyq3/dsh-gemini-oauth-bridge",
       "packagePath": "package.json",
       "package": "dsh-gemini-oauth-bridge",
@@ -73688,6 +74021,18 @@
       ],
       "description": "Expand running work-detail groups, then fold each group when its segment finishes.",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "iBobbyTS/dsh-git-commit",
+      "packagePath": "package.json",
+      "package": "@ibobbyts/dsh-git-commit",
+      "version": "0.2.1",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Floating Git stats and AI commits with native DSH LLM, authenticated RPC, settings and shared service",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "ibrhr/dsh-peak",
@@ -82933,10 +83278,11 @@
       "version": "0.1.0",
       "ref": "HEAD",
       "sources": [
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DSH 插件：在右侧栏原生自定义 tab 中渲染加密行情技术分析图表",
-      "observedAt": "2026-11-17T18:32:04+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "Johnny-xuan/dsh-paste-to-path",
@@ -83525,6 +83871,18 @@
       ],
       "description": "DeepSeek Harness（DSH）插件：把会话折叠成分步工作流地图，显示每步状态、进度、工具与文件操作，并支持把提示词排入下一步队列。",
       "observedAt": "2026-11-17T18:26:55+00:00"
+    },
+    {
+      "repo": "jpolvora/deepseek-harness-git-explorer-plugin",
+      "packagePath": "package.json",
+      "package": "dsh-plugin-git-explorer",
+      "version": "0.1.0-m6",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Git (Source Control) panel for the DeepSeek Harness Web GUI: a right-sidebar Git tab with staging, commits and diffs.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "jqlong17/dsh-meeting-memo",
@@ -84407,6 +84765,30 @@
       ],
       "description": "Workspace file browser with agent-change review (accept/reject + undo), full user editing (undo/redo, save, auto-save), diff view and rendered markdown, plus an integrated terminal view whose run button executes the file you have open (project-local runtime first; static host+client plugin)",
       "observedAt": "2026-11-17T18:29:34+00:00"
+    },
+    {
+      "repo": "JustGenius-s/DSH-Plugs",
+      "packagePath": "plugins/dsh-codex/package.json",
+      "package": "@just-genius/dsh-codex",
+      "version": "0.2.1",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Codex-style Side Chat, Terminal, Git, and voice controls for DeepSeek Harness",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
+      "repo": "JustGenius-s/DSH-Plugs",
+      "packagePath": "plugins/dsh-flow/package.json",
+      "package": "@just-genius/dsh-flow",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Leader-plans / subagent-executes orchestration: a DAG workflow the Leader reshapes while child agents run it, drawn as a React Flow tab.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "justhalfbit/dsh-plugin-jev-effort-selector",
@@ -85744,6 +86126,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "KawaiiHachimi/dsh-kvmflow",
+      "packagePath": "package.json",
+      "package": "dsh-kvmflow",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "KVMFlow: IP-KVM control, recording, AI-authored YAML workflows, and verified playback as a native DeepSeek Harness plugin",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "Kayungko/dsh-plugin-task-coordinator",
       "packagePath": "package.json",
       "package": "dsh-plugin-task-coordinator",
@@ -86760,10 +87154,11 @@
       "version": "0.23.3",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "dot — a character who lives on her own phone, for DeepSeek Harness (dsh): an Android phone the plugin installs and runs, her own QQ, memory and a diary from real events, a life between conversations (幕间), an optional microVM computer with approval gates. One plugin, seven components; lives next to qq-bridge.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "kevinx-key/dsh-plugin-read-aloud",
@@ -87567,10 +87962,11 @@
       "version": "0.2.3",
       "ref": "HEAD",
       "sources": [
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Jupyter notebook (.ipynb) viewer, editor and runner for the dsh web GUI: a native right-sidebar tab type driven by the host filesystem service, with a stdlib-only Python kernel bridge that uses dsh's bundled Python. No native dependencies.",
-      "observedAt": "2026-11-17T18:29:34+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "kilganon725/dsh-mic-dictation",
@@ -88323,10 +88719,11 @@
       "ref": "HEAD",
       "sources": [
         "DeepSeek Harness discussion #4649",
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Explore source conversations in private Topics with citations, drafts, visual boards, and learning cards.",
-      "observedAt": "2026-11-17T18:26:55+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "kirkchinese/CiteCiter",
@@ -88335,10 +88732,11 @@
       "version": "0.9.0-beta.11",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Explore source conversations in private Topics with citations, drafts, visual boards, and learning cards.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "kirkchinese/dsh-recollect",
@@ -90954,6 +91352,18 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "l246804/dsh-tweaks",
+      "packagePath": "package.json",
+      "package": "@leiwang2000/dsh-tweaks",
+      "version": "0.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Tweaks that improve the DeepSeek Harness (DSH) experience",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "l2685209197/dsh-pdf-translate",
       "packagePath": "package.json",
       "package": "dsh-pdf-translate",
@@ -92233,6 +92643,18 @@
       ],
       "description": "Recoverable session deletion for DeepSeek Harness: move sessions to a trash folder, restore them from a UI page, and purge automatically after 7 days.",
       "observedAt": "2026-11-17T18:35:01+00:00"
+    },
+    {
+      "repo": "lb-aigc/LDD-build",
+      "packagePath": "packages/canvas/package.json",
+      "package": "@ldd/dsh-canvas",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "lb290/dsh-db-connections",
@@ -95517,6 +95939,18 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "LiaoHan5426/Engineering-Automation-Platform",
+      "packagePath": "dsh-personal/packages/experimental/timeline/package.json",
+      "package": "@deepseek-ai/dsh-timeline",
+      "version": "0.2.2-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Replace Todo in long-running sessions with task trees, a live progress bar, and timed reports",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "liaohongrao/dsh-session-dates",
       "packagePath": "package.json",
       "package": "dsh-session-dates",
@@ -97270,6 +97704,30 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "Ling0727-ai/falstad-circuit",
+      "packagePath": "package.json",
+      "package": "dsh-plugin-falstad-circuit",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Falstad CircuitJS1 circuit drawing and simulation workspace for DeepSeek Harness",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
+      "repo": "Ling0727-ai/plugin-geogebra-pic",
+      "packagePath": "package.json",
+      "package": "dsh-plugin-geogebra-pic",
+      "version": "0.3.1",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "GeoGebra drawing workspace for DeepSeek Harness",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "lingdong0128-sys/dsh-plugin-oauth-subs",
       "packagePath": "package.json",
       "package": "dsh-plugin-oauth-subs",
@@ -98029,10 +98487,11 @@
       "version": "1.2.1",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DSH 插件:在官方右侧栏提供「dsh-git」本地仓库工作台——多仓库下拉 + Changes/History 本地 git(暂存·提交·同步) + Code/Issues/PR/Actions 远端页签,commit message 由 DSH 模型列表里的模型生成 | Local Git workbench for the DSH sidebar: multi-repo picker, Changes/History, GitHub tabs (Code/Issues/PR/Actions), and commit messages written by your configured DSH model.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "LinYanZhi/dsh-mesh",
@@ -98758,6 +99217,18 @@
       ],
       "description": "Image generation tool for DeepSeek Harness 0.2.x — provider-table driven (Doubao Seedream / Aliyun qwen / any OpenAI-compatible gateway / local deployments), user-configurable model per channel, watermark-free, inline in-chat display.",
       "observedAt": "2026-11-17T18:35:01+00:00"
+    },
+    {
+      "repo": "Little-W/custom-dsh-plugin",
+      "packagePath": "package.json",
+      "package": "@agent-studio/plugin-opencode-provider",
+      "version": "0.1.15",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "连接并管理 OpenCode 提供的 AI 模型；Claude 模型也可通过工作台内置的兼容服务使用。",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "LittleAlety/dsh-team-conductor",
@@ -102591,10 +103062,11 @@
       "ref": "HEAD",
       "sources": [
         "dsh-plugin.org",
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DeepSeek Harness plugin for harnesses running in a container, with no access to your local file system: download buttons instead of \"Show file location\", a \"Show files\" shortcut, creating, renaming, deleting (with restore) and zip-downloading files and folders, and an in-sidebar Monaco file editor, all through the browser.",
-      "observedAt": "2026-11-17T18:29:34+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "louisremi/dsh-docker-adapter",
@@ -102607,6 +103079,18 @@
       ],
       "description": "DeepSeek Harness plugin for harnesses running in a container, with no access to your local file system: download buttons instead of \"Show file location\", a \"Show files\" shortcut, creating, renaming, deleting (with restore) and zip-downloading files and folders, and an in-sidebar Monaco file editor, all through the browser.",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "louke6572/dsh-Dfy",
+      "packagePath": "package.json",
+      "package": "dsh-dfy",
+      "version": "0.7.9",
+      "ref": "HEAD",
+      "sources": [
+        "DSH GO"
+      ],
+      "description": "QQ × B站 × 桌宠一体化插件：统一设置窗口、小鲸鱼余额挂件、106 段透明动画桌宠、QQ 消息卡与双向脱敏记忆。",
+      "observedAt": "2026-11-17T19:12:28+00:00"
     },
     {
       "repo": "louke6572/dsh-whale-widget-plus",
@@ -105821,6 +106305,18 @@
       "observedAt": "2026-11-17T18:45:48+00:00"
     },
     {
+      "repo": "lxj5820/dsh-boot-animation",
+      "packagePath": "package.json",
+      "package": "dsh-boot-animation",
+      "version": "0.3.0",
+      "ref": "HEAD",
+      "sources": [
+        "DSH GO"
+      ],
+      "description": "DSH 启动动画与屏保：全屏短片片尾交叉溶解进界面；闲置后全屏盖住界面，点击或按键收回。支持视频/图片/动图/Live2D，设置全在界面里。不改 DSH 本体源码。",
+      "observedAt": "2026-11-17T19:12:28+00:00"
+    },
+    {
       "repo": "lxl2000927/dsh-memos-panel",
       "packagePath": "package.json",
       "package": "dsh-memos-panel",
@@ -106275,10 +106771,11 @@
       "version": "0.20.0",
       "ref": "HEAD",
       "sources": [
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Token usage, context occupancy, session metrics and cross-session totals in the DeepSeek Harness right sidebar.",
-      "observedAt": "2026-11-17T18:32:04+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "lyonleeeee/dsh-steer",
@@ -107325,10 +107822,11 @@
       "version": "0.11.2",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "综合性增强插件：界面优化、布局调整与提示词注入等更多功能。A comprehensive enhancement plugin with UI polish, layout tweaks, prompt injection, and more.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "magian1127/deepseek-harness-zhipu_plan_tools",
@@ -112644,10 +113142,11 @@
       "version": "0.2.0",
       "ref": "HEAD",
       "sources": [
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Generative UI for DeepSeek Harness — the agent writes TSX, dsh web renders it live, inline in chat and in a canvas panel",
-      "observedAt": "2026-11-17T18:32:04+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "MinEagle/dsh-dingtalk-self",
@@ -114423,6 +114922,18 @@
       ],
       "description": "S3, FDS & FTP file tools for DeepSeek Harness: 8 agent tools (list, stat, mkdir, delete, move, copy, download, upload) — approval-gated mutations, transfer jobs with progress & cancel.",
       "observedAt": "2026-11-17T18:35:01+00:00"
+    },
+    {
+      "repo": "modestoma/dsh_channels",
+      "packagePath": "package.json",
+      "package": "@modesto_ma/dsh-channels",
+      "version": "0.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "DeepSeek Harness (DSH) 飞书渠道插件：一个 dsh 实例对应一个飞书机器人，私聊/群聊/话题群 @ 触发会话，话题绑定 session，卡片 2.0 流式回复；Web 左侧栏提供「飞书渠道」状态与常用配置面板",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "Modole/dsh-plugin-app-manager-laoboshi",
@@ -117182,6 +117693,18 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "Mulibaixi/dsh-translation-plugin",
+      "packagePath": "package.json",
+      "package": "dsh-translation-plugin",
+      "version": "0.27.1",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Translation and refinement workspace for DeepSeek Harness, with topic memory, revision history, and main-model collaboration.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "mulqizamzam/dsh-browser",
       "packagePath": "package.json",
       "package": "dsh-builtin-browser",
@@ -118130,6 +118653,18 @@
       ],
       "description": "cardian —— DeepSeek Harness 知识中心插件：RepoWiki / 知识卡片 / 记忆，全部落地到本地 Obsidian 仓库",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "myYangyunfan/dsh_desktop",
+      "packagePath": "dsh-desktop/assets/plugins/dsh-better-sidebar/package.json",
+      "package": "dsh-better-sidebar",
+      "version": "0.24.2",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Better Sidebar for DSH — file tree, editor, changes, tasks and side chat in one column, separate for every conversation. Also exposes a service other plugins use to register sidebar tabs and file viewers.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "Mzgnk/dsh-bz",
@@ -121402,12 +121937,13 @@
       "packagePath": "package.json",
       "package": "dsh-vibecode-studio",
       "version": "0.1.0",
-      "ref": "main",
+      "ref": "HEAD",
       "sources": [
-        "pagination recovery: \"DeepSeek Harness\" studio in:name,description is:public"
+        "pagination recovery: \"DeepSeek Harness\" studio in:name,description is:public",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DSH Vibecode Studio: in-chat preview, annotation, inspect and API workbench for DeepSeek Harness.",
-      "observedAt": "2026-11-17T18:11:58+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "nipheryang/dsh-folderead",
@@ -122611,6 +123147,18 @@
         "topic:dsh-plugin 工作台 in:readme"
       ],
       "observedAt": "2026-11-17T17:53:20+00:00"
+    },
+    {
+      "repo": "NorthGateChat/dsh-think-game",
+      "packagePath": "package.json",
+      "package": "dsh-think-game",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "DSH GO"
+      ],
+      "description": "Inline mini-game arcade for DeepSeek Harness streaming reasoning / 流式思考下方的轻量小游戏（七款游戏，自动暂停/淡出）",
+      "observedAt": "2026-11-17T19:12:28+00:00"
     },
     {
       "repo": "norths7ar/dsh-model-guidance",
@@ -124281,10 +124829,11 @@
       "sources": [
         "DeepSeek Harness discussion #6977",
         "DeepSeek Harness discussion #7151",
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Better Sidebar for DSH — file tree, editor, changes, tasks and side chat in one column, separate for every conversation. Configure it in Settings → Side card (bottom-left). Also exposes a service other plugins use to register sidebar tabs and file viewers.",
-      "observedAt": "2026-11-17T18:26:55+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "omdsh-dev/dsh-better-workbench",
@@ -126424,10 +126973,11 @@
       "version": "0.28.0-cursorlike.4-beta.1",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "CursorLike Sidebar：嵌入 DSH 的文件树、代码编辑、终端、Git、侧边对话与 Ctrl+L/拖放引用交互",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "oxygenforce/dsh-agent-activity",
@@ -127671,10 +128221,11 @@
       "version": "0.17.0",
       "ref": "HEAD",
       "sources": [
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DeepSeek Harness 原生测试计划、执行、断言和报告插件",
-      "observedAt": "2026-11-17T18:45:48+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "Pegasus02/dsh-siri",
@@ -127707,10 +128258,11 @@
       "version": "0.9.5",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Map your Zotero library into DSH: let AI operate Zotero for you and help you read papers. Browse collections and tags in the sidebar, read PDFs with highlights in place, and cite excerpts, annotations, notes or whole items into the chat. The model works from the source text for reviews, comparisons and data extraction, and can also search and organize the library, import papers and attach translations back to items; first use needs the Zotero MCP plugin and the local API enabled.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "peikuo/dayreel",
@@ -127747,6 +128299,18 @@
       ],
       "description": "DSH skills manager + SkillHub marketplace: manage user-level/per-workspace skills and search/install skills from SkillHub in a Web UI panel",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "peiyucn/dsh-sparrow",
+      "packagePath": "plugins/dsh-desk-one/package.json",
+      "package": "@dsh-sparrow/dsh-desk-one",
+      "version": "0.2.2-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Desk One — a shared desk for you and your DSH harness: notes, tasks, a read-only calendar and annotations on workspace files in one panel.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "pekeyTeam/dsh-AGE",
@@ -128141,6 +128705,18 @@
       ],
       "description": "Codex-inspired Guardian approval reviewer for DeepSeek Harness",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "PermeationLoop/dsh-omp-search",
+      "packagePath": "package.json",
+      "package": "@local/dsh-omp-web-search",
+      "version": "1.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Multi-provider web search for the DeepSeek Harness, ported from oh-my-pi's web search feature: an ordered engine chain with fallback, a right-side debug panel, and per-provider credentials.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "perry-ai/dsh-todo-list",
@@ -128718,6 +129294,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "PGshen/dsh-idea-gittool",
+      "packagePath": "package.json",
+      "package": "dsh-idea-gittool",
+      "version": "1.0.0-rc.1",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "IntelliJ 风格 Git 工作台：DSH Web 右侧栏双面 bundle 插件",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "ph1996-cn/dsh-BMAD-Method",
       "packagePath": "package.json",
       "package": "dsh-bmad-method",
@@ -129240,6 +129828,18 @@
       ],
       "description": "Liquid-glass popup and overlay motion for DeepSeek Harness: spring clip-morph entrances, coherent hover bubbles, image-zoom FLIP and a live-preview settings page.",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "picoaide/picoaide-harness",
+      "packagePath": "packages/host/cron/package.json",
+      "package": "@picoaide/dsh-cron",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Host cron scheduler for PicoAide Harness: 5-field cron parsing, Host-authoritative job ledger, missed-trigger semantics, and a scheduled job executor (task / prompt actions)",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "picsky/dsh-pocket-console",
@@ -134465,6 +135065,18 @@
       ],
       "description": "DSH Web Git Sidebar: VS Code-style left-rail Git panel for DeepSeek Harness with branch switching, commit graph, per-commit previews and a session-following footer entry.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "raghubirmahato/Hack-Dev-Code",
+      "packagePath": "packages/experimental/timeline/package.json",
+      "package": "@hackdevcode/dsh-timeline",
+      "version": "0.2.2-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Replace Todo in long-running sessions with task trees, a live progress bar, and timed reports",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "Ragnoryok1/dsh-client-locale-ru",
@@ -140279,6 +140891,18 @@
       ],
       "description": "Windows-only DSH plugin: one-click shutdown from the sidebar, plus an app-window / normal-tab launch switch that also fixes the desktop shortcut.",
       "observedAt": "2026-11-17T18:48:43+00:00"
+    },
+    {
+      "repo": "SanZiNEO/resume-builder",
+      "packagePath": "dsh-resume/package.json",
+      "package": "dsh-resume-sp",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "简历模式：把会话变成简历顾问，右栏实时预览，导出 HTML / PDF / 长图",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "Saolence/dsh-restart-handoff",
@@ -146355,10 +146979,11 @@
       "version": "8.1.0",
       "ref": "HEAD",
       "sources": [
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Aggregate and selective DeepSeek Harness enhancements, including a standalone Windows launcher companion",
-      "observedAt": "2026-11-17T18:48:43+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "sky1ine139/dsh-plugin-screenshot-ask",
@@ -146755,6 +147380,18 @@
       ],
       "description": "机甲主题的 DeepSeek Harness 启动界面：黑幕厂牌 → 过曝洗白 → 机甲座舱（白蓝机甲 + 目镜辉光 + HUD）→ 可交互的五步授权（身份卡点选、接驳协议三选一）→ 欢迎页。机甲图已内嵌。",
       "observedAt": "2026-11-17T18:48:43+00:00"
+    },
+    {
+      "repo": "slimeball2026/DSH-Docs-Driven-Development",
+      "packagePath": "plugin/package.json",
+      "package": "@local/ddd",
+      "version": "1.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Document-Driven Development (DDD) construction constraint engine for DeepSeek-Harness — project-scoped read gate + index injection, mounted globally at profile level.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "SLin-code/dsh-custom-skin",
@@ -147614,10 +148251,11 @@
       "version": "0.1.0-alpha.2",
       "ref": "HEAD",
       "sources": [
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Load each workspace's direnv environment into every command the DeepSeek Harness runs — automatically, per working directory. 让 DSH 每个工作区的子进程自动带上该工作区的 direnv 环境。",
-      "observedAt": "2026-11-17T18:32:04+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "so16tm/dsh-locale-ja",
@@ -148946,6 +149584,18 @@
       ],
       "description": "Certificate trust for DeepSeek Harness: a Settings section that skips TLS certificate verification for a specific host, so a private model gateway behind a self-signed certificate connects.",
       "observedAt": "2026-11-17T18:48:43+00:00"
+    },
+    {
+      "repo": "SparkElf/dsh-plugins-plus",
+      "packagePath": "packages/group-chat/package.json",
+      "package": "@sparkelf/dsh-group-chat",
+      "version": "0.5.11",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Human-agent group chat for DataOps-managed DSH workspaces: rooms broadcast to every member, and only a member's own @mention wakes that member's agent.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "Sparrived/dsh-custom-theme",
@@ -153308,6 +153958,18 @@
       "observedAt": "2026-11-17T18:48:43+00:00"
     },
     {
+      "repo": "Suxeca/dsh-plugin",
+      "packagePath": "packages/dsh-external-dirs/package.json",
+      "package": "@suxeca/dsh-external-dirs",
+      "version": "0.0.1",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "官方侧边栏的「外部目录」tab：浏览会话工作区之外的目录（只读），点击文件复用官方预览",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "suyunxing/dsh-compact-sidebar",
       "packagePath": "package.json",
       "package": "dsh-compact-sidebar",
@@ -153447,10 +154109,11 @@
       "version": "0.5.0",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "AI-assisted reading for DeepSeek Harness: TXT, Markdown, EPUB and PDF with a companion session, notes, memory and export.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "svgop/dsh-generative-ideas",
@@ -154509,6 +155172,18 @@
         "\"DeepSeek Harness\" workbench in:name,description"
       ],
       "observedAt": "2026-11-17T17:53:20+00:00"
+    },
+    {
+      "repo": "tailong-wu/dsh-plugin-dayflow",
+      "packagePath": "package.json",
+      "package": "dsh-plugin-dayflow",
+      "version": "0.6.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Your Dayflow screen timeline as DeepSeek Harness tools, skills, and an optional Web panel: ask what you worked on, how your screen time split up, and draft standups from the timeline the Dayflow Mac app recorded locally.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "TaiyakiOffical/claude-style-skin",
@@ -155706,6 +156381,18 @@
       ],
       "description": "DeepSeek Harness 的 SSH / SFTP 工作区：多主机终端、文件传输与编辑、复用宿主模型的 AI 命令助手。",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "techflag/workdsh",
+      "packagePath": "packages/bundle/package.json",
+      "package": "workdsh-bundle",
+      "version": "0.1.0-alpha.53",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Composes the WorkDSH workspace, capabilities and default DSH plugins.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "teethyachi/dsh-usage-mini",
@@ -159050,13 +159737,14 @@
       "packagePath": "package.json",
       "package": "dsh-deepclaude",
       "version": "0.1.0",
-      "ref": "main",
+      "ref": "HEAD",
       "sources": [
         "pagination recovery: \"DSH Desktop\" 工作台 in:readme is:public",
-        "retry: \"DSH Desktop\" 工作台 in:readme is:public"
+        "retry: \"DSH Desktop\" 工作台 in:readme is:public",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DeepSeek-branded Claude-Code-style workbench theme for DSH Desktop",
-      "observedAt": "2026-11-17T18:11:58+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "Tommy00748/dsh-self-evolution",
@@ -159324,6 +160012,18 @@
       ],
       "description": "Fairy H.D.D skin for DeepSeek Harness: Hollow Zero-inspired glass UI, HDD wireframe hero with reflection, status eye that mirrors the agent state, and a full sidebar/composer restyle.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "tonyzdev/dsh-session-messaging",
+      "packagePath": "package.json",
+      "package": "@tonyzdev/dsh-session-messaging",
+      "version": "0.3.2",
+      "ref": "HEAD",
+      "sources": [
+        "DSH GO"
+      ],
+      "description": "Lets one top-level DSH session message another or open a new one: session_list finds sessions, session_send_message delivers an attributed message that wakes or resumes the target, session_create opens a titled session that starts with a message, and recipients can reply the same way",
+      "observedAt": "2026-11-17T19:12:28+00:00"
     },
     {
       "repo": "TonyZiYuan/dsh-session-delete",
@@ -159747,6 +160447,18 @@
       ],
       "description": "A compact DSH session workbench with native menus, search, keyboard navigation, unread results, portable list backups, and reversible Working/Settled organization.",
       "observedAt": "2026-11-17T18:11:58+00:00"
+    },
+    {
+      "repo": "Tranquillitatis-Lab/dsh-live-compact",
+      "packagePath": "package.json",
+      "package": "dsh-live-compact",
+      "version": "1.1.12",
+      "ref": "HEAD",
+      "sources": [
+        "DSH GO"
+      ],
+      "description": "In-place newest-turn compaction for DeepSeek Harness. Compress while the task runs and keep the prefix.",
+      "observedAt": "2026-11-17T19:12:28+00:00"
     },
     {
       "repo": "Traveritas/averita-dsh-theme-inspiration",
@@ -162861,10 +163573,11 @@
       "version": "1.3.3",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Drag-and-drop reordering, official/third-party dividers and a stash panel for the buttons DSH renders in the left sidebar, the sidebar footer, the conversation tabs, the composer dock, the right sidebar Start page and Settings. Only display position changes; the plugin registry is untouched.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "Vast-Unhurried/dsh-workbench",
@@ -164736,16 +165449,29 @@
       "observedAt": "2026-11-17T18:51:37+00:00"
     },
     {
+      "repo": "Vncntvx/dsh-typst",
+      "packagePath": "package.json",
+      "package": "dsh-typst-plugin",
+      "version": "0.1.0-alpha.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Typst plugin for DeepSeek Harness: a live preview right-sidebar panel driven by the user's own typst, with agent tools that check errors, look at rendered pages, point at places in the preview, and export PDFs.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "Vncntvx/dsh-zotero",
       "packagePath": "package.json",
       "package": "dsh-zotero",
       "version": "1.3.0-alpha.1",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Zotero plugin for DeepSeek Harness: search and read papers in conversation, audit the literature trail, and browse the literature panel for citations and approved writes.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "Voellin/dsh-deephub-share",
@@ -164920,11 +165646,13 @@
       "packagePath": "package.json",
       "package": "dsh-openspec-dashboard",
       "version": "0.0.2",
-      "ref": "main",
+      "ref": "HEAD",
       "sources": [
-        "\"DeepSeek Harness\" dashboard in:name,description"
+        "\"DeepSeek Harness\" dashboard in:name,description",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
-      "observedAt": "2026-11-17T17:53:20+00:00"
+      "description": "OpenSpec dashboard with guarded task checkboxes in the DeepSeek Harness right sidebar",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "voyage-he/dsh-background-image",
@@ -169287,10 +170015,11 @@
       "version": "0.7.1",
       "ref": "HEAD",
       "sources": [
-        "DeepSeek Harness discussion #10156"
+        "DeepSeek Harness discussion #10156",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Read-only Git Graph sidebar for DeepSeek Harness, with direct submodule switching and file diffs",
-      "observedAt": "2026-11-17T18:26:55+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "whiteS18/dsh-bing-search",
@@ -169376,6 +170105,18 @@
       ],
       "description": "DSH web plugin: 快捷键设定平台 —— ctx.hotkeys 注册表服务，插件注册动作、统一配置快捷键",
       "observedAt": "2026-11-17T18:51:37+00:00"
+    },
+    {
+      "repo": "whj0512/dsh-sidebar-workbench",
+      "packagePath": "package.json",
+      "package": "dsh-plugin-sidebar-workbench",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "A native right-sidebar workbench page for DeepSeek Harness Web.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "whoisDDD/dsh-approval-notify",
@@ -171927,6 +172668,18 @@
       ],
       "description": "Git 状态（Git Graph）：DSH 右侧栏 tab 或浮窗——commit DAG 泳道图 + 未提交改动虚拟行/stash + 行内详情 diff + 分支操作（checkout/新建）。",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "woniuniuniu/dsh-media-desk",
+      "packagePath": "package.json",
+      "package": "dsh-media-desk",
+      "version": "2.7.2",
+      "ref": "HEAD",
+      "sources": [
+        "DSH GO"
+      ],
+      "description": "DeepSeek Harness 插件。一句话记灵感，一键成稿：口播脚本、标题、视频封面、配图和黑白线稿分镜。",
+      "observedAt": "2026-11-17T19:12:28+00:00"
     },
     {
       "repo": "Wonjader/dsh-permission-workspace-write-plus",
@@ -175835,10 +176588,11 @@
       "ref": "HEAD",
       "sources": [
         "DeepSeek Harness discussion #8074",
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Backup, restore, export, import, migrate and sync your DeepSeek Harness (DSH) configuration: settings, plugins, MCP servers, skills, agent presets and workspaces. One-click migration to another machine. DSH 配置一键备份、恢复、导出、导入、迁移与同步插件。",
-      "observedAt": "2026-11-17T18:26:55+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "xiajingchun/dsh-nebulagraph-v5",
@@ -176549,10 +177303,11 @@
       "version": "1.0.3",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DSH Web GUI right sidebar, replaced end to end: VS Code-style file explorer plus full source control (git status, stage/unstage/discard, commit, diff, commit graph, fetch/pull/push sync, branch/remote management, git init, multi-repo switch, color-coded status, file-type icons). Every file opened from the chat, the sidebar or source control is taken over into a multi-tab editor view (Markdown/HTML/PDF/image previews, 15-language syntax highlighting, hunk-level diff editing, Ctrl+S save), with file operations (new/move/copy/delete, reveal in file explorer), a collapsible icon rail, a multi-tab bottom terminal (ConPTY) and AI commit messages from a host-configured model.",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "XiaoLaoLv/dsh-image-studio",
@@ -183241,10 +183996,11 @@
       "version": "0.1.0-beta.10",
       "ref": "HEAD",
       "sources": [
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "AI-powered PDF reader for DeepSeek Harness with annotations, multi-PDF workflows, mixed image-text evidence, and on-demand OCR.",
-      "observedAt": "2026-11-17T18:51:37+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "YDT-china/dsh-web-search-session",
@@ -183776,6 +184532,18 @@
       ],
       "description": "Workspace-owned durable process supervision, readiness checks, and a Runtime Center for DeepSeek Harness.",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "yexi-by/dsh-unrestricted",
+      "packagePath": "package.json",
+      "package": "dsh-unrestricted",
+      "version": "0.2.11",
+      "ref": "HEAD",
+      "sources": [
+        "DSH GO"
+      ],
+      "description": "Toggleable unrestricted mode for DeepSeek Harness: fuses execution rules into the active standard, ptc, cordis, minimal, and subagent prompts",
+      "observedAt": "2026-11-17T19:12:28+00:00"
     },
     {
       "repo": "YEYEYEYESHIFU/dsh-result-only-view",
@@ -186981,6 +187749,18 @@
       "observedAt": "2026-11-17T18:52:54+00:00"
     },
     {
+      "repo": "youssefsiam38/dsh-plugins",
+      "packagePath": "packages/dsh-hunk-review/package.json",
+      "package": "dsh-hunk-review",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Review the agent's file edits per hunk in the DeepSeek Harness Web UI: keep or revert each hunk, a whole file, or every change of a turn, with conflict detection and a note to the agent about what you reverted.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "youx123/dsh-shared-brain",
       "packagePath": "package.json",
       "package": "dsh-shared-brain",
@@ -188363,10 +189143,11 @@
       "ref": "HEAD",
       "sources": [
         "dsh-plugin.org",
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "Git changes, diffs, history and CI in the DeepSeek Harness sidebar.",
-      "observedAt": "2026-11-17T18:35:01+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "yugasun/dsh-plugins",
@@ -189617,6 +190398,18 @@
       ],
       "description": "Learning-mode toggle in the DSH input toolbar: injects a guided teaching prompt (introduce, learn, test, correct) and renders graded quizzes through GenUI (requires the @changfenhuang/dsh-genui plugin). · 输入框工具栏的学习模式开关：为当前会话注入教学提示词，按「引入—学习—测试—纠错」引导，并用 GenUI 生成可判分的互动测验。",
       "observedAt": "2026-11-17T18:52:54+00:00"
+    },
+    {
+      "repo": "yusiwen/dsh-web-ask-aside",
+      "packagePath": "package.json",
+      "package": "dsh-web-ask-aside",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Ask about selected conversation text in a forked side session shown in the DSH Web right sidebar",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "yustillrain/dsh-plugin-tool-repository",
@@ -191858,6 +192651,18 @@
       "observedAt": "2026-11-17T18:52:54+00:00"
     },
     {
+      "repo": "zdt3476/dsh-subagent-routes",
+      "packagePath": "package.json",
+      "package": "@zdt3476/dsh-subagent-routes",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "按工作区目录给子智能体指定 provider/模型/思考等级的路由表：最长前缀匹配后注入子代理 AgentOptions。",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "zdt3476/dsh-tide-theme",
       "packagePath": "package.json",
       "package": "dsh-tide-theme",
@@ -192978,10 +193783,11 @@
       "version": "0.1.0",
       "ref": "HEAD",
       "sources": [
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "ICPC competitive programming training tools for DeepSeek Harness — sync, analysis, plans, reviews, templates",
-      "observedAt": "2026-11-17T18:52:54+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "zfu691531-hash/dsh-realtime-voice",
@@ -196146,6 +196952,18 @@
     },
     {
       "repo": "zhu1090093659/dsh-web",
+      "packagePath": "packages/dsh-browser-view/package.json",
+      "package": "@linxin666/dsh-client-ui-browser-view",
+      "version": "0.4.19",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Right-docked live browser view for the DSH Web GUI: a CDP-driven Chromium the agent operates, a screencast panel the user watches, and screenshots attached to every tool result.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
+      "repo": "zhu1090093659/dsh-web",
       "packagePath": "packages/dsh-remote-web-ui/package.json",
       "package": "@linxin666/dsh-remote-web-ui",
       "version": "0.4.19",
@@ -196287,6 +197105,18 @@
       ],
       "description": "DeepSeek Harness Web 股票实时行情悬浮插件：实时报价、K线、7日/30日走势、技术面看多看空预测。",
       "observedAt": "2026-11-17T18:52:54+00:00"
+    },
+    {
+      "repo": "zhuchongba-01/dsh-breach",
+      "packagePath": "package.json",
+      "package": "dsh-breach",
+      "version": "1.3.4",
+      "ref": "HEAD",
+      "sources": [
+        "DSH GO"
+      ],
+      "description": "DeepSeek Harness dsh-breach 插件，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model.",
+      "observedAt": "2026-11-17T19:12:28+00:00"
     },
     {
       "repo": "zhuchuovo/dsh-swarm-orchestrator",
@@ -196538,10 +197368,11 @@
       "version": "1.0.6",
       "ref": "HEAD",
       "sources": [
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "在 DeepSeek Harness 里直接使用 Claude Code、Kimi、Codex、PI、OMP 等 Agent CLI",
-      "observedAt": "2026-11-17T18:03:40+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "zhule33-cmyk/muse-plush-skin",
@@ -197619,10 +198450,11 @@
       "version": "0.9.0",
       "ref": "HEAD",
       "sources": [
-        "dshplugin.org (2026-10-31 snapshot)"
+        "dshplugin.org (2026-10-31 snapshot)",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "DSH 浏览器插件：右侧边栏里的浏览器标签页，每个会话一只 Chrome、各自一份独立 profile。",
-      "observedAt": "2026-11-17T18:52:54+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "zjuatri/dsh-terminal-plugin",
@@ -199120,6 +199952,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "ztybuaa/dsh_test1",
+      "packagePath": "package.json",
+      "package": "dsh-desktop-view",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "DSH plugin that adopts the native browser view hosted by a thin Electron shell and drives it over CDP.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
       "repo": "ztyhehe/dsh-better-sidebar-svn",
       "packagePath": "package.json",
       "package": "dsh-better-sidebar-svn",
@@ -200300,10 +201144,11 @@
       "ref": "HEAD",
       "sources": [
         "DeepSeek Harness discussion #9288",
-        "plugin index"
+        "plugin index",
+        "sidebarRightTabs.register in:file language:TypeScript"
       ],
       "description": "OpenClaw-compatible shared persona and memory for DeepSeek Harness",
-      "observedAt": "2026-11-17T18:26:55+00:00"
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "zzy6-a/dsh-prompt-enhance",
@@ -200352,6 +201197,18 @@
       ],
       "description": "模块工作区、独立 AI 会话、知识资料与成果交付的工作流画布",
       "observedAt": "2026-11-17T18:26:55+00:00"
+    },
+    {
+      "repo": "zzzgydi/verge-browser",
+      "packagePath": "packages/dsh-plugin/package.json",
+      "package": "dsh-plugin-verge-browser",
+      "version": "0.1.1",
+      "ref": "HEAD",
+      "sources": [
+        "sidebarRightTabs.register in:file language:TypeScript"
+      ],
+      "description": "Attach DeepSeek Harness to a self-hosted Verge browser with engine-aware tools and human handoff.",
+      "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
       "repo": "ZZZjf13960/dsh-onfail",
