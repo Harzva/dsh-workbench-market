@@ -49,6 +49,8 @@ python3 scripts/merge_discoveries.py discovery.json .scan/discussions.json --out
 
 外部索引列出的 GitHub 仓库也可以交给 `discover.py --repository-export` 核查。JSON 的 `indexes` 记录各索引源和条数，`repositories` 把 `owner/repo` 映射到来源列表。索引条目只提供发现线索，仍按同一套源码标准核查。
 
+公开 npm registry 的 `dsh-plugin`、`deepseek-harness` 和 `dsh-desktop` 关键词搜索也用于反查 GitHub 源仓库。这轮按实际返回的唯一包去重，搜索页出现重复后按已返回数据统计。核查范围为所指 GitHub 仓库的根清单。[npm Registry 搜索接口](https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md)
+
 如果要从客户端接口反查名称中看不出用途的项目，可单独执行 `python3 scripts/discover.py --code-query 'sidebarRightTabs.register in:file language:TypeScript' --output .scan/right-sidebar.json`。扫描会从命中的源码路径向上查找插件清单，并在报告里记录搜索读到的条数。
 
 发现流程只读 GitHub 的公开搜索、上游索引与源码，不安装插件。GitHub 搜索有索引延迟、结果上限和速率限制。REST 代码搜索主要覆盖默认分支和小于 384 KB 的文件，公开 fork 也有额外限制。同一仓库可在多轮出现，因此报告保留各轮的计数。[GitHub 代码搜索说明](https://docs.github.com/en/search-github/searching-on-github/searching-code#considerations-for-code-search)分类与版本证据可按 [收录标准](docs/workbench-definition.md) 复核。
