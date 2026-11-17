@@ -4860,7 +4860,7 @@
     "manifest": "https://github.com/zhangj1164/dsh-mega-plugins/blob/f01f6a21eaa6ca6e746c129f6ef60fd4e80afc5e/packages/client/ui-memo/package.json",
     "workflow": "https://github.com/zhangj1164/dsh-mega-plugins/blob/f01f6a21eaa6ca6e746c129f6ef60fd4e80afc5e/packages/client/ui-memo/README.md#L62-L76",
     "registration": "https://github.com/zhangj1164/dsh-mega-plugins/blob/f01f6a21eaa6ca6e746c129f6ef60fd4e80afc5e/packages/client/ui-memo/src/client/index.ts#L144-L156",
-    "assembly": "https://github.com/zhangj1164/dsh-mega-plugins/blob/f01f6a21eaa6ca6e746c129f6ef60fd4e80afc5e/packages/memo/dsh-memo/cordis.patch.yml#L25-L28"
+    "assembly": "https://github.com/zhangj1164/dsh-mega-plugins/blob/f01f6a21eaa6ca6e746c129f6ef60fd4e80afc5e/packages/memo/dsh-memo/cordis.patch.yml#L26-L27"
   },
   {
     "repo": "ZOU2850/dsh-file-launcher",

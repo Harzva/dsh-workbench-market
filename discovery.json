@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T20:02:54+00:00",
+  "checkedAt": "2026-11-17T20:08:08+00:00",
   "repositoriesInspected": 14324,
   "repositoryCountScope": "largest individual inspection pass",
   "counts": {
@@ -889,6 +889,17 @@
       "manifestPathsInspected": 2,
       "indexes": {
         "retry from DPHarness and DSHPlugin public indexes": 2
+      },
+      "searches": {},
+      "errors": []
+    },
+    {
+      "checkedAt": "2026-11-17T20:08:08+00:00",
+      "repositoriesInspected": 310,
+      "manifestPathsInspected": 592,
+      "indexes": {
+        "npm version records returned": 5980,
+        "npm version records with GitHub subdirectory": 805
       },
       "searches": {},
       "errors": []
@@ -5703,6 +5714,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "1692775560/dsh-Mimir-Academic-research",
+      "packagePath": "packages/mimir/package.json",
+      "package": "dsh-mimir",
+      "version": "0.23.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Research-assistant plugin suite (literature search, research wiki, LaTeX compile, independent subagent review) for the DeepSeek Harness",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "1694439208/dsh-task-list",
       "packagePath": "package.json",
       "package": "@kaifeise/dsh-task-list",
@@ -6365,6 +6388,42 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "1outres/my-dsh-plugins",
+      "packagePath": "packages/dsh-plugin-background/package.json",
+      "package": "@1outres/dsh-plugin-background",
+      "version": "0.7.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Set a background image behind the DeepSeek Harness Web UI, with panel opacity, dim and blur controls.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "1outres/my-dsh-plugins",
+      "packagePath": "packages/dsh-plugin-edit-message/package.json",
+      "package": "@1outres/dsh-plugin-edit-message",
+      "version": "0.7.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Edit a sent message in the DeepSeek Harness Web UI: the conversation restarts from just before it with the edited text.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "1outres/my-dsh-plugins",
+      "packagePath": "packages/dsh-plugin-notify/package.json",
+      "package": "@1outres/dsh-plugin-notify",
+      "version": "0.7.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Desktop notifications for approval prompts, agent questions, and finished turns in the DeepSeek Harness Web UI.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "1parado/dsh-deepseek-web-search",
       "packagePath": "package.json",
       "package": "dsh-deepseek-web-search",
@@ -6387,6 +6446,18 @@
       ],
       "description": "DSH 营销工具箱：在侧边栏底部（Settings 旁，官方 sidebar.footer.action 席位）增加「🎯 营销工具箱」模块，一键打开封面图生成 / 朋友圈文案 / 短视频脚本 / 开头黄金3秒检验四个预设营销 Agent 通道；后续工具在 lib/client.js 顶部 CHANNELS 数组中逐步添加。",
       "observedAt": "2026-11-17T18:35:01+00:00"
+    },
+    {
+      "repo": "1yefuwang1/dsh-copilot-catalog",
+      "packagePath": "packages/better-copilot/package.json",
+      "package": "dsh-better-copilot",
+      "version": "0.5.4",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Account-aware GitHub Copilot model discovery, Copilot-compatible wire identity, native Responses web search and a Copilot Gemini tool-declaration guard in one DeepSeek Harness plugin.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "2000HINA/dsh-crash-backup",
@@ -6847,6 +6918,30 @@
       ],
       "description": "DSH「蓝色大肥鱼·智商鉴定中心」：从放鱼时刻起对全部运行中会话的 thinking（reasoning）内容做短语检测统计，含思考块数、思考字符数、偷吃/头脑大开词/吃瓜词命中与梁圣/梁子判定；侧边栏按钮 + 可拖拽悬浮窗，检测词可自由增删",
       "observedAt": "2026-11-17T18:35:01+00:00"
+    },
+    {
+      "repo": "22-ai-00/dsh-enhanced",
+      "packagePath": "plugins/assistant-web-owner/package.json",
+      "package": "@dsh-enhanced/assistant-web-owner",
+      "version": "0.1.76",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "A DeepSeek Harness plugin for Assistant Web Owner.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "22-ai-00/dsh-enhanced",
+      "packagePath": "plugins/owner-console/package.json",
+      "package": "@dsh-enhanced/owner-console",
+      "version": "0.1.76",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "A DeepSeek Harness plugin for Owner Console.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "2211431960/dsh-wallpaper-theme",
@@ -7519,6 +7614,18 @@
       ],
       "description": "Gargantua black hole for DSH / DeepSeek Harness — Interstellar-inspired background｜卡冈图雅黑洞 · 星际穿越动态背景插件",
       "observedAt": "2026-11-17T18:35:01+00:00"
+    },
+    {
+      "repo": "2BingLing/dsh-market",
+      "packagePath": "plugin/ui/package.json",
+      "package": "@dsh-market/plugin",
+      "version": "0.4.22",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH Market 插件端：cordis 侧边栏插件（浏览/搜索/猜你喜欢/一键安装/已装管理），核心逻辑来自 @dsh-market/core",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "2DHardty/dsh-renpy-skin",
@@ -9120,6 +9227,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "5aaee9/pi-agent-extensions",
+      "packagePath": "dsh-prompt-suggestions/package.json",
+      "package": "@indexyz/dsh-prompt-suggestions",
+      "version": "0.1.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Suggest the user's next message as dim composer text after a successful reply",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "5D-artist/dsh-archived-purge",
       "packagePath": "package.json",
       "package": "dsh-archived-purge",
@@ -10231,6 +10350,18 @@
       ],
       "description": "Connect your own machines to a DSH Web deployment and run commands on them from the agent.",
       "observedAt": "2026-11-17T18:35:01+00:00"
+    },
+    {
+      "repo": "9Ashwin/ocean-crew",
+      "packagePath": "ocean-crew/package.json",
+      "package": "ocean-crew",
+      "version": "0.6.10",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Ocean Crew: a team of long-lived Bots for DeepSeek Harness, with Main Bots, Bot-to-Bot messages and group chats",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "9Epuuuu/dsh-api-balance",
@@ -13744,6 +13875,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "agent-network-protocol/anp-identity",
+      "packagePath": "packages/dsh-anp-identity/package.json",
+      "package": "@agent-network-protocol/dsh-anp-identity",
+      "version": "0.1.18",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "ANP Identity management plugin for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "AgentConnect/dsh-awiki",
       "packagePath": "package.json",
       "package": "@awiki/dsh-plugin",
@@ -15964,6 +16107,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "alaliqing/dsh-annotate",
+      "packagePath": "packages/dsh-annotate/package.json",
+      "package": "dsh-annotate",
+      "version": "0.1.15",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Element annotation and review panel for the DeepSeek Harness Desktop and web client: pick UI elements in a live app preview, write notes, and send them to the conversation as one structured block",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "Alamanes/dsh-dignity-guard",
       "packagePath": "package.json",
       "package": "dsh-dignity-guard",
@@ -16891,6 +17046,54 @@
     },
     {
       "repo": "Alice39s/agent-stash",
+      "packagePath": "dsh/autosuggest/package.json",
+      "package": "@agent-stash/dsh-autosuggest",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Complete the DeepSeek Harness composer from global prompt history, zsh-autosuggestions style",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Alice39s/agent-stash",
+      "packagePath": "dsh/enhance/package.json",
+      "package": "@agent-stash/dsh-enhance",
+      "version": "0.4.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Polish, structure, or distill a DeepSeek Harness prompt draft to its core in one click",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Alice39s/agent-stash",
+      "packagePath": "dsh/kit/package.json",
+      "package": "@agent-stash/dsh-stash-kit",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Shared panels, ghost text, motion, and appearance settings for the Agent Stash DeepSeek Harness plugins",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Alice39s/agent-stash",
+      "packagePath": "dsh/recall/package.json",
+      "package": "@agent-stash/dsh-recall",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Browse the prompts of the current DeepSeek Harness session with the arrow keys in the composer",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Alice39s/agent-stash",
       "packagePath": "package.json",
       "package": "@agent-stash/init",
       "version": "1.5.0",
@@ -16900,6 +17103,30 @@
       ],
       "description": "Personal Agent Skills and /init plugins for Pi, DeepSeek Harness, Cline, Grok Build, goose, and Aider",
       "observedAt": "2026-11-17T18:35:01+00:00"
+    },
+    {
+      "repo": "Alice39s/agent-stash",
+      "packagePath": "packages/dsh-message-edit/package.json",
+      "package": "@agent-stash/dsh-message-edit",
+      "version": "0.5.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Edit, reroll, and retry DeepSeek Harness conversation turns as reversible session branches",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Alice39s/agent-stash",
+      "packagePath": "packages/dsh-skill-scout/package.json",
+      "package": "@agent-stash/dsh-skill-scout",
+      "version": "0.4.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Turn reusable workflows from finished DeepSeek Harness sessions into Agent Skills after review",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "AliceLJY/dsh-thumb",
@@ -19099,6 +19326,18 @@
       ],
       "description": "Delete action for archived DeepSeek Harness sessions: permanently removes the session log, its Workspace membership, and its archive mark.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "Angela-lwh/dsh-archive-purge",
+      "packagePath": "plugin/package.json",
+      "package": "@angela_lwh/dsh-archive-purge",
+      "version": "1.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Delete action for archived DeepSeek Harness sessions: permanently removes the session log, its Workspace membership, and its archive mark.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "AngelosZou/dsh-github-router",
@@ -22633,6 +22872,114 @@
       ],
       "description": "Virtual-desktop computer use for DeepSeek Harness: the agent sees a live snapshot in the right sidebar and its mouse acts on a virtual pointer overlay, so your real desktop and cursor stay yours.",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "Asuta/dsh-cdx-plus",
+      "packagePath": "packages/archived-sessions/package.json",
+      "package": "dsh-asuta-archived-sessions",
+      "version": "0.1.9",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Find, restore and delete archived DSH conversations. · 集中查找、恢复和删除已归档的 DSH 对话。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Asuta/dsh-cdx-plus",
+      "packagePath": "packages/conversation-workbench/package.json",
+      "package": "dsh-asuta-conversation-workbench",
+      "version": "0.1.6",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Give DSH agents on-demand tools to find and read conversations, manage workspaces, move sessions and inspect PR checks. · 让 DSH Agent 按需查找和读取对话、管理工作区、移动会话并查询 PR 检查结果。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Asuta/dsh-cdx-plus",
+      "packagePath": "packages/desktop-navigation/package.json",
+      "package": "dsh-asuta-desktop-navigation",
+      "version": "0.1.9",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Open local file paths from DSH conversations and rename recent chats with a double click. · 从 DSH 对话打开本地文件路径，并通过双击重命名最近对话。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Asuta/dsh-cdx-plus",
+      "packagePath": "packages/hide-new-session/package.json",
+      "package": "dsh-asuta-hide-new-session",
+      "version": "0.1.6",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Hide the new-chat button at the top of the DSH sidebar for a simpler navigation area. · 隐藏 DSH 侧栏顶部的新会话按钮，精简导航区域。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Asuta/dsh-cdx-plus",
+      "packagePath": "packages/project-activity/package.json",
+      "package": "dsh-asuta-project-activity",
+      "version": "0.1.6",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Show conversation activity beside collapsed DSH project headings. · 在折叠的 DSH 项目标题旁显示对话运行状态。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Asuta/dsh-cdx-plus",
+      "packagePath": "packages/projectless-chat/package.json",
+      "package": "dsh-asuta-projectless-chat",
+      "version": "0.1.9",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Start DSH conversations outside a workspace and configure their default working directory. · 新建不绑定工作区的 DSH 对话，并配置默认工作目录。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Asuta/dsh-cdx-plus",
+      "packagePath": "packages/reasoning-effort-memory/package.json",
+      "package": "dsh-asuta-reasoning-effort-memory",
+      "version": "0.1.6",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Remember the last DSH reasoning-effort setting for each provider and model. · 按提供商和模型记住 DSH 上次使用的思考强度。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Asuta/dsh-cdx-plus",
+      "packagePath": "packages/selection-quote/package.json",
+      "package": "dsh-asuta-selection-quote",
+      "version": "0.1.8",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Quote selected text, add annotations and browse a quote list in DSH, with optional side-chat integration. · 在 DSH 中选中文字添加引用和批注，汇总引用清单，并联动侧边对话。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Asuta/dsh-cdx-plus",
+      "packagePath": "packages/sidebar-chat/package.json",
+      "package": "dsh-asuta-sidebar-chat",
+      "version": "0.1.6",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Open independent DSH side conversations with inherited context, optional history hiding and conversion to standalone chats. · 在 DSH 右侧开启继承主对话上下文的独立侧边对话，支持隐藏历史显示与转为独立会话。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Asuta/dsh-cdx-plus",
@@ -27587,6 +27934,18 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "benz-ai-x/dsh-24-PA",
+      "packagePath": "packages/24pa/package.json",
+      "package": "@benz-ai-x/dsh-24pa",
+      "version": "0.2.2-rc.3.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "24私助（24PA）: Feishu-backed personal assistant as a dsh workspace bundle.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "benz-ai-x/dsh-research-graph",
       "packagePath": "package.json",
       "package": "@benz-ai-x/dsh-research-graph",
@@ -28944,6 +29303,18 @@
       ],
       "description": "Claude Science-style research workbench for DeepSeek Harness: ReAct research-loop engine (research_* tools), versioned artifacts with provenance (artifact_* tools), SSH remote-compute engine for long bioinformatics jobs on workstations/HPC (remote_* tools), and 11 science skills for genomics / pathogens / bioinformatics. Ships the tiered cross-provider model router via the companion dsh-model-tier bundle.",
       "observedAt": "2026-11-17T18:26:55+00:00"
+    },
+    {
+      "repo": "biociao/dsh-science",
+      "packagePath": "packages/dsh-model-tier/package.json",
+      "package": "dsh-model-tier",
+      "version": "0.1.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Tiered model router for DeepSeek Harness: routes auxiliary calls (session title, compaction) and subtasks to light models, escalates hard tasks to strong ones — automatically, per request, across providers.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Biogod2020/dsh-article-review",
@@ -30489,6 +30860,18 @@
       ],
       "description": "用 NativeAOT runner 替换 DSH 的 Node.js 子进程 runner：消除约 63~67% 的 runner 开销，p99 改善 73~124ms",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "boyingliu01/xp-gate",
+      "packagePath": "plugins/dsh/package.json",
+      "package": "@boyingliu01/dsh-plugin-xp-gate",
+      "version": "0.38.9",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "XP-Gate deterministic quality gates + AI workflow skills as a DeepSeek Harness (DSH) native plugin: gate-check / gate-principles / gate-arch tools + 12 SKILL.md skills",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "boyl/dsh-sidebar-pins",
@@ -34386,6 +34769,18 @@
       "observedAt": "2026-11-17T19:38:34+00:00"
     },
     {
+      "repo": "cecwxf/collab",
+      "packagePath": "packages/dsh-room/package.json",
+      "package": "@cecwxf/dsh-room",
+      "version": "0.3.23",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH Room — Web and Desktop plugin for encrypted multi-agent collaboration",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "Ceelog/dsh-plugins",
       "packagePath": "src/plugins/dsh-plugin-scheduled-tasks/package.json",
       "package": "@opendsh/dsh-plugin-scheduled-tasks",
@@ -35663,6 +36058,18 @@
       ],
       "description": "Retro CRT phosphor theme: pure-black Matrix green / 40K amber-green / TFEL amber screens with bold glowing text and a code-rain boot animation",
       "observedAt": "2026-11-17T19:49:41+00:00"
+    },
+    {
+      "repo": "charonX/dsh-plugins",
+      "packagePath": "plugins/skills-manager/package.json",
+      "package": "@charonx/dsh-skills-manager",
+      "version": "0.1.3",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Skill library manager for DeepSeek Harness: install sources from Git or a folder, check updates, import globally installed skills, and distribute them into projects as symlinks.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "charovo0059/dsh-model-vision",
@@ -38793,6 +39200,18 @@
       ],
       "description": "Hold Alt to dictate, release to insert the cleaned-up transcript; a ✨ button at the left of the composer rewrites the draft into a clearer prompt.",
       "observedAt": "2026-11-17T19:51:50+00:00"
+    },
+    {
+      "repo": "ChronosSun/dsh-wsl",
+      "packagePath": "pkg/package.json",
+      "package": "@chronosun/dsh-wsl",
+      "version": "1.8.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "WSL World for DeepSeek Harness: the whole session runs in a local WSL distribution with Linux paths, clean PATH, native @/search/diffs/worktrees, plus a connection panel and project doctor. Not a wsl_* tool set.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Chruix/dsh-team-model",
@@ -42322,6 +42741,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "cq-guojia/dsh-plugin-core",
+      "packagePath": "packages/demo/package.json",
+      "package": "dsh-plugin-core-demo",
+      "version": "0.42.5",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "The shared UI foundation for DSH plugins, with a live component preview: design tokens, common controls, workspace browsing and notifications maintained in one place — install it to preview every component in a real host.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "cq-guojia/dsh-session-title-pattern",
       "packagePath": "package.json",
       "package": "dsh-session-title-pattern",
@@ -43438,6 +43869,18 @@
       ],
       "description": "Browser studio for DeepSeek Harness: Chrome-style device toolbar and Cursor-style element picking inside the built-in browser, one click into the session.",
       "observedAt": "2026-11-17T18:11:58+00:00"
+    },
+    {
+      "repo": "CurLeaf/dsh-plugins",
+      "packagePath": "packages/dsh-command-rea/package.json",
+      "package": "dsh-command-rea",
+      "version": "0.3.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH slash command /rea: hand a reverse-engineering request to the reverse-engineer-anything skill and the REA MCP tools, with a titled and glyphed / menu row",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "CurLeaf/dsh-remote-panel",
@@ -44576,6 +45019,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "d0nj/dsh-plugins",
+      "packagePath": "packages/ui-custom/package.json",
+      "package": "@d0nj/dsh-ui-custom",
+      "version": "0.3.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Theme, colour-token, typography and geometry customisation for the DeepSeek Harness Web UI, with presets and a live editor.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "d0ublecl1ck/dsh-csdn-theme",
       "packagePath": "package.json",
       "package": "dsh-csdn-theme",
@@ -45239,6 +45694,150 @@
       ],
       "description": "DSH 会话 Bark 通知插件：会话头部按钮切换「会通知」状态（持久化，服务重启后保持），回合停止时经 Bark 推送到手机——正常结束推送最后一条文本消息，异常停止推送完整错误原因与必要信息；用户主动点停止不推送。插件管理页本插件详情页配置 Bark server/key，并提供 ping→push→register 三步连通测试（dsh 0.1.5–0.2.2 适配）。",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "dale0525/dsh-plugins",
+      "packagePath": "packages/dsh-better-reasoning-effort/package.json",
+      "package": "@logictan/dsh-better-reasoning-effort",
+      "version": "0.5.12",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Third-party provider reasoning-effort AND input-modality settings for DeepSeek Harness: thinking levels and image-input support declared per model, auto-adapted from a model knowledge base + wire-protocol inference, edited right inside the official Models page card.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "dale0525/dsh-plugins",
+      "packagePath": "packages/dsh-browser-agent/package.json",
+      "package": "@logictan/dsh-browser-agent",
+      "version": "0.2.7",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH browser agent: a dynamic operation+target decision loop. TypeSafe picks the action, this plugin executes it over CDP against the user's own Chrome. DSH 浏览器 Agent 子插件。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "dale0525/dsh-plugins",
+      "packagePath": "packages/dsh-config-manager/package.json",
+      "package": "@logictan/dsh-config-manager",
+      "version": "0.1.86",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Sync your DeepSeek Harness (DSH) configuration between machines over a private git or WebDAV channel: settings, plugins, MCP servers, skills, agent presets and provider credentials. DSH 配置远程同步插件（私有通道，明文自用）。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "dale0525/dsh-plugins",
+      "packagePath": "packages/dsh-desktop-agent/package.json",
+      "package": "@logictan/dsh-desktop-agent",
+      "version": "0.1.10",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH desktop agent: a native-vision decision loop that drives the host desktop through the Cua Driver tools. DSH 桌面 Agent 子插件。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "dale0525/dsh-plugins",
+      "packagePath": "packages/dsh-easyrewrite/package.json",
+      "package": "@logictan/dsh-easyrewrite",
+      "version": "2.7.7",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH Web内目前最无感的消息撤回、重编辑插件，原版体验，兼容性强，功能简单可开关，设置丰富，现代化轻量ui框架。The most seamless message recall & re-edit plugin for DSH Web — native experience, strong compatibility, simple toggles, rich settings, modern lightweight UI. DSH Web で最もシームレスなメッセージ撤回・再編集プラグイン——ネイティブ体験、高い互換性、シンプルなトグル、充実した設定、モダンで軽量な UI。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "dale0525/dsh-plugins",
+      "packagePath": "packages/dsh-lan-access/package.json",
+      "package": "@logictan/dsh-lan-access",
+      "version": "0.1.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH LAN access: serve the Web UI on one configurable port reachable from the LAN and from 127.0.0.1, with either the plugin's own password or no authentication at all, and no profile patch edits. DSH 局域网访问子插件。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "dale0525/dsh-plugins",
+      "packagePath": "packages/dsh-macos-theme/package.json",
+      "package": "@logictan/dsh-macos-theme",
+      "version": "0.1.17",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "macOS-native theme for DeepSeek Harness: a floating translucent workbench window on a sky-blue gradient desktop, with the macOS light and dark palettes. Pure UI plugin — the browser half stacks a token override layer on the active theme and injects the structural CSS the token layer cannot express.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "dale0525/dsh-plugins",
+      "packagePath": "packages/dsh-magpie-image/package.json",
+      "package": "@logictan/dsh-magpie-image",
+      "version": "0.1.4",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH magpie image: image generation and reference-image editing through magpie's image MCP, as native mcp__magpie__* tools. The only image plugin since dsh-imagegen was removed. DSH magpie 生图子插件。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "dale0525/dsh-plugins",
+      "packagePath": "packages/dsh-modal-h3/package.json",
+      "package": "@logictan/dsh-modal-h3",
+      "version": "0.1.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH Modal H3: MiniMax H3 Ref2VA video generation on Modal as native mcp__modal_h3__* tools, with a multi-account pool kept in a credential. DSH Modal H3 视频生成子插件。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "dale0525/dsh-plugins",
+      "packagePath": "packages/dsh-ssh/package.json",
+      "package": "@logictan/dsh-ssh",
+      "version": "0.1.4",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH SSH: run commands and move files on configured SSH hosts from the agent, addressing hosts by alias, with passwords kept in the credential store. DSH SSH 子插件。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "dale0525/dsh-plugins",
+      "packagePath": "packages/dsh-stitch-designer/package.json",
+      "package": "@logictan/dsh-stitch-designer",
+      "version": "2.1.5",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH Stitch designer: Google Stitch AI UI generation as native mcp__stitch__* tools, plus the design conventions that keep one code project bound to one Stitch project. DSH Stitch 界面设计子插件。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "dale0525/dsh-plugins",
+      "packagePath": "packages/dsh-worktree-session/package.json",
+      "package": "@logictan/dsh-worktree-session",
+      "version": "0.1.14",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Git-worktree sessions for dsh: pick 'work on the main checkout', an existing linked worktree, or 'new worktree' right beside the composer's workspace picker. Picking a worktree moves a new conversation's working directory into it on its first message, so its tools run in that checkout while the conversation stays in its Workspace and no second Workspace is minted for a checkout that already exists. A new worktree is created the same way, named after the task by one auxiliary model call. The host half owns the git plumbing (branch, worktree add, .gitignore entry); the browser half registers the picker and the sidebar row icon.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "dalintian/dsh-means-digital-sweet-heart",
@@ -46315,6 +46914,42 @@
       ],
       "description": "启动 / 显示 / 隐藏 / 退出鲸鱼娘桌面宠物（DSH 斜杠命令，macOS + Windows）",
       "observedAt": "2026-11-17T19:38:34+00:00"
+    },
+    {
+      "repo": "dawn0608/dsh-plugins",
+      "packagePath": "plugins/cost-overview/package.json",
+      "package": "@dawn0608/dsh-cost-overview",
+      "version": "1.0.7",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Estimate the current session cost and view model costs and the DeepSeek API balance below the composer.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "dawn0608/dsh-plugins",
+      "packagePath": "plugins/mcp-manager/package.json",
+      "package": "@dawn0608/dsh-mcp-manager",
+      "version": "0.3.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "View STDIO and Streamable HTTP servers for the current profile and toggle editable entries from Settings.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "dawn0608/dsh-plugins",
+      "packagePath": "plugins/skill-manager/package.json",
+      "package": "@dawn0608/dsh-skill-manager",
+      "version": "0.4.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Search and preview global skills, render Markdown and open source repositories.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Dawn388887/dsh-fileview",
@@ -49001,6 +49636,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "devockr/idsh",
+      "packagePath": "packages/privileged-ui/package.json",
+      "package": "@idsh/privileged-ui",
+      "version": "0.0.4",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Re-enable the loopback-only privileged surface (settings page, durable settings persistence) for a dsh Web profile served to a non-loopback origin, for the authorities the deployment declares — the deliberate exception the self-hosted image used to carry as a build-time patch",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "devome/dsh-panel-layout",
       "packagePath": "package.json",
       "package": "dsh-panel-layout",
@@ -50945,6 +51592,18 @@
       ],
       "description": "RunningHub 云端 ComfyUI 工作流后台任务池：批量提交后自动派发、轮询、下载产物并唤醒会话，共享台账记录批次、费用、实例规格、时长与保存位置，右侧边栏实时看板。",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "do-nothing/media-suite",
+      "packagePath": "packages/media-suite/package.json",
+      "package": "@tmmk/media-suite",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "媒体插件家族：一次安装 Qwen 与 RunningHub 媒体能力，并提供跨 provider 的全局设置。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "DobroGnom/dsh-tab-title",
@@ -53813,6 +54472,18 @@
       "observedAt": "2026-11-17T19:49:41+00:00"
     },
     {
+      "repo": "dsh-labs/kivotos",
+      "packagePath": "packages/kivotos/package.json",
+      "package": "kivotos",
+      "version": "0.7.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Open and drive every dsh on your tailnet from any dsh, with a complete phone layout.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "dsh-market/dsh-market",
       "packagePath": "package.json",
       "package": "dshmarket",
@@ -56307,6 +56978,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "echoVic/boss-skill",
+      "packagePath": "integrations/deepseek-harness/package.json",
+      "package": "dsh-boss-mode",
+      "version": "0.1.5",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Boss expert squad for DeepSeek Harness: nine engineering roles, artifact-driven delivery, and a live team panel.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "echoVic/dsh-workspace-ide",
       "packagePath": "package.json",
       "package": "dsh-workspace-ide",
@@ -56380,6 +57063,18 @@
     },
     {
       "repo": "ECNU/EduWork",
+      "packagePath": "packages/dsh-desktop-pet/package.json",
+      "package": "@eduwork/dsh-desktop-pet",
+      "version": "0.1.5",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Desktop pet for DSH applications with the EduWork Electron desktop bridge",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "ECNU/EduWork",
       "packagePath": "packages/dsh-knowledge-studio/package.json",
       "package": "@eduwork/dsh-knowledge-studio",
       "version": "0.6.5",
@@ -56425,6 +57120,30 @@
       ],
       "description": "Standards-based OIDC identity, token-authorized model access, declarative branding, and OpenAI-compatible model integration for DeepSeek Harness",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "ECNU/EduWork",
+      "packagePath": "packages/dsh-remote-access/package.json",
+      "package": "@eduwork/dsh-remote-access",
+      "version": "0.1.7",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "End-to-end encrypted remote access to a DSH host through a self-hosted relay",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "ECNU/EduWork",
+      "packagePath": "packages/dsh-side-chat/package.json",
+      "package": "@eduwork/dsh-side-chat",
+      "version": "0.1.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Side conversations using native DSH session forks",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "ecoyoung/dsh-psd-batch-studio",
@@ -57218,6 +57937,18 @@
       "observedAt": "2026-11-17T18:11:58+00:00"
     },
     {
+      "repo": "elangan1997-cmyk/canvas-workbench",
+      "packagePath": "canvas-workbench/package.json",
+      "package": "@local/canvas-workbench",
+      "version": "1.9.60",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "本地生图工作台,零订阅费:开自己的 API 生图(任意 OpenAI 兼容接口,零订阅),画布排版+修图/擦除/去背景/OCR/转矢量,可编辑 PSD/AI 交付,Photoshop/Illustrator 图层级双向桥接",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "elanski/dsh-failover-continue",
       "packagePath": "package.json",
       "package": "dsh-failover-continue",
@@ -57630,6 +58361,18 @@
       ],
       "description": "Route DeepSeek Harness model-API requests through an HTTP/SOCKS proxy without modifying Harness source",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "elk-9527/dsh-vscode",
+      "packagePath": "packages/dsh-door/package.json",
+      "package": "dsh-acp-door",
+      "version": "0.7.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "连接本机 DSH 与 VS Code 等外部程序，共用模型、工具、记忆和会话。支持历史查看、权限切换及已注册插件的能力调用。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "ellelkktrraaa/dsh-audio-alert",
@@ -58244,6 +58987,18 @@
       "observedAt": "2026-11-17T18:39:05+00:00"
     },
     {
+      "repo": "enkolesnikov/MaxDSHBot",
+      "packagePath": "dsh-max-notify/package.json",
+      "package": "dsh-max-notify",
+      "version": "1.9.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH → MAX messenger plugin: rc.2-safe webhook, hardened outbound/allowlist, compact UX, briefings, remote control, schedules, GUI settings, zero runtime deps.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "enoughpower/dsh-git-graph",
       "packagePath": "package.json",
       "package": "dsh-git-graph",
@@ -58474,6 +59229,18 @@
       ],
       "description": "DSH 插件「巢」：在设置里用下拉框安排会话从属，让母会话像访问 agent 一样访问子会话（原地续聊，不复制历史）",
       "observedAt": "2026-11-17T18:39:05+00:00"
+    },
+    {
+      "repo": "Epsirom/braid",
+      "packagePath": "integrations/dsh/package.json",
+      "package": "@chrok/dsh-braid",
+      "version": "0.7.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DeepSeek Harness plugin for Braid: background agent graphs, bounded loops, live updates, and execution progress",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Eqarx/dsh-peak-guard",
@@ -59014,6 +59781,18 @@
       ],
       "description": "Project-scoped organization and long-lived AI workforce layer for DeepSeek Harness",
       "observedAt": "2026-11-17T18:57:11+00:00"
+    },
+    {
+      "repo": "EsonXie/dsh-agent-toolkit",
+      "packagePath": "packages/toolkit/package.json",
+      "package": "dsh-agent-toolkit",
+      "version": "0.4.16",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DeepSeek Harness plugin: agent registry with layered prompts, parallel delegation, Feishu bots and token usage",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Estellalee/dsh-outdoor-theme",
@@ -59599,6 +60378,18 @@
       ],
       "description": "Shows GLM Coding Plan quota usage and the 5-hour window reset countdown next to the session stats row.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "everson-junior/everywhere-makertplace-harness",
+      "packagePath": "packages/plugin-providers/package.json",
+      "package": "@everywhere-harness/plugin-providers",
+      "version": "1.1.3",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Provider Antigravity para Everywhere Harness com login Google, proxy Cloud Code, ferramentas, streaming e imagens.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Evhye38496/dsh-perfscope",
@@ -61536,6 +62327,54 @@
     },
     {
       "repo": "FeatherHunter/ilife",
+      "packagePath": "packages/plugin-bill-ilife/package.json",
+      "package": "dsh-bill-ilife",
+      "version": "0.3.88",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "爱生活单品插件 P10 脚手架：记账（ilife:cookie order 95），硬依赖总管 dsh-life-pack",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "FeatherHunter/ilife",
+      "packagePath": "packages/plugin-calorie/package.json",
+      "package": "dsh-calorie",
+      "version": "0.3.88",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "爱生活单品插件 P10 脚手架：卡路里（ilife:calorie order 75），硬依赖总管 dsh-life-pack",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "FeatherHunter/ilife",
+      "packagePath": "packages/plugin-chef/package.json",
+      "package": "dsh-chef",
+      "version": "0.3.88",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "爱生活单品插件 P10 脚手架：大厨（ilife:chef order 90），硬依赖总管 dsh-life-pack",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "FeatherHunter/ilife",
+      "packagePath": "packages/plugin-home-ilife/package.json",
+      "package": "dsh-home-ilife",
+      "version": "0.3.88",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "爱生活单品插件 P10 脚手架：居家（ilife:home order 85），硬依赖总管 dsh-life-pack",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "FeatherHunter/ilife",
       "packagePath": "packages/plugin-manager/package.json",
       "package": "dsh-life-pack",
       "version": "0.3.88",
@@ -61545,6 +62384,30 @@
       ],
       "description": "爱生活总管插件：单 DSH设置面板槽（爱生活卡）+ 爱生活页签槽 children，技能设置页动态聚合，不依赖单品、不 import 单品页",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "FeatherHunter/ilife",
+      "packagePath": "packages/plugin-memo-ilife/package.json",
+      "package": "dsh-memo-ilife",
+      "version": "0.3.88",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "爱生活单品插件 P10 脚手架：备忘录（ilife:memo order 70），硬依赖总管 dsh-life-pack",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "FeatherHunter/ilife",
+      "packagePath": "packages/plugin-schedule-ilife/package.json",
+      "package": "dsh-schedule-ilife",
+      "version": "0.3.88",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "爱生活单品插件 P10 脚手架：作息（ilife:schedule order 80），硬依赖总管 dsh-life-pack",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "february2015/dsh-dingo",
@@ -62874,6 +63737,30 @@
       ],
       "description": "DeepSeek Harness 照片壁纸轮播：读取本地文件夹里的照片，作为界面背景自动轮播，并把面板做成半透明毛玻璃。",
       "observedAt": "2026-11-17T19:51:50+00:00"
+    },
+    {
+      "repo": "feng5124/dsh-plugins",
+      "packagePath": "packages/dsh-plugin-headless-sessions-panel/package.json",
+      "package": "dsh-plugin-headless-sessions-panel",
+      "version": "1.0.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "侧栏「无头会话」入口：列出本机正在运行的无头 DSH 会话，并可导出/预览其转录",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "feng5124/dsh-plugins",
+      "packagePath": "packages/dsh-smart-mail/package.json",
+      "package": "dsh-smart-mail",
+      "version": "0.8.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Smart mail for DSH: multi-account IMAP/SMTP send & read tools (with attachments), whitelist-only wake with a configurable wake Workspace (default / named / ungrouped / directory), and same-thread reply continuation that resumes (and interrupts) the original DSH session, restoring archived sessions when needed.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "feng78-boop/dsh-thirteen-bg",
@@ -64240,6 +65127,66 @@
       ],
       "description": "第三方模型的思考强度与输入模态设置（DeepSeek Harness 插件，Fish 补充版）：每模型声明思考档位与图片输入，由内置模型知识库 + 线协议推断自动适配，直接在官方「模型」页卡片内编辑。基于上游 dsh-better-reasoning-effort 0.5.4，修复了与 dsh-web 模型能力插件的席位冲突。 默认启用八大模型家族的大肥鱼奔跑主题。",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "Fish-under-sea/dsh-fish",
+      "packagePath": "packages/dsh-agent-teams-fish/package.json",
+      "package": "@fish-under-sea/dsh-agent-teams-fish",
+      "version": "2.0.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "AgentTeams 多智能体团队协作（DeepSeek Harness 插件）：自然语言组队、成员与任务依赖 DAG、信箱通信、右侧栏树状监测 —— 上游 NanmiCoder/dsh-agent-teams 的补充版，新增自定义美术目录、十八厂商头像（十个有厂商 × 岗位全套）与厂商商标徽标。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Fish-under-sea/dsh-fish",
+      "packagePath": "packages/dsh-approval-guide/package.json",
+      "package": "@fish-under-sea/dsh-approval-guide",
+      "version": "2.0.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "在 DSH Web GUI 的审批弹窗里追加中文说明：这次审批会做什么、有什么风险、依据是什么。原英文理由与命令原文保留显示。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Fish-under-sea/dsh-fish",
+      "packagePath": "packages/dsh-git-sync/package.json",
+      "package": "@fish-under-sea/dsh-git-sync",
+      "version": "2.0.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DeepSeek Harness 一键 GitHub 同步：把插件清单、插件启用状态、插件配置、本地设置、Skills、Skill 的 refs/脚本、看板/用量账本、设置导航顺序偏好、壁纸引擎整机配置快照（$DSH_HOME/FISH.json）、免费模型插件配置与用量账本采集进你自己的私有 git 仓库并推送，换机可一键还原；采集前自动 fetch 远端并合并，密钥永不搬运。0.2.5 起不再同步 agent 预设 / 桌宠存档 / 工作区映射，0.2.6 起不再同步归档台账，0.2.7 起纳入 skill-refs，0.3.0 起支持额外扫描根，0.3.1 起纳入免费模型插件（our-free-model）配置面，0.3.2 起补上字体集与吉祥物，0.3.3 起壁纸引擎四条收敛为一条整机快照（还原后需在壁纸引擎面板点「导入预设…」才生效），0.4.0 起新增「导出凭据文件」：只把 $DSH_HOME/.credentials.yaml 纯本机复制到用户指定目录（默认桌面）下的「DSH凭据导出」文件夹，不生成 README、不碰 git、不发网络请求、不把凭据内容读进日志。仓库目录与导出目录在「设置 → Git 同步」里改。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Fish-under-sea/dsh-fish",
+      "packagePath": "packages/dsh-settings-nav-order/package.json",
+      "package": "@fish-under-sea/dsh-settings-nav-order",
+      "version": "2.0.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DeepSeek Harness 设置导航与斜杠菜单顺序：重排、隐藏设置侧栏；为 agent-teams、companion、acp、acp-cache 补充图标和中文标题，支持自定义默认顺序。偏好随浏览器本地状态及 $DSH_HOME/dsh-settings-nav-order/state.json 持久化。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Fish-under-sea/dsh-fish",
+      "packagePath": "packages/dsh-skill-lens-fish/package.json",
+      "package": "@fish-under-sea/dsh-skill-lens-fish",
+      "version": "2.0.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Skill Lens（Fish 版）：在 DSH Web GUI 的会话页签里浏览本机全部 Agent Skill——同时识别目录式 <名称>/SKILL.md 与扁平 <名称>.md，解析技能对共享资源（skill-refs/）的引用并画成依赖图，另有概览、文件浏览/编辑、新建/导入/删除。基于 x-feichen/dsh-skill-lens（MIT）改造。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Fish-under-sea/dsh-our-free-model-fish",
@@ -70433,6 +71380,18 @@
       "observedAt": "2026-11-17T18:42:30+00:00"
     },
     {
+      "repo": "gigaflw/dsh-fft-base",
+      "packagePath": "packages/dsh-fft-settings/package.json",
+      "package": "@dsh-ft/dsh-fft-settings",
+      "version": "0.7.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "FT 设置与凭据底座：FTShare API Key、设置页卡片、运行日志与品牌主题层，供 FT 系列插件共享。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "gigaflw/dsh-fft-paper-trading",
       "packagePath": "package.json",
       "package": "@dsh-ft/dsh-fft-paper-trading",
@@ -71094,6 +72053,18 @@
       ],
       "description": "Balance and spending of an arckep.ru account inside the DeepSeek Harness (DSH) web UI. Unofficial community plugin.",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "GMH13552/dsh-mc-art",
+      "packagePath": "panel/package.json",
+      "package": "dsh-mc-art-panel",
+      "version": "0.3.6",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "MC 资产面板 + 「MC 模组工作室」模式 + mc-mod / mc-art 两个 skill：3D+物品栏、像素/结构编辑器、出错的报告自动放进输入框、GameTest 判定闭环。原生 Windows 可用（不需要 WSL），不绑定任何具体 mod。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "GMH13552/dsh-timer-scheduler",
@@ -74284,6 +75255,18 @@
       ],
       "description": "DSH 任务插件：仿魔兽世界任务系统——任务面板（L 键）、总体任务看板、任务追踪条、任务维护与 Agent 联动。",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "gxx950224/sapbuddy-dsh",
+      "packagePath": "packages/sapbuddy-dsh/package.json",
+      "package": "sapbuddy-dsh",
+      "version": "0.1.6",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "SapBuddy —— SAP ABAP AI 全能助手（DeepSeek Harness 插件）：41 个 SAP 工具 + 12 个技能 + SapBuddy preset + 连接设置页。一个包名装完。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Gyanano/dsh-grok-auth",
@@ -78752,6 +79735,18 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "herenfor/dsh-wsl",
+      "packagePath": "experiments/mirror/mirror/package.json",
+      "package": "@herenfor/dsh-wsl",
+      "version": "0.1.15",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "WSL run mode for DeepSeek Harness Desktop on Windows: run chosen tasks, and the plugins they use, in WSL from the Desktop window",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "Hermannmayer/dsh-worktree-bar",
       "packagePath": "package.json",
       "package": "dsh-worktree-bar",
@@ -79778,6 +80773,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "Highjobop/dsh-gadgets",
+      "packagePath": "dsh-skin/package.json",
+      "package": "dsh-skin",
+      "version": "0.4.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH custom appearance plugin: light/dark switch, 15 preset skins, 13 adjustable color roles and font scaling, zh/en bilingual UI, persisted in localStorage (survives restart).",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "highland0971/dsh-native-memory",
       "packagePath": "package.json",
       "package": "dsh-native-memory",
@@ -79860,6 +80867,18 @@
       ],
       "description": "网易云歌词背景层：hook 桌面歌词窗口取词，在壁纸层与聊天层之间渲染随机特效歌词（含原文/译文配对四种显示模式）。",
       "observedAt": "2026-11-17T18:42:30+00:00"
+    },
+    {
+      "repo": "hilariouhiss/dsh-hiss-plugins",
+      "packagePath": "dsh-hiss-plugins/package.json",
+      "package": "dsh-hiss-plugins",
+      "version": "1.4.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "dsh-hiss-plugins — one DeepSeek Harness bundle carrying nine independently switchable plugins (colgrep, codegraph, project-mcp, git-bash, superpowers, ponytail, init, fix, lan-access) plus a management tab in the Plugins page.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "HildebrandYu/dsh-open-with",
@@ -80153,6 +81172,42 @@
       ],
       "description": "Retirement countdown widget in the DSH composer: shows days/hours/minutes/seconds and lets you pick the target date. 退休倒计时小组件。",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "hj01857655/dsh-plugins",
+      "packagePath": "packages/dsh-context-memory/package.json",
+      "package": "dsh-context-memory",
+      "version": "1.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Cross-session memory for your dsh agent: remembered, recalled, and re-verified instead of assumed.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "hj01857655/dsh-plugins",
+      "packagePath": "packages/dsh-git-ops/package.json",
+      "package": "dsh-git-ops",
+      "version": "2.0.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Structured git tools for your dsh agent: status, diff, log, and commit that run in the host process, not inside a sandbox whose environment strips HOME.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "hj01857655/dsh-plugins",
+      "packagePath": "packages/dsh-theme-studio/package.json",
+      "package": "dsh-theme-studio",
+      "version": "0.10.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Customize the dsh UI theme: 12 accent presets, dark-mode aware accents with a contrast guard, density, font family, animation toggle, and raw design-token overrides.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "hj01857655/dsh-theme-studio",
@@ -81148,6 +82203,18 @@
       ],
       "description": "Desktop notifications when a DeepSeek Harness turn ends: bundled Python/PowerShell notifier, custom command fallback, and its own Settings page.",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "Hope-Phenom/dsh-plugin-remote-use",
+      "packagePath": "packages/dsh-plugin-remote-use/package.json",
+      "package": "@hope_phenom/dsh-plugin-remote-use",
+      "version": "0.2.24",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Delegate DSH tasks to a paired LAN worker and drive it like a subagent (ACP over WebSocket).",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Hope2023Dcr/dsh-gallery",
@@ -85275,6 +86342,18 @@
       "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
+      "repo": "hyprnos/dsh-Remote",
+      "packagePath": "packages/plugin/package.json",
+      "package": "@hyprnos/dsh-remote-plugin",
+      "version": "0.8.33",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH Remote（个人分支）bundle 插件：手机连接入口、首次连接提示与浏览器管理控制台；内置网关自动启停，支持手机远程会话、审批、文件互传、语音输入和设备管理。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "hyqhyq3/dsh-gemini-oauth-bridge",
       "packagePath": "package.json",
       "package": "dsh-gemini-oauth-bridge",
@@ -86288,6 +87367,18 @@
       ],
       "description": "火山方舟 Coding Plan LLM provider for DeepSeek Harness — provider-scoped PDF、图片与 Responses API 流式支持",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "Icefox12138/socratic-tutor",
+      "packagePath": "plugin-socratic/package.json",
+      "package": "dsh-socratic",
+      "version": "0.5.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Socratic tutor tools for DSH: cited retrieval, page images, chapter index, session review, embedded console. Teaching behaviour lives in dsh-socratic-persona.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "iceice666/dsh-locale-zh-tw",
@@ -87377,6 +88468,18 @@
       "observedAt": "2026-11-17T18:42:30+00:00"
     },
     {
+      "repo": "imaegoo/dshoo",
+      "packagePath": "src/plugin/package.json",
+      "package": "dshoo",
+      "version": "0.0.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Remote access for DeepSeek Harness: connect an instance to a dshoo server so it can be opened from the server's web UI.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "iMankoppai/dsh-right",
       "packagePath": "package.json",
       "package": "dsh-right",
@@ -87908,6 +89011,18 @@
         "topic:dsh-plugin 工作台 in:readme"
       ],
       "observedAt": "2026-11-17T17:53:20+00:00"
+    },
+    {
+      "repo": "imwhatiam/dsh-plugins",
+      "packagePath": "packages/dsh-mosaic/package.json",
+      "package": "dsh-mosaic",
+      "version": "1.1.5",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Lightweight visual answers for DeepSeek Harness: one compact visual style, an editable model prompt, dsh-view components, Mermaid diagrams, a sandboxed HTML/JS escape hatch, local-first interactions, and link-only media cards.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "imyasonly/dsh-plugin-market",
@@ -89939,6 +91054,18 @@
       ],
       "description": "电商商品广告视频创作工场：输入商品 URL，产出面向抖音/TikTok/YouTube/Twitter 的广告视频创作包（分镜、各视频模型提示词、口播文案），可经 UNIAPI 网关接入 Seedance 2.0 / 可灵 Kling 2.6 出片。",
       "observedAt": "2026-11-17T18:11:58+00:00"
+    },
+    {
+      "repo": "Jack7510/ggb-plugins",
+      "packagePath": "dsh/package.json",
+      "package": "ggb-plugins-dsh",
+      "version": "0.9.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "GeoGebra construction Skill and verified delivery CLI for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "jack7510/ggb-plugins-dsh",
@@ -94710,6 +95837,18 @@
       "observedAt": "2026-11-17T18:42:30+00:00"
     },
     {
+      "repo": "jincheng3870682453-hash/dsh-doctor",
+      "packagePath": "plugin/package.json",
+      "package": "dsh-doctor-plugin",
+      "version": "0.14.10",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH 私人医生：检查并一键修复桌面端在 Windows 上踩过的坑（桌面图标变白/闪烁、工作区注册在桌面、profile 宿主包重复、启动崩溃）",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "jinchenwu1220/dsh-edit-rerun",
       "packagePath": "package.json",
       "package": "dsh-edit-rerun",
@@ -97476,6 +98615,18 @@
       "observedAt": "2026-11-17T19:38:34+00:00"
     },
     {
+      "repo": "jqlong17/dsh-pocket-ios",
+      "packagePath": "plugin/package.json",
+      "package": "dsh-pocket-ios",
+      "version": "0.6.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "给 DSH 设置页加「手机访问（iOS）」：局域网 / Cloudflare / Tailscale / EasyTier 四种连接方式可切换，扫码即连；附带 CLI 供无 GUI 的服务器在终端出二维码",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "jqlong17/influence-net",
       "packagePath": "package.json",
       "package": "influence-net",
@@ -99194,6 +100345,66 @@
     },
     {
       "repo": "Kaczev/dsh-life-pipline",
+      "packagePath": "components/dsh-lpipe-bili/package.json",
+      "package": "dsh-lpipe-bili",
+      "version": "0.2.5",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Read-only Bilibili browsing, QR login and storyboard viewing for DSH.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Kaczev/dsh-life-pipline",
+      "packagePath": "components/dsh-lpipe-chat/package.json",
+      "package": "dsh-lpipe-chat",
+      "version": "0.7.12",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Own WeChat and QQ channels: scan to connect, batch incoming messages, inject them into the main session.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Kaczev/dsh-life-pipline",
+      "packagePath": "components/dsh-lpipe-memory/package.json",
+      "package": "dsh-lpipe-memory",
+      "version": "0.1.5",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "把会话原文逐字投影到长期文件：按会话分文件夹，按天分卷，哈希链可校验。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Kaczev/dsh-life-pipline",
+      "packagePath": "components/dsh-lpipe-starmap/package.json",
+      "package": "dsh-lpipe-starmap",
+      "version": "0.1.9",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Star map for DSH: turn raw memory into a deterministic index of concepts and the sentences that bind them.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Kaczev/dsh-life-pipline",
+      "packagePath": "components/dsh-lpipe-wake/package.json",
+      "package": "dsh-lpipe-wake",
+      "version": "0.2.11",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Self-wake pipeline for DSH: after you stop for a while, it wakes you in your main session.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Kaczev/dsh-life-pipline",
       "packagePath": "package.json",
       "package": "dsh-life-pipline",
       "version": "0.8.11",
@@ -99204,6 +100415,18 @@
       ],
       "description": "All-in-one Life Pipline installer: Life Core and eight independently switchable pipelines.",
       "observedAt": "2026-11-17T19:38:34+00:00"
+    },
+    {
+      "repo": "kadaliao/dsh-plugins",
+      "packagePath": "plugins/bots/package.json",
+      "package": "@kadaliao/dsh-bots",
+      "version": "0.10.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Grok-style bots for DeepSeek Harness: create bots with their own avatar, persona, model, skills, apps, scheduled tasks and memory; they message each other, a dispatcher bot hands out the work, and a usage view counts tokens by bot, task and day.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "kadima-code/dsh-subagent-toolkit",
@@ -99950,6 +101173,54 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "kangyishuai/dsh-plugins",
+      "packagePath": "packages/advisor/package.json",
+      "package": "@kangyishuai/dsh-advisor",
+      "version": "0.6.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Pair the main model with a stronger advisor model it consults at key moments: autonomous second opinion, cost ledger, and model picker",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "kangyishuai/dsh-plugins",
+      "packagePath": "packages/next-step/package.json",
+      "package": "@kangyishuai/dsh-next-step",
+      "version": "0.4.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Next-step decision card under each completed answer, plus an optional greyed-out next-prompt hint in the composer",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "kangyishuai/dsh-plugins",
+      "packagePath": "packages/session-delete/package.json",
+      "package": "@kangyishuai/dsh-session-delete",
+      "version": "0.5.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Real session deletion for DSH: trash by default, plan before delete, audit log, residue receipt",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "kangyishuai/dsh-plugins",
+      "packagePath": "packages/session-rewind/package.json",
+      "package": "@kangyishuai/dsh-session-rewind",
+      "version": "0.7.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "In-place conversation rewind for DSH: withdraw a user message and everything after it, then refill the composer",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "kankanfs/dsh-chat-first",
       "packagePath": "package.json",
       "package": "dsh-chat-first",
@@ -100301,6 +101572,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "KasenRi/dsh-orbit-browser-plugins",
+      "packagePath": "packages/orbit/package.json",
+      "package": "@kasenri/dsh-orbit",
+      "version": "0.6.7",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "让 AI 项目可以在无人监管下持续推进。Orbit 会自动规划任务、分工执行、逐步检查并继续完成后续工作；不同环节可以使用不同模型，让低成本模型承担执行任务、强模型负责规划和审核，从而降低整体 AI 使用成本。Watchdog 还会监控运行异常，在任务卡死或中断时协助恢复。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "Kattentions/dsh-katt-browser",
       "packagePath": "package.json",
       "package": "dsh-katt-browser",
@@ -100459,6 +101742,18 @@
       ],
       "description": "One card for the whole secret chain in DSH: ask, deliver into a terminal or the sidebar browser, reveal stored secrets, and hand a value over as a vault reference or a private file",
       "observedAt": "2026-11-17T19:51:50+00:00"
+    },
+    {
+      "repo": "KCNyu/clawock",
+      "packagePath": "examples/dsh/packages/clawock-dsh/package.json",
+      "package": "clawock-dsh",
+      "version": "0.4.3",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Investment decision skill, trade-to-plan views, and a background task panel for DeepSeek Harness (dsh).",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "kdcadmin/dsh_douyin_tools",
@@ -103389,6 +104684,18 @@
       "observedAt": "2026-11-17T19:15:15+00:00"
     },
     {
+      "repo": "kirkchinese/dsh-capability-catalog",
+      "packagePath": "packages/capability-catalog/package.json",
+      "package": "@kirkchinese/dsh-capability-catalog",
+      "version": "0.1.6",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Lazy capability catalog for DeepSeek Harness: one compact index plus search/describe/call meta-tools for MCP tools and skills, instead of every schema on every request",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "kirkchinese/dsh-recollect",
       "packagePath": "package.json",
       "package": "@kirkchinese/dsh-recollect",
@@ -104036,6 +105343,18 @@
     },
     {
       "repo": "klarkxy/dsh-plugins",
+      "packagePath": "plugins/dsh-delegation/package.json",
+      "package": "@klarkxy/dsh-delegation",
+      "version": "0.2.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Delegation Mode: a per-session switch where the main agent plans, delegates, and reviews while subagents carry out the work.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "klarkxy/dsh-plugins",
       "packagePath": "plugins/dsh-dev-index/package.json",
       "package": "@klarkxy/dsh-dev-index",
       "version": "0.3.2",
@@ -104048,6 +105367,18 @@
     },
     {
       "repo": "klarkxy/dsh-plugins",
+      "packagePath": "plugins/dsh-font/package.json",
+      "package": "@klarkxy/dsh-font",
+      "version": "0.2.7",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Font: customize the interface, conversation, code and terminal fonts and font sizes of the DeepSeek Harness Web GUI.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "klarkxy/dsh-plugins",
       "packagePath": "plugins/dsh-git-commit/package.json",
       "package": "@klarkxy/dsh-git-commit",
       "version": "0.3.6",
@@ -104057,6 +105388,66 @@
       ],
       "description": "Git Commit: commit workspace changes from the conversation, with the model grouping commits and generating commit messages.",
       "observedAt": "2026-11-17T19:54:29+00:00"
+    },
+    {
+      "repo": "klarkxy/dsh-plugins",
+      "packagePath": "plugins/dsh-model-hub/package.json",
+      "package": "@klarkxy/dsh-model-hub",
+      "version": "0.2.4",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Subagents: configure the model and reasoning effort for new subagents, and see each one's last-used model in the conversation popup.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "klarkxy/dsh-plugins",
+      "packagePath": "plugins/dsh-safe-auto/package.json",
+      "package": "@klarkxy/dsh-safe-auto",
+      "version": "0.5.7",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Safe Auto: a reviewer model answers approval requests one call at a time; includes review history with full audit trails.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "klarkxy/dsh-plugins",
+      "packagePath": "plugins/dsh-session-manager/package.json",
+      "package": "@klarkxy/dsh-session-manager",
+      "version": "0.5.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Search and read DeepSeek Harness sessions across working directories, use temporary workspaces, continue with one tap or automatically when a reply stops early, recap on return with context-compaction hints, and optionally let the agent fork the current session or message other sessions.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "klarkxy/dsh-plugins",
+      "packagePath": "plugins/dsh-unrestricted/package.json",
+      "package": "@klarkxy/dsh-unrestricted",
+      "version": "0.4.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Unrestricted: a session preset that removes the limits on what the model answers and delivers complete results, only in sessions that pick it. May get your account banned.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "klarkxy/dsh-plugins",
+      "packagePath": "plugins/dsh-web-search-manager/package.json",
+      "package": "@klarkxy/dsh-web-search-manager",
+      "version": "0.3.6",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Manage and rank web search and page-reading providers in one settings page—with built-in DuckDuckGo, Exa, Tavily, Linkup, Zhipu, and others—for the model's web_search and web_fetch tools.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "klarkxy/dsh-plugins",
@@ -109266,6 +110657,18 @@
       ],
       "description": "Folia 壁纸引擎：把本机 Wallpaper Engine 壁纸搬进 DSH 界面（场景实时渲染 / 视频 / 网页），内置液态玻璃与 Folia 吉祥物，并可从自建站点拉取壁纸。单包形态（组件已合并）。",
       "observedAt": "2026-11-17T19:38:34+00:00"
+    },
+    {
+      "repo": "leiboss/dsh-tts",
+      "packagePath": "packages/voiceover/package.json",
+      "package": "@leiboss/dsh-voiceover",
+      "version": "0.5.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Long-form voiceover pipeline for DeepSeek Harness: chapter planning, spoken-script adaptation, subtitles, manifest, and resumable jobs. Turns a document into a publishable audio set.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Leica-Shen/deepseek-harness-group-chat",
@@ -114714,6 +116117,18 @@
       "observedAt": "2026-11-17T18:11:58+00:00"
     },
     {
+      "repo": "lininn/ds-bot-control",
+      "packagePath": "ds-bot/package.json",
+      "package": "@lininn/ds-bot",
+      "version": "0.4.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DS Bot: a team of long-lived Bots for DeepSeek Harness, with Main Bots, Bot-to-Bot messages and group chats",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "Linj1k/dsh-whisper-local",
       "packagePath": "package.json",
       "package": "dsh-whisper-local",
@@ -115934,6 +117349,18 @@
       ],
       "description": "DeepSeek Harness 侧栏底部的账户余额与花费卡片：常驻显示账户余额与今日花费，点击展开五层级成本明细（最近提问 / 今日·本会话 / 本工作区 / 所有工作区），含峰谷时段状态与一键充值入口。",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "litingyes/dsh-plugins",
+      "packagePath": "dsh-context7/package.json",
+      "package": "@litingyes/dsh-context7",
+      "version": "0.2.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Context7 documentation for DeepSeek Harness: connects the official Context7 MCP server so agents can resolve libraries and fetch current documentation and code examples.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "litongtong256/dsh-automation-monitor",
@@ -118255,6 +119682,18 @@
       "observedAt": "2026-11-17T19:51:50+00:00"
     },
     {
+      "repo": "ljwzhaoxiaoniu/DLR",
+      "packagePath": "DSH-based Agent Service/dsh-tsm-agent/package.json",
+      "package": "dsh-tsm-agent",
+      "version": "0.2.4",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "dsh bundle for TSM / DLR: MCP semantic gateway to tsm-core-dlr, the scenario-independent paradigm skill, the TSM status overlay, and the agent rules (AGENTS.md). Assembly face = preset-dlr.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "ljx200719/dsh-screen-beyond",
       "packagePath": "package.json",
       "package": "dsh-screen-beyond",
@@ -120128,6 +121567,18 @@
       "observedAt": "2026-11-17T18:11:58+00:00"
     },
     {
+      "repo": "lonk1989/webclaw-oss",
+      "packagePath": "packages/webclaw/package.json",
+      "package": "@lonk1989/webclaw",
+      "version": "0.1.17",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DeepSeek Harness plugin: deterministic Chinese-recipe browser RPA via webclaw-lite",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "loommii/dsh-input-history",
       "packagePath": "package.json",
       "package": "@loommii/dsh-input-history",
@@ -121227,6 +122678,18 @@
       ],
       "description": "Zero-dependency molecular-biology plugin bundle for the DeepSeek Harness: sequence analysis, primer design (incl. cross-intron qPCR primers, TaqMan hydrolysis/MGB probes with ordering CSV and multiplex compatibility), in-silico PCR, cloning simulation, SnapGene .dna parsing and plasmid maps, Sanger verification, protein tools (incl. helical wheel, hydropathy and charge-pH plots), methylation-aware restriction analysis with double-digest buffer checks, qPCR analysis and plotting, multiple sequence alignment that conserves every input residue, conservation analysis, sequence logos, codon-usage analysis, phylogenetic trees with bootstrap support, Newick I/O and long-name label wrapping, CpG-island/GC-skew composition analysis, k-mer dotplots, read-level FASTQ QC, vector/adapter contamination screening, FASTQ trimming/filtering, batch file analysis with CSV export, silent restriction-site mutagenesis, family-aware CRISPR gRNA design (SpCas9/SaCas9/Cas12a/Cas13) with off-target search, an opt-in hand-off that shows a generated plot to the model as an attached image, plus a browser-side right-sidebar panel (plasmid maps, sequence logos, and a rotatable realistic 3D ball-and-stick/space-filling preview of PDB/mmCIF/SDF structures drawn in the Web GUI) and a literature/protocol/experiment record system.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "lovy2004/dsh-molbio-tools",
+      "packagePath": "packages/molbio-panel/package.json",
+      "package": "dsh-molbio-panel",
+      "version": "0.1.12",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Browser panel for the DeepSeek Harness Web GUI: a Molbio tab in the right sidebar that draws plasmid maps and sequence logos from workspace sequence files, using the same computation modules as the dsh-molbio-tools plugin.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "loyalchiiina/dsh-archive-favorites-forge",
@@ -123783,6 +125246,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "Lutisure/cyrene-dsh-plugin",
+      "packagePath": "dsh-theme-cyrene/package.json",
+      "package": "@lutisure/dsh-theme-cyrene",
+      "version": "0.17.3",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "昔涟主题 · Cyrene — 淡粉柔光配色 + 半透明壁纸 + 环境流萤粒子 + 背景音乐 + 打字音效（DeepSeek Harness 客户端主题插件）",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "Lutra23/dsh-design-symposium",
       "packagePath": "package.json",
       "package": "dsh-design-symposium",
@@ -124974,6 +126449,54 @@
     },
     {
       "repo": "LyraWang6688/ai-capability-store",
+      "packagePath": "external-capabilities/plugin/dsh/feishu-ref/package.json",
+      "package": "@lyra_wang/dsh-feishu-ref",
+      "version": "0.7.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Composer + button: search Feishu docs, drive files, group chats, messages and contacts; picker grows out of the composer with a bottom search field and inserts an agent-readable reference.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "LyraWang6688/ai-capability-store",
+      "packagePath": "external-capabilities/plugin/dsh/html-annotate/package.json",
+      "package": "@lyra_wang/dsh-html-annotate",
+      "version": "0.6.3",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "在 DSH 中打开本地 HTML 原型，点元素写批注，提交后把批注作为消息发给当前会话，由 Agent 修改源码。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "LyraWang6688/ai-capability-store",
+      "packagePath": "external-capabilities/plugin/dsh/image-ocr/package.json",
+      "package": "@lyra_wang/dsh-image-ocr",
+      "version": "0.4.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Composer + button: OCR the clipboard image locally (macOS Vision) and insert the text into the DSH input box.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "LyraWang6688/ai-capability-store",
+      "packagePath": "external-capabilities/plugin/dsh/selection-toolbar/package.json",
+      "package": "@lyra_wang/dsh-selection-toolbar",
+      "version": "0.10.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Floating toolbar on selected text in the DSH conversation: copy / follow up / collect to Feishu / deliver to the inbox Base / rewrite.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "LyraWang6688/ai-capability-store",
       "packagePath": "external-capabilities/plugin/dsh/session-board/package.json",
       "package": "@lyra_wang/dsh-session-board",
       "version": "0.3.0",
@@ -124983,6 +126506,18 @@
       ],
       "description": "DSH 会话需求看板：按「需求」而不是按消息，列出这个会话里你提过哪些目标、智能体为每条需求拆出了哪些子任务，各自的进展与状态。",
       "observedAt": "2026-11-17T19:52:01+00:00"
+    },
+    {
+      "repo": "LyraWang6688/ai-capability-store",
+      "packagePath": "external-capabilities/plugin/dsh/terminal-context/package.json",
+      "package": "@lyra_wang/dsh-terminal-context",
+      "version": "0.6.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH 输入框左侧的「发送终端」按钮：点一下就把右侧边栏终端当前可见的最后 20 行发给 AI（并唤醒它）。没有常驻监听、没有自动上报——什么时候把终端交给 AI 由人决定。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Lysander-9/dsh-intermi",
@@ -130621,6 +132156,18 @@
       "observedAt": "2026-11-17T19:51:50+00:00"
     },
     {
+      "repo": "Mercuryof37/Agent-Memory-Assistant",
+      "packagePath": "packages/dsh/package.json",
+      "package": "@agent_memory/dsh",
+      "version": "0.5.4",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Agent Memory plugin for DeepSeek Harness: local, file-per-memory long-term memory with human approval.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "mercy719/dsh-client-ui-weather",
       "packagePath": "package.json",
       "package": "@deepseek-ai/dsh-client-ui-weather",
@@ -133826,6 +135373,18 @@
       "observedAt": "2026-11-17T18:11:58+00:00"
     },
     {
+      "repo": "mjw0531/dsh-ai-studio",
+      "packagePath": "packages/dsh-studio/package.json",
+      "package": "dsh-ai-studio",
+      "version": "3.15.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Install-and-use AI studio for DeepSeek Harness: owner dashboard, Agent dispatch, token budgets, decision desk, branch/contract conflicts, worktree code execution, host verification, independent AI review, automatic integration gates, docs sync and irreversible decision gates with ADR drafts and write-back, human-triggered Git merge with post-merge regression, failure escalation and rollback, fix-ticket diagnosis/plan gate, workflow guardrails, project knowledge and module contracts, contract scope guard, integration and re-split tickets, projects, tasks, acceptance, and merge governance on an independent page.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "MjxUpUp/dsh-visual",
       "packagePath": "package.json",
       "package": "dsh-visual",
@@ -133967,6 +135526,30 @@
       ],
       "description": "Wordless-styled skin for the DSH blank-session hero: the brand tile and the workspace picker menu, with the native composer untouched.",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "mlaimail77/genkaku",
+      "packagePath": "DSH/packages/user/package.json",
+      "package": "@genkaku/dsh-user-plugin",
+      "version": "0.2.0-rc.15",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Buy peer-to-peer inference from the GenKaKu network",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "mlaimail77/genkaku",
+      "packagePath": "DSH/packages/worker/package.json",
+      "package": "@genkaku/dsh-worker-plugin",
+      "version": "0.2.0-rc.15",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Share this machine's Ollama models on the GenKaKu network",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "mldhao/dsh-blue-archive-shiroko",
@@ -134401,6 +135984,30 @@
       ],
       "description": "Modellix Design, LLM, and Web providers for DeepSeek Harness",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "modelstudioai/cli",
+      "packagePath": "packages/bailian-kb-dsh/package.json",
+      "package": "bailian-kb-dsh",
+      "version": "2.10.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Bailian knowledge-base tools for DeepSeek Harness: kb_search and kb_chat over the DashScope RAG API, plus the bl CLI management skill.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "modelstudioai/cli",
+      "packagePath": "packages/bailian-memo-dsh/package.json",
+      "package": "bailian-memo-dsh",
+      "version": "2.10.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Bailian personal memory for DeepSeek Harness: automatic recall, silent curation, and user-controlled remember/forget.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "modersetech/dsh-material-file-icons",
@@ -136535,6 +138142,18 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "Mr-cjf/cohub",
+      "packagePath": "packages/dsh-cohub/package.json",
+      "package": "dsh-cohub",
+      "version": "0.13.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DeepSeek Harness 版 CoHub：中文智能体编排——用户可选 2 种工作模式（co-orchestrator 纯调度 / cohub-cordis 创造模式）+ 13 个专职代理技能 + 多模型共识；另由 cohub-subagent-readonly / cohub-subagent-write 两个支撑 preset 实现子代理读写硬隔离（共 4 个 preset）",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "Mr-cjf/dsh-status-anim",
       "packagePath": "package.json",
       "package": "dsh-status-anim",
@@ -138241,6 +139860,18 @@
       ],
       "description": "DSH Web 客户端插件：助手回答结束时播放「叮咚」提示音",
       "observedAt": "2026-11-17T18:45:48+00:00"
+    },
+    {
+      "repo": "mxn404/deepseek-plugins",
+      "packagePath": "packages/dsh-worktree-switch/package.json",
+      "package": "dsh-worktree-switch",
+      "version": "0.5.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "A New Session switch that puts the conversation into a throwaway Git worktree under the project's worktree pool (`<project>/.dsh/worktrees` by default), plus a panel to inspect and discard the copies.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "my-0228/dsh-api-key-switch",
@@ -150308,6 +151939,18 @@
     },
     {
       "repo": "peiyucn/dsh-sparrow",
+      "packagePath": "plugins/dsh-codebuddy-credits/package.json",
+      "package": "@dsh-sparrow/dsh-codebuddy-credits",
+      "version": "0.2.2-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Company CodeBuddy credits as a DeepSeek Harness LLM provider — official API key, models only, no agent harness",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "peiyucn/dsh-sparrow",
       "packagePath": "plugins/dsh-desk-one/package.json",
       "package": "@dsh-sparrow/dsh-desk-one",
       "version": "0.2.2-rc.3",
@@ -150317,6 +151960,18 @@
       ],
       "description": "Desk One — a shared desk for you and your DSH harness: notes, tasks, a read-only calendar and annotations on workspace files in one panel.",
       "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
+      "repo": "peiyucn/dsh-sparrow",
+      "packagePath": "plugins/dsh-theme-tone/package.json",
+      "package": "@dsh-sparrow/dsh-theme-tone",
+      "version": "0.2.2-rc.3",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Tone skins for the official light and dark themes: token colors, ground light, and liquid glass on the conversation header, composer and right sidebar",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "pekeyTeam/dsh-AGE",
@@ -154705,6 +156360,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "pzyyll/dsh-plugins",
+      "packagePath": "packages/dsh-xai-auth/package.json",
+      "package": "@balaenis/dsh-xai-auth",
+      "version": "0.3.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "dsh plugin that signs in to an xAI SuperGrok subscription and serves it as the xai-supergrok model route.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "Q-hao516/dsh-qqmail",
       "packagePath": "package.json",
       "package": "@qhao/dsh-qqmail",
@@ -158484,6 +160151,18 @@
       "observedAt": "2026-11-17T19:38:34+00:00"
     },
     {
+      "repo": "rainow/ds-harness-remote-fast",
+      "packagePath": "packages/plugin/package.json",
+      "package": "ds-harness-remote-fast",
+      "version": "0.6.5-fast.3",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "P2P-based, end-to-end encrypted remote access to DeepSeek Harness, CodeX, Claude Code, Pi, and other workspaces from web and mobile clients.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "Rainpomelo/dsh-liquid-glass-theme",
       "packagePath": "package.json",
       "package": "@deepseek-ai/dsh-client-ui-liquid-glass",
@@ -160736,6 +162415,18 @@
       "observedAt": "2026-11-17T18:48:43+00:00"
     },
     {
+      "repo": "Revcloudi/Cortex",
+      "packagePath": "dsh-cortex/package.json",
+      "package": "@lievclouds/dsh-cortex",
+      "version": "1.3.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Cortex workbench for DeepSeek Harness: the original Cortex UI (vulnerabilities, client findings, assets, internal operations, Memory Nebula, snapshots, retest, standalone Web Fuzzer with raw/JSON/render responses, mini-program reversing), project/selected-asset export to JSON/CSV/DefectDojo, multi-select asset batch export/delete, editable system names, internal entity cleanup and raw local data (no masking), plus 22 native agent tools so DSH conversations use the local Cortex SQLite without MCP.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "reverse-PAI/dsh-minimal-session-delete",
       "packagePath": "package.json",
       "package": "dsh-minimal-session-delete",
@@ -161855,6 +163546,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "rkfg/dsh-better-sandbox",
+      "packagePath": "packages/@rkfg/dsh-better-sandbox-ui/package.json",
+      "package": "@rkfg/dsh-better-sandbox-ui",
+      "version": "0.4.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Settings page for the DeepSeek Harness better-sandbox plugin; edits apply without a restart.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "RMRdeveloper/sideroom-dsh",
       "packagePath": "package.json",
       "package": "@rmrdeveloper/sideroom-dsh",
@@ -162208,6 +163911,18 @@
       ],
       "description": "A durable task board that DSH agents plan multi-step work on: a tree of steps with free-form link fields, kept as a local JSON file that other processes can read.",
       "observedAt": "2026-11-17T18:26:55+00:00"
+    },
+    {
+      "repo": "romany-saad/dsh-plugins",
+      "packagePath": "packages/dsh-core/package.json",
+      "package": "@rs-dsh/dsh-core",
+      "version": "0.1.4",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Shared UI layer for the rs-dsh DSH plugins: one selection toolbar, anchored cards and DSH's own components, so the plugins look like DSH and stay small.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "romany-saad/dsh-plugins",
@@ -164226,6 +165941,18 @@
       ],
       "description": "把 B 站视频读成文本给 AI 用：元数据、评论、弹幕、字幕、本地 ASR 转写、抽帧 OCR；支持 b23.tv 短链与 av 号，抽帧缓存目录可换。本地跑不上传、内容一致性检查、二次读瞬时、为 AI 设计落盘+摘要。",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "Sacredbluedragon/dsh-memory-shield",
+      "packagePath": "packages/dsh-memory-core/package.json",
+      "package": "dsh-memory-core",
+      "version": "0.1.10",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "被 dsh-memory-shield 遮蔽的会话的隔离记忆包：五轨（memory/user/project/key/daily）独立数据目录，与 dsh-memory-evolve 完全隔离。装完即已生效——默认只提供管理页，不接管任何会话；在目标 preset 里设 memoryEnabled: true 才启用。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Sacredbluedragon/dsh-memory-shield",
@@ -167719,6 +169446,18 @@
       "observedAt": "2026-11-17T17:53:20+00:00"
     },
     {
+      "repo": "shanchuann/dsh-remote",
+      "packagePath": "plugin/package.json",
+      "package": "dsh-remote-harness",
+      "version": "0.1.17",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "LAN and Tailscale remote access for DeepSeek Harness: QR pairing, device tokens, REST + SSE bridge for the DSH Remote Android app. Zero runtime dependencies.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "Shane-Jay/dsh-self-update",
       "packagePath": "package.json",
       "package": "dsh-self-update",
@@ -167946,6 +169685,18 @@
       ],
       "description": "Bring ChatGPT-like image generation to DeepSeek Harness — Gemini, OpenAI, Seedream, DashScope, local ComfyUI & more.",
       "observedAt": "2026-11-17T18:26:55+00:00"
+    },
+    {
+      "repo": "shantanugoel/dsh-agent-browser",
+      "packagePath": "packages/dsh-agent-browser/package.json",
+      "package": "dsh-agent-browser",
+      "version": "0.2.7",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Native DSH browser tools on agent-browser: snapshot+ref automation, batched actions, live viewport panel. One-line install: dsh plugin --profile web add dsh-agent-browser",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "shantanugoel/dsh-web-degoog",
@@ -168569,6 +170320,42 @@
       ],
       "description": "DSH Web plugin: a Smart Prompt button under the composer that rewrites your draft into a structured prompt using your workspace conventions, then fills it back into the composer.",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "shellRaining/dsh-plugins",
+      "packagePath": "plugins/shellraining-brand/package.json",
+      "package": "@shellraining/dsh-brand",
+      "version": "0.1.8",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "将侧栏和欢迎页的品牌标识替换为 shellRaining 品牌。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "shellRaining/dsh-plugins",
+      "packagePath": "plugins/side-chat/package.json",
+      "package": "@shellraining/dsh-side-chat",
+      "version": "0.1.7",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "从当前会话派生临时侧边对话，可能修改工作区文件。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "shellRaining/dsh-plugins",
+      "packagePath": "plugins/streamdown/package.json",
+      "package": "@shellraining/dsh-streamdown",
+      "version": "0.1.6",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "让助手回复平滑出字、逐字淡入，生成结束时保持排版稳定。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Shen-18/dsh-ofm-balance",
@@ -170084,6 +171871,18 @@
       ],
       "description": "DeepSeek Harness plugin: a clock-led per-session working-time pill that subtracts the time spent waiting for your answers, whose dialog shows the span from the conversation's first message to its last activity (capped, so idle time never accrues), the all-conversation total above the sidebar account row with their token total right below it, and a \"55min ago\" reading on each workspace session row instead of a bare distance",
       "observedAt": "2026-11-17T19:51:50+00:00"
+    },
+    {
+      "repo": "shuangji66/dsh",
+      "packagePath": "dsh-fnos-advanced/package.json",
+      "package": "dsh-fnos-advanced",
+      "version": "0.7.3",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "飞牛文件与目录桥：选目录/选文件进对话、文件树与交付卡片操作、目录权限体检、诊断与中英文界面。fnOS picker, composer/file-tree/deliverable bridge, workspace access checks, diagnostics, and i18n for DeepSeekRuntime.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "shuanzhe/dsh-turn-hard-delete",
@@ -176569,6 +178368,18 @@
       "observedAt": "2026-11-17T18:48:43+00:00"
     },
     {
+      "repo": "StarCried/starlite-dsh",
+      "packagePath": "packages/dsh-plugin/package.json",
+      "package": "dsh-starlite",
+      "version": "0.2.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "StarLite for DSH: a lightweight Windows companion managed by one DSH plugin",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "STARDUSTLC666/deepseek-computer-use",
       "packagePath": "package.json",
       "package": "deepseek-computer-use",
@@ -178389,6 +180200,30 @@
       ],
       "description": "AI 错题本：把扫描试卷与手写笔记整理成可复习的错题卡片和电子笔记（DSH 插件）",
       "observedAt": "2026-11-17T18:48:43+00:00"
+    },
+    {
+      "repo": "SuanmoSuanyangTechnology/MemoryBearDSHPlugin",
+      "packagePath": "packages/dsh-memorybear/package.json",
+      "package": "@redbearai/dsh-memorybear",
+      "version": "0.2.4",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "MemoryBear long-term memory for DeepSeek Harness: per-turn recall, end-of-turn write, and a memory_search tool",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "SuanmoSuanyangTechnology/MemoryBearDSHPlugin",
+      "packagePath": "packages/dsh-memoryskills/package.json",
+      "package": "@redbearai/dsh-memoryskills",
+      "version": "0.2.4",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "MemorySkills long-term memory for DeepSeek Harness: sign in with email, paste one sk-mem- key, no MemoryBear tenant setup",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "subeichen1/dsh-auto-effort",
@@ -180991,6 +182826,18 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "swswordholy-tech/AgentsChat",
+      "packagePath": "mcp-plugin/package.json",
+      "package": "agentschat-mcp",
+      "version": "0.36.29",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Connect Claude Code to AgentsChat — AI Agent social network. Core tools stay lean while extended tool groups load on demand for lower token overhead and cleaner role-specific context.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "SwufeFox/kenlet-v2",
       "packagePath": "package.json",
       "package": "@local/kenlet-v2",
@@ -181208,6 +183055,18 @@
       ],
       "description": "Start a read-only session without choosing a workspace: isolated directory, locked read-only composition, approval-gated absolute-path file reads.",
       "observedAt": "2026-11-17T18:32:04+00:00"
+    },
+    {
+      "repo": "sympoies/dsh-plugins",
+      "packagePath": "packages/dsh-telegram/package.json",
+      "package": "@sympoies/dsh-telegram",
+      "version": "0.7.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Telegram channel for DeepSeek Harness — real Telegram markdown, and answer the agent's questions and approvals straight from chat",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "Synapse-ACh/dsh-subagent-cost",
@@ -183076,6 +184935,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "tdccccc/arxiv-daily",
+      "packagePath": "extensions/dsh-arxiv-daily/package.json",
+      "package": "dsh-arxiv-daily",
+      "version": "0.1.20",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Read, filter and save research papers in the DSH sidebar with arXiv Daily",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "tdcq9594/dsh-roost",
       "packagePath": "package.json",
       "package": "dsh-roost",
@@ -183378,6 +185249,18 @@
       ],
       "description": "在 QQ 私聊和群聊里直接对话 DeepSeek Harness。 Chat with DeepSeek Harness in QQ private and group chats.",
       "observedAt": "2026-11-17T18:26:55+00:00"
+    },
+    {
+      "repo": "Tencent/page-harness",
+      "packagePath": "dsh-plugin/package.json",
+      "package": "page-harness-dsh",
+      "version": "0.1.3",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DeepSeek Harness plugin: start a page-harness share preview from DSH so teammates can review a running page",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "TencentCloud/cloudq-for-dsh",
@@ -184901,6 +186784,18 @@
       ],
       "description": "Wide stats footer: removes the max-width clamp on the composer stats line (turns/steps | LLM time | TTFT | cache hit | token counts) so it spans the full composer width, centered",
       "observedAt": "2026-11-17T18:48:43+00:00"
+    },
+    {
+      "repo": "thonatos/project-v",
+      "packagePath": "packages/plugins/dsh-telegram/package.json",
+      "package": "@implementsio/dsh-telegram",
+      "version": "2.0.0-dsh.0.2.1-rc.5",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Telegram Bot API plugin for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "thooy/dsh-client-ui-theme-manager",
@@ -188421,6 +190316,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "try-works/tool-mode",
+      "packagePath": "dsh-tool-mode/packages/dsh-tool-mode/package.json",
+      "package": "@try-works/dsh-tool-mode",
+      "version": "0.5.90",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Install Desert Ant Labs on-device models as DSH tools and skills, with per-platform capability gating",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "tryanstm/dsh-chatcanvas",
       "packagePath": "package.json",
       "package": "dsh-chatcanvas",
@@ -188821,6 +190728,54 @@
       ],
       "description": "Assistant reply-body translation for the DeepSeek Harness Web UI (OpenAI-compatible channel)",
       "observedAt": "2026-11-17T19:54:29+00:00"
+    },
+    {
+      "repo": "tttnny/my-dsh",
+      "packagePath": "plugins/dsh-kimi-cu/package.json",
+      "package": "@lynn123411/dsh-kimi-cu",
+      "version": "0.3.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "接上本机 KimiCU（macOS / Windows）：把它的 mcp 服务挂成 mcp__kimi-cu__* 工具，随包带操作技能，并在插件页给出安装检测与引导。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "tttnny/my-dsh",
+      "packagePath": "plugins/dsh-native-plus/package.json",
+      "package": "@lynn123411/dsh-native-plus",
+      "version": "0.3.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "在 DSH 自带的蓝白黑之上增强对话正文的排版与装饰：六级标题的蓝阶、引用与表格、代码块、行高与段距；侧边栏工作区行显示运行标记。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "tttnny/my-dsh",
+      "packagePath": "plugins/dsh-notify-user/package.json",
+      "package": "@lynn123411/dsh-notify-user",
+      "version": "0.5.3",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "给模型一条不结束本轮就能向用户汇报进度的通道；连续多次工具调用没汇报时，插件会催它发一条。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "tttnny/my-dsh",
+      "packagePath": "plugins/dsh-subagent-judge-dispatch/package.json",
+      "package": "@lynn123411/dsh-subagent-judge-dispatch",
+      "version": "0.6.5",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "用一个判断模型从你写的任务类型清单里挑一个编号，据此改写子代理使用的模型与思考强度。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "TtTRz/dsh-a2a",
@@ -191120,6 +193075,18 @@
       "observedAt": "2026-11-17T18:51:37+00:00"
     },
     {
+      "repo": "ustinian-T/SPARK-SIGHT-plugin",
+      "packagePath": "apps/dsh/package.json",
+      "package": "sparksight-dsh",
+      "version": "0.5.4",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "SPARK SIGHT for DeepSeek Harness: research plotting inside the agent harness",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "Utmotc/dsh-balance-card",
       "packagePath": "package.json",
       "package": "@utmotc/dsh-balance-card",
@@ -192212,6 +194179,66 @@
     },
     {
       "repo": "veildawn/dsh-plugins",
+      "packagePath": "plugins/dsh-im-bot/package.json",
+      "package": "@weniatall/dsh-im-bot",
+      "version": "0.1.15",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "IM bot integration for DeepSeek Harness: personal WeChat (Tencent iLink Bot) and WeCom intelligent robot (long-connection API) with bidirectional chat and turn-completion notifications",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "veildawn/dsh-plugins",
+      "packagePath": "plugins/dsh-jev/package.json",
+      "package": "@weniatall/dsh-jev",
+      "version": "0.2.13",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "决策模型原生工具插件：70ms 极速结构化决策、意图分流与状态打分。可直接下拉选择 dsh 已配置的提供商与模型（接口地址与 API Key 由提供商配置解析），也可手写 baseUrl / API Key / 模型 ID；决策模型按 /v1/models 的 modality 字段、静态 modality 与 classifier 协议识别；默认仍为 TypeSafe Jev 官方地址，支持 /v1/systemone 与 /v1/decisions 端点。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "veildawn/dsh-plugins",
+      "packagePath": "plugins/dsh-mobile-adapter/package.json",
+      "package": "@weniatall/dsh-mobile-adapter",
+      "version": "0.1.68",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Zero-intrusion mobile drawer and responsive layout adapter for DeepSeek Harness Web",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "veildawn/dsh-plugins",
+      "packagePath": "plugins/dsh-model-roles/package.json",
+      "package": "@weniatall/dsh-model-roles",
+      "version": "0.4.40",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Automatic OMP-style model-role routing deeply integrated with DeepSeek Harness tasks, vision, plan mode, subagents, background work, and advisor review",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "veildawn/dsh-plugins",
+      "packagePath": "plugins/dsh-plugin-manager/package.json",
+      "package": "@weniatall/dsh-plugin-manager",
+      "version": "0.3.64",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Visual plugin manager for DeepSeek Harness — manage repository updates, browse 2200+ community plugins by category, one-click batch update, removal, deprecated plugins (uninstall-only), GitHub Token support to increase API rate limits, and smooth async daemon restart",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "veildawn/dsh-plugins",
       "packagePath": "plugins/dsh-repo-wiki/package.json",
       "package": "@weniatall/dsh-repo-wiki",
       "version": "0.2.10",
@@ -192221,6 +194248,30 @@
       ],
       "description": "Qoder Repo Wiki 等价的仓库知识库插件：在宿主内用 ctx.llm 跑「目录规划 → 逐页写作」两阶段流水线，把结构化 Markdown 知识库落进仓库的 <dataDir>/repowiki，沿用 Qoder 的状态机、目录模型、导出布局与 wiki_plan.yaml 语义，并提供六个 *_wiki 工具与左侧全局面板。",
       "observedAt": "2026-11-17T19:52:01+00:00"
+    },
+    {
+      "repo": "veildawn/dsh-plugins",
+      "packagePath": "plugins/dsh-system-prompt-editor/package.json",
+      "package": "@weniatall/dsh-system-prompt-editor",
+      "version": "0.3.6",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Visual editor for the DeepSeek Harness system prompt: inspect the assembled prompt, then append, replace or remove sections with persistent, per-preset rules",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "veildawn/dsh-plugins",
+      "packagePath": "plugins/dsh-theme-studio/package.json",
+      "package": "@weniatall/dsh-theme-studio",
+      "version": "0.3.8",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Theme Studio for DeepSeek Harness: switchable built-in themes (ZCode / Apple Glass / Aurora Flow), unified design tokens compatible with every dsh plugin, selectable status-bar effects, and user-customizable background, fonts and field colors",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "VeillessRose/dsh-ai-fastvideo",
@@ -193961,6 +196012,42 @@
       "observedAt": "2026-11-17T18:32:04+00:00"
     },
     {
+      "repo": "Vontean/vt-dsh-plugin",
+      "packagePath": "plugins/vt-system-prompt/package.json",
+      "package": "dsh-vt-system-prompt",
+      "version": "1.0.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "View and edit DSH's global system prompt (AGENTS.md) from Settings, with conflict-safe save, discard and reload.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Vontean/vt-dsh-plugin",
+      "packagePath": "plugins/vt-uiux-enhancer/package.json",
+      "package": "dsh-vt-uiux-enhancer",
+      "version": "1.2.9",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "VT UI/UX Enhancer: reversible UI/UX refinements for DeepSeek Harness — palette, elevation, control shapes and motion shipped as patches over DSH's own tokens, slots and styles. Disabling the plugin restores the shipped interface exactly.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "Vontean/vt-dsh-plugin",
+      "packagePath": "plugins/vt-web-chat/package.json",
+      "package": "dsh-vt-web-chat",
+      "version": "1.2.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Adds a Web Chat entry under New Session that opens chat.deepseek.com as a full main-area panel in the desktop embedded browser, remembers the last conversation, starts with the site sidebar collapsed and keeps the site's environment warning dismissed.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "vonweller/dsh-skillhub",
       "packagePath": "package.json",
       "package": "dsh-skillhub",
@@ -194413,6 +196500,18 @@
       ],
       "description": "Persist and replay dynamic Cordis plugins: export the current Session's dynamic plugins to a fixed directory, then selectively load them back after a restart — and browse/import them from a Web Settings panel.",
       "observedAt": "2026-11-17T18:51:37+00:00"
+    },
+    {
+      "repo": "wads-dev/dsh-live-voice",
+      "packagePath": "packages/live-voice/package.json",
+      "package": "dsh-live-voice",
+      "version": "0.8.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Local-first hands-free AI voice assistant plugin for DeepSeek Harness (DSH), with speech-to-text, text-to-speech, voice commands, and local speech engines.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "waenny/dsh-qoder-input",
@@ -197680,6 +199779,18 @@
       "observedAt": "2026-11-17T18:26:55+00:00"
     },
     {
+      "repo": "weijiafu14/pi2dsh",
+      "packagePath": "dsh-x/package.json",
+      "package": "dsh-work-x",
+      "version": "0.7.0-next.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Capability suite for DeepSeek Harness: Pi MCP manager, subagents, side conversations, memory, background tasks and credential-dependent image generation.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "weijianguizhou/dsh-model-provider-badge",
       "packagePath": "package.json",
       "package": "dsh-model-provider-badge",
@@ -198301,6 +200412,18 @@
       ],
       "description": "把 WorkBuddy 桌面端的模型接入 DeepSeek Harness，支持国际版与国内版，支持多账号导入导出与切换。基于 dsh-workbuddy-connect 扩展。",
       "observedAt": "2026-11-17T19:38:34+00:00"
+    },
+    {
+      "repo": "wenliang9527/quick-send",
+      "packagePath": "plugins/dsh-quick-send/package.json",
+      "package": "@wenliang9527/dsh-quick-send",
+      "version": "0.4.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "常用语快捷发送：浮层一键插到光标处（不覆盖、不自动发送），侧边栏管理页负责增删改与排序。与 ZCode quick-send 共享同一份 phrases.json 内容源，pinned/order 各侧本地。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "WenOwen/dsh-your-turn",
@@ -204582,6 +206705,18 @@
       "observedAt": "2026-11-17T17:53:20+00:00"
     },
     {
+      "repo": "wyx135230/DeepSeek-Office",
+      "packagePath": "ds-bot/package.json",
+      "package": "deepseek-office",
+      "version": "0.7.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DeepSeek Office: persistent AI teammates in a detailed, interactive 2.5D office for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "wyxbupt-22/dsh-plugin-edit-message",
       "packagePath": "package.json",
       "package": "dsh-plugin-edit-message",
@@ -205256,6 +207391,138 @@
       ],
       "description": "Deterministic documentation impact engine for DeepSeek Harness",
       "observedAt": "2026-11-17T18:51:37+00:00"
+    },
+    {
+      "repo": "xarleyn/dsh-plugins",
+      "packagePath": "plugins/dsh-answer-review-gate/package.json",
+      "package": "@yadsh/dsh-answer-review-gate",
+      "version": "0.3.10",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Independent answer review gate for DeepSeek Harness agent responses",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "xarleyn/dsh-plugins",
+      "packagePath": "plugins/dsh-documents/package.json",
+      "package": "@yadsh/dsh-documents",
+      "version": "0.9.3",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Managed document pipeline for the DeepSeek Harness: DOCX/PDF, XLSX/CSV/TSV/OpenDocument spreadsheets, Markdown and online sources as agent tools",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "xarleyn/dsh-plugins",
+      "packagePath": "plugins/dsh-domain-experts/package.json",
+      "package": "@yadsh/dsh-domain-experts",
+      "version": "0.6.5",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Configurable domain-scoped expert agents for DeepSeek Harness",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "xarleyn/dsh-plugins",
+      "packagePath": "plugins/dsh-l10n-overrides/package.json",
+      "package": "@yadsh/dsh-l10n-overrides",
+      "version": "0.1.13",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "English localization overrides for DeepSeek Harness plugins",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "xarleyn/dsh-plugins",
+      "packagePath": "plugins/dsh-llm-provider-extended/package.json",
+      "package": "@yadsh/dsh-llm-provider-extended",
+      "version": "0.4.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Full DSH provider adapter with generation controls and typed System One decisions",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "xarleyn/dsh-plugins",
+      "packagePath": "plugins/dsh-openviking-memory/package.json",
+      "package": "@yadsh/dsh-openviking-memory",
+      "version": "0.5.7",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "OpenViking memory integration for DeepSeek Harness with configurable automatic context injection; derived from the official OpenViking DSH plugin.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "xarleyn/dsh-plugins",
+      "packagePath": "plugins/dsh-plugin-log-ui/package.json",
+      "package": "@yadsh/dsh-plugin-log-ui",
+      "version": "0.6.5",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH settings UI for shared plugin logging levels and file format",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "xarleyn/dsh-plugins",
+      "packagePath": "plugins/dsh-qa-integrations/package.json",
+      "package": "@yadsh/dsh-qa-integrations",
+      "version": "0.11.4",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Principal-scoped, encrypted user integrations for DSH QA Surface",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "xarleyn/dsh-plugins",
+      "packagePath": "plugins/dsh-qa-surface/package.json",
+      "package": "@yadsh/dsh-qa-surface",
+      "version": "0.23.5",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "A focused end-user QA surface backed by native DeepSeek Harness sessions",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "xarleyn/dsh-plugins",
+      "packagePath": "plugins/dsh-session-audit/package.json",
+      "package": "@yadsh/dsh-session-audit",
+      "version": "0.2.7",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Session audit registry and viewer for DeepSeek Harness: an Audit tab in every session, driven by audit artifacts on disk",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "xarleyn/dsh-plugins",
+      "packagePath": "plugins/dsh-web-fetch-authenticated/package.json",
+      "package": "@yadsh/dsh-web-fetch-authenticated",
+      "version": "0.7.6",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Authenticated, policy-gated WebFetchProvider for the DeepSeek Harness web capability seam (ctx.web)",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "xarleyn/dsh-sleev",
@@ -205957,6 +208224,18 @@
       ],
       "description": "DSH web plugin: token usage stats in the sidebar footer — today badge opening a tabbed panel (overview, daily trend + heatmap, per-model and per-session breakdowns with drill-down) plus DeepSeek / OpenCode Go / Z.ai quota monitoring; per-session TTFT/ATPS readings in the composer",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "xfy2412/dsh-session-cloudsync",
+      "packagePath": "packages/plugin/package.json",
+      "package": "dsh-session-cloudsync",
+      "version": "0.1.5",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "把 DSH 会话同步到你自部署的服务器：端到端加密、按会话增量、多设备共用。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "xfy2412/dsh-time-reminder",
@@ -207934,6 +210213,42 @@
       "observedAt": "2026-11-17T18:51:37+00:00"
     },
     {
+      "repo": "xiaoxiao44443/dfy-dsh-plugins",
+      "packagePath": "plugins/appearance/package.json",
+      "package": "@dfy-plugins/dsh-appearance",
+      "version": "0.1.8",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DFY DSH 对话外观设置：调节回复行距与过程行距，并扩展本地文件的打开方式。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "xiaoxiao44443/dfy-dsh-plugins",
+      "packagePath": "plugins/image-generation/package.json",
+      "package": "@dfy-plugins/dsh-image-generation",
+      "version": "0.1.4",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "为 DeepSeek Harness 提供独立的图像生成与编辑 Skill、工具和设置界面。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "xiaoxiao44443/dfy-dsh-plugins",
+      "packagePath": "plugins/visualize/package.json",
+      "package": "@dfy-plugins/dsh-visualize",
+      "version": "0.1.5",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "在 DeepSeek Harness 对话中以会话级 artifact 安全展示交互式 HTML 可视化。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "xiaoxiaohai/dsh-remote",
       "packagePath": "package.json",
       "package": "@musitoolbox/dsh-remote",
@@ -208495,6 +210810,18 @@
       ],
       "description": "opencode 任务完成提示音：一轮完成/提问/出错时播放原始 mp3 音效，零外部依赖",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "xiayh0107/hoploom",
+      "packagePath": "dsh-hoploom/package.json",
+      "package": "dsh-hoploom",
+      "version": "0.3.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Hoploom for DeepSeek Harness: local SSH inventory, host context and explicitly enabled remote operations, with credentials kept in the OS vault.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "xiayifan1024/dsh-pdf-math-reader",
@@ -210376,6 +212703,18 @@
       "observedAt": "2026-11-17T18:51:37+00:00"
     },
     {
+      "repo": "XJungit/omdp",
+      "packagePath": "dsh-connector/package.json",
+      "package": "@omdp/dsh-connector",
+      "version": "0.3.11",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Unified DeepSeek Harness connector: edit MCP servers (cordis.patch.yml), user skills (~/.dsh/skills) and browse the ModelScope MCP/Skills marketplaces from one Web UI settings page.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "xjungit/omdp",
       "packagePath": "package.json",
       "package": "@omdp/dsh-connector",
@@ -212197,6 +214536,18 @@
     },
     {
       "repo": "xwamt/at-terminal-dsh",
+      "packagePath": "dsh/package.json",
+      "package": "@at-series/dsh-at-terminal",
+      "version": "0.3.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "AT Terminal for DeepSeek Harness: SSH/SFTP assets and remote SSH terminals.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "xwamt/at-terminal-dsh",
       "packagePath": "package.json",
       "package": "@at-series/dsh-at-terminal",
       "version": "0.3.2",
@@ -213469,6 +215820,30 @@
       ],
       "description": "NAZUNA (彻夜之歌) themed wallpaper engine for the DSH web GUI: Wallpaper Engine / custom Video-Web-Scene wallpapers behind the chat with iOS-style liquid glass — 七草荠 mascot pull-cord, moonlight-violet accent, deep-night glass. Based on elysia395/dsh-wallpaper-engine v0.7.1.",
       "observedAt": "2026-11-17T18:51:37+00:00"
+    },
+    {
+      "repo": "yangda611/dsh-scriptor-full",
+      "packagePath": "packages/bundle/package.json",
+      "package": "@yangda611/dsh-scriptor",
+      "version": "8.4.10",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Webnovel Writer：DSH 长篇网文写作工作台（含检索增强：嵌入、场景识别与重排，默认停用）",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "yangda611/dsh-scriptor-full",
+      "packagePath": "packages/embedding-provider/package.json",
+      "package": "@yangda611/dsh-scriptor-retrieval",
+      "version": "8.4.10",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Scriptor 检索增强：嵌入、场景识别与重排（已并入主包 @yangda611/dsh-scriptor；新用户直接装主包，不要与主包同装本包）",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "yangdcm/dsh-expert-team",
@@ -215216,6 +217591,18 @@
       "observedAt": "2026-11-17T18:51:37+00:00"
     },
     {
+      "repo": "yellow-yel/dsh-fatfish",
+      "packagePath": "dsh-fatfish/package.json",
+      "package": "dsh-fatfish",
+      "version": "0.5.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "给 DSH 的 agent 套上大肥鱼人格：会聊天、会记事、会查毒。人设/时段/情绪/红线，本地记忆自动抽取，恶意进程/启动项/文件哈希检查，病毒库可在线更新，零依赖不上传。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "yellow630914/dsh-agent-rp",
       "packagePath": "package.json",
       "package": "@hewzhew/dsh-agent-rp",
@@ -216767,6 +219154,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "YingkeSu/dsh-lab",
+      "packagePath": "plugins/dsh-remote-pure/package.json",
+      "package": "dsh-remote-pure",
+      "version": "0.14.0",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Control a remote DeepSeek Harness project over SSH: remote runtime, local panel, on-demand history.",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "Yingmoon0715/rightbar-driver",
       "packagePath": "package.json",
       "package": "rightbar-driver",
@@ -216925,6 +219324,18 @@
       ],
       "description": "momolulu, a gentle coding companion with scenic backgrounds, live session activity, focus timing and wellbeing nudges.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "yinqiang/dsh-plugins",
+      "packagePath": "packages/dsh-theme-picker/package.json",
+      "package": "dsh-theme-picker",
+      "version": "0.2.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Install many theme packs, switch between them instantly, no reload",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "yinque91/dsh-live-narrator",
@@ -219470,6 +221881,18 @@
       ],
       "description": "Sync active Wallpaper Engine wallpapers(image/video/scence/app)to DeepSeek Harness Web UI as a customizable dynamic background.",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "YrracOwl/dsh-hmos-sidebar",
+      "packagePath": "packages/dsh-hmos-sidebar/package.json",
+      "package": "dsh-hmos-sidebar",
+      "version": "0.5.2",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "EN: Windows-only HarmonyOS workbench for DeepSeek Harness with 41 dcli tools and one native agent preset. ZH: 面向 DeepSeek Harness 的 Windows 原生鸿蒙开发工作台，包含 41 个 dcli 工具与一个原生鸿蒙预设。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "yrracowl/dsh-mcp-pill",
@@ -224431,6 +226854,18 @@
       "observedAt": "2026-11-17T18:35:01+00:00"
     },
     {
+      "repo": "ZASENJC/dsh-plugins-store",
+      "packagePath": "packages/dsh-plugins-store/package.json",
+      "package": "dsh-plugins-store",
+      "version": "0.1.4",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "Native DSH browser integration for the DSH Plugin Store",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "ZaVang/dsh-diorama",
       "packagePath": "package.json",
       "package": "dsh-diorama",
@@ -225785,6 +228220,18 @@
       "observedAt": "2026-11-17T18:03:40+00:00"
     },
     {
+      "repo": "zenstory-ai/oh-story-dsh",
+      "packagePath": "packages/dsh-plugin/package.json",
+      "package": "@oh-story/dsh",
+      "version": "0.1.27",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "A DSH plugin for fiction, short-drama, interactive-game, and video-recap production",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
       "repo": "zenvertao/dsh-inline-comments",
       "packagePath": "package.json",
       "package": "dsh-inline-comments",
@@ -226235,6 +228682,18 @@
       ],
       "description": "ICPC competitive programming training tools for DeepSeek Harness — sync, analysis, plans, reviews, templates",
       "observedAt": "2026-11-17T19:15:15+00:00"
+    },
+    {
+      "repo": "zfdx123/dsh-atelier",
+      "packagePath": "packages/dsh-hooks-ordering/package.json",
+      "package": "@zfdx123/dsh-hooks-ordering",
+      "version": "1.0.18",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "钩子排序：为 Cordis 的 waterfall / serial 钩子提供确定性的 before/after 排序，让互相独立的插件能声明彼此的先后关系（拓扑排序、环检测、可配置控制集与设置页）。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "zfqxuz/dsh-qq-onebot-bridge",
@@ -229230,6 +231689,18 @@
     },
     {
       "repo": "zhiqiangme/dsh-plugins",
+      "packagePath": "dsh-autostart-workbuddy/package.json",
+      "package": "@zhiqiangme/dsh-autostart-workbuddy",
+      "version": "26.11.16",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "DSH 启动时默认拉起 WorkBuddy2API Panel（misakano7545，127.0.0.1:7863），可切换 Hub；幂等、静默、退出时只停自己拉起的进程。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
+    },
+    {
+      "repo": "zhiqiangme/dsh-plugins",
       "packagePath": "dsh-magpie/package.json",
       "package": "@zhiqiangme/dsh-magpie",
       "version": "26.11.16",
@@ -230791,6 +233262,18 @@
       ],
       "description": "为 DeepSeek Harness 接入 AMD Radeon Cloud，完整支持模型思考（reasoning）功能。provider 定义由插件自带的补丁层声明，交由 DSH 自带的 dsh-llm-pi-ai 承载，不修改 DSH 本体、不写用户 profile，也不自研适配器。",
       "observedAt": "2026-11-17T18:03:40+00:00"
+    },
+    {
+      "repo": "zi-O1/dsh-pet-to-family",
+      "packagePath": "dsh-pet/package.json",
+      "package": "dsh-pet-to-family",
+      "version": "0.7.1",
+      "ref": "HEAD",
+      "sources": [
+        "npm package version repository.directory"
+      ],
+      "description": "吃白饭的蓝色大肥鱼，赖在 DeepSeek Harness 里不走了。平时爱玩魔方、爱吃各种零食、偶尔打个盹，闲不住就在桌面上溜达两圈，被你拖来甩去也照旧赖着；你忙起来它跟着忙前忙后，也会帮你打理余额钱包，闲下来爱碎碎念，还乐意陪你唠两句。",
+      "observedAt": "2026-11-17T20:08:08+00:00"
     },
     {
       "repo": "zi-O1/dsh-pet-to-family",
