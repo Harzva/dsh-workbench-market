@@ -11,6 +11,15 @@ from review_web_candidates import key, TASK_HINT
 
 PANEL = re.compile(r"主面板|主区域|右侧栏|侧边栏|会话旁|独立面板|right sidebar|main panel|full-screen|dock(?:ed|ing)", re.I)
 ACTION = re.compile(r"新建|编辑|保存|导出|审查|筛选|恢复|管理|预览|\b(?:create|edit|save|export|review|filter|restore|manage|preview)\b", re.I)
+DOSSIER_STATUS_ORDER = {"review": 2, "manifest_missing": 1, "manifest_changed": 1, "fetch_error": 0}
+
+
+def dossier_order(row):
+    return (
+        row.get("observedAt") or "",
+        DOSSIER_STATUS_ORDER.get(row.get("status"), -1),
+        bool((row.get("clientEvidence") or {}).get("hooks")),
+    )
 
 
 def read_dossiers(paths):
@@ -26,9 +35,7 @@ def read_dossiers(paths):
                     raise
                 identity = key(row)
                 old = dossiers.get(identity, {})
-                quality = row.get("observedAt") or "", bool(row.get("clientEvidence"))
-                previous_quality = old.get("observedAt") or "", bool(old.get("clientEvidence"))
-                if quality >= previous_quality:
+                if dossier_order(row) >= dossier_order(old):
                     dossiers[identity] = row
     return dossiers
 
@@ -55,8 +62,10 @@ def build_queue(candidates, published, dossiers):
             counts["published"] += 1
             continue
         dossier = dossiers.get(identity, {})
-        status = dossier.get("status", "unread")
-        if dossier and (candidate.get("observedAt") or "") > (dossier.get("observedAt") or ""):
+        status = dossier.get("status") if dossier else "unread"
+        if dossier and status not in DOSSIER_STATUS_ORDER:
+            status = "invalid_dossier"
+        elif dossier and (candidate.get("observedAt") or "") > (dossier.get("observedAt") or ""):
             status = "dossier_outdated"
         elif status == "review":
             status = "with_client_hint" if (dossier.get("clientEvidence") or {}).get("hooks") else "with_dossier"
@@ -66,7 +75,7 @@ def build_queue(candidates, published, dossiers):
             "packagePath": candidate["packagePath"],
             "package": candidate.get("package"),
             "description": dossier.get("description") or candidate.get("description") or "",
-            "priority": priority(candidate, dossier),
+            "priority": priority(candidate, dossier if status in {"with_client_hint", "with_dossier"} else {}),
             "status": status,
         })
     queue.sort(key=lambda row: (-row["priority"], key(row)))
