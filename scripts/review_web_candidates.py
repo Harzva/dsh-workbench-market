@@ -1,4 +1,4 @@
-"""Collect README excerpts and client entry points for manual GitHub workbench review."""
+"""Collect workflow and optional client source hints for manual GitHub workbench review."""
 import argparse
 import concurrent.futures
 import json
@@ -17,6 +17,13 @@ HOST_HINT = re.compile(
     r"DeepSeek Harness|DSH Web|主界面|主面板|侧[栏欄]|侧边[栏欄]|面板|"
     r"sidebar|workbench|main panel|canvas|workspace|工作[台臺]|工作区",
     re.I,
+)
+CLIENT_HOOK = re.compile(
+    r"""\b(?:sidebar\.panellist|sidebar\.footer\.action|sidebar\.right\.pane\.tab|"""
+    r"""sidebar\.right\.tab\.document|shell\.overlay|conversation\.view|conversation\.input\.dock|settings\.plugins\.tab)\b|"""
+    r"""\b(?:sidebarRightTabs|desktopWorkbenches|documentPreviews)\s*(?:\?\.|\.)\s*register\b|"""
+    r"""\bbetterSidebar\s*(?:\?\.|\.)\s*registerTab\b|"""
+    r"""(?:\b(?:register|inject)\s*\(\s*|\bname\s*:\s*)['"]main['"]"""
 )
 
 
@@ -78,6 +85,44 @@ def collect(row):
         return {**record, "status": "fetch_error", "error": str(error)}
 
 
+def collect_client(record):
+    if record["status"] != "review":
+        return record
+    repo, ref = record["repo"], record["ref"]
+    parent = record["packagePath"].rpartition("/")[0]
+    fallback = (
+        "src/client.ts", "src/client.tsx", "src/client.js", "src/client/index.ts",
+        "src/client/index.tsx", "src/client/index.js", "src/client-entry.js",
+        "client.js", "client.ts",
+    )
+    candidate_paths = dict.fromkeys([
+        record["client"], *(f"{parent}/{path}" if parent else path for path in fallback),
+    ])
+    inspected = []
+    errors = []
+    for path in candidate_paths:
+        try:
+            source = read_file(repo, ref, path, limit=3_000_000)
+        except (OSError, UnicodeError, ValueError) as error:
+            errors.append({"path": path, "error": str(error)})
+            continue
+        if source is None:
+            continue
+        inspected.append(path)
+        hints = {}
+        for number, line in enumerate(source.splitlines(), 1):
+            for match in CLIENT_HOOK.finditer(line):
+                hints.setdefault(match.group(), number)
+        if hints:
+            return {**record, "clientEvidence": {"path": path, "hooks": hints, "errors": errors}}
+    return {**record, "clientEvidence": {"inspected": inspected, "errors": errors}}
+
+
+def review(row, previous, include_client):
+    record = previous or collect(row)
+    return collect_client(record) if include_client else record
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("reports", nargs="*", type=Path, default=[ROOT / "discovery.json"])
@@ -85,6 +130,8 @@ def main():
     parser.add_argument("--limit", type=int, default=250, help="Maximum new candidate dossiers per run.")
     parser.add_argument("--workers", type=int, default=10)
     parser.add_argument("--retry-errors", action="store_true")
+    parser.add_argument("--client-evidence", action="store_true",
+                        help="Check client code for known host hooks, reusing saved README excerpts.")
     args = parser.parse_args()
     if args.limit < 1 or not 1 <= args.workers <= 20:
         parser.error("positive limit and 1–20 workers required")
@@ -108,16 +155,22 @@ def main():
             old = rows.get(ident, {})
             if not old or (row.get("observedAt") or "") >= (old.get("observedAt") or ""):
                 rows[ident] = row
-    pending = [row for ident, row in rows.items()
-               if ident not in reviewed and (
-                   ident not in processed or
-                   (row.get("observedAt") or "") > (processed[ident].get("observedAt") or "")
-               )]
-    pending.sort(key=lambda row: (not priority(row), key(row)))
+    pending = []
+    for ident, row in rows.items():
+        if ident in reviewed:
+            continue
+        old = processed.get(ident)
+        if not old or (row.get("observedAt") or "") > (old.get("observedAt") or ""):
+            pending.append((row, None))
+        elif args.client_evidence and old["status"] == "review":
+            evidence = old.get("clientEvidence")
+            if evidence is None or (args.retry_errors and evidence.get("errors")):
+                pending.append((row, old))
+    pending.sort(key=lambda entry: (not priority(entry[0]), key(entry[0])))
     batch = pending[:args.limit]
     print(f"Reading {len(batch)}/{len(pending)} unread Web candidates", flush=True)
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool, args.output.open("a") as output:
-        futures = [pool.submit(collect, row) for row in batch]
+        futures = [pool.submit(review, row, old, args.client_evidence) for row, old in batch]
         for count, future in enumerate(concurrent.futures.as_completed(futures), 1):
             row = future.result()
             output.write(json.dumps(row, ensure_ascii=False) + "\n")

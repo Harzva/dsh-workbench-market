@@ -36,6 +36,8 @@ python3 scripts/update_catalog.py
 python3 scripts/review_web_candidates.py --output .scan/web-dossiers.jsonl
 ```
 
+加 `--client-evidence` 可复用已有的 README 记录，并扫描客户端导出与常见源码入口，记录宿主插槽和页签注册线索。源码片段仅用于缩小人工复核范围，最终仍按固定提交核实任务界面。
+
 也可以扫描 [DeepSeek Harness 插件展示区](https://github.com/deepseek-ai/deepseek-harness/discussions/categories/show-your-plugins)。使用 GitHub GraphQL 导出该分类讨论的 `number` 和 `body`，每行一个 JSON 对象，再执行：
 
 ```sh
