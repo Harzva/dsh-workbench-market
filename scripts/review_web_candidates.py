@@ -150,7 +150,10 @@ def main():
 
     rows = {}
     for report in args.reports:
-        for row in json.loads(report.read_text()).get("webCandidates", []):
+        snapshot = json.loads(report.read_text())
+        for row in snapshot.get("webCandidates", []):
+            if not row.get("observedAt") and snapshot.get("checkedAt"):
+                row = {**row, "observedAt": snapshot["checkedAt"]}
             ident = key(row)
             old = rows.get(ident, {})
             if not old or (row.get("observedAt") or "") >= (old.get("observedAt") or ""):

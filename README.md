@@ -51,7 +51,7 @@ python3 scripts/merge_discoveries.py discovery.json .scan/discussions.json --out
 
 公开 npm registry 的 `dsh-plugin`、`deepseek-harness` 和 `dsh-desktop` 关键词搜索也用于反查 GitHub 源仓库。搜索页出现重复时，按实际返回的唯一包统计。根清单扫描之外，可从 npm 版本元数据的 `repository.directory` 取出子包路径，再到 GitHub 核实对应清单、界面挂载和任务流程。[npm Registry 搜索接口](https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md) · [npm repository 字段](https://docs.npmjs.com/cli/v11/configuring-npm/package-json#repository)
 
-DSH Desk、DSH Open、DPHarness 和 DSHPlugin 的公开索引也参与发现。下载索引后，按 GitHub 仓库与包清单路径去重，再补扫此前未覆盖的路径。[DSH Desk 索引](https://plugin.dshdesk.com/data/plugin-index.json) · [DSH Open 索引](https://dshopen.org/index.json) · [DPHarness 索引](https://dpharness.com/market/index.json) · [DSHPlugin 数据](https://github.com/tjsdyy/dshplugin/blob/027ea85e0c717a1256c9d9412bce7667a9aa70c3/app/plugins.json)
+DSH Desk、DSH Open、DPHarness、DSHPlugin 与 DSHarness 的公开目录也参与发现。获取目录后，按 GitHub 仓库与包清单路径去重，再补扫此前未覆盖的路径。[DSH Desk 索引](https://plugin.dshdesk.com/data/plugin-index.json) · [DSH Open 索引](https://dshopen.org/index.json) · [DPHarness 索引](https://dpharness.com/market/index.json) · [DSHPlugin 数据](https://github.com/tjsdyy/dshplugin/blob/027ea85e0c717a1256c9d9412bce7667a9aa70c3/app/plugins.json) · [DSHarness 目录](https://dsharness.org/plugins)
 
 如果要从客户端接口反查名称中看不出用途的项目，可单独执行 `python3 scripts/discover.py --code-query 'sidebarRightTabs.register in:file language:TypeScript' --output .scan/right-sidebar.json`。扫描会从命中的源码路径向上查找插件清单，并在报告里记录搜索读到的条数。
 
