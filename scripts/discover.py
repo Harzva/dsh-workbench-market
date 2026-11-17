@@ -88,6 +88,14 @@ def clean_path(value):
     return value if re.fullmatch(r"[\w.@+ /-]+", value) else None
 
 
+def bundle_has_patch(bundle):
+    if not isinstance(bundle, dict):
+        return False
+    patch = bundle.get("patch")
+    paths = patch if isinstance(patch, list) else [patch]
+    return bool(paths) and all(clean_path(path) for path in paths)
+
+
 def manifest_contract(package):
     dsh = package.get("dsh")
     if not isinstance(dsh, dict):
@@ -99,12 +107,12 @@ def manifest_contract(package):
     entry = exports.get("./client")
     if isinstance(entry, dict):
         entry = entry.get("default") or entry.get("import")
-    entry, patch = clean_path(entry), clean_path(bundle.get("patch"))
-    if not isinstance(inject, list) or SERVICE not in inject or not entry or not patch:
+    entry = clean_path(entry)
+    if not isinstance(inject, list) or SERVICE not in inject or not entry or not bundle_has_patch(bundle):
         return None
     if not all(isinstance(package.get(key), str) and package[key] for key in ("name", "version")):
         return None
-    return entry, patch
+    return entry
 
 
 def registration_line(source):
@@ -305,7 +313,7 @@ def web_signal(package):
     if not isinstance(dsh, dict):
         return False
     client, bundle = dsh.get("client"), dsh.get("bundle")
-    if not isinstance(client, dict) or not isinstance(bundle, dict) or not clean_path(bundle.get("patch")):
+    if not isinstance(client, dict) or not bundle_has_patch(bundle):
         return False
     description = " ".join(str(package.get(field) or "") for field in ("name", "description", "keywords"))
     inject = client.get("inject")
@@ -340,7 +348,7 @@ def inspect(candidate):
             contract = manifest_contract(package) if package else None
             if not contract:
                 continue
-            entry, patch = contract
+            entry = contract
             parent, _, _ = path.rpartition("/")
             base = parent + "/" if parent else ""
             files = list(dict.fromkeys([base + entry, *sorted(hinted_files), *(
