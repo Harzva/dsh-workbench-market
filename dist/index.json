@@ -4325,6 +4325,87 @@
       "packagePath": "package.json",
       "source": "web",
       "href": "https://github.com/Natsubrei/dsh-comfyui-panel"
+    },
+    {
+      "name": "SuperTerminal 终端工作台",
+      "description": "在 DSH 打开多分栏终端，切换本地 Agent，会话旁可查看命令相关建议。",
+      "package": "@harzva/dsh-terminal",
+      "version": "0.1.0-alpha.17",
+      "manifest": "https://github.com/Harzva/dsh-superterminal/blob/1a313755ed1cd8e8c0d678b3e6ff939ee2e3d1d3/package.json",
+      "registration": "https://github.com/Harzva/dsh-superterminal/blob/1a313755ed1cd8e8c0d678b3e6ff939ee2e3d1d3/src/client-plugin.mjs#L232-L253",
+      "workflow": "https://github.com/Harzva/dsh-superterminal/blob/1a313755ed1cd8e8c0d678b3e6ff939ee2e3d1d3/README.md#L27-L45",
+      "repo": "harzva/dsh-superterminal",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/Harzva/dsh-superterminal",
+      "preview": {
+        "url": "https://raw.githubusercontent.com/Harzva/dsh-superterminal/1a313755ed1cd8e8c0d678b3e6ff939ee2e3d1d3/site/assets/screenshots/workspace-blue.jpg",
+        "width": 1280,
+        "height": 720,
+        "alt": "SuperTerminal 多分栏工作台界面"
+      }
+    },
+    {
+      "name": "PR Guardian 审阅工作台",
+      "description": "在侧栏打开自己提交的 PR 反馈，筛选反馈并跟踪处理进度。",
+      "package": "dsh-pr-guardian",
+      "version": "0.2.0-alpha.1",
+      "manifest": "https://github.com/Harzva/dsh-pr-guardian/blob/ddb4c5957ca9e6f56a373b20adc2082def9ec872/package.json",
+      "registration": "https://github.com/Harzva/dsh-pr-guardian/blob/ddb4c5957ca9e6f56a373b20adc2082def9ec872/src/client/index.tsx#L42-L61",
+      "workflow": "https://github.com/Harzva/dsh-pr-guardian/blob/ddb4c5957ca9e6f56a373b20adc2082def9ec872/README.md#L3-L17",
+      "repo": "harzva/dsh-pr-guardian",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/Harzva/dsh-pr-guardian"
+    },
+    {
+      "name": "GroupX 协作工作台",
+      "description": "从 GroupX 面板打开协作室，对照成员、消息与时间线并发送消息。",
+      "package": "@harness-flow/dsh-groupx",
+      "version": "0.1.0-alpha.0",
+      "manifest": "https://github.com/Harzva/dsh-groupx/blob/667a5dd095cade3074ddf9db501b848393c3487c/package.json",
+      "registration": "https://github.com/Harzva/dsh-groupx/blob/667a5dd095cade3074ddf9db501b848393c3487c/src/client.tsx#L26-L64",
+      "workflow": "https://github.com/Harzva/dsh-groupx/blob/667a5dd095cade3074ddf9db501b848393c3487c/README.md#L18-L45",
+      "repo": "harzva/dsh-groupx",
+      "category": "效率",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/Harzva/dsh-groupx"
+    },
+    {
+      "name": "Supervisor 会话督导",
+      "description": "在会话内打开监督面板，生成、查看并采纳建议，必要时授权接管。",
+      "package": "dsh-supervisor",
+      "version": "0.2.7",
+      "manifest": "https://github.com/Harzva/dsh-supervisor/blob/08939da68574a8e5c3b7558fd73e5de223cffa3d/package.json",
+      "registration": "https://github.com/Harzva/dsh-supervisor/blob/08939da68574a8e5c3b7558fd73e5de223cffa3d/src/client.js#L898-L949",
+      "workflow": "https://github.com/Harzva/dsh-supervisor/blob/08939da68574a8e5c3b7558fd73e5de223cffa3d/README.md#L74-L88",
+      "repo": "harzva/dsh-supervisor",
+      "category": "效率",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/Harzva/dsh-supervisor"
+    },
+    {
+      "name": "UVM Python 环境工作台",
+      "description": "创建和管理 Python 环境，预览后应用依赖同步，在面板运行命令并查看输出。",
+      "package": "@harness-flow/dsh-uvm",
+      "version": "0.1.0-alpha.1",
+      "manifest": "https://github.com/Harzva/dsh-uvm/blob/f5bab7a5e2bb2a530e3b7dc1a89378dedbe0183f/package.json",
+      "registration": "https://github.com/Harzva/dsh-uvm/blob/f5bab7a5e2bb2a530e3b7dc1a89378dedbe0183f/src/client.tsx#L345-L432",
+      "workflow": "https://github.com/Harzva/dsh-uvm/blob/f5bab7a5e2bb2a530e3b7dc1a89378dedbe0183f/README.md#L18-L31",
+      "repo": "harzva/dsh-uvm",
+      "category": "开发",
+      "host": "web",
+      "packagePath": "package.json",
+      "source": "web",
+      "href": "https://github.com/Harzva/dsh-uvm"
     }
   ]
 }
