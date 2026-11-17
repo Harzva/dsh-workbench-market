@@ -195,6 +195,32 @@ def repo_id(url):
     return None
 
 
+def discussion_export(path):
+    """Read project links from the official plugin showcase, including linked monorepo packages."""
+    candidates = {}
+    discussions = set()
+    for line in path.read_text().splitlines():
+        row = json.loads(line)
+        number = row["number"]
+        if number in discussions:
+            continue
+        discussions.add(number)
+        for url in re.findall(r"https?://(?:www\.)?github\.com/[\w./@+%-]+", row["body"] or "", re.ASCII):
+            repo = repo_id(url.rstrip("./"))
+            if not repo or repo.lower() == "deepseek-ai/deepseek-harness":
+                continue
+            entry = candidates.setdefault(repo.lower(), {
+                "repo": repo, "ref": "HEAD", "sources": set(), "paths": {"package.json": set()},
+            })
+            entry["sources"].add(f"DeepSeek Harness discussion #{number}")
+            parts = urllib.parse.unquote(urllib.parse.urlsplit(url).path).strip("/").split("/", 4)
+            if len(parts) == 5 and parts[2] in ("tree", "blob"):
+                path_hint = parts[4] if parts[2] == "blob" else parts[4] + "/package.json"
+                if path_hint.endswith("/package.json") and clean_path(path_hint) == path_hint:
+                    entry["paths"].setdefault(path_hint, set())
+    return candidates, len(discussions)
+
+
 def pages(kind, query, results, errors, per_page=100, first=None):
     fetched = 0
     try:
@@ -442,11 +468,34 @@ def main():
                        help="Check only subpackage paths declared in the general plugin index.")
     scope.add_argument("--plugin-index-only", action="store_true",
                        help="Check the general plugin index with no repository or code search.")
+    scope.add_argument("--discussion-export", type=Path,
+                       help="Inspect GitHub projects linked from an official plugin showcase JSONL export.")
+    scope.add_argument("--repository-export", type=Path,
+                       help="Inspect a JSON export of public repositories from external indexes.")
     args = parser.parse_args()
     if not 1 <= args.workers <= 24:
         parser.error("--workers must be between 1 and 24")
     existing = json.loads((ROOT / "community.json").read_text())
-    if args.only_existing:
+    if args.repository_export:
+        exported = json.loads(args.repository_export.read_text())
+        candidates = {}
+        for repo, sources in exported["repositories"].items():
+            if (not REPO.fullmatch(repo) or not isinstance(sources, list) or not sources
+                    or not all(isinstance(source, str) and source for source in sources)):
+                parser.error(f"Invalid repository export record: {repo}")
+            candidate = candidates.setdefault(repo.lower(), {
+                "repo": repo, "ref": "HEAD", "sources": set(), "paths": {"package.json": set()},
+            })
+            candidate["sources"].update(sources)
+        if not candidates:
+            parser.error("--repository-export is empty")
+        searches, indices, errors = {}, exported["indexes"], []
+    elif args.discussion_export:
+        candidates, discussion_count = discussion_export(args.discussion_export)
+        if not discussion_count:
+            parser.error("--discussion-export is empty")
+        searches, indices, errors = {}, {"DeepSeek Harness plugin discussions": discussion_count}, []
+    elif args.only_existing:
         candidates = {
             row["repo"].lower(): {
                 "repo": row["repo"], "ref": "HEAD", "sources": {"previous catalog"},

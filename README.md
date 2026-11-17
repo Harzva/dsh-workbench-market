@@ -36,4 +36,13 @@ python3 scripts/update_catalog.py
 python3 scripts/review_web_candidates.py --output .scan/web-dossiers.jsonl
 ```
 
+也可以扫描 [DeepSeek Harness 插件展示区](https://github.com/deepseek-ai/deepseek-harness/discussions/categories/show-your-plugins)。使用 GitHub GraphQL 导出该分类讨论的 `number` 和 `body`，每行一个 JSON 对象，再执行：
+
+```sh
+python3 scripts/discover.py --discussion-export .scan/plugin-discussions.jsonl --output .scan/discussions.json
+python3 scripts/merge_discoveries.py discovery.json .scan/discussions.json --output discovery.json
+```
+
+外部索引列出的 GitHub 仓库也可以交给 `discover.py --repository-export` 核查。JSON 的 `indexes` 记录各索引源和条数，`repositories` 把 `owner/repo` 映射到来源列表。索引条目只提供发现线索，仍按同一套源码标准核查。
+
 发现流程只读 GitHub 的公开搜索、上游索引与源码，不安装插件。GitHub 搜索有索引延迟、结果上限和速率限制。REST 代码搜索主要覆盖默认分支和小于 384 KB 的文件，公开 fork 也有额外限制。同一仓库可在多轮出现，因此报告保留各轮的计数。[GitHub 代码搜索说明](https://docs.github.com/en/search-github/searching-on-github/searching-code#considerations-for-code-search)分类与版本证据可按 [收录标准](docs/workbench-definition.md) 复核。

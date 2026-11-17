@@ -4,13 +4,14 @@
 
 ## DeepSeek 官方提供什么
 
-在核对的 DeepSeek Harness 上游版本 `39163dd`，Workspace 是按工作目录组织 Session 的对象。Web 宿主支持全局业务面板与会话级右栏扩展，官方 Electron 桌面壳也运行该 Web 宿主。同一上游还有一个通用插件发现页，使用 format-1 插件索引。本目录把这些作为宿主能力依据，在该版本未发现 DeepSeek 官方专用的工作台注册接口或工作台市场。
+在核对的 DeepSeek Harness 上游版本 `ca33fd6`，Workspace 是按工作目录组织 Session 的对象。Web 宿主支持全局业务面板与会话级右栏扩展，官方 Electron 桌面壳也运行该 Web 宿主。上游的通用插件发现页支持自定义索引。以上是本目录采用的宿主能力依据。在该版本未发现 DeepSeek 官方专用的工作台注册接口或工作台市场。
 
-- [Workspace 与 Session](https://github.com/deepseek-ai/deepseek-harness/blob/39163dd30f703a79079e2d2446545cff3c453738/packages/client/ui-workspace/README.md#L12-L14)
-- [全局业务面板 main slot](https://github.com/deepseek-ai/deepseek-harness/blob/39163dd30f703a79079e2d2446545cff3c453738/packages/client/ui-layout/README.md#L34-L38)
-- [会话右栏注册接口](https://github.com/deepseek-ai/deepseek-harness/blob/39163dd30f703a79079e2d2446545cff3c453738/packages/client/ui-sidebar-right/README.md#L81-L88)
-- [官方 Electron 桌面壳](https://github.com/deepseek-ai/deepseek-harness/blob/39163dd30f703a79079e2d2446545cff3c453738/apps/desktop/README.md#L38-L44)
-- [通用插件发布协议](https://github.com/deepseek-ai/deepseek-harness/blob/39163dd30f703a79079e2d2446545cff3c453738/docs/user/develop/basic/publish.md#L11-L16)
+- [Workspace 与 Session](https://github.com/deepseek-ai/deepseek-harness/blob/ca33fd6843b205e279c7ccb6cb73a472c78f5760/packages/client/ui-workspace/README.md#L44-L49)
+- [全局业务面板 main slot](https://github.com/deepseek-ai/deepseek-harness/blob/ca33fd6843b205e279c7ccb6cb73a472c78f5760/packages/client/ui-layout/README.md#L34-L38)
+- [会话右栏注册接口](https://github.com/deepseek-ai/deepseek-harness/blob/ca33fd6843b205e279c7ccb6cb73a472c78f5760/packages/client/ui-sidebar-right/README.md#L81-L88)
+- [官方 Electron 桌面壳](https://github.com/deepseek-ai/deepseek-harness/blob/ca33fd6843b205e279c7ccb6cb73a472c78f5760/apps/desktop/README.md#L38-L44)
+- [通用插件发现页](https://github.com/deepseek-ai/deepseek-harness/blob/ca33fd6843b205e279c7ccb6cb73a472c78f5760/docs/user/guide/plugin-market.md#L19-L28)
+- [通用插件发布协议](https://github.com/deepseek-ai/deepseek-harness/blob/ca33fd6843b205e279c7ccb6cb73a472c78f5760/docs/user/develop/basic/publish.md#L11-L16)
 
 Dataelem 的 DSH Desktop 提供自己的原生工作台服务。工作台包是 DSH bundle，导出客户端，声明 `dsh-desktop-workbenches` 注入，并通过 `desktopWorkbenches.register()` 或其可核对的别名注册业务界面。[Dataelem 工作台开发规范](https://github.com/dataelement/dsh-desktop/blob/bbc7494aa9ed1cda0b89888264d7ee74a26ec50e/packages/dsh-desktop-workbenches/development-guide.zh.md#L57-L63) · [Dataelem 市场验收规范](https://dshdesktop.com/workbench/docs/market-acceptance/)
 

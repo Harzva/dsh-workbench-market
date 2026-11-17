@@ -42,12 +42,12 @@ def main():
         if source != "official":
             revision, path = pinned_link(entry["manifest"], entry["repo"])
             assert path == entry["packagePath"], entry["manifest"]
-            evidence = entry["registration"] if source == "registered" else entry["workflow"]
-            if evidence:
-                evidence_revision, _ = pinned_link(evidence, entry["repo"])
-                assert evidence_revision == revision, evidence
+            for field in ("registration", "workflow"):
+                if entry[field]:
+                    evidence_revision, _ = pinned_link(entry[field], entry["repo"])
+                    assert evidence_revision == revision, entry[field]
             if source != "manifest":
-                assert evidence, entry
+                assert entry["registration" if source == "registered" else "workflow"], entry
     previews = sum("preview" in entry for entry in entries)
     print(f"{len(keys)} entries with {previews} previews, matching JSON and browser data, valid evidence links")
 

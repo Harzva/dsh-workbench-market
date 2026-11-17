@@ -1669,5 +1669,205 @@
     "packagePath": "package.json",
     "manifest": "https://github.com/The-Data-Galaxy/dsh-dpia-workbench/blob/93b7e8aaf9124e87a366ea8146bee701be93ae53/package.json",
     "workflow": "https://github.com/The-Data-Galaxy/dsh-dpia-workbench/blob/93b7e8aaf9124e87a366ea8146bee701be93ae53/client.js#L271-L280"
+  },
+  {
+    "repo": "callmesoul/deepseek-kanban-plugin",
+    "name": "DSH 任务看板",
+    "description": "在侧栏打开任务看板及路线图，管理 Agent 领取、执行、人工审核和交付。",
+    "category": "开发",
+    "version": "0.7.3",
+    "package": "@deepseek-kanban/plugin",
+    "manifest": "https://github.com/callmesoul/deepseek-kanban-plugin/blob/789b65ad50566af9714d8a4793dad3fe0eda8970/package.json",
+    "workflow": "https://github.com/callmesoul/deepseek-kanban-plugin/blob/789b65ad50566af9714d8a4793dad3fe0eda8970/README.md#L25-L38",
+    "registration": "https://github.com/callmesoul/deepseek-kanban-plugin/blob/789b65ad50566af9714d8a4793dad3fe0eda8970/src/client.ts#L442-L468",
+    "packagePath": "package.json",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/callmesoul/deepseek-kanban-plugin/789b65ad50566af9714d8a4793dad3fe0eda8970/docs/assets/kanban-board.png",
+        "alt": "DSH 任务看板的任务列和状态",
+        "width": 2552,
+        "height": 1266
+      }
+    ]
+  },
+  {
+    "repo": "yh4922/dsh-workspace",
+    "name": "远程工作区",
+    "description": "在 DSH 中连接已配置的 SSH 主机，浏览和编辑远程文件、查看 Git，并打开对应终端。",
+    "category": "开发",
+    "version": "0.13.0",
+    "package": "@yh4922/dsh-workspace",
+    "manifest": "https://github.com/yh4922/dsh-workspace/blob/917cb65e53471d9b583797967d0445820ffccdea/package.json",
+    "workflow": "https://github.com/yh4922/dsh-workspace/blob/917cb65e53471d9b583797967d0445820ffccdea/README.md#L8-L24",
+    "registration": "https://github.com/yh4922/dsh-workspace/blob/917cb65e53471d9b583797967d0445820ffccdea/src/client/index.tsx#L93-L116",
+    "packagePath": "package.json"
+  },
+  {
+    "repo": "fourzkw/dsh-drawai",
+    "name": "DrawAI 画布",
+    "description": "在对话旁新建、打开和编辑流程图，与 Agent 共用工作区中的画布文件。",
+    "category": "内容",
+    "version": "0.4.6",
+    "package": "dsh-drawai",
+    "manifest": "https://github.com/fourzkw/dsh-drawai/blob/6914e5dd07e9c9b2864a7af963df5da6e29d8926/package.json",
+    "workflow": "https://github.com/fourzkw/dsh-drawai/blob/6914e5dd07e9c9b2864a7af963df5da6e29d8926/README.md#L54-L64",
+    "registration": "https://github.com/fourzkw/dsh-drawai/blob/6914e5dd07e9c9b2864a7af963df5da6e29d8926/src/client.js#L15040-L15060",
+    "packagePath": "package.json",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/fourzkw/dsh-drawai/6914e5dd07e9c9b2864a7af963df5da6e29d8926/docs/picture/%E6%95%B4%E4%BD%93%E7%95%8C%E9%9D%A2%E5%9B%BE.png",
+        "alt": "DrawAI 画布和 DSH 对话同屏",
+        "width": 1537,
+        "height": 1387
+      }
+    ]
+  },
+  {
+    "repo": "Lenonss/DSH_VsCodeMode",
+    "name": "VSCode Mode 编码台",
+    "description": "在会话右栏使用 Monaco 编辑工作区文件，查看并处理 Agent 生成的差异。",
+    "category": "开发",
+    "version": "0.30.0",
+    "package": "dsh-vscode-mode",
+    "manifest": "https://github.com/Lenonss/DSH_VsCodeMode/blob/47b2129beec12c0b6240435c40d796deada4b50a/package.json",
+    "workflow": "https://github.com/Lenonss/DSH_VsCodeMode/blob/47b2129beec12c0b6240435c40d796deada4b50a/README.md#L8-L29",
+    "registration": "https://github.com/Lenonss/DSH_VsCodeMode/blob/47b2129beec12c0b6240435c40d796deada4b50a/src/client/officialSidebar.ts#L306-L336",
+    "packagePath": "package.json",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/Lenonss/DSH_VsCodeMode/47b2129beec12c0b6240435c40d796deada4b50a/docs/screenshots/workbench.png",
+        "alt": "DSH 对话旁的 Monaco 编辑和差异审查",
+        "width": 1971,
+        "height": 988
+      }
+    ]
+  },
+  {
+    "repo": "lucagiftzek/dsh-note-keeper",
+    "name": "Note Keeper 笔记台",
+    "description": "从侧栏打开笔记页面，编辑、搜索 Markdown 笔记，通过双链和图谱浏览。",
+    "category": "效率",
+    "version": "0.3.0",
+    "package": "@lucagiftzek/dsh-note-keeper",
+    "manifest": "https://github.com/lucagiftzek/dsh-note-keeper/blob/f8bc03e6fb4f3db82af01c78fa381618b455f058/package.json",
+    "workflow": "https://github.com/lucagiftzek/dsh-note-keeper/blob/f8bc03e6fb4f3db82af01c78fa381618b455f058/README.md#L30-L57",
+    "registration": "https://github.com/lucagiftzek/dsh-note-keeper/blob/f8bc03e6fb4f3db82af01c78fa381618b455f058/lib/client.js#L331",
+    "packagePath": "package.json",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/lucagiftzek/dsh-note-keeper/f8bc03e6fb4f3db82af01c78fa381618b455f058/docs/media/demo.png",
+        "alt": "Note Keeper 笔记、标签和双向链接",
+        "width": 1600,
+        "height": 950
+      }
+    ]
+  },
+  {
+    "repo": "bandung-circuits/pictor",
+    "name": "Pictor 信息图工作台",
+    "description": "打开项目并上传源材料，构思与渲染信息图，预览后下载。",
+    "category": "内容",
+    "version": "0.2.5",
+    "package": "dsh-pictor",
+    "manifest": "https://github.com/bandung-circuits/pictor/blob/97987d7833e14e1702092d67c26de59b8cf5c9a1/package.json",
+    "workflow": "https://github.com/bandung-circuits/pictor/blob/97987d7833e14e1702092d67c26de59b8cf5c9a1/README.md#L32-L45",
+    "registration": "https://github.com/bandung-circuits/pictor/blob/97987d7833e14e1702092d67c26de59b8cf5c9a1/lib/client.js#L1930-L1944",
+    "packagePath": "package.json",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/bandung-circuits/pictor/97987d7833e14e1702092d67c26de59b8cf5c9a1/docs/screenshot-workbench.png",
+        "alt": "Pictor 中编辑信息图的项目",
+        "width": 2420,
+        "height": 1768
+      }
+    ]
+  },
+  {
+    "repo": "echoVic/dsh-workspace-ide",
+    "name": "Workspace IDE",
+    "description": "在 DSH 主面板查找和编辑工作区文件，浏览 Git 差异与历史。",
+    "category": "开发",
+    "version": "1.8.11",
+    "package": "dsh-workspace-ide",
+    "manifest": "https://github.com/echoVic/dsh-workspace-ide/blob/66155ccb2637b09c0c5b69017fac6ac4098deb64/package.json",
+    "workflow": "https://github.com/echoVic/dsh-workspace-ide/blob/66155ccb2637b09c0c5b69017fac6ac4098deb64/README.md#L15-L25",
+    "registration": "https://github.com/echoVic/dsh-workspace-ide/blob/66155ccb2637b09c0c5b69017fac6ac4098deb64/lib/client.js#L11519-L11549",
+    "packagePath": "package.json",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/echoVic/dsh-workspace-ide/66155ccb2637b09c0c5b69017fac6ac4098deb64/docs/screenshot-files.png",
+        "alt": "Workspace IDE 的文件树和文件编辑器",
+        "width": 1800,
+        "height": 1277
+      }
+    ]
+  },
+  {
+    "repo": "DSH-Extensions-list/dsh-deckforge",
+    "name": "Deckforge 演示文稿",
+    "description": "从 DSH 面板创建、导入和编辑演示文稿，预览并核对导出的 PowerPoint。",
+    "category": "内容",
+    "version": "1.0.0",
+    "package": "dsh-deckforge",
+    "manifest": "https://github.com/DSH-Extensions-list/dsh-deckforge/blob/0d16c0b1dfe8a6e2921f89f9e18ba5f488637348/package.json",
+    "workflow": "https://github.com/DSH-Extensions-list/dsh-deckforge/blob/0d16c0b1dfe8a6e2921f89f9e18ba5f488637348/README.md#L13-L42",
+    "registration": "https://github.com/DSH-Extensions-list/dsh-deckforge/blob/0d16c0b1dfe8a6e2921f89f9e18ba5f488637348/client.js#L779-L794",
+    "packagePath": "package.json"
+  },
+  {
+    "repo": "AleixRocal/dsh-sidepanel-web",
+    "name": "Sidepanel Web 网页批注",
+    "description": "在会话右栏打开网页、选择元素并批注，把带标记的截图送回会话。",
+    "category": "效率",
+    "version": "0.4.5",
+    "package": "dsh-sidepanel-web",
+    "manifest": "https://github.com/AleixRocal/dsh-sidepanel-web/blob/d5b92e79cea448645f2ac1625c5abc4083170816/package.json",
+    "workflow": "https://github.com/AleixRocal/dsh-sidepanel-web/blob/d5b92e79cea448645f2ac1625c5abc4083170816/README.md#L69-L75",
+    "registration": "https://github.com/AleixRocal/dsh-sidepanel-web/blob/d5b92e79cea448645f2ac1625c5abc4083170816/lib/client.js#L2893-L2921",
+    "packagePath": "package.json",
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/AleixRocal/dsh-sidepanel-web/d5b92e79cea448645f2ac1625c5abc4083170816/assets/screenshots/01-browser-panel.png",
+        "alt": "打开网页侧栏的 DSH 会话",
+        "width": 3200,
+        "height": 2000
+      }
+    ]
+  },
+  {
+    "repo": "iggypcnfsky/dsh-docs",
+    "name": "DSH Docs 文档编辑器",
+    "description": "在独立面板编辑富文本、查看目录及导出文档，并与 Agent 共用文档存储。",
+    "category": "内容",
+    "version": "1.1.0",
+    "package": "@iggylove/dsh-docs",
+    "manifest": "https://github.com/iggypcnfsky/dsh-docs/blob/ee22d786b2af1f67cefe3f66f09f5ab846733dd4/package.json",
+    "workflow": "https://github.com/iggypcnfsky/dsh-docs/blob/ee22d786b2af1f67cefe3f66f09f5ab846733dd4/README.md#L25-L37",
+    "registration": "https://github.com/iggypcnfsky/dsh-docs/blob/ee22d786b2af1f67cefe3f66f09f5ab846733dd4/client.js#L5062-L5085",
+    "packagePath": "package.json"
+  },
+  {
+    "repo": "iggypcnfsky/dsh-sheets",
+    "name": "DSH Sheets 表格编辑器",
+    "description": "在独立面板编辑和计算表格，导入数据并导出 Excel。",
+    "category": "效率",
+    "version": "1.0.0",
+    "package": "@iggylove/dsh-sheets",
+    "manifest": "https://github.com/iggypcnfsky/dsh-sheets/blob/b940db9af919475f6bcbef4b9f66ef8a91f9feb3/package.json",
+    "workflow": "https://github.com/iggypcnfsky/dsh-sheets/blob/b940db9af919475f6bcbef4b9f66ef8a91f9feb3/README.md#L25-L36",
+    "registration": "https://github.com/iggypcnfsky/dsh-sheets/blob/b940db9af919475f6bcbef4b9f66ef8a91f9feb3/client.js#L4383-L4407",
+    "packagePath": "package.json"
+  },
+  {
+    "repo": "Natsubrei/dsh-comfyui-panel",
+    "name": "ComfyUI 图像工作流",
+    "description": "在 DSH 主面板打开 ComfyUI 编辑器，编辑并保存图像工作流。需要可连接的 ComfyUI。",
+    "category": "内容",
+    "version": "0.10.1",
+    "package": "dsh-comfyui-panel",
+    "manifest": "https://github.com/Natsubrei/dsh-comfyui-panel/blob/c67f20e1851299671d51894c632f5724341684b8/package.json",
+    "workflow": "https://github.com/Natsubrei/dsh-comfyui-panel/blob/c67f20e1851299671d51894c632f5724341684b8/README.md#L54-L80",
+    "registration": "https://github.com/Natsubrei/dsh-comfyui-panel/blob/c67f20e1851299671d51894c632f5724341684b8/client.js#L3280-L3290",
+    "packagePath": "package.json"
   }
 ]
