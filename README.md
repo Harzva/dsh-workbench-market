@@ -14,7 +14,7 @@
 
 - `community.json` 保存逐项复核、名称和分类。新条目提供仓库、包名、版本、GitHub 清单及注册代码链接。
 - `web-workbenches.json` 保存使用客户端插槽或面板接口的工作台，包括 Dataelem 会话扩展。请附固定提交的插件清单、任务流程和源码挂载证据。由另一 bundle 装载的子包可在 `assembly` 填入同提交的装载配置链接。
-- `catalog-exclusions.json` 记录已核实的占位、演示和官方索引重复项，以及对应版本或工作台身份的证据。
+- `catalog-exclusions.json` 记录已复核的占位、演示和重复项，以及对应版本或工作台身份的证据。若按完整目录树判定是上游副本，则同时记录两侧的固定清单链接和相同的 Git 树 SHA。
 - `discovery.json` 保存发现扫描的命中及各轮覆盖范围与失败。GitHub 搜索只覆盖可见且已索引的内容，漏收项目可提交 PR。
 - `dist/` 是无需构建依赖的站点。也可直接打开 `dist/index.html` 离线使用。
 

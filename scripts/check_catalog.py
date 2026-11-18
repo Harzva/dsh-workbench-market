@@ -14,10 +14,10 @@ def check_link(value):
     assert parsed.scheme == "https" and parsed.netloc == "github.com" and parsed.path.count("/") >= 2, value
 
 
-def pinned_link(url, repo):
+def pinned_link(url, repo=None):
     check_link(url)
     match = re.fullmatch(r"/([^/]+/[^/]+)/blob/([a-f0-9]{40})/(.+)", urlsplit(url).path)
-    assert match and match[1].lower() == repo, url
+    assert match and (repo is None or match[1].lower() == repo), url
     return match[2], unquote(match[3])
 
 
@@ -26,10 +26,14 @@ def main():
     for row in exclusions:
         if "observedAt" not in row:
             continue
-        revision, _ = pinned_link(row["evidence"], row["repo"])
+        revision, path = pinned_link(row["evidence"], row["repo"])
         assert revision == row["commit"] and row["source"] in {"web", "deepseek-desktop"}, row
         assert datetime.fromisoformat(row["observedAt"]).tzinfo is not None, row
         assert row["version"] and row["reason"], row
+        if "upstreamEvidence" in row:
+            _, upstream_path = pinned_link(row["upstreamEvidence"])
+            assert path == row["packagePath"] and Path(upstream_path).name == "package.json", row
+            assert re.fullmatch(r"[a-f0-9]{40}", row["packageTree"]), row
     raw = (ROOT / "dist" / "index.json").read_text()
     prefix = "window.workbenchCatalog = "
     assert (ROOT / "dist" / "catalog.js").read_text() == prefix + raw.rstrip() + ";\n"
