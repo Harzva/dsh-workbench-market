@@ -10,6 +10,9 @@ const status = document.querySelector("#result-status");
 const empty = document.querySelector("#empty");
 const template = document.querySelector("#listing");
 const date = document.querySelector("#date");
+const viewOptions = document.querySelector("#view-options");
+const viewButtons = [...viewOptions.querySelectorAll("button[data-view]")];
+const viewStorageKey = "dsh-workbench-market.view";
 const labels = {
   official: "Dataelem 市场",
   registered: "Dataelem · 注册已核",
@@ -20,11 +23,36 @@ const labels = {
 };
 const order = {registered: 0, "dataelem-extension": 1, web: 2, "deepseek-desktop": 3, official: 4, manifest: 5};
 
-function renderListing(item, position) {
+function savedView() {
+  try {
+    const stored = localStorage.getItem(viewStorageKey);
+    if (viewButtons.some(button => button.dataset.view === stored)) return stored;
+  } catch {
+    // Browsing still works when site storage is unavailable.
+  }
+  return "thumbnail";
+}
+
+function setView(view) {
+  results.dataset.view = view;
+  for (const button of viewButtons) {
+    button.setAttribute("aria-pressed", String(button.dataset.view === view));
+  }
+}
+
+function renderListing(item, view, position) {
   const node = template.content.cloneNode(true);
   const listing = node.querySelector("li");
   listing.dataset.kind = item.source;
   if (item.preview) {
+    listing.dataset.hasPreview = "";
+    if (view !== "thumbnail") {
+      const link = node.querySelector("[data-preview-source]");
+      link.href = item.preview.url;
+      link.hidden = false;
+    }
+  }
+  if (item.preview && view === "thumbnail") {
     const link = node.querySelector("[data-preview]");
     const image = link.querySelector("img");
     const description = item.preview.alt || `${item.name}的界面截图`;
@@ -37,10 +65,10 @@ function renderListing(item, position) {
     image.alt = description;
     image.width = item.preview.width;
     image.height = item.preview.height;
-    if (position > 0) image.loading = "lazy";
+    if (position === 0) image.fetchPriority = "high";
+    else image.loading = "lazy";
     image.addEventListener("error", hidePreview, {once: true});
     link.hidden = false;
-    listing.dataset.hasPreview = "";
     image.src = item.preview.url;
   }
   const title = node.querySelector("[data-title]");
@@ -73,8 +101,12 @@ function render(entries) {
     (!withPreview.checked || item.preview) &&
     terms.every(term => item.searchable.includes(term))
   );
+  const view = results.dataset.view;
+  if (view === "thumbnail") {
+    filtered.sort((a, b) => Number(Boolean(b.preview)) - Number(Boolean(a.preview)));
+  }
   const list = document.createDocumentFragment();
-  filtered.forEach((item, position) => list.append(renderListing(item, position)));
+  filtered.forEach((item, position) => list.append(renderListing(item, view, position)));
   results.replaceChildren(list);
   status.textContent = `${filtered.length} / ${entries.length} 个工作台`;
   empty.hidden = filtered.length > 0;
@@ -94,6 +126,21 @@ if (catalog?.entries?.length) {
   date.dateTime = catalog.checkedAt;
   date.textContent = catalog.checkedAt;
   const refresh = () => render(entries);
+  setView(savedView());
+  viewOptions.hidden = false;
+  for (const button of viewButtons) {
+    button.addEventListener("click", () => {
+      const view = button.dataset.view;
+      if (view === results.dataset.view) return;
+      setView(view);
+      try {
+        localStorage.setItem(viewStorageKey, view);
+      } catch {
+        // The current view can still change without persistence.
+      }
+      refresh();
+    });
+  }
   form.addEventListener("submit", event => {
     event.preventDefault();
     refresh();
